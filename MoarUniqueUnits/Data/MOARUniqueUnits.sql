@@ -51,8 +51,8 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 0, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 0, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_VULTURE', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_VULTURE', 0, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 
 -- Even Moar Units Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
@@ -1094,7 +1094,7 @@ INSERT INTO Types (Type, Kind) SELECT 'UNIT_JANISSARY', 'KIND_UNIT' FROM Civiliz
 
 INSERT INTO Types (Type, Kind) SELECT 'RESOURCE_JANISSARY', 'KIND_RESOURCE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 
-INSERT INTO Resources (ResourceType, Name, ResourceClassType, Frequency) SELECT 'RESOURCE_JANISSARY', 'LOC_RESOURCE_JANISSARY_NAME', 'RESOURCECLASS_STRATEGIC', [d-]+ FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+INSERT INTO Resources (ResourceType, Name, ResourceClassType, Frequency) SELECT 'RESOURCE_JANISSARY', 'LOC_RESOURCE_JANISSARY_NAME', 'RESOURCECLASS_STRATEGIC', 0 FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 
 INSERT INTO TraitModifiers (TraitType, ModifierId) SELECT 'MINOR_CIV_PRESLAV_TRAIT', 'MINOR_CIV_JANISSARY_BONUS'  FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 INSERT INTO TraitModifiers (TraitType, ModifierId) SELECT 'MINOR_CIV_YEREVAN_TRAIT', 'MINOR_CIV_JANISSARY_BONUS'  FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
