@@ -14,76 +14,112 @@ DROP TRIGGER OnTypeInsert;
 CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
 PRAGMA foreign_keys = ON;
 
-
-CREATE TABLE EnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, Enabled INTEGER);
+CREATE TABLE EnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, Enabled INTEGER, DefaultReplaces VARCHAR, DefaultUpgrade VARCHAR, UnitAiBaseUnit VARCHAR);
 
 -- Core Uniques
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_CAMEL_ARCHER', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_BANDEIRANTE', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_HYKSOS_BOWMAN', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_PELTAST', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_SEPOY', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_SOHEI', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_MEDICINE_MAN', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_ULFHEDNAR', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_EQUITE', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_DRUZHINA', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 0);
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_VULTURE', 1);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 1, 'UNIT_HELICOPTER', NULL, 'UNIT_HELICOPTER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 0, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_CAMEL_ARCHER', 1, NULL, 'UNIT_FIELD_CANNON', 'UNIT_SCYTHIAN_HORSE_ARCHER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 0, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_BANDEIRANTE', 1, 'UNIT_RANGER', NULL, 'UNIT_RANGER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 0, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, NULL, NULL, 'UNIT_MEDIC');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_HYKSOS_BOWMAN', 0, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 1, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 1, NULL, 'UNIT_TANK', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0, 'UNIT_MUSKETMAN', 'UNIT_FRENCH_GARDE_IMPERIALE', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1, 'UNIT_PIKEMAN', 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 0, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 0, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_PELTAST', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 0, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_SEPOY', 1, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_SOHEI', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 0, 'UNIT_BATTLESHIP', NULL, 'UNIT_BATTLESHIP');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 0, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_MEDICINE_MAN', 1, 'UNIT_MEDIC', NULL, 'UNIT_MEDIC');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 0, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_ULFHEDNAR', 1, NULL, NULL, 'UNIT_MEDIC');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_EQUITE', 1, 'UNIT_HORSEMAN', 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 0, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_DRUZHINA', 1, NULL, 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 0, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 0, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 0, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_VULTURE', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 
 -- Even Moar Units Uniques
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_JAGUAR', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_UHLAN', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_CATAPHRACT', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_BALLISTA', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 1); --WHERE CIV EXISTS
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_JAGUAR', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 0, NULL, NULL, 'UNIT_MEDIC');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 0, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_UHLAN', 1, 'UNIT_CAVALRY', 'UNIT_HELICOPTER', 'UNIT_CAVALRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_CATAPHRACT', 1, NULL, 'UNIT_KNIGHT', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 0, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_BALLISTA', 1, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 0, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
 
 -- New Uniques
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_NUBIA','UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 0); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_INDONESIA','UNIT_INDONESIAN_KRIS_SWORDSMAN', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_KHMER','UNIT_KHMER_WAR_CANOE', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_KOREA','UNIT_KOREAN_TURTLE_SHIP', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_NETHERLANDS','UNIT_DUTCH_SCHUTTERIJ', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_GEORGIA','UNIT_GEORGIAN_TADZREULI', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_CREE','UNIT_CREE_OTEHTAPIW', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_MAPUCHE','UNIT_MAPUCHE_GUERILLA', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_SCOTLAND','UNIT_SCOTTISH_GALLOWGLASS', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_MONGOLIA','UNIT_MONGOLIAN_HUI_HUI_PAO', 1); --WHERE CIV EXISTS
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled) VALUES ('CIVILIZATION_ZULU','UNIT_ZULU_ASSEGAI', 1); --WHERE CIV EXISTS
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NUBIA','UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDONESIA','UNIT_INDONESIAN_KRIS_SWORDSMAN', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KHMER','UNIT_KHMER_WAR_CANOE', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KOREA','UNIT_KOREAN_TURTLE_SHIP', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NETHERLANDS','UNIT_DUTCH_SCHUTTERIJ', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GEORGIA','UNIT_GEORGIAN_TADZREULI', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CREE','UNIT_CREE_OTEHTAPIW', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAPUCHE','UNIT_MAPUCHE_GUERILLA', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCOTLAND','UNIT_SCOTTISH_GALLOWGLASS', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MONGOLIA','UNIT_MONGOLIAN_HUI_HUI_PAO', 1, NULL, NULL, NULL);
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ZULU','UNIT_ZULU_ASSEGAI', 1, 'UNIT_SLINGER', 'UNIT_ARCHER', 'UNIT_SLINGER');
+
+-- Disable UUs for Civilizations that are not present (DLC)
+UPDATE EnabledUniqueUnits SET Enabled = 0 WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.CivilizationType);
 
 
--- CONDITIONALS
--- CONDITIONALS
--- CONDITIONALS
 
+
+-- Hunter Promotion - does this work with Unit Upgrades?
+
+INSERT INTO Types (Type, Kind) VALUES ('PROMOTION_CLASS_HUNTER','KIND_PROMOTION_CLASS');
+
+INSERT INTO Types (Type, Kind)
+		SELECT UnitPromotionType || '_HUNTER','KIND_PROMOTION'
+		FROM UnitPromotions
+		WHERE PromotionClass = 'PROMOTION_CLASS_RANGED';
+
+INSERT INTO UnitPromotionClasses (PromotionClassType, Name)
+VALUES ('PROMOTION_CLASS_HUNTER', 'Hunter');
+
+INSERT INTO UnitPromotions(UnitPromotionType, Name, Description, Level, Column, PromotionClass)
+		SELECT UnitPromotionType || '_HUNTER', Name, Description, Level, Column, 'PROMOTION_CLASS_HUNTER'
+FROM UnitPromotions
+WHERE PromotionClass = 'PROMOTION_CLASS_RANGED';
+
+INSERT INTO UnitPromotionPrereqs(UnitPromotion, PrereqUnitPromotion)
+		SELECT UnitPromotion || '_HUNTER',  PrereqUnitPromotion || '_HUNTER'
+		FROM UnitPromotionPrereqs
+		WHERE UnitPromotion IN (SELECT UnitPromotionType FROM UnitPromotions WHERE PromotionClass =  'PROMOTION_CLASS_RANGED')
+					OR PrereqUnitPromotion IN (SELECT UnitPromotionType FROM UnitPromotions WHERE PromotionClass =  'PROMOTION_CLASS_RANGED');
+
+INSERT INTO UnitPromotionModifiers(UnitPromotionType, ModifierId)
+		SELECT UnitPromotionType || '_HUNTER',  ModifierId
+		FROM   UnitPromotionModifiers
+		WHERE UnitPromotionType IN (SELECT UnitPromotionType FROM UnitPromotions WHERE PromotionClass =  'PROMOTION_CLASS_RANGED');
+
+UPDATE UnitPromotions SET Name = 'LOC_PROMOTION_HUNTER_NAME', Description = 'LOC_PROMOTION_HUNTER_DESCRIPTION' WHERE UnitPromotionType = 'PROMOTION_VOLLEY_HUNTER';
+
+
+INSERT INTO UnitPromotionModifiers (UnitPromotionType, ModifierId) VALUES ('PROMOTION_VOLLEY_HUNTER', 'PLUS_5_COMBAT_STRENGTH_NON_DISTRICT');
+
+
+
+-- CONDITIONALS (Unit Stuff)
 
 --Types (KIND_UNIT)
 INSERT INTO Types (Type, Kind) SELECT  Type, 'KIND_UNIT' FROM EnabledUniqueUnits WHERE Enabled = 1;
@@ -96,12 +132,6 @@ INSERT INTO Traits (TraitType, Name) SELECT 'TRAIT_CIVILIZATION_'||Type, 'LOC_'|
 
 --Traits
 INSERT INTO CivilizationTraits (CivilizationType, TraitType) SELECT CivilizationType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1;
-
-
-
-
-
-
 
 --Units
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource, MandatoryObsoleteTech, TraitType)
@@ -197,7 +227,7 @@ SELECT Type, '4', '460', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_RUSSIAN_T34';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Combat, TraitType)
-SELECT Type, '3', '30', 'ADVISOR_GENERIC', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_EXPLORER', 'PROMOTION_CLASS_RECON', '15', 'TRAIT_CIVILIZATION_UNIT_SCYTHIAN_AMAZON_SCOUT'
+SELECT Type, '3', '30', 'ADVISOR_GENERIC', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_DLV_EXPLORER', 'PROMOTION_CLASS_RECON', '15', 'TRAIT_CIVILIZATION_UNIT_SCYTHIAN_AMAZON_SCOUT'
 FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON_SCOUT';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, PrereqTech, Bombard, MandatoryObsoleteTech, TraitType)
@@ -256,453 +286,95 @@ FROM   Types WHERE Type = 'UNIT_NORWEGIAN_ULFHEDNAR';
 -- Even Moar Units
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
-VALUES ('UNIT_AUSTRALIAN_SASR', '4', '650', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AUSTRALIAN_SASR_NAME', 'LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '8', '91', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_AUSTRALIAN_SASR');
+SELECT Type, '4', '650', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AUSTRALIAN_SASR_NAME', 'LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '8', '91', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_AUSTRALIAN_SASR'
+FROM   Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
-VALUES ('UNIT_AZTEC_JAGUAR', '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AZTEC_JAGUAR_NAME', 'LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '34', 'TECH_IRON_WORKING', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_AZTEC_JAGUAR');
+SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AZTEC_JAGUAR_NAME', 'LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '34', 'TECH_IRON_WORKING', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_AZTEC_JAGUAR'
+FROM   Types WHERE Type = 'UNIT_AZTEC_JAGUAR';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, CostProgressionModel, CostProgressionParam1, PromotionClass, Maintenance, PrereqCivic, TraitType)
-VALUES ('UNIT_AZTEC_WARRIOR_PRIEST', '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME', 'LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION', 'YIELD_FAITH', 'COST_PROGRESSION_PREVIOUS_COPIES', '20', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_AZTEC_WARRIOR_PRIEST');
+SELECT Type, '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME', 'LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION', 'YIELD_FAITH', 'COST_PROGRESSION_PREVIOUS_COPIES', '20', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_AZTEC_WARRIOR_PRIEST'
+FROM   Types WHERE Type = 'UNIT_AZTEC_WARRIOR_PRIEST';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, Range, PrereqTech, Bombard, TraitType)
-VALUES ('UNIT_MACEDONIAN_BALLISTA', '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MACEDONIAN_BALLISTA_NAME', 'LOC_UNIT_MACEDONIAN_BALLISTA_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '2', '23', 'TECH_STEEL', '2', 'TECH_ENGINEERING', '35', 'TRAIT_CIVILIZATION_UNIT_MACEDONIAN_BALLISTA');
+SELECT Type, '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MACEDONIAN_BALLISTA_NAME', 'LOC_UNIT_MACEDONIAN_BALLISTA_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '2', '23', 'TECH_STEEL', '2', 'TECH_ENGINEERING', '35', 'TRAIT_CIVILIZATION_UNIT_MACEDONIAN_BALLISTA'
+FROM   Types WHERE Type = 'UNIT_MACEDONIAN_BALLISTA';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, PrereqTech, TraitType)
-VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', '2', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MACEDONIAN_PEZHETAIROS_NAME', 'LOC_UNIT_MACEDONIAN_PEZHETAIROS_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '1', '28', 'TECH_COMPOSITES', 'TECH_BRONZE_WORKING', 'TRAIT_CIVILIZATION_UNIT_MACEDONIAN_PEZHETAIROS');
+SELECT Type, '2', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MACEDONIAN_PEZHETAIROS_NAME', 'LOC_UNIT_MACEDONIAN_PEZHETAIROS_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '1', '28', 'TECH_COMPOSITES', 'TECH_BRONZE_WORKING', 'TRAIT_CIVILIZATION_UNIT_MACEDONIAN_PEZHETAIROS'
+FROM   Types WHERE Type = 'UNIT_MACEDONIAN_PEZHETAIROS';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource, MandatoryObsoleteTech, TraitType)
-VALUES ('UNIT_PERSIAN_CATAPHRACT', '4', '100', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_PERSIAN_CATAPHRACT_NAME', 'LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '2', '39', 'TECH_HORSEBACK_RIDING', 'RESOURCE_IRON', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_PERSIAN_CATAPHRACT');
+SELECT Type, '4', '100', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_PERSIAN_CATAPHRACT_NAME', 'LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '2', '39', 'TECH_HORSEBACK_RIDING', 'RESOURCE_IRON', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_PERSIAN_CATAPHRACT'
+FROM   Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, PrereqTech, TraitType)
-VALUES ('UNIT_PERSIAN_WARSHIP', '3', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_SEA', 'FORMATION_CLASS_NAVAL', 'LOC_UNIT_PERSIAN_WARSHIP_NAME', 'LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'PROMOTION_CLASS_NAVAL_MELEE', '1', '25', 'TECH_STEAM_POWER', 'TECH_SAILING', 'TRAIT_CIVILIZATION_UNIT_PERSIAN_WARSHIP');
+SELECT Type, '3', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_SEA', 'FORMATION_CLASS_NAVAL', 'LOC_UNIT_PERSIAN_WARSHIP_NAME', 'LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'PROMOTION_CLASS_NAVAL_MELEE', '1', '25', 'TECH_STEAM_POWER', 'TECH_SAILING', 'TRAIT_CIVILIZATION_UNIT_PERSIAN_WARSHIP'
+FROM   Types WHERE Type = 'UNIT_PERSIAN_WARSHIP';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource, MandatoryObsoleteTech, TraitType)
-VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', '2', '180', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME', 'LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '3', '55', 'TECH_GUNPOWDER', 'RESOURCE_NITER', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_POLISH_CHOSEN_INFANTRY');
+SELECT Type, '2', '180', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME', 'LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '3', '55', 'TECH_GUNPOWDER', 'RESOURCE_NITER', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_POLISH_CHOSEN_INFANTRY'
+FROM   Types WHERE Type = 'UNIT_POLISH_CHOSEN_INFANTRY';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource, TraitType)
-VALUES ('UNIT_POLISH_UHLAN', '5', '330', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_POLISH_UHLAN_NAME', 'LOC_UNIT_POLISH_UHLAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '5', '62', 'TECH_MILITARY_SCIENCE', 'RESOURCE_HORSES', 'TRAIT_CIVILIZATION_UNIT_POLISH_UHLAN');
+SELECT Type, '5', '330', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_POLISH_UHLAN_NAME', 'LOC_UNIT_POLISH_UHLAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '5', '62', 'TECH_MILITARY_SCIENCE', 'RESOURCE_HORSES', 'TRAIT_CIVILIZATION_UNIT_POLISH_UHLAN'
+FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
 
-INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range, TraitType, InitialLevel)
-VALUES ('UNIT_ZULU_ASSEGAI', '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2', 'TRAIT_CIVILIZATION_UNIT_ZULU_ASSEGAI', '2');
+-- New Units
 
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2', '2'
+FROM   Types WHERE Type = 'UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT'; -- PLACEHOLDER!!!
 
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2', '2'
+FROM   Types WHERE Type = 'UNIT_INDONESIAN_KRIS_SWORDSMAN'; -- PLACEHOLDER!!!
 
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2', '2'
+FROM   Types WHERE Type = 'UNIT_KHMER_WAR_CANOE'; -- PLACEHOLDER!!!
 
--- Special Additional Units:
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2', '2'
+FROM   Types WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP'; -- PLACEHOLDER!!!
 
--- Janissary (if Poland DLC)
-INSERT INTO Types (Type, Kind) VALUES ('UNIT_JANISSARY', 'KIND_UNIT');
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_DUTCH_SCHUTTERIJ'; -- PLACEHOLDER!!!
 
-INSERT INTO Types (Type, Kind) VALUES ('RESOURCE_JANISSARY', 'KIND_RESOURCE');
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI'; -- PLACEHOLDER!!!
 
-INSERT INTO Resources (ResourceType, Name, ResourceClassType, Frequency) VALUES ('RESOURCE_JANISSARY', 'LOC_RESOURCE_JANISSARY_NAME', 'RESOURCECLASS_STRATEGIC', '0');
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW'; -- PLACEHOLDER!!!
 
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES ('MINOR_CIV_PRESLAV_TRAIT', 'MINOR_CIV_JANISSARY_BONUS');
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES ('MINOR_CIV_YEREVAN_TRAIT', 'MINOR_CIV_JANISSARY_BONUS');
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range, InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_MAPUCHE_GUERILLA'; -- PLACEHOLDER!!!
 
-REPLACE INTO TypeTags (Type, Tag)
-		SELECT Type, 'CLASS_JANISSARY'
-		FROM   TypeTags
-		WHERE  Tag = 'CLASS_MELEE' AND Type LIKE 'ABILITY%';
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range, InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_SCOTTISH_GALLOWGLASS'; -- PLACEHOLDER!!!
 
-INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource)
-VALUES ('UNIT_JANISSARY', '2', '240', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_JANISSARY_NAME', 'LOC_UNIT_JANISSARY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '55', 'TECH_GUNPOWDER', 'RESOURCE_JANISSARY');
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range,  InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_MONGOLIAN_HUI_HUI_PAO'; -- PLACEHOLDER!!!
 
-
-
--- UnitReplaces
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'UNIT_HELICOPTER');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'UNIT_MUSKETMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_ARABIAN_GHAZI', 'UNIT_MACEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'UNIT_RANGER');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNIT_RIFLEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_CHINESE_CHOKONU', 'UNIT_CROSSBOWMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'UNIT_ARCHER');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'UNIT_QUADRIREME');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'UNIT_CROSSBOWMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_FRENCH_GENDARME', 'UNIT_KNIGHT');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_FRENCH_MARINE', 'UNIT_MUSKETMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'UNIT_PIKEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_GERMAN_PANZER', 'UNIT_TANK');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_GREEK_ARMATOLOS', 'UNIT_RIFLEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_GREEK_PELTAST', 'UNIT_ARCHER');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNIT_KNIGHT');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_INDIAN_SEPOY', 'UNIT_RIFLEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_JAPANESE_SAMURAI', 'UNIT_MACEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_JAPANESE_YAMATO', 'UNIT_BATTLESHIP');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'UNIT_MECHANIZED_INFANTRY');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_KONGO_MEDICINE_MAN', 'UNIT_MEDIC');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'UNIT_SWORDSMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_ROMAN_EQUITE', 'UNIT_HORSEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_ROMAN_ONAGER', 'UNIT_CATAPULT');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNIT_MEDIEVAL_HORSEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_RUSSIAN_T34', 'UNIT_TANK');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNIT_KNIGHT');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'UNIT_SCOUT');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SPANISH_JINETE', 'UNIT_MEDIEVAL_HORSEMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_PHALANX', 'UNIT_SPEARMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_VULTURE', 'UNIT_SWORDSMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_WOOMERA', 'UNIT_SLINGER');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_AUSTRALIAN_SASR', 'UNIT_MECHANIZED_INFANTRY');
-
--- DLC
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_AZTEC_JAGUAR', 'UNIT_SWORDSMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'UNIT_MUSKETMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_POLISH_UHLAN', 'UNIT_CAVALRY');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_PERSIAN_WARSHIP', 'UNIT_GALLEY');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'UNIT_SPEARMAN');
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'UNIT_CATAPULT');
-
-
---UnitUpgrades
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'UNIT_RIFLEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'UNIT_FIELD_CANNON');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_ARABIAN_GHAZI', 'UNIT_MUSKETMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNIT_INFANTRY');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_CHINESE_CHOKONU', 'UNIT_FIELD_CANNON');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'UNIT_CROSSBOWMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'UNIT_FRIGATE');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_ENGLISH_IRONSIDE', 'UNIT_TANK');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'UNIT_FIELD_CANNON');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_FRENCH_GENDARME', 'UNIT_CUIRASSIER');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_FRENCH_MARINE', 'UNIT_FRENCH_GARDE_IMPERIALE');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'UNIT_AT_CREW');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_GERMAN_PANZER', 'UNIT_MODERN_ARMOR');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_GREEK_ARMATOLOS', 'UNIT_INFANTRY');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_GREEK_PELTAST', 'UNIT_CROSSBOWMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNIT_CUIRASSIER');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_INDIAN_SEPOY', 'UNIT_INFANTRY');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_JAPANESE_SOHEI', 'UNIT_MUSKETMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'UNIT_MACEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_ROMAN_EQUITE', 'UNIT_MEDIEVAL_HORSEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_ROMAN_ONAGER', 'UNIT_TREBUCHET');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNIT_CAVALRY');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_RUSSIAN_T34', 'UNIT_MODERN_ARMOR');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNIT_CUIRASSIER');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'UNIT_EXPLORER');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_SPANISH_JINETE', 'UNIT_CAVALRY');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_SPANISH_TERCIO', 'UNIT_AT_CREW');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_SUMERIAN_PHALANX', 'UNIT_PIKEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_SUMERIAN_VULTURE', 'UNIT_MACEMAN');
-
--- DLC
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'UNIT_KNIGHT');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'UNIT_PIKEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'UNIT_BOMBARD');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_PERSIAN_WARSHIP', 'UNIT_CARAVEL');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'UNIT_RIFLEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_POLISH_UHLAN', 'UNIT_HELICOPTER');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_JANISSARY', 'UNIT_RIFLEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_AZTEC_JAGUAR', 'UNIT_MACEMAN');
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) VALUES ('UNIT_WOOMERA', 'UNIT_ARCHER');
-
-
---UnitAIInfos
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_GHAZI', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_GHAZI', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_GHAZI', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ARABIAN_GHAZI', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_CHINESE_CHOKONU', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_CHINESE_CHOKONU', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_CHINESE_CHOKONU', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_CHINESE_SHIGONG', 'UNITTYPE_CIVILIAN');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_CHINESE_SHIGONG', 'UNITTYPE_SIEGE_SUPPORT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'UNITTYPE_NAVAL');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_IRONSIDE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_IRONSIDE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_IRONSIDE', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_IRONSIDE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_IRONSIDE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_GENDARME', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_GENDARME', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_GENDARME', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_GENDARME', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_GENDARME', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_MARINE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_MARINE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_MARINE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_FRENCH_MARINE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_PANZER', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_PANZER', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_PANZER', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GERMAN_PANZER', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_ARMATOLOS', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_ARMATOLOS', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_ARMATOLOS', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_ARMATOLOS', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_PELTAST', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_PELTAST', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_GREEK_PELTAST', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_SEPOY', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_SEPOY', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_SEPOY', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_INDIAN_SEPOY', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_SOHEI', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_SOHEI', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_SOHEI', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_SOHEI', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_YAMATO', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_YAMATO', 'UNITTYPE_NAVAL');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JAPANESE_YAMATO', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_KONGO_MEDICINE_MAN', 'UNITTYPE_CIVILIAN');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_KONGO_MEDICINE_MAN', 'UNITTYPE_SIEGE_SUPPORT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_NORWEGIAN_ULFHEDNAR', 'UNITTYPE_CIVILIAN');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_NORWEGIAN_ULFHEDNAR', 'UNITTYPE_SIEGE_SUPPORT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_EQUITE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_EQUITE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_EQUITE', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_EQUITE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_EQUITE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_ONAGER', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_ONAGER', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_ONAGER', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_ROMAN_ONAGER', 'UNITTYPE_SIEGE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_T34', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_T34', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_T34', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_RUSSIAN_T34', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_JINETE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_JINETE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_JINETE', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_JINETE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_JINETE', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_TERCIO', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_TERCIO', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_TERCIO', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SPANISH_TERCIO', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_PHALANX', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_PHALANX', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_PHALANX', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_PHALANX', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_VULTURE', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_VULTURE', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_VULTURE', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_SUMERIAN_VULTURE', 'UNITTYPE_MELEE');
-
--- DLC
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_WOOMERA', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_WOOMERA', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_WOOMERA', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AUSTRALIAN_SASR', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AUSTRALIAN_SASR', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AUSTRALIAN_SASR', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AUSTRALIAN_SASR', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AZTEC_JAGUAR', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AZTEC_JAGUAR', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AZTEC_JAGUAR', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AZTEC_JAGUAR', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AZTEC_WARRIOR_PRIEST', 'UNITTYPE_CIVILIAN');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_AZTEC_WARRIOR_PRIEST', 'UNITTYPE_SIEGE_SUPPORT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_UHLAN', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_UHLAN', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_UHLAN', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_UHLAN', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_POLISH_UHLAN', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JANISSARY', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JANISSARY', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JANISSARY', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_JANISSARY', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'UNITTYPE_RANGED');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'UNITTYPE_SIEGE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'UNITTYPE_CAVALRY');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'UNITTYPE_LAND_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_WARSHIP', 'UNITAI_COMBAT');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_WARSHIP', 'UNITAI_EXPLORE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_WARSHIP', 'UNITTYPE_MELEE');
-INSERT INTO UnitAIInfos (UnitType, AiType) VALUES ('UNIT_PERSIAN_WARSHIP', 'UNITTYPE_NAVAL');
-
-
--- Unit Classes
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'CLASS_AMERICAN_AH64_APACHE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'CLASS_HELICOPTER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AMERICAN_AH64_APACHE', 'CLASS_LIGHT_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AMERICAN_MINUTEMAN', 'CLASS_MINUTEMAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'CLASS_CAMEL_ARCHER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ARABIAN_CAMEL_ARCHER', 'CLASS_RANGED_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ARABIAN_GHAZI', 'CLASS_GHAZI');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ARABIAN_GHAZI', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'CLASS_BANDEIRANTE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'CLASS_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_BRAZILIAN_BANDEIRANTE', 'CLASS_RECON');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'CLASS_FATHERLAND_VOLUNTEER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_CHINESE_CHOKONU', 'CLASS_CHOKONU');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_CHINESE_CHOKONU', 'CLASS_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_CHINESE_SHIGONG', 'CLASS_SHIGONG');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'CLASS_HYKSOS_BOWMAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_EGYPTIAN_HYKSOS_BOWMAN', 'CLASS_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'CLASS_NAVAL_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_EGYPTIAN_WAR_GALLEY', 'CLASS_WAR_GALLEY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ENGLISH_IRONSIDE', 'CLASS_ENGLISH_IRONSIDE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ENGLISH_IRONSIDE', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'CLASS_LONGBOWMAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ENGLISH_LONGBOWMAN', 'CLASS_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_FRENCH_GENDARME', 'CLASS_GENDARME');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_FRENCH_GENDARME', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_FRENCH_MARINE', 'CLASS_FRENCH_MARINE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_FRENCH_MARINE', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'CLASS_ANTI_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GERMAN_LANDSKNECHT', 'CLASS_LANDSKNECHT');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GERMAN_PANZER', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GERMAN_PANZER', 'CLASS_HEAVY_CHARIOT');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GERMAN_PANZER', 'CLASS_PANZER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GREEK_ARMATOLOS', 'CLASS_ARMATOLOS');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GREEK_ARMATOLOS', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GREEK_PELTAST', 'CLASS_PELTAST');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_GREEK_PELTAST', 'CLASS_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_INDIAN_MUGHAL_SOWAR', 'CLASS_MUGHAL_SOWAR');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_INDIAN_SEPOY', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_INDIAN_SEPOY', 'CLASS_SEPOY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_JAPANESE_SOHEI', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_JAPANESE_SOHEI', 'CLASS_PLUS_10_DEFENDER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_JAPANESE_YAMATO', 'CLASS_ANTI_AIR');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_JAPANESE_YAMATO', 'CLASS_NAVAL_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_JAPANESE_YAMATO', 'CLASS_YAMATO');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'CLASS_GARDE_REPUBLICAINE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_KONGO_GARDE_REPUBLICAINE', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_KONGO_MEDICINE_MAN', 'CLASS_MEDIC');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_KONGO_MEDICINE_MAN', 'CLASS_MEDICINE_MAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_MEDIEVAL_HORSEMAN', 'CLASS_LIGHT_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'CLASS_HIRDMAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_NORWEGIAN_HIRDMAN', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_NORWEGIAN_ULFHEDNAR', 'CLASS_NORWEGIAN_ULFHEDNAR');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ROMAN_EQUITE', 'CLASS_EQUITE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ROMAN_EQUITE', 'CLASS_LIGHT_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ROMAN_ONAGER', 'CLASS_ONAGER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_ROMAN_ONAGER', 'CLASS_SIEGE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'CLASS_DRUZHINA');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_RUSSIAN_DRUZHINA', 'CLASS_LIGHT_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_RUSSIAN_T34', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_RUSSIAN_T34', 'CLASS_HEAVY_CHARIOT');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_RUSSIAN_T34', 'CLASS_T34');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SCYTHIAN_AMAZON', 'CLASS_AMAZON');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SCYTHIAN_AMAZON', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'CLASS_AMAZON_SCOUT');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'CLASS_RECON');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SCYTHIAN_AMAZON_SCOUT', 'CLASS_REVEAL_STEALTH');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SPANISH_JINETE', 'CLASS_JINETE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SPANISH_JINETE', 'CLASS_LIGHT_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SPANISH_TERCIO', 'CLASS_ANTI_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SPANISH_TERCIO', 'CLASS_TERCIO');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SUMERIAN_PHALANX', 'CLASS_ANTI_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SUMERIAN_PHALANX', 'CLASS_PHALANX');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SUMERIAN_VULTURE', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_SUMERIAN_VULTURE', 'CLASS_VULTURE');
-
--- DLC
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_WOOMERA', 'CLASS_RANGED');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_WOOMERA', 'CLASS_WOOMERA');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AUSTRALIAN_SASR', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AUSTRALIAN_SASR', 'CLASS_SASR');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AZTEC_JAGUAR', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AZTEC_JAGUAR', 'CLASS_CAPTURE_WORKER');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AZTEC_JAGUAR', 'CLASS_JAGUAR');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_AZTEC_WARRIOR_PRIEST', 'CLASS_WARRIOR_PRIEST');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'CLASS_MELEE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_POLISH_CHOSEN_INFANTRY', 'CLASS_CHOSEN_INFANTRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_POLISH_UHLAN', 'CLASS_LIGHT_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_POLISH_UHLAN', 'CLASS_UHLAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_JANISSARY', 'CLASS_JANISSARY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'CLASS_SIEGE');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_MACEDONIAN_BALLISTA', 'CLASS_BALLISTA');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'CLASS_HEAVY_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_PERSIAN_CATAPHRACT', 'CLASS_CATAPHRACT');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'CLASS_ANTI_CAVALRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_MACEDONIAN_PEZHETAIROS', 'CLASS_PEZHETAIROS');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_PERSIAN_WARSHIP', 'CLASS_PERSIAN_WARSHIP');
-INSERT INTO TypeTags (Type, Tag) VALUES ('UNIT_PERSIAN_WARSHIP', 'CLASS_NAVAL_MELEE');
-
-
---Improvement_ValidBuildUnits
-INSERT INTO Improvement_ValidBuildUnits (ImprovementType, UnitType) VALUES ('IMPROVEMENT_FORT', 'UNIT_BRAZILIAN_BANDEIRANTE');
-
---Unit_BuildingPrereqs
-INSERT INTO Unit_BuildingPrereqs (Unit, PrereqBuilding) VALUES ('UNIT_CHINESE_SHIGONG', 'BUILDING_BARRACKS');
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, MandatoryObsoleteTech, RangedCombat, Range, InitialLevel)
+SELECT Type, '2', '35', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HUNTER', '5', 'TECH_MACHINERY', '15', '2',  '2'
+FROM   Types WHERE Type = 'UNIT_ZULU_ASSEGAI';
 
 
 
 
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT Type, DefaultReplaces FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultReplaces IS NOT NULL;
 
+INSERT INTO UnitUpgrades (Unit, UpgradeUnit) SELECT Type, DefaultUpgrade FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultUpgrade IS NOT NULL;
 
-
--- UNCONDITIONALS
--- UNCONDITIONALS
--- UNCONDITIONALS
+INSERT INTO UnitAIInfos (UnitType, AiType) SELECT EnabledUniqueUnits.Type, UnitAiInfos.AiType FROM UnitAiInfos, EnabledUniqueUnits WHERE UnitAiInfos.UnitType = EnabledUniqueUnits.UnitAiBaseUnit AND EnabledUniqueUnits.Enabled = 1 AND EnabledUniqueUnits.UnitAiBaseUnit IS NOT NULL;
 
 
 -- Classes
@@ -747,7 +419,7 @@ INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_WAR_GALLEY', 'ABILITY_CLASS');
 INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_YAMATO', 'ABILITY_CLASS');
 
 --DLC
-INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_WOOMERA', 'ABILITY_CLASS');
+INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_ZULU_ASSEGAI', 'ABILITY_CLASS');
 INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_SASR', 'ABILITY_CLASS');
 INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_JAGUAR', 'ABILITY_CLASS');
 INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_WARRIOR_PRIEST', 'ABILITY_CLASS');
@@ -759,6 +431,118 @@ INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_BALLISTA', 'ABILITY_CLASS');
 INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_PEZHETAIROS', 'ABILITY_CLASS');
 INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_PERSIAN_WARSHIP', 'ABILITY_CLASS');
 
+
+-- Unit Classes  (add conditions, add NEW units)
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_AMERICAN_AH64_APACHE' FROM Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HELICOPTER' FROM Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LIGHT_CAVALRY' FROM Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_AMERICAN_MINUTEMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MINUTEMAN' FROM Types WHERE Type = 'UNIT_AMERICAN_MINUTEMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_CAMEL_ARCHER' FROM Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED_CAVALRY' FROM Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_GHAZI' FROM Types WHERE Type = 'UNIT_ARABIAN_GHAZI';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_ARABIAN_GHAZI';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_BANDEIRANTE' FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED' FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RECON' FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_FATHERLAND_VOLUNTEER' FROM Types WHERE Type = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_CHOKONU' FROM Types WHERE Type = 'UNIT_CHINESE_CHOKONU';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED' FROM Types WHERE Type = 'UNIT_CHINESE_CHOKONU';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_SHIGONG' FROM Types WHERE Type = 'UNIT_CHINESE_SHIGONG';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HYKSOS_BOWMAN' FROM Types WHERE Type = 'UNIT_EGYPTIAN_HYKSOS_BOWMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED' FROM Types WHERE Type = 'UNIT_EGYPTIAN_HYKSOS_BOWMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_NAVAL_RANGED' FROM Types WHERE Type = 'UNIT_EGYPTIAN_WAR_GALLEY';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_WAR_GALLEY' FROM Types WHERE Type = 'UNIT_EGYPTIAN_WAR_GALLEY';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ENGLISH_IRONSIDE' FROM Types WHERE Type = 'UNIT_ENGLISH_IRONSIDE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_ENGLISH_IRONSIDE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LONGBOWMAN' FROM Types WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED' FROM Types WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_GENDARME' FROM Types WHERE Type = 'UNIT_FRENCH_GENDARME';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_FRENCH_GENDARME';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_FRENCH_MARINE' FROM Types WHERE Type = 'UNIT_FRENCH_MARINE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_FRENCH_MARINE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_CAVALRY' FROM Types WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LANDSKNECHT' FROM Types WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_GERMAN_PANZER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CHARIOT' FROM Types WHERE Type = 'UNIT_GERMAN_PANZER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PANZER' FROM Types WHERE Type = 'UNIT_GERMAN_PANZER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ARMATOLOS' FROM Types WHERE Type = 'UNIT_GREEK_ARMATOLOS';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_GREEK_ARMATOLOS';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PELTAST' FROM Types WHERE Type = 'UNIT_GREEK_PELTAST';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED' FROM Types WHERE Type = 'UNIT_GREEK_PELTAST';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_INDIAN_MUGHAL_SOWAR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MUGHAL_SOWAR' FROM Types WHERE Type = 'UNIT_INDIAN_MUGHAL_SOWAR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_INDIAN_SEPOY';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_SEPOY' FROM Types WHERE Type = 'UNIT_INDIAN_SEPOY';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_JAPANESE_SOHEI';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PLUS_10_DEFENDER' FROM Types WHERE Type = 'UNIT_JAPANESE_SOHEI';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_AIR' FROM Types WHERE Type = 'UNIT_JAPANESE_YAMATO';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_NAVAL_RANGED' FROM Types WHERE Type = 'UNIT_JAPANESE_YAMATO';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_YAMATO' FROM Types WHERE Type = 'UNIT_JAPANESE_YAMATO';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_GARDE_REPUBLICAINE' FROM Types WHERE Type = 'UNIT_KONGO_GARDE_REPUBLICAINE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_KONGO_GARDE_REPUBLICAINE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MEDIC' FROM Types WHERE Type = 'UNIT_KONGO_MEDICINE_MAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MEDICINE_MAN' FROM Types WHERE Type = 'UNIT_KONGO_MEDICINE_MAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HIRDMAN' FROM Types WHERE Type = 'UNIT_NORWEGIAN_HIRDMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_NORWEGIAN_HIRDMAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_NORWEGIAN_ULFHEDNAR' FROM Types WHERE Type = 'UNIT_NORWEGIAN_ULFHEDNAR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_EQUITE' FROM Types WHERE Type = 'UNIT_ROMAN_EQUITE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LIGHT_CAVALRY' FROM Types WHERE Type = 'UNIT_ROMAN_EQUITE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ONAGER' FROM Types WHERE Type = 'UNIT_ROMAN_ONAGER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_SIEGE' FROM Types WHERE Type = 'UNIT_ROMAN_ONAGER';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_DRUZHINA' FROM Types WHERE Type = 'UNIT_RUSSIAN_DRUZHINA';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LIGHT_CAVALRY' FROM Types WHERE Type = 'UNIT_RUSSIAN_DRUZHINA';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_RUSSIAN_T34';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CHARIOT' FROM Types WHERE Type = 'UNIT_RUSSIAN_T34';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_T34' FROM Types WHERE Type = 'UNIT_RUSSIAN_T34';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_AMAZON' FROM Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_AMAZON_SCOUT' FROM Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON_SCOUT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RECON' FROM Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON_SCOUT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_REVEAL_STEALTH' FROM Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON_SCOUT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_JINETE' FROM Types WHERE Type = 'UNIT_SPANISH_JINETE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LIGHT_CAVALRY' FROM Types WHERE Type = 'UNIT_SPANISH_JINETE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_CAVALRY' FROM Types WHERE Type = 'UNIT_SPANISH_TERCIO';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_TERCIO' FROM Types WHERE Type = 'UNIT_SPANISH_TERCIO';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_CAVALRY' FROM Types WHERE Type = 'UNIT_SUMERIAN_PHALANX';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PHALANX' FROM Types WHERE Type = 'UNIT_SUMERIAN_PHALANX';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_SUMERIAN_VULTURE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_VULTURE' FROM Types WHERE Type = 'UNIT_SUMERIAN_VULTURE';
+
+-- DLC
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_SASR' FROM Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_CAPTURE_WORKER' FROM Types WHERE Type = 'UNIT_AZTEC_JAGUAR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_JAGUAR' FROM Types WHERE Type = 'UNIT_AZTEC_JAGUAR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_AZTEC_JAGUAR';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_WARRIOR_PRIEST' FROM Types WHERE Type = 'UNIT_AZTEC_WARRIOR_PRIEST';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_BALLISTA' FROM Types WHERE Type = 'UNIT_MACEDONIAN_BALLISTA';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_SIEGE' FROM Types WHERE Type = 'UNIT_MACEDONIAN_BALLISTA';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_CAVALRY' FROM Types WHERE Type = 'UNIT_MACEDONIAN_PEZHETAIROS';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PEZHETAIROS' FROM Types WHERE Type = 'UNIT_MACEDONIAN_PEZHETAIROS';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_CATAPHRACT' FROM Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_HEAVY_CAVALRY' FROM Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_NAVAL_MELEE' FROM Types WHERE Type = 'UNIT_PERSIAN_WARSHIP';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PERSIAN_WARSHIP' FROM Types WHERE Type = 'UNIT_PERSIAN_WARSHIP';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_CHOSEN_INFANTRY' FROM Types WHERE Type = 'UNIT_POLISH_CHOSEN_INFANTRY';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_POLISH_CHOSEN_INFANTRY';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_LIGHT_CAVALRY' FROM Types WHERE Type = 'UNIT_POLISH_UHLAN';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_UHLAN' FROM Types WHERE Type = 'UNIT_POLISH_UHLAN';
+
+-- NEW
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_RANGED' FROM Types WHERE Type = 'UNIT_ZULU_ASSEGAI';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ZULU_ASSEGAI' FROM Types WHERE Type = 'UNIT_ZULU_ASSEGAI';
+
+--Improvement_ValidBuildUnits
+INSERT INTO Improvement_ValidBuildUnits (ImprovementType, UnitType) SELECT 'IMPROVEMENT_FORT', Type FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
+
+--Unit_BuildingPrereqs
+INSERT INTO Unit_BuildingPrereqs (Unit, PrereqBuilding) SELECT Type, 'BUILDING_BARRACKS' FROM Types WHERE Type = 'UNIT_CHINESE_SHIGONG';
+
+
+
+-- UNCONDITIONALS (Abilities, Classes, Modifiers, Requirements)
 
 --Types (KIND_ABILITY)
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PELTAST', 'KIND_ABILITY');
@@ -802,7 +586,7 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_RECEIVE_NORWEGIAN_ULFHEDNAR_BONU
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_AUTOMATIC_GUNFIRE', 'KIND_ABILITY');
 
 --DLC
-INSERT INTO Types (Type, Kind) VALUES ('ABILITY_WOOMERA', 'KIND_ABILITY');
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_ZULU_ASSEGAI', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_SASR', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_JAGUAR', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS', 'KIND_ABILITY');
@@ -874,7 +658,7 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_YAMATO', 'CLASS_YAMATO');
 
 -- DLC
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_SASR', 'CLASS_SASR');
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_WOOMERA', 'CLASS_WOOMERA');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ZULU_ASSEGAI', 'CLASS_ZULU_ASSEGAI');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_JAGUAR', 'CLASS_JAGUAR');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS', 'CLASS_MELEE');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS', 'CLASS_ANTI_CAVALRY');
@@ -938,7 +722,7 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_YAMATO', 'LOC_ABILITY_YAMATO_NAME', 'LOC_ABILITY_YAMATO_DESCRIPTION');
 
 --DLC
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_WOOMERA', 'LOC_ABILITY_WOOMERA', 'LOC_ABILITY_WOOMERA_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_ZULU_ASSEGAI', 'LOC_ABILITY_ZULU_ASSEGAI', 'LOC_ABILITY_ZULU_ASSEGAI_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_SASR', 'LOC_ABILITY_SASR', 'LOC_ABILITY_SASR_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_JAGUAR', 'LOC_ABILITY_JAGUAR', 'LOC_ABILITY_JAGUAR_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS', 'LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS', 'LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION');
@@ -950,6 +734,188 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PEZHETAIROS', 'LOC_ABILITY_PEZHETAIROS', 'LOC_ABILITY_PEZHETAIROS_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PERSIAN_WARSHIP', 'LOC_ABILITY_PERSIAN_WARSHIP', 'LOC_ABILITY_PERSIAN_WARSHIP_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS', 'LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS', 'LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION');
+
+
+--RequirementSets
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_SHIGONG_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('NOT_IN_OWNER_TERRITORY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_HEAVY_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_LIGHT_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
+
+--DLC
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_WARRIOR_PRIEST_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+
+
+--Requirements
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_COLONIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_HOLY_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_RECONQUEST_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_TERRITORIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'REQUIREMENT_UNIT_DAMAGE_MINIMUM', 1);
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT', 'REQUIREMENT_UNIT_IN_OWNER_TERRITORY', 1);
+
+--DLC
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS', 'REQUIREMENT_PLOT_DISTRICT_IS_DEFENDED', 1);
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT', 'REQUIREMENT_PLOT_HAS_ANY_DISTRICT', 1);
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+
+
+--RequirementArguments
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'Tag', 'CLASS_MEDICINE_MAN');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'Tag', 'CLASS_NORWEGIAN_ULFHEDNAR');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'Tag', 'CLASS_SHIGONG');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'MinimumAmount', '1');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'TerrainType', 'TERRAIN_PLAINS_HILLS');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'ImprovementType', 'IMPROVEMENT_ZIGGURAT');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MaxRange', '8');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MinRange', '0');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'ImprovementType', 'IMPROVEMENT_STEPWELL');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MaxRange', '1');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MinRange', '0');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'UnitType', 'UNIT_ROMAN_LEGION');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'UnitType', 'UNIT_ENGLISH_LONGBOWMAN');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'UnitType', 'UNIT_WARRIOR');
+
+--DLC
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'Tag', 'CLASS_WARRIOR_PRIEST');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'Tag', 'CLASS_PERSIAN_WARSHIP');
+
+
+--RequirementSetRequirements
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED', 'OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SHIGONG_REQUIREMENTS', 'ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'OPPONENT_IS_DAMAGED_UNIT_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NOT_IN_OWNER_TERRITORY_REQUIREMENTS', 'UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_HEAVY_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_LIGHT_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'ANTI_SPEAR_OPPONENT_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'OPPONENT_MELEE_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'OPPONENT_MELEE_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT_HILLS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS_HILLS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'PLOT_IS_HILLS_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LONGBOWMAN');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LEGION');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_WARRIOR');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'OPPONENT_IS_LAND_UNIT_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'OPPONENT_IS_NOT_HEAVY_CAVALRY_UNIT_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_DESERT_HILLS_TERRAIN_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_GRASS_HILLS_TERRAIN_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_PLAINS_HILLS_TERRAIN_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_SNOW_HILLS_TERRAIN_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_TUNDRA_HILLS_TERRAIN_REQUIREMENT');
+
+--DLC
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_WARRIOR_PRIEST_REQUIREMENTS', 'ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT');
+
+
+--Modifiers
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('50_PERCENT_POST_COMBAT_FAITH', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('BANDEIRANTE_POST_COMBAT_CULTURE', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('BANDEIRANTE_POST_COMBAT_GOLD', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('EQUITE_POST_COMBAT_GOLD', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('50_PERCENT_POST_COMBAT_FAITH_ON_CAPITAL_CONTINENT', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ROUGH_RIDER_PLOT_IS_CAPITAL_CONTINENT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('HIRDMAN_POST_COMBAT_CULTURE', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ROUGH_RIDER_PLOT_IS_CAPITAL_CONTINENT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_HEAVY_CAVALRY_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_WHEN_DEFENDING_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLAYER_IS_DEFENDER_REQUIREMENTS_SET');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_15_HEAL_PER_TURN_BONUS_FROM_STEPWELL', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN', 'PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_HEAVY_CAVALRY_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_LIGHT_CAVALRY_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_MELEE_CAVALRY_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_4_VERSUS_MELEE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'THRUST_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ROUGH_RIDER_PLOT_IS_CAPITAL_CONTINENT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_FOREIGN_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REDCOAT_PLOT_IS_FOREIGN_CONTINENT');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_FOREST_JUNGLE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_HILLS_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_HILLS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_NOT_OWNER_TERRITORY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'NOT_IN_OWNER_TERRITORY_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_OTHER_RELIGION_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_OPPONENT_IS_OTHER_RELIGION');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_WHEN_ATTACKING_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLAYER_IS_ATTACKER_REQUIREMENTS_SET');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_ZIGURRAT_PROXIMITY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_8_DESERT_PLAINS_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_VS_MELEE_ANTICAV_LIGHTCAV_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_MEDICINE_MAN_FAITH_BONUS', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ADJACENT_MEDICINE_MAN_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_NORWEGIAN_ULFHEDNAR_FAITH_BONUS', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_SHIGONG_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_SHIGONG_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_SHIGONG_EXPERIENCE_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER', 'ADJACENT_SHIGONG_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE', 'SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET');
+
+--DLC
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_COMBAT_STRENGTH_NON_DISTRICT', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'NON_DISTRICT_REQUIREMENT_SET');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_DESERT_PLAINS_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('JAGUAR_IGNORE_JUNGLE_MOVEMENT_PENALTY', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_WARRIOR_PRIEST_GREAT_GENERAL_POINTS_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_GREAT_PEOPLE_POINTS_PER_KILL', 'ADJACENT_WARRIOR_PRIEST_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_WARRIOR_PRIEST_NO_REDUCTION_WHEN_DAMAGED_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE', 'ADJACENT_WARRIOR_PRIEST_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('PLUS_10_HEAL_PER_TURN_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('ONE_HUNDRED_PERCENT_FLANKING_BONUS_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_FLANKING_BONUS_MODIFIER');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('MINOR_CIV_JANISSARY_BONUS', 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER', 'PLAYER_IS_SUZERAIN');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('JANISSARY_RESOURCE_BONUS', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_VERSUS_MELEE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'THRUST_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_PERSIAN_WARSHIP_ADJACENT_MOVEMENT_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT', 'ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS');
 
 
 -- AbilityModifiers
@@ -1020,58 +986,6 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS', 'RECEIVE_PERSIAN_WARSHIP_ADJACENT_MOVEMENT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_BALLISTA', 'PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_BALLISTA', 'MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS');
-
-
---Modifiers
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('50_PERCENT_POST_COMBAT_FAITH', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('BANDEIRANTE_POST_COMBAT_CULTURE', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('BANDEIRANTE_POST_COMBAT_GOLD', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('EQUITE_POST_COMBAT_GOLD', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('50_PERCENT_POST_COMBAT_FAITH_ON_CAPITAL_CONTINENT', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ROUGH_RIDER_PLOT_IS_CAPITAL_CONTINENT_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('HIRDMAN_POST_COMBAT_CULTURE', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ROUGH_RIDER_PLOT_IS_CAPITAL_CONTINENT_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_HEAVY_CAVALRY_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_WHEN_DEFENDING_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLAYER_IS_DEFENDER_REQUIREMENTS_SET');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_15_HEAL_PER_TURN_BONUS_FROM_STEPWELL', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN', 'PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_HEAVY_CAVALRY_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_LIGHT_CAVALRY_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_MELEE_CAVALRY_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_4_VERSUS_MELEE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'THRUST_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ROUGH_RIDER_PLOT_IS_CAPITAL_CONTINENT_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_FOREIGN_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REDCOAT_PLOT_IS_FOREIGN_CONTINENT');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_FOREST_JUNGLE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_HILLS_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_HILLS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_NOT_OWNER_TERRITORY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'NOT_IN_OWNER_TERRITORY_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_OTHER_RELIGION_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_OPPONENT_IS_OTHER_RELIGION');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_WHEN_ATTACKING_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLAYER_IS_ATTACKER_REQUIREMENTS_SET');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_ZIGURRAT_PROXIMITY_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_8_DESERT_PLAINS_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_VS_MELEE_ANTICAV_LIGHTCAV_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_MEDICINE_MAN_FAITH_BONUS', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ADJACENT_MEDICINE_MAN_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_NORWEGIAN_ULFHEDNAR_FAITH_BONUS', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_SHIGONG_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_SHIGONG_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_SHIGONG_EXPERIENCE_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER', 'ADJACENT_SHIGONG_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE', 'SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET');
-
---DLC
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_COMBAT_STRENGTH_NON_DISTRICT', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'NON_DISTRICT_REQUIREMENT_SET');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_5_DESERT_PLAINS_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('JAGUAR_IGNORE_JUNGLE_MOVEMENT_PENALTY', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_WARRIOR_PRIEST_GREAT_GENERAL_POINTS_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_GREAT_PEOPLE_POINTS_PER_KILL', 'ADJACENT_WARRIOR_PRIEST_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_WARRIOR_PRIEST_NO_REDUCTION_WHEN_DAMAGED_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE', 'ADJACENT_WARRIOR_PRIEST_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('PLUS_10_HEAL_PER_TURN_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('ONE_HUNDRED_PERCENT_FLANKING_BONUS_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_FLANKING_BONUS_MODIFIER');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('MINOR_CIV_JANISSARY_BONUS', 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER', 'PLAYER_IS_SUZERAIN');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('JANISSARY_RESOURCE_BONUS', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_VERSUS_MELEE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'THRUST_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_PERSIAN_WARSHIP_ADJACENT_MOVEMENT_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT', 'ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS');
 
 
 --ModifierStrings
@@ -1172,194 +1086,95 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_7_WHEN_ATT
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS', 'Amount', '-10');
 
 
---RequirementSets
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_SHIGONG_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('NOT_IN_OWNER_TERRITORY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_HEAVY_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_LIGHT_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
+/* -------------------------- */
+/* Poland DLC - Add Janissary */
+/* -------------------------- */
 
---DLC
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_WARRIOR_PRIEST_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO Types (Type, Kind) SELECT 'UNIT_JANISSARY', 'KIND_UNIT' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 
+INSERT INTO Types (Type, Kind) SELECT 'RESOURCE_JANISSARY', 'KIND_RESOURCE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 
---RequirementSetRequirements
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS_NOT_DAMAGED', 'OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SHIGONG_REQUIREMENTS', 'ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'OPPONENT_IS_DAMAGED_UNIT_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NOT_IN_OWNER_TERRITORY_REQUIREMENTS', 'UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_HEAVY_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_LIGHT_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'ANTI_SPEAR_OPPONENT_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS', 'OPPONENT_MELEE_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'OPPONENT_MELEE_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT_HILLS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS_HILLS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'PLOT_IS_HILLS_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LONGBOWMAN');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LEGION');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_WARRIOR');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'OPPONENT_IS_LAND_UNIT_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'OPPONENT_IS_NOT_HEAVY_CAVALRY_UNIT_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_12_RANGED_VS_LAND_NON_HC_REQUIREMENTS_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_DESERT_HILLS_TERRAIN_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_GRASS_HILLS_TERRAIN_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_PLAINS_HILLS_TERRAIN_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_SNOW_HILLS_TERRAIN_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('SNIPER_PLUS_1_RANGE_ON_HILL_REQUIREMENTS_SET', 'PLOT_IS_TUNDRA_HILLS_TERRAIN_REQUIREMENT');
+INSERT INTO Resources (ResourceType, Name, ResourceClassType, Frequency) SELECT 'RESOURCE_JANISSARY', 'LOC_RESOURCE_JANISSARY_NAME', 'RESOURCECLASS_STRATEGIC', [d-]+ FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 
---DLC
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_WARRIOR_PRIEST_REQUIREMENTS', 'ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT');
+INSERT INTO TraitModifiers (TraitType, ModifierId) SELECT 'MINOR_CIV_PRESLAV_TRAIT', 'MINOR_CIV_JANISSARY_BONUS'  FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+INSERT INTO TraitModifiers (TraitType, ModifierId) SELECT 'MINOR_CIV_YEREVAN_TRAIT', 'MINOR_CIV_JANISSARY_BONUS'  FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+
+REPLACE INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_JANISSARY' FROM TypeTags WHERE  Tag = 'CLASS_MELEE' AND Type LIKE 'ABILITY%' AND EXISTS (SELECT 1 FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource)
+SELECT 'UNIT_JANISSARY', '2', '240', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_JANISSARY_NAME', 'LOC_UNIT_JANISSARY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '55', 'TECH_GUNPOWDER', 'RESOURCE_JANISSARY'
+FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+
+INSERT INTO UnitUpgrades (Unit, UpgradeUnit) SELECT 'UNIT_JANISSARY', 'UNIT_INFANTRY' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+
+INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITAI_COMBAT' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITAI_EXPLORE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITTYPE_LAND_COMBAT' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITTYPE_MELEE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+
+INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_JANISSARY', 'CLASS_JANISSARY' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
+
+-- Polish Winged Hussar Fix
+UPDATE Units SET MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_POLISH_HUSSAR';
 
 
---Requirements
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_COLONIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_HOLY_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_RECONQUEST_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_TERRITORIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'REQUIREMENT_UNIT_DAMAGE_MINIMUM', 1);
-INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT', 'REQUIREMENT_UNIT_IN_OWNER_TERRITORY', 1);
-
---DLC
-INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS', 'REQUIREMENT_PLOT_DISTRICT_IS_DEFENDED', 1);
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT', 'REQUIREMENT_PLOT_HAS_ANY_DISTRICT', 1);
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-
-
---RequirementArguments
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'Tag', 'CLASS_MEDICINE_MAN');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'Tag', 'CLASS_NORWEGIAN_ULFHEDNAR');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'Tag', 'CLASS_SHIGONG');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'MinimumAmount', '1');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'TerrainType', 'TERRAIN_PLAINS_HILLS');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'ImprovementType', 'IMPROVEMENT_ZIGGURAT');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MaxRange', '8');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MinRange', '0');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'ImprovementType', 'IMPROVEMENT_STEPWELL');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MaxRange', '1');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MinRange', '0');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'UnitType', 'UNIT_ROMAN_LEGION');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'UnitType', 'UNIT_ENGLISH_LONGBOWMAN');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'UnitType', 'UNIT_WARRIOR');
-
---DLC
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'Tag', 'CLASS_WARRIOR_PRIEST');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'Tag', 'CLASS_PERSIAN_WARSHIP');
-
-
-
-
-
-
--- Hunter Promotion - does this work with Unit Upgrades?
-
-INSERT INTO UnitPromotionModifiers (UnitPromotionType, ModifierId) VALUES ('PROMOTION_VOLLEY_HUNTER', 'PLUS_5_COMBAT_STRENGTH_NON_DISTRICT');
-
-
-INSERT INTO Types (Type, Kind) VALUES ('PROMOTION_CLASS_HUNTER','KIND_PROMOTION_CLASS');
-
-INSERT INTO Types (Type, Kind)
-		SELECT UnitPromotionType || '_HUNTER','KIND_PROMOTION'
-		FROM UnitPromotions
-		WHERE PromotionClass = 'PROMOTION_CLASS_RANGED';
-
-INSERT INTO UnitPromotionClasses (PromotionClassType, Name)
-VALUES ('PROMOTION_CLASS_HUNTER', 'Hunter');
-
-INSERT INTO UnitPromotions(UnitPromotionType, Name, Description, Level, Column, PromotionClass)
-		SELECT UnitPromotionType || '_HUNTER', Name, Description, Level, Column, 'PROMOTION_CLASS_HUNTER'
-FROM UnitPromotions
-WHERE PromotionClass = 'PROMOTION_CLASS_RANGED';
-
-INSERT INTO UnitPromotionPrereqs(UnitPromotion, PrereqUnitPromotion)
-		SELECT UnitPromotion || '_HUNTER',  PrereqUnitPromotion || '_HUNTER'
-		FROM UnitPromotionPrereqs
-		WHERE UnitPromotion IN (SELECT UnitPromotionType FROM UnitPromotions WHERE PromotionClass =  'PROMOTION_CLASS_RANGED')
-					OR PrereqUnitPromotion IN (SELECT UnitPromotionType FROM UnitPromotions WHERE PromotionClass =  'PROMOTION_CLASS_RANGED');
-
-INSERT INTO UnitPromotionModifiers(UnitPromotionType, ModifierId)
-		SELECT UnitPromotionType || '_HUNTER',  ModifierId
-		FROM   UnitPromotionModifiers
-		WHERE UnitPromotionType IN (SELECT UnitPromotionType FROM UnitPromotions WHERE PromotionClass =  'PROMOTION_CLASS_RANGED');
-
-UPDATE UnitPromotions SET Name = 'LOC_PROMOTION_HUNTER_NAME', Description = 'LOC_PROMOTION_HUNTER_DESCRIPTION' WHERE UnitPromotionType = 'PROMOTION_VOLLEY_HUNTER';
-
-
-
-
-
-
-
--- POLAND Hussar Fix
-UPDATE Units SET MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE  UnitType = 'UNIT_POLISH_HUSSAR';
-
-
-
-
-
+/* ------------------------- */
 /* Rise & Fall Compatibility */
+/* ------------------------- */
 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_PIKE_AND_SHOT' WHERE Unit = 'UNIT_GERMAN_LANDSKNECHT' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
+
 INSERT INTO UnitUpgrades SELECT 'UNIT_BRAZILIAN_BANDEIRANTE', 'UNIT_SPEC_OPS' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPEC_OPS');
+
 INSERT INTO UnitReplaces SELECT 'UNIT_SPANISH_TERCIO', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
-UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_SNIPER' WHERE Unit = 'UNIT_KOREAN_HWACHA' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_KOREAN_HWACHA');
-UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_EXPLORER' WHERE Unit = 'UNIT_CREE_OKIHTCITAW' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CREE_OKIHTCITAW');
+
 UPDATE Units SET Cost = 140 WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI');
 
 
+/* ----------------------------- */
 /* Steel & Thunder Compatibility */
+/* ----------------------------- */
+
+-- Unit Replaces
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ARABIAN_GHAZI', 'UNIT_DLV_LONGSWORDSMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_ARABIAN_GHAZI');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPANISH_JINETE');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNIT_DLV_RIFLEMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_GREEK_ARMATOLOS', 'UNIT_DLV_RIFLEMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GREEK_ARMATOLOS');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_INDIAN_SEPOY', 'UNIT_DLV_RIFLEMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_INDIAN_SEPOY');
+
+-- Unit Upgrades
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_EXPLORER' WHERE Unit = 'UNIT_SCYTHIAN_AMAZON_SCOUT' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_EXPLORER');
+
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_MEDIEVAL_HORSEMAN' WHERE Unit = 'UNIT_ROMAN_EQUITE' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN');
+
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_TREBUCHET' WHERE Unit = 'UNIT_ROMAN_ONAGER' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_TREBUCHET');
+
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_NORWEGIAN_HIRDMAN' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_SUMERIAN_VULTURE' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_AZTEC_JAGUAR' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
+
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_SCYTHIAN_AMAZON' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_FRENCH_GENDARME' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_INDIAN_MUGHAL_SOWAR' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
+
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_JANISSARY' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_POLISH_CHOSEN_INFANTRY' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_AMERICAN_MINUTEMAN' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
