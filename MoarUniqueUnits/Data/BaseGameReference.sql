@@ -323,3 +323,33 @@ VALUES ('UNIT_MAPUCHE_MALON_RAIDER', '4', '250', 'ADVISOR_CONQUEST', '2', 'true'
  
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Combat, TraitType) 
 VALUES ('UNIT_CREE_OKIHTCITAW', '3', '40', 'ADVISOR_CONQUEST', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_CREE_OKIHTCITAW_NAME', 'LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RECON', '20', 'TRAIT_CIVILIZATION_UNIT_CREE_OKIHTCITAW');
+
+
+-- Steel & Thunder
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, StrategicResource, PrereqTech, MandatoryObsoleteTech)  
+VALUES ('UNIT_DLV_CUIRASSIER', '4', '360', 'ADVISOR_CONQUEST', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_CUIRASSIER_NAME', 'LOC_UNIT_CUIRASSIER_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '5', '66', 'RESOURCE_NITER', 'TECH_BALLISTICS', 'TECH_COMPOSITES');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, StrategicResource, PrereqTech, MandatoryObsoleteTech)
+VALUES ('UNIT_DLV_MEDIEVAL_HORSEMAN', '4', '150', 'ADVISOR_CONQUEST', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MEDIEVAL_HORSEMAN_NAME', 'LOC_UNIT_MEDIEVAL_HORSEMAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '2', '44', 'RESOURCE_HORSES', 'TECH_STIRRUPS', 'TECH_COMPOSITES');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech)
+VALUES ('UNIT_DLV_RIFLEMAN', '2', '350', 'ADVISOR_CONQUEST', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_RIFLEMAN_NAME', 'LOC_UNIT_RIFLEMAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '64', 'TECH_RIFLING', 'TECH_SATELLITES');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, Bombard, PrereqTech, MandatoryObsoleteTech)
+VALUES ('UNIT_DLV_TREBUCHET', '2', '200', 'ADVISOR_CONQUEST', '2', 'false', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_TREBUCHET_NAME', 'LOC_UNIT_TREBUCHET_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '3', '33', '2', '45', 'TECH_MILITARY_ENGINEERING', 'TECH_BALLISTICS');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, PseudoYieldType, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech)
+VALUES ('UNIT_DLV_EXPLORER', '3', '120', 'ADVISOR_GENERIC', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_EXPLORER_NAME', 'LOC_UNIT_EXPLORER_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RECON', 'PSEUDOYIELD_UNIT_EXPLORER', '3', '35', 'TECH_CARTOGRAPHY', 'TECH_RIFLING');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, StrategicResource, PrereqTech, MandatoryObsoleteTech)
+VALUES ('UNIT_DLV_LONGSWORDSMAN', '2', '160', 'ADVISOR_CONQUEST', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_LONGSWORDSMAN_NAME', 'LOC_UNIT_LONGSWORDSMAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '46', 'RESOURCE_IRON', 'TECH_CASTLES', 'TECH_REPLACEABLE_PARTS');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech)
+VALUES ('UNIT_DLV_GATLING_GUN', '2', '195', 'ADVISOR_CONQUEST', '2', 'true', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GATLING_GUN_NAME', 'LOC_UNIT_GATLING_GUN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '3', '55', '65', '1', 'TECH_INDUSTRIALIZATION', 'TECH_GUIDANCE_SYSTEMS');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech)
+VALUES ('UNIT_DLV_MORTAR', '2', '540', 'ADVISOR_CONQUEST', '2', 'false', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MORTAR_NAME', 'LOC_UNIT_MORTAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '6', '65', '75', '2', 'TECH_ROCKETRY');
+
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, PrereqTech, Bombard)
+VALUES ('UNIT_DLV_SELF_PROPELLED_ARTILLERY', '3', '680', 'ADVISOR_CONQUEST', '3', 'false', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SELF_PROPELLED_ARTILLERY_NAME', 'LOC_UNIT_SELF_PROPELLED_ARTILLERY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '8', '70', '3', 'TECH_SATELLITES', '95');
