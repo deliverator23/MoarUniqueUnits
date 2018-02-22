@@ -282,7 +282,6 @@ INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneO
 SELECT Type, '2', '100', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_NORWEGIAN_ULFHEDNAR_NAME', 'LOC_UNIT_NORWEGIAN_ULFHEDNAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_NORWEGIAN_ULFHEDNAR', 'TECH_GUNPOWDER'
 FROM   Types WHERE Type = 'UNIT_NORWEGIAN_ULFHEDNAR';
 
-
 -- Even Moar Units
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
