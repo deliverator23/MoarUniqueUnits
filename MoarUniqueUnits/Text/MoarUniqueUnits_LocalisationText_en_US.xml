@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <GameData>
 	<LocalizedText>
-		<Replace Language="en_US" Tag="LOC_LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME">
+		<Replace Language="en_US" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME">
 			<Text>African Forest Elephant</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
+		<Replace Language="en_US" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
 			<Text>African Forest Elephant Description.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME'">
