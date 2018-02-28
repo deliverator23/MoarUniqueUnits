@@ -54,16 +54,22 @@
         <Element>
             <LibraryName text="Unit"/>
             <PackageDependencies>
+                <Element text="units/aborigine.blp"/>
                 <Element text="units/accessories.blp"/>
                 <Element text="units/apache.blp"/>
                 <Element text="units/armoredHorseman.blp"/>
+                <Element text="units/ballista.blp"/>
                 <Element text="units/bandeirante.blp"/>
+                <Element text="units/cataphract.blp"/>
                 <Element text="units/gatling_gun.blp"/>
                 <Element text="units/gendarme.blp"/>
                 <Element text="units/humans.blp"/>
                 <Element text="units/ironside.blp"/>
+                <Element text="units/modernInfantry.blp"/>
                 <Element text="units/modernInfantry2.blp"/>
                 <Element text="units/peltast.blp"/>
+                <Element text="units/persianWarship.blp"/>
+                <Element text="units/pezhetairos.blp"/>
                 <Element text="units/recon.blp"/>
                 <Element text="units/rifleman.blp"/>
                 <Element text="units/roundShields.blp"/>
@@ -71,6 +77,7 @@
                 <Element text="units/tanks.blp"/>
                 <Element text="units/trebuchet.blp"/>
                 <Element text="units/ulfhednar.blp"/>
+                <Element text="units/units.blp"/>
             </PackageDependencies>
         </Element>
         <Element>
