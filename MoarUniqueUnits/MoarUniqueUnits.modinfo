@@ -37,7 +37,7 @@
     <InGameActions>
         <UpdateDatabase id="MOAR_UpdateDatabase2">
 			<Properties>
-				<LoadOrder>3</LoadOrder>
+				<LoadOrder>5</LoadOrder>
 			</Properties>
             <File>Data/MOARUniqueUnits.sql</File>
         </UpdateDatabase>
@@ -57,7 +57,7 @@
         </UpdateText>
         <UpdateIcons id="MOAR_Icons">
 			<Properties>
-				<LoadOrder>2</LoadOrder>
+				<LoadOrder>4</LoadOrder>
 			</Properties>
 			<File>Data/MOARUniqueUnitsIcons.xml</File>
         </UpdateIcons>
