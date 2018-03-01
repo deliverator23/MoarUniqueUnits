@@ -7,13 +7,13 @@
         <Authors>Deliverator</Authors>
     </Properties>
     <FrontEndActions>
-        <UpdateDatabase id="MOAR_SETTING">
+        <UpdateDatabase id="MUU_Config_UpdateDatabase">
 			<Properties>
 				<LoadOrder>3</LoadOrder>
 			</Properties>
             <File>Data/MOARUniqueUnitsConfig.sql</File>
         </UpdateDatabase>
-        <UpdateText id="MOAR_SETTING_TEXT">
+        <UpdateText id="MUU_Config_Text">
 			<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
 			<File>Text/MoarUniqueUnits_LocalisationText_en_US.xml</File>
 			<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
@@ -27,7 +27,7 @@
 			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hans_CN.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hant_HK.xml</File>-->
         </UpdateText>
-		<UpdateIcons id="MOAR_SETTING_Icons">
+		<UpdateIcons id="MUU_Config_Icons">
 			<Properties>
 				<LoadOrder>2</LoadOrder>
 			</Properties>
@@ -35,13 +35,13 @@
 		</UpdateIcons>
     </FrontEndActions>
     <InGameActions>
-        <UpdateDatabase id="MOAR_UpdateDatabase2">
+        <UpdateDatabase id="MUU_UpdateDatabase">
 			<Properties>
 				<LoadOrder>5</LoadOrder>
 			</Properties>
             <File>Data/MOARUniqueUnits.sql</File>
         </UpdateDatabase>
-        <UpdateText id="MOAR_LocalizedText">
+        <UpdateText id="MUU_LocalizedText">
 			<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
 			<File>Text/MoarUniqueUnits_LocalisationText_en_US.xml</File>
 			<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
@@ -55,13 +55,13 @@
 			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hans_CN.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hant_HK.xml</File>-->
         </UpdateText>
-        <UpdateIcons id="MOAR_Icons">
+        <UpdateIcons id="MUU_Icons">
 			<Properties>
 				<LoadOrder>4</LoadOrder>
 			</Properties>
 			<File>Data/MOARUniqueUnitsIcons.xml</File>
         </UpdateIcons>
-        <UpdateArt id="MOAR_ModArt">
+        <UpdateArt id="MUU_ModArt">
             <File>MoarUniqueUnits.dep</File>
         </UpdateArt>
     </InGameActions>
