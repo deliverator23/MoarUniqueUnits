@@ -41,12 +41,6 @@
 			</Properties>
             <File>Data/MOARUniqueUnits.sql</File>
         </UpdateDatabase>
-		<UpdateDatabase id="MOAR_UpdateDatabase3">
-			<Properties>
-				<LoadOrder>3</LoadOrder>
-			</Properties>
-			<!--<File>Data/MOAR_Units_Data.sql</File>-->
-		</UpdateDatabase>
         <UpdateText id="MOAR_LocalizedText">
 			<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
 			<File>Text/MoarUniqueUnits_LocalisationText_en_US.xml</File>
@@ -146,10 +140,12 @@
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_roman_ballista_idleb</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_roman_ballista_run</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Warrior_AttackMeleeA</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_AfricanForestElephant_ao</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_AH64_g</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_BallistaOp_AO</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Black_Gloss</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Black_Metalness</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_AfricanForestElephant_a2_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_AH64_dark_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_ArmoredHorseman_a_ArmoredHorseman_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Ballista_Black_TintMask</File>
@@ -273,6 +269,7 @@
 		<File>Platforms\MacOS\BLPs\Icons.blp</File>
 		<File>Platforms\MacOS\BLPs\aborigine.blp</File>
 		<File>Platforms\MacOS\BLPs\accessories.blp</File>
+		<File>Platforms\MacOS\BLPs\africanForestElephant.blp</File>
 		<File>Platforms\MacOS\BLPs\apache.blp</File>
 		<File>Platforms\MacOS\BLPs\armoredHorseman.blp</File>
 		<File>Platforms\MacOS\BLPs\ballista.blp</File>
@@ -342,10 +339,12 @@
 		<File>Platforms\Windows\BLPs\ANIMATION_u_roman_ballista_idleb</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_u_roman_ballista_run</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Warrior_AttackMeleeA</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_AfricanForestElephant_ao</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_AH64_g</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_BallistaOp_AO</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Black_Gloss</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Black_Metalness</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_AfricanForestElephant_a2_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_AH64_dark_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_ArmoredHorseman_a_ArmoredHorseman_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Ballista_Black_TintMask</File>
@@ -469,6 +468,7 @@
 		<File>Platforms\Windows\BLPs\Icons.blp</File>
 		<File>Platforms\Windows\BLPs\aborigine.blp</File>
 		<File>Platforms\Windows\BLPs\accessories.blp</File>
+		<File>Platforms\Windows\BLPs\africanForestElephant.blp</File>
 		<File>Platforms\Windows\BLPs\apache.blp</File>
 		<File>Platforms\Windows\BLPs\armoredHorseman.blp</File>
 		<File>Platforms\Windows\BLPs\ballista.blp</File>

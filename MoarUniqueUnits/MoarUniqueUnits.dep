@@ -56,6 +56,7 @@
             <PackageDependencies>
                 <Element text="units/aborigine.blp"/>
                 <Element text="units/accessories.blp"/>
+                <Element text="units/africanForestElephant.blp"/>
                 <Element text="units/apache.blp"/>
                 <Element text="units/armoredHorseman.blp"/>
                 <Element text="units/ballista.blp"/>
