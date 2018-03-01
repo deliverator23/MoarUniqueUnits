@@ -52,7 +52,6 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
-
 -- Move to Egyptian Khopesh
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_VULTURE', 0, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 
@@ -325,7 +324,7 @@ FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
 -- New Units
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
-SELECT Type, '180', '3', '4', '2', 1, 'DOMAIN_LAND', '48', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_HEAVY_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 'LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 'YIELD_GOLD', 'TECH_COMPOSITES', 'TECH_STIRRUPS', 'TRAIT_CIVILIZATION_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT'
+SELECT Type, '180', '3', '4', '2', 1, 'DOMAIN_LAND', '48', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_HEAVY_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME', 'LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION', 'YIELD_GOLD', 'TECH_COMPOSITES', 'TECH_STIRRUPS', 'TRAIT_CIVILIZATION_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT'
 FROM   Types WHERE Type = 'UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT';
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, Name, Description, PurchaseYield, TrackReligion, MustPurchase, EnabledByReligion, TraitType)
@@ -374,6 +373,8 @@ INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT Type, Defa
 INSERT INTO UnitUpgrades (Unit, UpgradeUnit) SELECT Type, DefaultUpgrade FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultUpgrade IS NOT NULL;
 
 INSERT INTO UnitAIInfos (UnitType, AiType) SELECT EnabledUniqueUnits.Type, UnitAiInfos.AiType FROM UnitAiInfos, EnabledUniqueUnits WHERE UnitAiInfos.UnitType = EnabledUniqueUnits.UnitAiBaseUnit AND EnabledUniqueUnits.Enabled = 1 AND EnabledUniqueUnits.UnitAiBaseUnit IS NOT NULL;
+
+
 
 
 -- Classes
@@ -1128,6 +1129,11 @@ INSERT INTO UnitUpgrades SELECT 'UNIT_BRAZILIAN_BANDEIRANTE', 'UNIT_SPEC_OPS' WH
 INSERT INTO UnitReplaces SELECT 'UNIT_SPANISH_TERCIO', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
 
 UPDATE Units SET Cost = 140 WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI');
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'africanForestElephantHM.dds'
+FROM   Types WHERE Type = 'UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT';
+
 
 
 /* ----------------------------- */
