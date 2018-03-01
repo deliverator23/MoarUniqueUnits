@@ -6,14 +6,6 @@
 --CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
 --PRAGMA foreign_keys = ON;
 
--- Conditional - Units, Traits, Civ Traits
--- Load Anyway - Abilities, Classes, Modifiers, etc
-
-
-DROP TRIGGER OnTypeInsert;
-CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
-PRAGMA foreign_keys = ON;
-
 CREATE TABLE EnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, Enabled INTEGER, DefaultReplaces VARCHAR, DefaultUpgrade VARCHAR, UnitAiBaseUnit VARCHAR);
 
 -- Core Uniques
@@ -26,7 +18,8 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, NULL, NULL, 'UNIT_MEDIC');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_HYKSOS_BOWMAN', 0, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 1, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 0, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_KHOPESH', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 1, NULL, 'UNIT_TANK', 'UNIT_KNIGHT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
@@ -52,8 +45,6 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
--- Move to Egyptian Khopesh
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_VULTURE', 0, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 
 -- Even Moar Units Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
@@ -212,8 +203,8 @@ SELECT Type, '3', '660', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_KONGO_GARDE_REPUBLICAINE';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource, MandatoryObsoleteTech, TraitType)
-SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SUMERIAN_VULTURE_NAME', 'LOC_UNIT_SUMERIAN_VULTURE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '36', 'TECH_IRON_WORKING', 'RESOURCE_IRON', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_SUMERIAN_VULTURE'
-FROM   Types WHERE Type = 'UNIT_SUMERIAN_VULTURE';
+SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_EGYPTIAN_KHOPESH_NAME', 'LOC_UNIT_EGYPTIAN_KHOPESH_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '36', 'TECH_IRON_WORKING', 'RESOURCE_IRON', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_EGYPTIAN_KHOPESH'
+FROM   Types WHERE Type = 'UNIT_EGYPTIAN_KHOPESH';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '260', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SPANISH_TERCIO_NAME', 'LOC_UNIT_SPANISH_TERCIO_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '4', '60', 'TECH_GUNPOWDER', 'RESOURCE_NITER', 'TECH_ROCKETRY', 'TRAIT_CIVILIZATION_UNIT_SPANISH_TERCIO'
@@ -507,8 +498,8 @@ INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_CAVALRY' FROM Types WH
 INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_TERCIO' FROM Types WHERE Type = 'UNIT_SPANISH_TERCIO';
 INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_ANTI_CAVALRY' FROM Types WHERE Type = 'UNIT_SUMERIAN_PHALANX';
 INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_PHALANX' FROM Types WHERE Type = 'UNIT_SUMERIAN_PHALANX';
-INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_SUMERIAN_VULTURE';
-INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_VULTURE' FROM Types WHERE Type = 'UNIT_SUMERIAN_VULTURE';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_EGYPTIAN_KHOPESH';
+INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_VULTURE' FROM Types WHERE Type = 'UNIT_EGYPTIAN_KHOPESH';
 
 -- DLC
 INSERT INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_MELEE' FROM Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
@@ -1181,7 +1172,7 @@ UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_MEDIEVAL_HORSEMAN' WHERE Unit = 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_TREBUCHET' WHERE Unit = 'UNIT_ROMAN_ONAGER' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_TREBUCHET');
 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_NORWEGIAN_HIRDMAN' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
-UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_SUMERIAN_VULTURE' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_EGYPTIAN_KHOPESH' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNIT_AZTEC_JAGUAR' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN');
 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_SCYTHIAN_AMAZON' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
