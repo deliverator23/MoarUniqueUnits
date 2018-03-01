@@ -2724,7 +2724,7 @@
 										<m_ParamName text="Count"/>
 									</Element>
 									<Element class="AssetObjects:ArtDefReferenceValue">
-										<m_ElementName text="UnitMember_Vulture"/>
+										<m_ElementName text="UnitMember_Khopesh"/>
 										<m_RootCollectionName text="UnitMemberTypes"/>
 										<m_ArtDefPath text="Units.artdef"/>
 										<m_CollectionIsLocked>false</m_CollectionIsLocked>
@@ -2769,7 +2769,7 @@
 						</Element>
 					</Element>
 				</m_ChildCollections>
-				<m_Name text="UNIT_SUMERIAN_VULTURE"/>
+				<m_Name text="UNIT_EGYPTIAN_KHOPESH"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
 			<Element>
@@ -9531,7 +9531,7 @@
 						</Element>
 					</Element>
 				</m_ChildCollections>
-				<m_Name text="UnitMember_Vulture"/>
+				<m_Name text="UnitMember_Khopesh"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
 			<Element>
