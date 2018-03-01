@@ -3,15 +3,15 @@
     <Properties>
         <Name>Moar Unique Units</Name>
         <Teaser>Moar Unique Units</Teaser>
-        <Description></Description>
+        <Description>The best thing since sliced bread!</Description>
         <Authors>Deliverator</Authors>
     </Properties>
     <FrontEndActions>
         <UpdateDatabase id="MOAR_SETTING">
 			<Properties>
-				<LoadOrder>2</LoadOrder>
+				<LoadOrder>3</LoadOrder>
 			</Properties>
-            <!--<File>Data/MOAR_Units_Config.xml</File>-->
+            <File>Data/MOARUniqueUnitsConfig.sql</File>
         </UpdateDatabase>
         <UpdateText id="MOAR_SETTING_TEXT">
 			<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
@@ -31,13 +31,13 @@
 			<Properties>
 				<LoadOrder>2</LoadOrder>
 			</Properties>
-			<!--<File>Data/MOAR_Units_Icons.xml</File>-->
+			<File>Data/MOARUniqueUnitsIcons.xml</File>
 		</UpdateIcons>
     </FrontEndActions>
     <InGameActions>
         <UpdateDatabase id="MOAR_UpdateDatabase2">
 			<Properties>
-				<LoadOrder>2</LoadOrder>
+				<LoadOrder>3</LoadOrder>
 			</Properties>
             <File>Data/MOARUniqueUnits.sql</File>
         </UpdateDatabase>
@@ -57,9 +57,9 @@
         </UpdateText>
         <UpdateIcons id="MOAR_Icons">
 			<Properties>
-				<LoadOrder>-1</LoadOrder>
+				<LoadOrder>2</LoadOrder>
 			</Properties>
-            <!--<File>Data/MOAR_Units_Icons.xml</File>-->
+			<File>Data/MOARUniqueUnitsIcons.xml</File>
         </UpdateIcons>
         <UpdateArt id="MOAR_ModArt">
             <File>MoarUniqueUnits.dep</File>
@@ -69,10 +69,9 @@
         <File>MoarUniqueUnits.dep</File>
 
 		<!-- Data -->
-		<!--<File>Data/MOAR_Units_Config.xml</File>-->
-		<!--<File>Data/MOAR_Units_Data.xml</File>-->
 		<File>Data/MOARUniqueUnits.sql</File>
-        <!--<File>Data/MOAR_Units_Icons.xml</File>-->
+		<File>Data/MOARUniqueUnitsConfig.sql</File>
+        <File>Data/MOARUniqueUnitsIcons.xml</File>
 
 		<!-- ArtDefs -->
         <File>ArtDefs/Units.artdef</File>
