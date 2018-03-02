@@ -1,6 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_UNIT_MACEDON_BALLISTA_NAME" Language="en_US">
+			<Text>Ballistra</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDON_BALLISTA_DESCRIPTION" Language="en_US">
+			<Text>Macedonian unique Catapult replacement. +17 [ICON_Strength] versus non-District tiles and -10 [ICON_Strength] versus District tiles.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_NAME" Language="en_US">
+			<Text>Hetairos</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDON_PEZHETAIROS_NAME" Language="en_US">
+			<Text>Pezhetairos</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDON_PEZHETAIROS_DESCRIPTION" Language="en_US">
+			<Text>Macedonian unique Spearman replacement. Stronger than Spearman and receives +10 [ICON_Strength] Combat Strength versus Melee units.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PERSIAN_WARSHIP_NAME" Language="en_US">
+			<Text>Phoenician Warship</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION" Language="en_US">
+			<Text>Persian unique Naval unit. Replaces Galley. +5 [ICON_Strength] Combat Strength when attacking. Also gives +5 [ICON_Strength] Combat Strength to adjacent land units and +2 movement if they start their turn in an adjacent tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PERSIAN_CATAPHRACT_NAME" Language="en_US">
+			<Text>Cataphract</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION" Language="en_US">
+			<Text>Persian unique Classical era heavy cavalry unit.</Text>
+		</Replace>
+		<Replace Tag="PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_DESC" Language="en_US">
+			<Text>+17 [ICON_Strength] Combat Strength versus non-District tiles.</Text>
+		</Replace>
+		<Replace Tag="MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_DESC" Language="en_US">
+			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
+		</Replace>
+		<Replace Tag="PLUS_10_VERSUS_MELEE_COMBAT_BONUS_DESC" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Strength versus Melee units.</Text>
+		</Replace>
+		<Replace Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength from adjacent Royal Warship.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDON_BALLISTA_CHAPTER_HISTORY_PARA_1">
+			<Text>The Greek ballista (Latin, from Greek ballistra) was a siege weapon. All components that were not made of wood were transported in the baggage train. It would be assembled with local wood, if necessary. Some were positioned inside large, armoured, mobile siege towers or even on the edge of a battlefield. For all the tactical advantages offered, it was only under Philip II of Macedon and even more so under his son Alexander, that the ballista began to develop and gain recognition as both siege engine and field artillery.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDON_PEZHETAIROS_CHAPTER_HISTORY_PARA_1">
+			<Text>The Pezhetairoi (singular: Pezhetairos) were the backbone of the Macedonian army and Diadochi kingdoms. They were literally "foot companions" (in Greek, pezos means "foot warrior" or "infantryman", and hetairos means "companion" or "friend"). The Macedonian phalanxes were made up almost entirely of Pezhetairoi. Pezhetairoi were very effective against both enemy cavalry and infantry, as their long pikes could be used to impale enemies charging on horse-back or to keep enemy infantry with shorter weapons at bay.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDON_PEZHETAIROS_CHAPTER_HISTORY_PARA_2">
+			<Text>The Pezhetairoi first came to prominence during the reign of Philip II, particularly when they played such an important role in Philip's subjugation of Greece at the Battle of Chaeronea in 338 BCE. The name "foot companions" was used by famed commander Alexander the Great, the successor of Phillip II, as an ancient recruiting method. By labeling his infantry as his personal "companions" and "friends," Alexander was able to engage a wider manpower base for his subsequent military campaigns, as positions in his personal infantry would denote pride and honor. Therefore, as Alexander would campaign across Asia, he was able to use his reputation as a brilliant military strategist, along with the personal connotation given to his infantry, to recruit more native peoples to his cause than conventional recruitment methods of the day. This created a near endless base of manpower for the burgeoning military leader, and allowed him to engage in longer, costlier campaigns in areas like Asia Minor, Egypt, Persia, and India.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDON_PEZHETAIROS_CHAPTER_HISTORY_PARA_3">
+			<Text>They were armed with the sarissa, a long spear with a shaft made from flexible cornel wood, which had a much longer reach than the traditional hoplite spear. Because of its length the phalanx could present the spearpoints of around five files of men; which made the phalanx almost impenetrable, and fearsome to oppose. Tactically, the Pezhetairoi were best used as a strong defensive line, rather than as shock troops. The length of the sarissa, while making them terrifying for an enemy to oppose, severely limited their maneuverability; and if they were taken in flank or rear they had little chance of responding. This was particularly clear at the Battle of Gaugamela in 331 BCE, when the rapid advance of the right wing caused a breach to open between two of the battalions of Pezhetairoi — a force of enemy cavalry broke through and, had it not been for a lack of discipline in their own command, and for Alexander's placing of a second line of traditional hoplites in reserve, the phalanx might have been destroyed from the rear.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_1">
+			<Text>A Cataphract was a form of armored heavy cavalry used in ancient warfare by a number of peoples in Western Eurasia and the Eurasian Steppe. Historically, the cataphract was a very heavily armored horseman, with both the rider and steed draped from head to toe in scale armor, while typically wielding a kontos or lance as their weapon. The evolution of the heavily armored horseman was not isolated to one focal point during a specific era (such as the Iranian plateau), but rather developed simultaneously in different parts of Central Asia (especially among the peoples inhabiting the Silk Road) as well as within Greater Iran. Assyria and the Khwarezm region were also significant to the development of Cataphract-like cavalry during the 1st millennium BC. Reliefs discovered in the ancient ruins of Nimrud (the ancient Assyrian city founded by king Shalmaneser I during the 13th century BC) are the earliest known depictions of riders wearing plated-mail shirts composed of metal scales, presumably deployed to provide the Assyrians with a tactical advantage over the unprotected mounted archers of their nomadic enemies, primarily the Aramaeans, Mushki, North Arabian tribes and the Babylonians. The Tiglath-Pileser III (745–727 BC) period, under which the Neo-Assyrian Empire was formed and reached its military peak, is believed to have been the first context within which the Assyrian kingdom formed crude regiments of Cataphract-like cavalry. Even when armed only with pikes, these early horsemen were effective mounted cavalrymen, but when provided with bows under Sennacherib (705–681 BC), they eventually became capable both of long-range and hand-to-hand combat, mirroring the development of dual-purpose Cataphract archers by the Parthian Empire during the 1st century BC.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_2">
+			<Text>Archaeological excavations also indicate that, by the 6th century BC, similar experimentation had taken place among the Iranian peoples inhabiting the Khwarezm region and Aral Sea basin, such as the Massagetae, Dahae and Saka. While the offensive weapons of these prototype Cataphracts were identical to those of the Assyrians, they differed in that not only the mount but also the head and flanks of the horse were protected by armor. Whether this development was influenced by the Assyrians, as Rubin postulates, or perhaps the Achaemenid Empire, or whether they occurred spontaneously and entirely unrelated to the advances in heavily armored cavalry made in the Ancient Near East, cannot be discerned by the archaeological records left by these mounted nomads. The further evolution of these early forms of heavy cavalry in Western Eurasia is not entirely clear. Heavily armored riders on large horses appear in 4th century BC frescoes in the northern Black Sea region, notably at a time when the Scythians, who relied on light horse archers, were superseded by the Sarmatians. By the 3rd century BC, light cavalry units were used in most eastern armies, but still only "relatively few states in the East or West attempted to imitate the Assyrian and Chorasmian experiments with mailed cavalry".</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_3">
+			<Text>The Greeks first encountered Cataphracts during the Greco-Persian Wars of the 5th century BC with the Achaemenid Empire. The Ionian Revolt, an uprising against Persian rule in Asia Minor which preluded the First Persian invasion of Greece, is very likely the first Western encounter of Cataphract cavalry, and to a degree heavy cavalry in general. The Cataphract was widely adopted by the Seleucid Empire, the Hellenistic successors of Alexander the Great's kingdom who reigned over conquered Persia and Asia Minor after his death in 323 BC. The Parthians, who wrested control over their native Persia from the last Seleucid Kingdom in the East in 147 BC, were also noted for their reliance upon Cataphracts as well as horse archers in battle.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_1">
+			<Text>Since its foundation by Cyrus, the Persian empire had been primarily a land empire with a strong army, but void of any actual naval forces. By the 5th century BC, this was to change, as the empire came across Greek, and Egyptian forces, each with their own maritime traditions and capabilities. Darius the Great (Darius I) is to be credited as the first Achaemenid king to invest in a Persian fleet. Even by then no true "imperial navy" had existed either in Greece or Egypt. Persia would become the first empire, under Darius, to inaugurate and deploy the first regular imperial navy. Despite this achievement, the personnel for the imperial navy would not come from Iran, but were often Phoenicians (mostly from Sidon), Egyptians and Greeks chosen by Darius the Great to operate the empire's combat vessels.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_2">
+			<Text>At first the ships were built in Sidon by the Phoenicians; the first Achaemenid ships measured about 40 meters in length and 6 meters in width, able to transport up to 300 Persian troops at any one trip. Soon, other states of the empire were constructing their own ships, each incorporating slight local preferences. The ships eventually found their way to the Persian Gulf. Persian naval forces laid the foundation for a strong Persian maritime presence in the Persian Gulf. Persians were not only stationed on islands in the Persian Gulf, but also had ships often of 100 to 200 capacity patrolling the empire's various rivers including the Caroon or Karun, Tigris and Nile in the west, as well as the Indus.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_3">
+			<Text>The Achaemenid navy established bases located along the Karun, Bahrain, Oman, and Yemen. The Persian fleet was not only used for peace-keeping purposes along the Karun but also opened the door to trade with India via the Persian Gulf. Darius's navy was in many ways a world power at the time, but it would be Artaxerxes II who in the summer of 397 BC would build a formidable navy, as part of a rearmament which would lead to his decisive victory at Knidos in 394 BC, reestablishing Achaemenid power in Ionia. Artaxerxes II would also utilize his navy to later on quell a rebellion in Egypt.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_4">
+			<Text>The construction material of choice was wood, but some armored Achaemenid ships had metallic blades on the front, often meant to slice enemy ships using the ship's momentum. Naval ships were also equipped with hooks on the side to grab enemy ships, or to negotiate their position. The ships were propelled by sails or manpower. The ships the Persians created were unique. As far as maritime engagement, the ships were equipped with two mangonels that would launch projectiles such as stones, or flammable substances.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_5">
+			<Text>Xenophon describes his eye-witness account of a massive military bridge created by joining 37 Persian ships across the Tigris river. The Persians utilized each boat's buoyancy, in order to support a connected bridge above which supply could be transferred. Herodotus also gives many accounts of Persians utilizing ships to build bridges. Darius the Great, in an attempt to subdue the Scythian horsemen north of the Black Sea, crossed over at the Bosphorus, using an enormous bridge made by connecting Achaemenid boats, then marched up to the Danube, crossing it by means of a second boat bridge. The bridge over the Bosphorus essentially connected the nearest tip of Asia to Europe, encompassing at least some 1000 meters of open water if not more. Herodotus describes the spectacle, and calls it the "bridge of Darius".</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AUSTRALIAN_SASR_NAME" Language="en_US">
+			<Text>S.A.S.R.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION" Language="en_US">
+			<Text>Strong, mobile Australian Mechanized Infantry replacement that ignores Zone of Control and has +5 [ICON_Strength] Combat Strength when fighting on Desert or Plains.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_HUNTER_NAME" Language="en_US">
+			<Text>Hunter</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_HUNTER_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Ranged] Ranged Strength vs. land units and +5 [ICON_Strength] Combat Strength when attacking non-District tiles.</Text>
+		</Replace>
+		<Replace Tag="PLUS_5_COMBAT_STRENGTH_NON_DISTRICT_DESC" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength when attacking non-District tiles.</Text>
+		</Replace>
+		<Replace Tag="PLUS_5_DESERT_PLAINS_COMBAT_BONUS_DESC" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength in Desert or Plains.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AUSTRALIAN_SASR_CHAPTER_HISTORY_PARA_1">
+			<Text>The Special Air Service Regiment, officially abbreviated S.A.S.R. though commonly known as the S.A.S., is a special forces unit of the Australian Army. Formed in 1957, it was originally modelled on the British S.A.S. sharing the motto, "Who Dares Wins". The regiment is based at Campbell Barracks, in Swanbourne, a suburb of Perth, Western Australia, and is a direct command unit of the Special Operations Command. It has taken part in operations in Borneo, Vietnam, Somalia, East Timor, Iraq and Afghanistan, as well as many other peacekeeping missions. The S.A.S.R. also provides a counter-terrorist capability, and has been involved in a number of domestic security operations.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AZTEC_JAGUAR_NAME" Language="en_US">
+			<Text>Jaguar Warrior</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION" Language="en_US">
+			<Text>Unique Aztec melee unit that replaces Swordsman. +7 [ICON_Strength] Combat Strength when attacking and -7 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME" Language="en_US">
+			<Text>Warrior Priest</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION" Language="en_US">
+			<Text>Aztec unique support unit available with the Mysticism Civic. Can be purchased with Faith. Adjacent Melee, Anti-Cavalry and Ranged units fight at full strength when damaged and earn Great General points from kills.</Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AZTEC_JAGUAR_CHAPTER_HISTORY_PARA_1">
+			<Text>In Aztec culture, war was as much a religious rite as it was a political tool. Young stallions had to capture or kill enemies in order to attain high status, and ever-increasing numbers of prisoners were needed as sacrifices for the Aztecs' religious rituals. The Jaguar Warriors were elite professional soldiers in the Aztec army. Clad in jaguar skins and equipped with deadly "macuahuitls" (wooden swords studded with sharp obsidian shards), the Jaguars were perhaps the deadliest light infantry found in Pre-Columbian Central and North America.</Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AZTEC_WARRIOR_PRIEST_CHAPTER_HISTORY_PARA_1">
+			<Text>The mighty Aztec warrior priests were not only important figures in society but also fearsome warriors who were more than capable of wielding a macuahuitl with deadly intent on the battlefield. In normal life Aztec priests would be responsible for many tasks, and often occupied high positions in society. They would be the life and blood of the Aztec religion, but also worked in government, created calenders, and were the primary record keepers. In addition they would teach in the schools and warrior training structures like the Calmecac and the Telpochocalli. As a warrior priest however their role was different, they would fight alongside the Aztec warriors blow for blow. The warrior priests were armed with weaponry capable of inflicting severe injury, and they were protected with armour and shields and were more than capable or holding their ground.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME" Language="en_US">
+			<Text>Chosen Infantry</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION" Language="en_US">
+			<Text>Polish unique Melee unit that replaces Musketman. Heals an additional 10 points per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_POLISH_UHLAN_NAME" Language="en_US">
+			<Text>Uhlan</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_POLISH_UHLAN_DESCRIPTION" Language="en_US">
+			<Text>Polish unique Light Cavalry unit that replaces Cavalry. +100% flanking bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="en_US">
+			<Text>Your light and heavy cavalry units have +5 [ICON_Strength] Strength when fighting on hill tiles. May build Janissary unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_YEREVAN_DESCRIPTION" Language="en_US">
+			<Text>Your Apostle units can choose from any possible promotion instead of receiving a random promotion. May build Janissary unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_JANISSARY_NAME" Language="en_US">
+			<Text>Janissary</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_JANISSARY_DESCRIPTION" Language="en_US">
+			<Text>Renaissance era melee unit that can be built by the Suzerain of Preslav or Yerevan. Heals when destroying an enemy unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_RESOURCE_JANISSARY_NAME" Language="en_US">
+			<Text>Devshirme</Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_1">
+			<Text>Chosen Infantry also known as piechota łanowa (łan's infantry) was a type of an infantry formation in the Polish–Lithuanian Commonwealth. Formed in 1578. Consisted of "royal" peasants (one from every 20 łans) from not charged (not under frequent lien, etc.) and revendicated royal lands.</Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_2">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_3">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_1">
+			<Text>Uhlans were Polish light cavalry armed with lances, sabres and pistols. The title was later used by lancer regiments in the Russian, Prussian, and Austrian armies. Uhlans typically wore a double-breasted jacket (kurtka) with a coloured panel (plastron) at the front, a coloured sash, and a square-topped Polish lancer cap (rogatywka, also called czapka). This cap or cavalry helmet was derived from a traditional design of Polish cap, made more formal and stylised for military use. Their lances usually had small, swallow-tailed flags (known as the lance pennon) just below the spearhead.</Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_2">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_3">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_1">
+			<Text>The Janissaries (meaning "new soldier") were elite infantry units that formed the Ottoman Sultan's household troops and bodyguards. The corps was most likely established during the reign of Murad I (1362–89).They began as an elite corps of slaves made up of conscripted young Christian boys, and became famed for internal cohesion cemented by strict discipline and order. Unlike typical slaves, they were paid regular salaries. Forbidden to marry or engage in trade, their complete loyalty to the Sultan was expected. By the seventeenth century, due to a dramatic increase in the size of the Ottoman standing army, the corps' initially strict recruitment policy was relaxed. Civilians bought their way into the corps in order to benefit from the improved socioeconomic status it conferred upon them. Consequently, the corps gradually lost its military character, undergoing a process which has been described as 'civilianization'. The corps was abolished by Sultan Mahmud II in 1826 in the Auspicious Incident in which 6,000 or more were executed.</Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_2">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_3">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US"  Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_JANISSARY_CHAPTER_HISTORY_PARA_1">
+			<Text>Devshirme (literally "lifting" or "collecting") was chiefly the practice whereby the Ottoman Empire sent military officers to take boys, ages 8 to 18, from their families in order that they be raised to serve the state. This tax of sons was imposed only on the Christian subjects of the empire. The boys were then converted to Islam with the primary objective of selecting and training the ablest children and teenagers for the military or civil service of the empire, notably into the Janissaries.</Text>
+		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME">
 			<Text>African Forest Elephant</Text>
 		</Replace>
@@ -67,7 +238,6 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION">
 			<Text>Hui Hui Pao Desc.</Text>
 		</Replace>
-
 		<Replace Language="en_US" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_NAME">
 			<Text>Minuteman</Text>
 		</Replace>
