@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AssetObjects::GameDependencyData>
     <ID>
-        <name text="MoarUnits"/>
+        <name text="MoarUniqueUnits"/>
         <id text="a1fe0ce2-ca98-4998-a0c9-2aa1639eb6d0"/>
     </ID>
     <RequiredGameArtIDs>
@@ -62,29 +62,27 @@
                 <Element text="units/ballista.blp"/>
                 <Element text="units/bandeirante.blp"/>
                 <Element text="units/cataphract.blp"/>
-                <Element text="units/gatling_gun.blp"/>
                 <Element text="units/gendarme.blp"/>
-                <Element text="units/humans.blp"/>
                 <Element text="units/ironside.blp"/>
+                <Element text="units/lancer.blp"/>
+                <Element text="units/longbowman.blp"/>
                 <Element text="units/modernInfantry.blp"/>
-                <Element text="units/modernInfantry2.blp"/>
+                <Element text="units/nativeAmerican.blp"/>
                 <Element text="units/peltast.blp"/>
                 <Element text="units/persianWarship.blp"/>
                 <Element text="units/pezhetairos.blp"/>
-                <Element text="units/recon.blp"/>
                 <Element text="units/rifleman.blp"/>
                 <Element text="units/roundShields.blp"/>
                 <Element text="units/septireme.blp"/>
                 <Element text="units/tanks.blp"/>
-                <Element text="units/trebuchet.blp"/>
                 <Element text="units/ulfhednar.blp"/>
-                <Element text="units/units.blp"/>
             </PackageDependencies>
         </Element>
         <Element>
             <LibraryName text="VFX"/>
             <PackageDependencies>
-                <Element text="VFX.blp"/>
+                <Element text="ballistaVFX.blp"/>
+                <Element text="spearVFX.blp"/>
             </PackageDependencies>
         </Element>
         <Element>

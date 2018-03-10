@@ -10,52 +10,52 @@ CREATE TABLE EnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, Enabled
 
 -- Core Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 1, 'UNIT_HELICOPTER', NULL, 'UNIT_HELICOPTER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 0, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 1, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_CAMEL_ARCHER', 1, NULL, 'UNIT_FIELD_CANNON', 'UNIT_SCYTHIAN_HORSE_ARCHER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 0, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_BANDEIRANTE', 1, 'UNIT_RANGER', NULL, 'UNIT_RANGER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 0, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 1, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, NULL, NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_HYKSOS_BOWMAN', 0, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 0, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_HYKSOS_BOWMAN', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 1, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_KHOPESH', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 1, NULL, 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0, 'UNIT_MUSKETMAN', 'UNIT_FRENCH_GARDE_IMPERIALE', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 1, 'UNIT_MUSKETMAN', 'UNIT_FRENCH_GARDE_IMPERIALE', 'UNIT_MUSKETMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1, 'UNIT_PIKEMAN', 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 0, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 0, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 1, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 1, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_PELTAST', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 0, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_SEPOY', 1, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_SOHEI', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 0, 'UNIT_BATTLESHIP', NULL, 'UNIT_BATTLESHIP');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 0, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 1, 'UNIT_BATTLESHIP', NULL, 'UNIT_BATTLESHIP');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_MEDICINE_MAN', 1, 'UNIT_MEDIC', NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 0, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_ULFHEDNAR', 1, NULL, NULL, 'UNIT_MEDIC');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_EQUITE', 1, 'UNIT_HORSEMAN', 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 0, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 1, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_DRUZHINA', 1, NULL, 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 0, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 1, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 0, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 1, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 1, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
 
 -- Even Moar Units Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_JAGUAR', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 0, NULL, NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 0, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 1, NULL, NULL, 'UNIT_MEDIC');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 1, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_UHLAN', 1, 'UNIT_CAVALRY', 'UNIT_HELICOPTER', 'UNIT_CAVALRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_CATAPHRACT', 1, NULL, 'UNIT_KNIGHT', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 0, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 1, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_BALLISTA', 1, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 0, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
 
 -- New Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NUBIA','UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 1, NULL, 'UNIT_KNIGHT', 'UNIT_KNIGHT');
@@ -219,7 +219,7 @@ SELECT Type, '4', '460', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_RUSSIAN_T34';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Combat, TraitType)
-SELECT Type, '3', '30', 'ADVISOR_GENERIC', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_DLV_EXPLORER', 'PROMOTION_CLASS_RECON', '15', 'TRAIT_CIVILIZATION_UNIT_SCYTHIAN_AMAZON_SCOUT'
+SELECT Type, '3', '30', 'ADVISOR_GENERIC', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_EXPLORER', 'PROMOTION_CLASS_RECON', '15', 'TRAIT_CIVILIZATION_UNIT_SCYTHIAN_AMAZON_SCOUT'
 FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON_SCOUT';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, PrereqTech, Bombard, MandatoryObsoleteTech, TraitType)
