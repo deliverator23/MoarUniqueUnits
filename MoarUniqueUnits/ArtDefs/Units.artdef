@@ -26828,14 +26828,6 @@
 														<Element>
 															<m_CollectionName text="Bins"/>
 															<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
-															<Element>
-																<m_Fields>
-																	<m_Values/>
-																</m_Fields>
-																<m_ChildCollections/>
-																<m_Name text="Spears/Horseman"/>
-																<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
-															</Element>
 														</Element>
 													</m_ChildCollections>
 													<m_Name text="Weapon"/>
@@ -33493,7 +33485,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Bodies/Male_ThinBody_Full"/>
+                                                                <m_Name text="Bodies/Male_ThinBody_NoShins"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
@@ -33509,9 +33501,9 @@
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
                                                             <Element class="AssetObjects..ArtDefReferenceValue">
-                                                                <m_ElementName text=""/>
+                                                                <m_ElementName text="Persia_Red"/>
                                                                 <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text=""/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
                                                                 <m_CollectionIsLocked>true</m_CollectionIsLocked>
                                                                 <m_TemplateName text=""/>
                                                                 <m_ParamName text="Tint"/>
@@ -33700,14 +33692,14 @@
 																<m_Value text="Hat"/>
 																<m_ParamName text="Point"/>
 															</Element>
-															<Element class="AssetObjects..ArtDefReferenceValue">
-																<m_ElementName text=""/>
-																<m_RootCollectionName text="UnitTintTypes"/>
-																<m_ArtDefPath text=""/>
-																<m_CollectionIsLocked>true</m_CollectionIsLocked>
-																<m_TemplateName text=""/>
-																<m_ParamName text="Tint"/>
-															</Element>
+                                                            <Element class="AssetObjects..ArtDefReferenceValue">
+                                                                <m_ElementName text="Persia_Red"/>
+                                                                <m_RootCollectionName text="UnitTintTypes"/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
+                                                                <m_CollectionIsLocked>true</m_CollectionIsLocked>
+                                                                <m_TemplateName text=""/>
+                                                                <m_ParamName text="Tint"/>
+                                                            </Element>
 														</m_Values>
 													</m_Fields>
 													<m_ChildCollections>
@@ -33892,14 +33884,14 @@
 																<m_Value text="Hat"/>
 																<m_ParamName text="Point"/>
 															</Element>
-															<Element class="AssetObjects..ArtDefReferenceValue">
-																<m_ElementName text=""/>
-																<m_RootCollectionName text="UnitTintTypes"/>
-																<m_ArtDefPath text=""/>
-																<m_CollectionIsLocked>true</m_CollectionIsLocked>
-																<m_TemplateName text=""/>
-																<m_ParamName text="Tint"/>
-															</Element>
+                                                            <Element class="AssetObjects..ArtDefReferenceValue">
+                                                                <m_ElementName text="Persia_Red"/>
+                                                                <m_RootCollectionName text="UnitTintTypes"/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
+                                                                <m_CollectionIsLocked>true</m_CollectionIsLocked>
+                                                                <m_TemplateName text=""/>
+                                                                <m_ParamName text="Tint"/>
+                                                            </Element>
 														</m_Values>
 													</m_Fields>
 													<m_ChildCollections>

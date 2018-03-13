@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Mod id="a1fe0ce2-ca98-4998-a0c9-2aa1639eb6d0">
     <Properties>
-        <Name>Moar Unique Units</Name>
-        <Teaser>Moar Unique Units</Teaser>
+        <Name>Steel & Thunder: Unique Units</Name>
+        <Teaser>Adds Unique Units!</Teaser>
         <Description>The best thing since sliced bread!</Description>
         <Authors>Deliverator</Authors>
     </Properties>
@@ -105,6 +105,8 @@
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_run</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_start_run</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_stop_run</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_Peltast_Throw</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_Skirt_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_roman_ballista_attacka</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_roman_ballista_combat_ready_idle</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_roman_ballista_deatha</File>
@@ -276,6 +278,8 @@
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_run</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_start_run</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_stop_run</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_Peltast_Throw</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_Skirt_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_u_roman_ballista_attacka</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_u_roman_ballista_combat_ready_idle</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_u_roman_ballista_deatha</File>
