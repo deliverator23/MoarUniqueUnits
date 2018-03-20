@@ -1280,6 +1280,55 @@
 													<m_Fields>
 														<m_Values>
 															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Pikemen_Mediterranean_Helm_B"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="units.xlp"/>
+																<m_BLPPackage text="units/units"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="Gallowglass"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
 																<m_EntryName text="NativeAmericanHat_A"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="nativeAmerican.xlp"/>
@@ -2608,6 +2657,55 @@
 							<m_Name text="AborigineSlinger"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects::BLPEntryValue">
+																<m_EntryName text="PlateMailWarrior_ArmorA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects::FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="Gallowglass"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
 					</Element>
 				</m_ChildCollections>
 				<m_Name text="Armor"/>
@@ -3625,6 +3723,77 @@
 								</Element>
 							</m_ChildCollections>
 							<m_Name text="RoundSwirl"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects:BLPEntryValue">
+																<m_EntryName text="Indo_ShieldA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects::FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="IndoA"/>
+													<m_AppendMergedParameterCollections>false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects:BLPEntryValue">
+																<m_EntryName text="Indo_ShieldB"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects::FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="IndoB"/>
+													<m_AppendMergedParameterCollections>false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="Indonesian"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
 						<Element>
