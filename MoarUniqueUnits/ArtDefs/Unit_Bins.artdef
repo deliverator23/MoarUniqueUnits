@@ -635,7 +635,7 @@
 													<m_Fields>
 														<m_Values>
 															<Element class="AssetObjects:BLPEntryValue">
-																<m_EntryName text="Claymore"/>
+																<m_EntryName text="ClaymoreA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
 																<m_BLPPackage text="units/uniqueUnits"/>

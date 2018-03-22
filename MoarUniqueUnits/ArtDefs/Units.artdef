@@ -34367,22 +34367,19 @@
                                                     <m_ChildCollections>
                                                         <Element>
                                                             <m_CollectionName text="Bins"/>
-                                                            <m_ReplaceMergedCollectionElements>false
-                                                            </m_ReplaceMergedCollectionElements>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
                                                             <Element>
                                                                 <m_Fields>
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
                                                                 <m_Name text="Armor/Gallowglass"/>
-                                                                <m_AppendMergedParameterCollections>false
-                                                                </m_AppendMergedParameterCollections>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
                                                     </m_ChildCollections>
                                                     <m_Name text="Armor"/>
-                                                    <m_AppendMergedParameterCollections>false
-                                                    </m_AppendMergedParameterCollections>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                 </Element>
                                                 <Element>
                                                     <m_Fields>
@@ -34404,22 +34401,87 @@
                                                     <m_ChildCollections>
                                                         <Element>
                                                             <m_CollectionName text="Bins"/>
-                                                            <m_ReplaceMergedCollectionElements>false
-                                                            </m_ReplaceMergedCollectionElements>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
                                                             <Element>
                                                                 <m_Fields>
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
                                                                 <m_Name text="Swords/Claymore"/>
-                                                                <m_AppendMergedParameterCollections>false
-                                                                </m_AppendMergedParameterCollections>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
                                                     </m_ChildCollections>
                                                     <m_Name text="Weapon"/>
-                                                    <m_AppendMergedParameterCollections>false
-                                                    </m_AppendMergedParameterCollections>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                </Element>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:StringValue">
+                                                                <m_Value text="Root"/>
+                                                                <m_ParamName text="Point"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects:ArtDefReferenceValue">
+                                                                <m_ElementName text=""/>
+                                                                <m_RootCollectionName text="UnitTintTypes"/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
+                                                                <m_CollectionIsLocked>true</m_CollectionIsLocked>
+                                                                <m_TemplateName text=""/>
+                                                                <m_ParamName text="Tint"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections>
+                                                        <Element>
+                                                            <m_CollectionName text="Bins"/>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                                            <Element>
+                                                                <m_Fields>
+                                                                    <m_Values/>
+                                                                </m_Fields>
+                                                                <m_ChildCollections/>
+                                                                <m_Name text="Bodies/Male_HeavyBody_Hands"/>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                            </Element>
+                                                        </Element>
+                                                    </m_ChildCollections>
+                                                    <m_Name text="Hands"/>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                </Element>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:StringValue">
+                                                                <m_Value text="Root"/>
+                                                                <m_ParamName text="Point"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects:ArtDefReferenceValue">
+                                                                <m_ElementName text=""/>
+                                                                <m_RootCollectionName text="UnitTintTypes"/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
+                                                                <m_CollectionIsLocked>true</m_CollectionIsLocked>
+                                                                <m_TemplateName text=""/>
+                                                                <m_ParamName text="Tint"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections>
+                                                        <Element>
+                                                            <m_CollectionName text="Bins"/>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                                            <Element>
+                                                                <m_Fields>
+                                                                    <m_Values/>
+                                                                </m_Fields>
+                                                                <m_ChildCollections/>
+                                                                <m_Name text="Heads/Male"/>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                            </Element>
+                                                        </Element>
+                                                    </m_ChildCollections>
+                                                    <m_Name text="Heads"/>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                 </Element>
                                                 <Element>
                                                     <m_Fields>
@@ -34441,22 +34503,19 @@
                                                     <m_ChildCollections>
                                                         <Element>
                                                             <m_CollectionName text="Bins"/>
-                                                            <m_ReplaceMergedCollectionElements>false
-                                                            </m_ReplaceMergedCollectionElements>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
                                                             <Element>
                                                                 <m_Fields>
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
                                                                 <m_Name text="Hats/Gallowglass"/>
-                                                                <m_AppendMergedParameterCollections>false
-                                                                </m_AppendMergedParameterCollections>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
                                                     </m_ChildCollections>
                                                     <m_Name text="Hats"/>
-                                                    <m_AppendMergedParameterCollections>false
-                                                    </m_AppendMergedParameterCollections>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                 </Element>
                                             </Element>
                                         </m_ChildCollections>

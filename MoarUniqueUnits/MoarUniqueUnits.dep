@@ -76,6 +76,7 @@
                 <Element text="units/septireme.blp"/>
                 <Element text="units/tanks.blp"/>
                 <Element text="units/ulfhednar.blp"/>
+                <Element text="units/uniqueUnits.blp"/>
             </PackageDependencies>
         </Element>
         <Element>

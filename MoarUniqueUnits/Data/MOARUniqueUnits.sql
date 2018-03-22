@@ -977,11 +977,33 @@ INSERT INTO UnitReplaces SELECT 'UNIT_SPANISH_TERCIO', 'UNIT_PIKE_AND_SHOT' WHER
 
 UPDATE Units SET Cost = 140 WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI');
 
+/* ----------------------------- */
+/* Historic Moments              */
+/* ----------------------------- */
+
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'africanForestElephantHM.dds'
 FROM   Types WHERE Type = 'UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT';
 
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'GendarmeHM.dds'
+FROM   Types WHERE Type = 'UNIT_FRENCH_GENDARME';
 
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'KrisHM.dds'
+FROM   Types WHERE Type = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CreeHorsemanHM.dds'
+FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CamelArcherHM.dds'
+FROM   Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'UhlanHM.dds'
+FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
 
 /* ----------------------------- */
 /* Steel & Thunder Compatibility */
