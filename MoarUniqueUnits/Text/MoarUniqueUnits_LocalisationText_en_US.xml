@@ -1060,10 +1060,10 @@
 			<Text>+5 [ICON_Strength] Combat Strength from Shigong unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
-			<Text>The newly created {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
+			<Text>Our newly created {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
-			<Text>Now that we are able utilise {ResourceType} {ResourceType : plural 1?was; other?were;} we are able to create the {UnitType} for the first time.</Text>
+			<Text>Now that we are able use {ResourceType} we are able to create the {UnitType}.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
