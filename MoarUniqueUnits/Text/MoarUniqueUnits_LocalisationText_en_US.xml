@@ -978,7 +978,7 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
 			<Text>Assegai</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="MINUS_7_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
+		<Replace Language="en_US" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
 			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="PLUS_10_VERSUS_MELEE_COMBAT_BONUS_DESC">
@@ -1038,7 +1038,7 @@
 		<Replace Language="en_US" Tag="PLUS_5_ZIGURRAT_PROXIMITY_COMBAT_BONUS_DESC">
 			<Text>+5 [ICON_Strength] Combat Strength within 8 tiles of Ziggurat.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="PLUS_7_WHEN_ATTACKING_NON_DISTRICT_BONUS_DESC">
+		<Replace Language="en_US" Tag="PLUS_17_WHEN_ATTACKING_NON_DISTRICT_BONUS_DESC">
 			<Text>+17 [ICON_Strength] Combat Strength versus non-District tiles.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="PLUS_8_DESERT_PLAINS_COMBAT_BONUS_DESC">
