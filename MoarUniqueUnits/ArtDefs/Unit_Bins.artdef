@@ -2235,7 +2235,7 @@
 													<m_Fields>
 														<m_Values>
 															<Element class="AssetObjects..BLPEntryValue">
-																<m_EntryName text="KrisArmor"/>
+																<m_EntryName text="Kris_Armor"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
 																<m_BLPPackage text="units/uniqueUnits"/>
@@ -4523,7 +4523,7 @@
 													<m_Fields>
 														<m_Values>
 															<Element class="AssetObjects:BLPEntryValue">
-																<m_EntryName text="WarCanoe"/>
+																<m_EntryName text="WarCanoeRetintable"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
 																<m_BLPPackage text="units/uniqueUnits"/>
@@ -4572,7 +4572,7 @@
 													<m_Fields>
 														<m_Values>
 															<Element class="AssetObjects:BLPEntryValue">
-																<m_EntryName text="TurtleShip"/>
+																<m_EntryName text="U_Korean_Turtle_Ship"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
 																<m_BLPPackage text="units/uniqueUnits"/>
