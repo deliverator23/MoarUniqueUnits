@@ -1047,6 +1047,18 @@ SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'africanFor
 FROM   Types WHERE Type = 'UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'AmazonHM.dds'
+FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CamelArcherHM.dds'
+FROM   Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CreeHorsemanHM.dds'
+FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'GendarmeHM.dds'
 FROM   Types WHERE Type = 'UNIT_FRENCH_GENDARME';
 
@@ -1055,12 +1067,12 @@ SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'KrisHM.dds
 FROM   Types WHERE Type = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
-SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CreeHorsemanHM.dds'
-FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'TadzreuliHM.dds'
+FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
-SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CamelArcherHM.dds'
-FROM   Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'ShutterijHM.dds'
+FROM   Types WHERE Type = 'UNIT_DUTCH_SCHUTTERIJ';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'UhlanHM.dds'
