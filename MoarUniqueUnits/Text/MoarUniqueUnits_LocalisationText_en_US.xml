@@ -682,7 +682,7 @@
 			<Text>Brazilian unique Industrial Era Melee unit that replaces the Rifleman. Cheaper than the Rifleman and costs less maintenance.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME">
-			<Text>Fatherland Volunteer</Text>
+			<Text>Voluntário da Pátria</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CHINESE_CHOKONU_DESCRIPTION">
 			<Text>Chinese unique Medieval Era Ranged unit that replaces Crossbowman. Slightly less strong than the Crossbowman, but can attack twice per turn.</Text>
@@ -790,7 +790,7 @@
 			<Text>Kris Swordsman Description.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME'">
-			<Text>Kris Swordsman</Text>
+			<Text>Kris Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_JANISSARY_DESCRIPTION">
 			<Text>Renaissance era melee unit that can be built by the Suzerain of Preslav or Yerevan. Heals when destroying an enemy unit.</Text>
@@ -966,17 +966,17 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_SUMERIAN_PHALANX_NAME">
 			<Text>Phalanx</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SUMERIAN_VULTURE_DESCRIPTION">
-			<Text>Sumerian unique Melee unit. +5 [ICON_Strength] Combat Strength versus damaged units.</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_DESCRIPTION">
+			<Text>Egyptian unique Melee unit. +5 [ICON_Strength] Combat Strength versus damaged units.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SUMERIAN_VULTURE_NAME">
-			<Text>Sickle Swordsman</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_NAME">
+			<Text>Khopesh Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION">
 			<Text>Assegai Desc.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
-			<Text>Assegai</Text>
+			<Text>Assegai Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
 			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
@@ -1060,10 +1060,10 @@
 			<Text>+5 [ICON_Strength] Combat Strength from Shigong unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
-			<Text>Our newly created {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
+			<Text>Our new {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
-			<Text>Now that we are able use {ResourceType} we are able to create the {UnitType}.</Text>
+			<Text>Since we now have a supply of {ResourceType} we are able to field the {UnitType} for the first time!</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
