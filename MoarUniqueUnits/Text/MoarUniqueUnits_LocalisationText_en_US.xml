@@ -697,13 +697,13 @@
 			<Text>Shigong</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CREE_OTEHTAPIW_DESCRIPTION">
-			<Text>Otehtapiw Desc.</Text>
+			<Text>Cree unique Industrial era light cavalry unit replacing Cavalry. Gains +2 movement points if it starts on flat terrain. Heals +15 per turn when on Plains or Grassland. +10 [ICON_Strength] when fighting on Plains or Grassland.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CREE_OTEHTAPIW_NAME">
 			<Text>Otehtapiw</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_DESCRIPTION">
-			<Text>Schutterij Description.</Text>
+			<Text>Dutch unique Renaissance era melee unit that replaces Musketman. Half cost and maintenance of Musketman. +10 [ICON_Strength] when defending districts.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_NAME">
 			<Text>Schutterij</Text>
@@ -745,7 +745,7 @@
 			<Text>Marine</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION">
-			<Text>Tadzreuli Description.</Text>
+			<Text>Georgian unique Medieval era heavy cavalry unit that replaces Knight. +5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. May be purchased with Faith.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GEORGIAN_TADZREULI_NAME">
 			<Text>Tadzreuli</Text>
@@ -787,7 +787,7 @@
 			<Text>Sepoy</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION">
-			<Text>Kris Swordsman Description.</Text>
+			<Text>Indonesian unique land combat unit that uses the Warrior Monk promotion tree. May be purchased with Faith.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME">
 			<Text>Kris Warrior</Text>
@@ -811,7 +811,7 @@
 			<Text>Yamato</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_KHMER_WAR_CANOE_DESCRIPTION">
-			<Text>War Canoe Description.</Text>
+			<Text>Khmer unique Ancient era naval melee unit replacing Galley. Escorted units move at the same speed. Can capture ships. Adjacent land units incur no embark/disembark movement cost. Can only operate on Coastal waters until Cartography is researched.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_KHMER_WAR_CANOE_NAME">
 			<Text>War Canoe</Text>
@@ -829,7 +829,7 @@
 			<Text>Medicine Man</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_DESCRIPTION">
-			<Text>Turtle Ship Description.</Text>
+			<Text>Korean unique Renaissance era naval melee unit. Faster and stronger than the Caravel. +5 [ICON_Strength] vs damaged units.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_NAME">
 			<Text>Turtle Ship</Text>
@@ -850,13 +850,13 @@
 			<Text>Pezhetairos</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION">
-			<Text>Rochela Desc.</Text>
+			<Text>Mapuche unique Medieval anti cavalry unit that replaces Pikeman. Has ranged attack. Can move after attacking. Can move and see through Woods and Rainforest.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAPUCHE_GUERILLA_NAME">
 			<Text>Rochela</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION">
-			<Text>Hui Hui Pao Desc.</Text>
+			<Text>Mongolian unique Medieval era siege unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME">
 			<Text>Hui Hui Pao</Text>
@@ -874,7 +874,7 @@
 			<Text>Ulfhedinn</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
-			<Text>African Forest Elephant Description.</Text>
+			<Text>Nubian unique Classical era heavy cavalry unit. Pushes defending enemy units back. No movement cost when crossing rivers.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME">
 			<Text>African Forest Elephant</Text>
@@ -928,7 +928,7 @@
 			<Text>T-34</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_DESCRIPTION">
-			<Text>Gallowglass Desc.</Text>
+			<Text>Scottish unique Medieval era melee unit. Earns experience faster and receives +5 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_NAME">
 			<Text>Gallowglass</Text>
@@ -973,7 +973,7 @@
 			<Text>Khopesh Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION">
-			<Text>Assegai Desc.</Text>
+			<Text>Zulu unique Ancient era ranged unit that replaces Archer. Higher Melee Strength. +4 [ICON_Strength] when adjacent to another Assegai Warrior.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
 			<Text>Assegai Warrior</Text>
@@ -1058,6 +1058,15 @@
 		</Replace>
 		<Replace Language="en_US" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC">
 			<Text>+5 [ICON_Strength] Combat Strength from Shigong unit.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_5_PLAINS_GRASS_COMBAT_BONUS_DESC">
+			<Text>+5 [ICON_Strength] Combat Strength in Plains or Grassland.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS_DESC">
+			<Text>+10 [ICON_Strength] Combat Strength when defending districts.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC">
+			<Text>+4 [ICON_Strength] Combat Strength next to Assegai Warrior unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
 			<Text>Our new {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
