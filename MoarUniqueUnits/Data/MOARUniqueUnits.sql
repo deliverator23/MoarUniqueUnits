@@ -331,7 +331,7 @@ SELECT Type, '120', '2', '2', '2', 1, 'DOMAIN_LAND', '55', 'FORMATION_CLASS_LAND
 FROM   Types WHERE Type = 'UNIT_DUTCH_SCHUTTERIJ';
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat,  FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
-SELECT Type, '180', '3', '4', '2', 1, 'DOMAIN_LAND', '48', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_HEAVY_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_GEORGIAN_TADZREULI_NAME', 'LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION', 'YIELD_GOLD', 'TECH_COMPOSITES', 'TECH_STIRRUPS', 'TRAIT_CIVILIZATION_UNIT_GEORGIAN_TADZREULI'
+SELECT Type, '180', '3', '4', '2', 1, 'DOMAIN_LAND', '48', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_HEAVY_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_GEORGIAN_TADZREULI_NAME', 'LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION', 'YIELD_FAITH', 'TECH_COMPOSITES', 'TECH_STIRRUPS', 'TRAIT_CIVILIZATION_UNIT_GEORGIAN_TADZREULI'
 FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI';
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, PrereqTech, TraitType)
@@ -908,7 +908,6 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_10_WHEN_DE
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'Preview', 'PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS', 'Preview', 'PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS_DESC');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS', 'Preview', 'PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS_DESC');
-INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS', 'Preview', 'PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS', 'Preview', 'PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS_DESC');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_4_VERSUS_MELEE_COMBAT_BONUS', 'Preview', 'PLUS_4_VERSUS_MELEE_COMBAT_BONUS_DESC');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS', 'Preview', 'PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS_DESC');
@@ -937,6 +936,7 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_5_DESERT_P
 --NEW
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_5_PLAINS_GRASS_COMBAT_BONUS', 'Preview', 'PLUS_5_PLAINS_GRASS_COMBAT_BONUS_DESC');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS', 'Preview', 'PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS_DESC');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS', 'Preview', 'PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC');
 
 
 --ModifierArguments
@@ -1071,6 +1071,14 @@ SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'ApacheHM.d
 FROM   Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'AssegaiHM.dds'
+FROM   Types WHERE Type = 'UNIT_ZULU_ASSEGAI';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'BallistaHM.dds'
+FROM   Types WHERE Type = 'UNIT_MACEDONIAN_BALLISTA';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'BandeirantesHM.dds'
 FROM   Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTES';
 
@@ -1097,6 +1105,10 @@ FROM   Types WHERE Type = 'UNIT_SCOTTISH_GALLOWGLASS';
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'GendarmeHM.dds'
 FROM   Types WHERE Type = 'UNIT_FRENCH_GENDARME';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'HuiHuiPaoHM.dds'
+FROM   Types WHERE Type = 'UNIT_MONGOLIAN_HUI_HUI_PAO';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'IronsideHM.dds'
@@ -1145,6 +1157,10 @@ FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'UlfhednarHM.dds'
 FROM   Types WHERE Type = 'UNIT_NORWEGIAN_ULFHEDNAR';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'WarCanoeHM.dds'
+FROM   Types WHERE Type = 'UNIT_KHMER_WAR_CANOE';
 
 /* ----------------------------- */
 /* Steel & Thunder Compatibility */
