@@ -850,10 +850,10 @@
 			<Text>Pezhetairos</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION">
-			<Text>Guerilla Desc.</Text>
+			<Text>Rochela Desc.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAPUCHE_GUERILLA_NAME">
-			<Text>Guerilla</Text>
+			<Text>Rochela</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION">
 			<Text>Hui Hui Pao Desc.</Text>

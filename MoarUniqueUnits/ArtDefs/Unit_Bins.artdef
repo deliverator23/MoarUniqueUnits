@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<AssetObjects:ArtDefSet>
+<AssetObjects::ArtDefSet>
 	<m_Version>
 		<major>4</major>
 		<minor>0</minor>
@@ -70,7 +70,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -83,7 +84,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -91,7 +92,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="T34_Tank"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -119,7 +121,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -132,7 +135,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -140,7 +143,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Panzer_VI"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -168,7 +172,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -189,7 +194,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="AH64-Apache"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -217,7 +223,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -238,7 +245,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Trebuchet"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -266,7 +274,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -287,7 +296,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -302,7 +312,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -323,7 +334,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -338,7 +350,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -359,7 +372,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -374,7 +388,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -395,7 +410,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -410,7 +426,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -431,7 +448,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -446,7 +464,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -467,7 +486,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -482,7 +502,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -503,7 +524,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -518,7 +540,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -539,7 +562,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="GatlingGun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -567,7 +591,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -588,7 +613,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Ballista"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -599,6 +625,57 @@
 								</Element>
 							</m_ChildCollections>
 							<m_Name text="Ballista"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects:BLPEntryValue">
+																<m_EntryName text="MongolianTrebuchet"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects:FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="MongolianTrebuchet"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="MongolianTrebuchet"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
 					</Element>
@@ -629,7 +706,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -642,7 +720,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -650,7 +728,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Claymore"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -678,7 +757,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -691,7 +771,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -699,7 +779,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="LongswordA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -740,7 +821,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -753,7 +835,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -761,7 +843,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Spearman_European_HelmD"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -789,7 +872,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -802,7 +886,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -810,7 +894,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Longswordsman_HelmA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -838,7 +923,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -859,7 +945,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Peltast_HatA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -887,7 +974,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -908,7 +996,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="African_HelmA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -936,7 +1025,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -957,7 +1047,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -985,7 +1076,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1006,7 +1098,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1034,7 +1127,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1055,7 +1149,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1083,7 +1178,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1104,7 +1200,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1132,7 +1229,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1153,7 +1251,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -1175,7 +1274,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="B"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -1197,7 +1297,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="C"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1225,7 +1326,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1246,7 +1348,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonHelm"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1274,7 +1377,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1295,7 +1399,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1323,7 +1428,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1344,7 +1450,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="NativeAmericanHat"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1372,7 +1479,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1420,7 +1528,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1453,6 +1562,125 @@
 							<m_Name text="HeadbandA"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Musketeer_HatA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="MusketeerBlack"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Berserker_HelmD"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="D"/>
+													<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Berserker_HelmB"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="B"/>
+													<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="Berserker"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
 					</Element>
 				</m_ChildCollections>
 				<m_Name text="Hats"/>
@@ -1481,7 +1709,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1502,7 +1731,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Rifleman_Gun"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1530,7 +1760,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1551,7 +1782,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ModernInfantry_RifleA2"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1579,12 +1811,13 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="ModernInfantry_RifleA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="modernInfantry.xlp"/>
@@ -1592,7 +1825,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -1600,7 +1833,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ModernInfantry_RifleA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1641,7 +1875,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1662,7 +1897,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1690,7 +1926,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1711,7 +1948,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1739,7 +1977,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1760,7 +1999,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1788,7 +2028,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1809,7 +2050,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ModernInfantry_ArmorA2"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1837,7 +2079,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1858,7 +2101,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1886,7 +2130,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1907,7 +2152,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1935,7 +2181,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -1956,7 +2203,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -1984,7 +2232,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2005,7 +2254,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2033,7 +2283,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2054,7 +2305,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2082,7 +2334,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2103,7 +2356,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonArmor"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2131,12 +2385,13 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="ModernInfantry_ArmorA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="modernInfantry.xlp"/>
@@ -2144,7 +2399,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2152,7 +2407,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ModernInfantry_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2180,7 +2436,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2201,7 +2458,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="NativeAmericanArmor"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2229,7 +2487,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2250,7 +2509,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="KrisArmor"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2278,7 +2538,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2291,7 +2552,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2299,7 +2560,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ElephantRider_ArmorB"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2327,7 +2589,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2340,7 +2603,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2348,7 +2611,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ElephantRider_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2376,7 +2640,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2389,7 +2654,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2397,7 +2662,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ElephantDriver_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2425,7 +2691,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2438,7 +2705,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2446,7 +2713,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Rifleman_Armor"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2474,7 +2742,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2487,7 +2756,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2495,7 +2764,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Longbowman_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2523,7 +2793,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2536,7 +2807,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2544,7 +2815,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="KnightWarrior_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2572,7 +2844,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2593,7 +2866,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Peltast_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2621,7 +2895,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2642,7 +2917,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="ArmoredHorseman_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2670,12 +2946,13 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="Lancer_ArmorA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="Units.xlp"/>
@@ -2683,7 +2960,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2691,7 +2968,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Lancer"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2719,12 +2997,13 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="AborigineSlinger_ArmorA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="aborigine.xlp"/>
@@ -2732,7 +3011,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2740,7 +3019,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="AborigineSlinger_ArmorA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2768,20 +3048,21 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
-																<m_EntryName text="PlateMailWarrior_ArmorA"/>
+															<Element class="AssetObjects:BLPEntryValue">
+																<m_EntryName text="Musketman_Tint_ArmorA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
 																<m_BLPPackage text="units/uniqueUnits"/>
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2789,7 +3070,108 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="MusketmanTint"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects:BLPEntryValue">
+																<m_EntryName text="PlateMailBuffHorseman_ArmorA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects:FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="PlateMailHorseman"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects:BLPEntryValue">
+																<m_EntryName text="PlateMailWarrior_ArmorA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects:FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2821,7 +3203,7 @@
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="NativeAmericanClothingArmorCavalry_A"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
@@ -2829,7 +3211,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2842,7 +3224,7 @@
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="NativeAmericanClothingArmorCavalry_B"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="uniqueUnits.xlp"/>
@@ -2850,7 +3232,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2898,7 +3280,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -2919,7 +3302,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2947,12 +3331,13 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
 														<m_Values>
-															<Element class="AssetObjects::BLPEntryValue">
+															<Element class="AssetObjects:BLPEntryValue">
 																<m_EntryName text="Lancer_HorseArmorA"/>
 																<m_XLPClass text="Unit"/>
 																<m_XLPPath text="Units.xlp"/>
@@ -2960,7 +3345,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -2968,7 +3353,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Lancer"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -2996,7 +3382,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -3017,7 +3404,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Cataphract"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -3058,7 +3446,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -3079,7 +3468,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3101,7 +3491,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="B"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3123,7 +3514,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="C"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3145,7 +3537,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="D"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3167,7 +3560,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="E"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3189,7 +3583,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="F"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3211,7 +3606,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="G"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3233,7 +3629,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="H"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3255,7 +3652,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="J"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3277,7 +3675,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="K"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3299,7 +3698,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="L"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3321,7 +3721,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="M"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3343,7 +3744,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="O"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3365,7 +3767,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Q"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3387,7 +3790,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="16"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3409,7 +3813,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="17"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3431,7 +3836,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="18"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3453,7 +3859,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="19"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3475,7 +3882,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="20"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3497,7 +3905,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="21"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3519,7 +3928,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="22"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3541,7 +3951,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="23"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3563,7 +3974,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="24"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3585,7 +3997,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="25"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3607,7 +4020,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="26"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3629,7 +4043,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="27"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -3657,7 +4072,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -3670,7 +4086,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3678,7 +4094,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3692,7 +4109,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3700,7 +4117,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="C"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3714,7 +4132,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3722,7 +4140,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="D"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3736,7 +4155,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3744,7 +4163,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="E"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3758,7 +4178,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3766,7 +4186,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="F"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3780,7 +4201,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3788,7 +4209,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="G"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3802,7 +4224,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3810,7 +4232,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="H"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3824,7 +4247,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3832,7 +4255,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="J"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3846,7 +4270,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3854,7 +4278,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="K"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3868,7 +4293,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3876,7 +4301,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="L"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -3904,7 +4330,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -3917,7 +4344,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3925,7 +4352,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="IndoA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -3939,7 +4367,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3947,7 +4375,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="IndoB"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -3975,7 +4404,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -3988,7 +4418,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -3996,7 +4426,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Peltast_ShieldA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4024,7 +4455,248 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Russian_KiteShieldA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Russian_KiteShieldB"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="B"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Russian_KiteShieldC"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="C"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Russian_KiteShieldD"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="D"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="Kite_Russian"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
+												</m_ReplaceMergedCollectionElements>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Georgian_KiteShieldA"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="A"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Georgian_KiteShieldB"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="B"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Georgian_KiteShieldC"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="C"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+												<Element>
+													<m_Fields>
+														<m_Values>
+															<Element class="AssetObjects..BLPEntryValue">
+																<m_EntryName text="Georgian_KiteShieldD"/>
+																<m_XLPClass text="Unit"/>
+																<m_XLPPath text="uniqueUnits.xlp"/>
+																<m_BLPPackage text="units/uniqueUnits"/>
+																<m_LibraryName text="Unit"/>
+																<m_ParamName text="Asset"/>
+															</Element>
+															<Element class="AssetObjects..FloatValue">
+																<m_fValue>1.000000</m_fValue>
+																<m_ParamName text="Scale"/>
+															</Element>
+														</m_Values>
+													</m_Fields>
+													<m_ChildCollections/>
+													<m_Name text="D"/>
+													<m_AppendMergedParameterCollections>
+														false
+													</m_AppendMergedParameterCollections>
+												</Element>
+											</Element>
+										</m_ChildCollections>
+										<m_Name text="Any"/>
+										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+									</Element>
+								</Element>
+							</m_ChildCollections>
+							<m_Name text="Kite_Georgian"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values/>
+							</m_Fields>
+							<m_ChildCollections>
+								<Element>
+									<m_CollectionName text="Cultures"/>
+									<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+									<Element>
+										<m_Fields>
+											<m_Values/>
+										</m_Fields>
+										<m_ChildCollections>
+											<Element>
+												<m_CollectionName text="Assets"/>
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4045,7 +4717,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4067,7 +4740,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="B"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4089,7 +4763,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="C"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4111,7 +4786,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="D"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4133,7 +4809,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="E"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4155,7 +4832,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="F"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4183,7 +4861,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4204,7 +4883,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A1"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4226,7 +4906,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A2"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4248,7 +4929,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A3"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4270,7 +4952,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A4"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4292,7 +4975,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A5"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4314,7 +4998,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A6"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4336,7 +5021,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A7"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4358,7 +5044,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_A8"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4380,7 +5067,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_B1"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4402,7 +5090,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_B2"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4424,7 +5113,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_B3"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -4446,7 +5136,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonShield_C1"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4487,7 +5178,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4508,7 +5200,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="PersianWarship"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4536,7 +5229,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4557,7 +5251,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Septireme"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4585,7 +5280,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4606,7 +5302,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="WarCanoe"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4634,7 +5331,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4655,7 +5353,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="TurtleShip"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4696,7 +5395,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4717,7 +5417,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="MacedonSarissa"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4754,7 +5455,7 @@
 									<Element>
 										<m_Fields>
 											<m_Values>
-												<Element class="AssetObjects::ArtDefReferenceValue">
+												<Element class="AssetObjects:ArtDefReferenceValue">
 													<m_ElementName text=""/>
 													<m_RootCollectionName text="UnitTintTypes"/>
 													<m_ArtDefPath text=""/>
@@ -4767,7 +5468,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4780,7 +5482,7 @@
 																<m_LibraryName text="Unit"/>
 																<m_ParamName text="Asset"/>
 															</Element>
-															<Element class="AssetObjects::FloatValue">
+															<Element class="AssetObjects:FloatValue">
 																<m_fValue>1.000000</m_fValue>
 																<m_ParamName text="Scale"/>
 															</Element>
@@ -4788,7 +5490,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="AfricanForestElephant"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4829,7 +5532,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4850,7 +5554,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Tomahawk"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4878,7 +5583,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4899,7 +5605,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Kris"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4940,7 +5647,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -4962,7 +5670,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Male_NativeAmerican_BuffBody_UpperA"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -4990,7 +5699,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -5012,7 +5722,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="Male_African_ThinBody_Full_LegsBent"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -5053,7 +5764,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -5074,7 +5786,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="SimpleAmulet"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -5115,7 +5828,8 @@
 										<m_ChildCollections>
 											<Element>
 												<m_CollectionName text="Assets"/>
-												<m_ReplaceMergedCollectionElements>false
+												<m_ReplaceMergedCollectionElements>
+													false
 												</m_ReplaceMergedCollectionElements>
 												<Element>
 													<m_Fields>
@@ -5136,7 +5850,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="A"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -5158,7 +5873,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="B"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -5180,7 +5896,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="C"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 												<Element>
@@ -5202,7 +5919,8 @@
 													</m_Fields>
 													<m_ChildCollections/>
 													<m_Name text="D"/>
-													<m_AppendMergedParameterCollections>false
+													<m_AppendMergedParameterCollections>
+														false
 													</m_AppendMergedParameterCollections>
 												</Element>
 											</Element>
@@ -5354,5 +6072,5 @@
 			<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
 		</Element>
 	</m_RootCollections>
-</AssetObjects:ArtDefSet>
+</AssetObjects::ArtDefSet>
 

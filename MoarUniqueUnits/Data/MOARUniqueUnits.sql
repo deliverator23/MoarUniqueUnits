@@ -1067,6 +1067,14 @@ SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'AmazonHM.d
 FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'ApacheHM.dds'
+FROM   Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'BandeirantesHM.dds'
+FROM   Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTES';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CamelArcherHM.dds'
 FROM   Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
 
@@ -1075,24 +1083,68 @@ SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CreeHorsem
 FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'DruzhinaHM.dds'
+FROM   Types WHERE Type = 'UNIT_RUSSIAN_DRUZHINA';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'EquesHM.dds'
+FROM   Types WHERE Type = 'UNIT_ROMAN_EQUITE';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'GallowglassHM.dds'
+FROM   Types WHERE Type = 'UNIT_SCOTTISH_GALLOWGLASS';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'GendarmeHM.dds'
 FROM   Types WHERE Type = 'UNIT_FRENCH_GENDARME';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'IronsideHM.dds'
+FROM   Types WHERE Type = 'UNIT_ENGLISH_IRONSIDE';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'JaguarHM.dds'
+FROM   Types WHERE Type = 'UNIT_AZTEC_JAGUAR';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'KrisHM.dds'
 FROM   Types WHERE Type = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
-SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'TadzreuliHM.dds'
-FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI';
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'MapucheHM.dds'
+FROM   Types WHERE Type = 'UNIT_MAPUCHE_GUERILLA';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'PhalanxHM.dds'
+FROM   Types WHERE Type = 'UNIT_SUMERIAN_PHALANX';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'SepoyHM.dds'
+FROM   Types WHERE Type = 'UNIT_INDIAN_SEPOY';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'ShutterijHM.dds'
 FROM   Types WHERE Type = 'UNIT_DUTCH_SCHUTTERIJ';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'SoheiHM.dds'
+FROM   Types WHERE Type = 'UNIT_JAPANESE_SOHEI';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'TadzreuliHM.dds'
+FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'TurtleShipHM.dds'
+FROM   Types WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'UhlanHM.dds'
 FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'UlfhednarHM.dds'
+FROM   Types WHERE Type = 'UNIT_NORWEGIAN_ULFHEDNAR';
 
 /* ----------------------------- */
 /* Steel & Thunder Compatibility */

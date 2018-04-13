@@ -84,6 +84,7 @@
             <PackageDependencies>
                 <Element text="ballistaVFX.blp"/>
                 <Element text="spearVFX.blp"/>
+                <Element text="trebuchetVFX.blp"/>
             </PackageDependencies>
         </Element>
         <Element>

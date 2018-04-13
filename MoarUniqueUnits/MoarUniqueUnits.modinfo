@@ -94,6 +94,7 @@
 		<!-- Platforms -->
 		<File>Platforms\MacOS\BLPs\ballistaVFX.blp</File>
 		<File>Platforms\MacOS\BLPs\spearVFX.blp</File>
+		<File>Platforms\MacOS\BLPs\trebuchetVFX.blp</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_ballista_static_anim</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_attacka</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_attackb</File>
@@ -108,6 +109,19 @@
 		<File>Platforms\MacOS\BLPs\ANIMATION_Longswordsman_Idle</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Peltast_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Skirt_Throw</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_attacka</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_attackb</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_attack_city</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_bombard_defense</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_combat_ready_idle</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_deatha</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_deathb</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_idlea</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_idlea_trans_idleb</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_run</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_start_run</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_stop_run</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_victory</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_UnitMedium_Run_2HandedSwordA.ma</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_korean_turtle_ship_attacka</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_u_korean_turtle_ship_attackb</File>
@@ -140,6 +154,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_ArmoredHorseman_a_ArmoredHorseman_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Ballista_Black_TintMask</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_black_tricorn_redcoat_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_01_d45_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_02_null</File>
@@ -171,6 +186,11 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Gendarme_Plate_Armor_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgian_KiteShieldA_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgian_KiteShieldB_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_A_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_B_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_C_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_D_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_GreatRenaissanceMusician_Hat_black_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Hoplite_NoShade_aVib_Hoplite_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Indo_ShieldA_a2_cargo_ship_middle_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Indo_ShieldA_a2_null</File>
@@ -197,6 +217,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_NativeAmerican_D_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_NativeAmerican_E_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_NativeAmerican_F_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Ngao_Mbeda_White_Feathers_a_Ngao_Mbeda_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Panzer_VI_Base_Panzer_VI_TintMask</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_PeltastMak_a_tweak_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_PersianSail2_a_Black_TintMask</File>
@@ -213,9 +234,14 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_ShieldJ_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_ShieldK_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_ShieldL_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_A_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_B_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_C_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_D_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_swordsmancor_retint_a_swordsmancor_retint_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_T34_Base_Texture_T34_TintMask2_Texture</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_thracepelta_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_trebuchet_a2_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_TS_WarCanoe_d5_TS_WarCanoe_t4</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Turtle_Ship_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Ulfhednar_Armor_a_Berzerker_ArmorA_t</File>
@@ -320,6 +346,7 @@
 		<File>Platforms\MacOS\BLPs\uniqueUnits.blp</File>
 		<File>Platforms\Windows\BLPs\ballistaVFX.blp</File>
 		<File>Platforms\Windows\BLPs\spearVFX.blp</File>
+		<File>Platforms\Windows\BLPs\trebuchetVFX.blp</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_ballista_static_anim</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_attacka</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_attackb</File>
@@ -334,6 +361,19 @@
 		<File>Platforms\Windows\BLPs\ANIMATION_Longswordsman_Idle</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Peltast_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Skirt_Throw</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_attacka</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_attackb</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_attack_city</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_bombard_defense</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_combat_ready_idle</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_deatha</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_deathb</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_idlea</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_idlea_trans_idleb</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_run</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_start_run</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_stop_run</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_victory</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_UnitMedium_Run_2HandedSwordA.ma</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_u_korean_turtle_ship_attacka</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_u_korean_turtle_ship_attackb</File>
@@ -366,6 +406,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_ArmoredHorseman_a_ArmoredHorseman_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Ballista_Black_TintMask</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_black_tricorn_redcoat_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_01_d45_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_02_null</File>
@@ -397,6 +438,11 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Gendarme_Plate_Armor_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgian_KiteShieldA_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgian_KiteShieldB_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_A_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_B_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_C_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_D_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_GreatRenaissanceMusician_Hat_black_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Hoplite_NoShade_aVib_Hoplite_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Indo_ShieldA_a2_cargo_ship_middle_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Indo_ShieldA_a2_null</File>
@@ -423,6 +469,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_NativeAmerican_D_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_NativeAmerican_E_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_NativeAmerican_F_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Ngao_Mbeda_White_Feathers_a_Ngao_Mbeda_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Panzer_VI_Base_Panzer_VI_TintMask</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_PeltastMak_a_tweak_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_PersianSail2_a_Black_TintMask</File>
@@ -439,9 +486,14 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_ShieldJ_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_ShieldK_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_ShieldL_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_A_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_B_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_C_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_D_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_swordsmancor_retint_a_swordsmancor_retint_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_T34_Base_Texture_T34_TintMask2_Texture</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_thracepelta_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_trebuchet_a2_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_TS_WarCanoe_d5_TS_WarCanoe_t4</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Turtle_Ship_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Ulfhednar_Armor_a_Berzerker_ArmorA_t</File>
@@ -544,5 +596,5 @@
 		<File>Platforms\Windows\BLPs\tanks.blp</File>
 		<File>Platforms\Windows\BLPs\ulfhednar.blp</File>
 		<File>Platforms\Windows\BLPs\uniqueUnits.blp</File>
-    </Files>
+	</Files>
 </Mod>
