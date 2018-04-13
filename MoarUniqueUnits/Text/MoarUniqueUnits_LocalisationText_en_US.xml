@@ -789,7 +789,7 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION">
 			<Text>Kris Swordsman Description.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME'">
+		<Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME">
 			<Text>Kris Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_JANISSARY_DESCRIPTION">
