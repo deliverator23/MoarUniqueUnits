@@ -33,6 +33,12 @@
 			</Properties>
 			<File>Data/MOARUniqueUnitsIcons.xml</File>
 		</UpdateIcons>
+		<UpdateArt id="MUU_Config_ModArt">
+			<Properties>
+				<LoadOrder>1</LoadOrder>
+			</Properties>
+			<File>MoarUniqueUnits.dep</File>
+		</UpdateArt>
     </FrontEndActions>
     <InGameActions>
         <UpdateDatabase id="MUU_UpdateDatabase">
@@ -61,9 +67,12 @@
 			</Properties>
 			<File>Data/MOARUniqueUnitsIcons.xml</File>
         </UpdateIcons>
-        <UpdateArt id="MUU_ModArt">
-            <File>MoarUniqueUnits.dep</File>
-        </UpdateArt>
+		<UpdateArt id="MUU_ModArt">
+			<Properties>
+				<LoadOrder>3</LoadOrder>
+			</Properties>
+			<File>MoarUniqueUnits.dep</File>
+		</UpdateArt>
     </InGameActions>
     <Files>
         <File>MoarUniqueUnits.dep</File>
