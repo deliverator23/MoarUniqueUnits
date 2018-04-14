@@ -844,7 +844,7 @@
 			<Text>Bandeirante</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION">
-			<Text>Brazilian unique Industrial Era Melee unit that replaces the Rifleman. Cheaper than the Rifleman and costs less maintenance.</Text>
+			<Text>Brazilian unique Industrial Era Melee unit that replaces the Rifleman. Cheaper than the Rifleman and costs less maintenance. +5 [ICON_Strength] Combat Strength on same continent as capital city.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME">
 			<Text>Voluntário da Pátria</Text>
@@ -1120,7 +1120,7 @@
 			<Text>Jinete</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SPANISH_TERCIO_DESCRIPTION">
-			<Text>Spanish unique Renaissance Era Anti-Cavalry unit.</Text>
+			<Text>Spanish unique Renaissance Era Anti-Cavalry unit. Earns experience more quickly</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SPANISH_TERCIO_NAME">
 			<Text>Tercio</Text>

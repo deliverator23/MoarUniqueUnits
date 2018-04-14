@@ -2,52 +2,51 @@ CREATE TABLE ConfigEnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, E
 
 -- Core Uniques
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 1, 31);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 1, 8);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 0, 8);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_CAMEL_ARCHER', 1, 8);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 1, 9);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_BANDEIRANTE', 1, 8);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 1, 9);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 1, 9);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 0, 9);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, 8);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_HYKSOS_BOWMAN', 1, 9);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 1, 11);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 0, 11);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_KHOPESH', 1, 12);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 1, 8);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 1, 9);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 8);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 1, 9);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1, 9);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 1, 11);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 1, 11);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 0, 11);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 0, 11);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_PELTAST', 1, 12);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 1, 11);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 0, 11);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_SEPOY', 1, 12);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_SOHEI', 1, 11);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 1, 12);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 1, 12);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 0, 12);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 0, 12);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_MEDICINE_MAN', 1, 11);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 1, 19);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 0, 19);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_ULFHEDNAR', 1, 18);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_EQUITE', 1, 11);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 1, 12);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 0, 12);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_DRUZHINA', 1, 9);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 1, 11);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 0, 11);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON', 1, 11);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 1, 8);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 1, 9);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 0, 8);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, 11);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 11);
 
 -- Even Moar Units Uniques
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 12);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_JAGUAR', 1, 11);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 1, 12);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 1, 11);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 0, 12);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 0, 11);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_UHLAN', 1, 12);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_CATAPHRACT', 1, 9);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 1, 8);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 0, 8);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_BALLISTA', 1, 22);
-INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 1, 21);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 0, 21);
 
 -- New Uniques
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_NUBIA','UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 1, 5);
