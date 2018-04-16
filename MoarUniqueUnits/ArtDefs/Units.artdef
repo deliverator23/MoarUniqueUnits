@@ -18438,7 +18438,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Hats/Pikeman/Mediterranean/Pikemen_Mediterranean_Helm_B"/>
+                                                                <m_Name text="Hats/Tercio"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
@@ -20350,7 +20350,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Animals/TraderCamel"/>
+                                                                <m_Name text="Animals/Camel_NoPacks"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
