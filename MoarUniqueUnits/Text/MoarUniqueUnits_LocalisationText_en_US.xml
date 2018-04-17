@@ -1120,7 +1120,7 @@
 			<Text>Jinete</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SPANISH_TERCIO_DESCRIPTION">
-			<Text>Spanish unique Renaissance Era Anti-Cavalry unit. Earns experience more quickly</Text>
+			<Text>Spanish unique Renaissance Era Anti-Cavalry unit. Earns experience more quickly.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SPANISH_TERCIO_NAME">
 			<Text>Tercio</Text>
