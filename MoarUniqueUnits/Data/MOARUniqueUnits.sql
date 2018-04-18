@@ -1,7 +1,3 @@
---Sqllite Hacks
-
---SELECT * FROM Types WHERE Type LIKE 'UNIT\_%' ESCAPE '\' ORDER BY Type
-
 --DROP TRIGGER OnTypeInsert;
 --CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
 --PRAGMA foreign_keys = ON;
