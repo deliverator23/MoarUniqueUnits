@@ -1126,7 +1126,7 @@
 			<Text>Tercio</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SUMERIAN_PHALANX_DESCRIPTION">
-			<Text>Sumerian unique Ancient Era unit that replaces the Spearman. The Phalanx is available with the discovery of the Mining technology. +8 [ICON_Strength] if fighting within 8 tiles of a Ziggurat improvement.</Text>
+			<Text>Sumerian unique Ancient Era unit that replaces the Spearman. The Phalanx is available with the discovery of the Mining technology. +5 [ICON_Strength] if fighting within 8 tiles of a Ziggurat improvement.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SUMERIAN_PHALANX_NAME">
 			<Text>Phalanx</Text>
