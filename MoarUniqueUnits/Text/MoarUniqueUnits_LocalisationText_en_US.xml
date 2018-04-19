@@ -772,7 +772,7 @@
 			<Text />
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_1">
-			<Text>An assegai is a pole weapon used for throwing, usually a light spear or javelin made of wood and pointed with iron or fire-hardened tip. The use of various types of the assegai was widespread all over Africa and it was the most common weapon used before the introduction of firearms. The Zulu and other Nguni tribes of South Africa were renowned for their use of the assegai.</Text>
+			<Text>An isijula is a pole weapon used for throwing, usually a light spear or javelin made of wood and pointed with iron or fire-hardened tip. The use of various types of the isijula (also known as an assegai) was widespread all over Africa and it was the most common weapon used before the introduction of firearms. The Zulu and other Nguni tribes of South Africa were renowned for their use of the isijula.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_2">
 			<Text />
@@ -1138,10 +1138,10 @@
 			<Text>Khopesh Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION">
-			<Text>Zulu unique Ancient era ranged unit that replaces Archer. Higher Melee Strength. +4 [ICON_Strength] when adjacent to another Assegai Warrior.</Text>
+			<Text>Zulu unique Ancient era ranged unit that replaces Archer. Higher Melee Strength. +4 [ICON_Strength] when adjacent to another Isijula Warrior.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
-			<Text>Assegai Warrior</Text>
+			<Text>Isijula Warrior</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
 			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
