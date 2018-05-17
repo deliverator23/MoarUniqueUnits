@@ -210,7 +210,7 @@ SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_ARABIAN_GHAZI';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, MustPurchase, CostProgressionModel, CostProgressionParam1, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
-SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GERMAN_LANDSKNECHT_NAME', 1, 'COST_PROGRESSION_PREVIOUS_COPIES', '13', 'LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '3', '41', 'TECH_MILITARY_TACTICS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_GERMAN_LANDSKNECHT'
+SELECT Type, '2', '80', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GERMAN_LANDSKNECHT_NAME', 1, 'COST_PROGRESSION_PREVIOUS_COPIES', '13', 'LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '3', '45', 'TECH_MILITARY_TACTICS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_GERMAN_LANDSKNECHT'
 FROM   Types WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, CanTargetAir, TraitType)
@@ -294,7 +294,7 @@ SELECT Type, '330', '5', '5', '2', 1, 'DOMAIN_LAND', '62', 'FORMATION_CLASS_LAND
 FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, RangedCombat, Range, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
-SELECT Type, '170', '2', '2', '2', 1, 'DOMAIN_LAND', '41', '31', '1', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_ANTI_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_MAPUCHE_GUERILLA_NAME', 'LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION', 'YIELD_GOLD', 'TECH_COMPOSITES', 'TECH_MILITARY_TACTICS', 'TRAIT_CIVILIZATION_UNIT_MAPUCHE_GUERILLA'
+SELECT Type, '160', '2', '2', '2', 1, 'DOMAIN_LAND', '45', '33', '1', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_ANTI_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_MAPUCHE_GUERILLA_NAME', 'LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION', 'YIELD_GOLD', 'TECH_COMPOSITES', 'TECH_MILITARY_TACTICS', 'TRAIT_CIVILIZATION_UNIT_MAPUCHE_GUERILLA'
 FROM   Types WHERE Type = 'UNIT_MAPUCHE_GUERILLA';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
