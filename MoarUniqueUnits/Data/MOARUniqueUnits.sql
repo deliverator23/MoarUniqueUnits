@@ -325,7 +325,7 @@ INSERT INTO TypeTags (Type, Tag) SELECT Type, replace(Type,'UNIT_','CLASS_') FRO
 INSERT INTO TypeTags (Type, Tag) SELECT EnabledUniqueUnits.Type, TypeTags.Tag FROM TypeTags, EnabledUniqueUnits WHERE TypeTags.Tag LIKE 'CLASS_%' AND TypeTags.Type = EnabledUniqueUnits.UnitAiBaseUnit AND EnabledUniqueUnits.Enabled = 1 AND EnabledUniqueUnits.UnitAiBaseUnit IS NOT NULL;
 
 -- Jaguars can capture units as Builders
-INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_JAGUAR', 'CLASS_CAPTURE_WORKER' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_AZTEC';
+INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_AZTEC_JAGUAR', 'CLASS_CAPTURE_WORKER' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_AZTEC';
 
 --Improvement_ValidBuildUnits
 INSERT INTO Improvement_ValidBuildUnits (ImprovementType, UnitType) SELECT 'IMPROVEMENT_FORT', Type FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
