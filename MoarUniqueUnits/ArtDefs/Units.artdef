@@ -21188,7 +21188,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Armor/Pikeman"/>
+                                                                <m_Name text="Armor/Landsknecht"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
@@ -21290,7 +21290,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Hats/Ranger/#/Ranger_HatC"/>
+                                                                <m_Name text="Hats/Landsknecht"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
