@@ -19,7 +19,7 @@
 			<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_fr_FR.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_it_IT.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>-->
+			<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>
 			<!--<File>Text/MOAR_Units_LocalisationText_ko_KR.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_pl_PL.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_pt_BR.xml</File>-->
@@ -53,7 +53,7 @@
 			<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_fr_FR.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_it_IT.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>-->
+			<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>
 			<!--<File>Text/MOAR_Units_LocalisationText_ko_KR.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_pl_PL.xml</File>-->
 			<!--<File>Text/MOAR_Units_LocalisationText_pt_BR.xml</File>-->
@@ -92,7 +92,7 @@
 		<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
 		<!--<File>Text/MOAR_Units_LocalisationText_fr_FR.xml</File>-->
 		<!--<File>Text/MOAR_Units_LocalisationText_it_IT.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>-->
+		<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>
 		<!--<File>Text/MOAR_Units_LocalisationText_ko_KR.xml</File>-->
 		<!--<File>Text/MOAR_Units_LocalisationText_pl_PL.xml</File>-->
 		<!--<File>Text/MOAR_Units_LocalisationText_pt_BR.xml</File>-->
