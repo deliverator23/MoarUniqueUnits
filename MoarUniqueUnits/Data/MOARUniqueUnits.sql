@@ -1113,6 +1113,30 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'WarCanoeHM.dds'
 FROM   Types WHERE Type = 'UNIT_KHMER_WAR_CANOE';
 
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Landsknecht_HM.dds'
+FROM   Types WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Shigong_HM.dds'
+FROM   Types WHERE Type = 'UNIT_CHINESE_SHIGONG';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Tercio_HM.dds'
+FROM   Types WHERE Type = 'UNIT_SPANISH_TERCIO';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Peltast_HM.dds'
+FROM   Types WHERE Type = 'UNIT_GREEK_PELTAST';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Khopesh_HM.dds'
+FROM   Types WHERE Type = 'UNIT_EGYPTIAN_KHOPESH';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Medicine_Man_HM.dds'
+FROM   Types WHERE Type = 'UNIT_KONGO_MEDICINE_MAN';
+
 UPDATE Colors
 SET Color = "255,255,255,255"
 WHERE Type = 'COLOR_PLAYER_NETHERLANDS_SECONDARY';
