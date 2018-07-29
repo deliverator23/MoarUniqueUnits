@@ -98,7 +98,7 @@ SELECT Type, '4', '150', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_RUSSIAN_DRUZHINA';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, RangedCombat, Range, PrereqTech, TraitType)
-SELECT Type, '2', '60', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GREEK_PELTAST_NAME', 'LOC_UNIT_GREEK_PELTAST_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '1', '20', 'TECH_BALLISTICS', '30', '1', 'TECH_ARCHERY', 'TRAIT_CIVILIZATION_UNIT_GREEK_PELTAST'
+SELECT Type, '2', '60', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GREEK_PELTAST_NAME', 'LOC_UNIT_GREEK_PELTAST_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '1', '20', 'TECH_BALLISTICS', '30', '2', 'TECH_ARCHERY', 'TRAIT_CIVILIZATION_UNIT_GREEK_PELTAST'
 FROM   Types WHERE Type = 'UNIT_GREEK_PELTAST';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
