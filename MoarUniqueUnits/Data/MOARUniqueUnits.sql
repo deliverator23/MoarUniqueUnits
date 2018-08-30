@@ -1,7 +1,3 @@
-DROP TRIGGER OnTypeInsert;
-CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
-PRAGMA foreign_keys = ON;
-
 CREATE TABLE EnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, Enabled INTEGER, DefaultReplaces VARCHAR, DefaultUpgrade VARCHAR, UnitAiBaseUnit VARCHAR);
 
 -- Core Uniques
