@@ -1234,7 +1234,7 @@
 			<Text>+4 [ICON_Strength] Combat Strength next to Isijula Warrior unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="RECEIVE_HUI_HUI_PAO_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength next to Hui Hui Pao unit.</Text>
+			<Text>+5 [ICON_Strength] Defenders fear the Hui Hui Pao!</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
 			<Text>Our new {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
