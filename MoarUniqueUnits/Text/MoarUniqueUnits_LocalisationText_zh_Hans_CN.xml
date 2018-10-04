@@ -934,7 +934,7 @@
 			<Text>Armatolos</Text>
 		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION">
-			<Text>Greek unique Ranged unit that replaces Archer. Stronger Ranged attack and Melee defence than Archer but with Range 1.</Text>
+			<Text>Greek unique Ranged unit that replaces Archer. Stronger Ranged attack and Melee defence than Archer but with Range 2.</Text>
 		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GREEK_PELTAST_NAME">
 			<Text>Peltast</Text>
