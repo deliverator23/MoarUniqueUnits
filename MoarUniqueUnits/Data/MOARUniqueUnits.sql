@@ -1142,6 +1142,14 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Medicine_Man_HM.dds'
 FROM   Types WHERE Type = 'UNIT_KONGO_MEDICINE_MAN';
 
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'cataphract_HM.dds'
+FROM   Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'sasr_HM.dds'
+FROM   Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
+
 UPDATE Colors
 SET Color = "255,255,255,255"
 WHERE Type = 'COLOR_PLAYER_NETHERLANDS_SECONDARY';

@@ -1021,7 +1021,7 @@
 			<Text>Namuntulinco</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION">
-			<Text>Mongolian unique Medieval era siege unit.</Text>
+			<Text>Mongolian unique Medieval era siege unit. Adjacent Heavy Cavalry, Light Cavalry and Melee units get +5 Combat Strength when attacking Districts.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME">
 			<Text>Hui Hui Pao</Text>
