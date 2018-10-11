@@ -697,16 +697,16 @@
 			<Text />
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_1">
-			<Text></Text>
+			<Text>There is a long history of relations between Georgia and the Holy Land and according to some Georgian historians, the founding date of the Tadzrelebi (Georgian for "People of the Temple") may be as far back as the fifth century. Relations between Georgia and the Holy Land became especially close from the fourth century, after the official adoption of Christianity in Kartli or Iberia (Eastern Georgia). The Georgians were in the Holy Land as early as the fifth century, Peter the Iberian being among the first to settle there.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_2">
-			<Text />
+			<Text>The position of the Georgians became especially remarkable in the Holy Land after the unification of the Georgian kingdom in the 12th century. They had distinguished places in the most important Christian shrines, like the Church of the Holy Sepulcher. According to the German clergyman and orient pilgrim Ludolf von Sudheim, the keys of the Chapel of the Holy Sepulchre were in hands of the "ancient Georgians". Certain monasteries belonged entirely to the Georgians, like the Monastery of the Cross which was patronized by Tamar. Recent archaeological work in the Church of the Holy Cross has shown that the present building was constructed over the remains of an earlier church of the sixth or seventh century.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_3">
-			<Text />
+			<Text>The chronicle of Tamar the Great praises her universal protection of Christianity and her support of churches and monasteries from Egypt to Bulgaria and Cyprus. The Georgian court was primarily concerned with the protection of the Georgian monastic centers in the Holy Land. By the 12th century, eight Georgian monasteries were listed in Jerusalem. Saladin's biographer, Baha ad-Din ibn Saddad, reports that after the Ayyubid conquest of Jerusalem in 1187, Tamar sent envoys to the sultan to request that the confiscated possessions of the Georgian monasteries in Jerusalem be returned. Saladin's response is not recorded, but the queen's efforts seem to have been successful.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_4">
-			<Text />
+			<Text>From other sources tell that the Georgian Tadzrelebi who provided military protection for the churches and monasteries were fierce fighters who were feared by their enemies.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_5">
 			<Text />
@@ -913,7 +913,7 @@
 			<Text>Georgian unique Medieval era heavy cavalry unit that replaces Knight. +5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. May be purchased with Faith.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GEORGIAN_TADZREULI_NAME">
-			<Text>Tadzreuli</Text>
+			<Text>Tadzrelebi</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION">
 			<Text>German unique Medieval Era unit that replaces Pikeman. Half the cost of Pikeman but must be purchased with gold.</Text>
