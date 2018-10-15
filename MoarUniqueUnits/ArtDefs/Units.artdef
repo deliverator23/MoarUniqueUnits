@@ -33232,11 +33232,11 @@
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
                                                             <Element class="AssetObjects:ArtDefReferenceValue">
-                                                                <m_ElementName text=""/>
+                                                                <m_ElementName text="Persia_Blue_Red"/>
                                                                 <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text=""/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
                                                                 <m_CollectionIsLocked>true</m_CollectionIsLocked>
-                                                                <m_TemplateName text=""/>
+                                                                <m_TemplateName text="Units"/>
                                                                 <m_ParamName text="Tint"/>
                                                             </Element>
                                                         </m_Values>
@@ -37699,6 +37699,49 @@
                     </Element>
                 </m_ChildCollections>
                 <m_Name text="Persia_Colour"/>
+                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+            </Element>
+            <Element>
+                <m_Fields>
+                    <m_Values/>
+                </m_Fields>
+                <m_ChildCollections>
+                    <Element>
+                        <m_CollectionName text="Colors"/>
+                        <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                        <Element>
+                            <m_Fields>
+                                <m_Values>
+                                    <Element class="AssetObjects:RGBValue">
+                                        <m_r>107.000000</m_r>
+                                        <m_g>151.000000</m_g>
+                                        <m_b>255.000000</m_b>
+                                        <m_ParamName text="Color"/>
+                                    </Element>
+                                </m_Values>
+                            </m_Fields>
+                            <m_ChildCollections/>
+                            <m_Name text="Colors001"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
+                           <Element>
+                            <m_Fields>
+                                <m_Values>
+                                    <Element class="AssetObjects:RGBValue">
+                                        <m_r>144.000000</m_r>
+                                        <m_g>23.000000</m_g>
+                                        <m_b>22.000000</m_b>
+                                        <m_ParamName text="Color"/>
+                                    </Element>
+                                </m_Values>
+                            </m_Fields>
+                            <m_ChildCollections/>
+                            <m_Name text="Colors002"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
+                    </Element>
+                </m_ChildCollections>
+                <m_Name text="Persia_Blue_Red"/>
                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
             </Element>
             <Element>
