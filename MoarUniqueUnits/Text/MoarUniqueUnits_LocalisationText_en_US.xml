@@ -934,7 +934,7 @@
 			<Text>Armatolos</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION">
-			<Text>Greek unique Ranged unit that replaces Archer. Stronger Ranged attack and Melee defence than Archer but with Range 2.</Text>
+			<Text>Greek unique Ranged unit that replaces Archer. +5 [ICON_Strength] Combat Strength when Defending.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GREEK_PELTAST_NAME">
 			<Text>Peltast</Text>
@@ -1154,6 +1154,9 @@
 		</Replace>
 		<Replace Language="en_US" Tag="PLUS_10_WHEN_DEFENDING_COMBAT_BONUS_DESC">
 			<Text>+10 [ICON_Strength] Combat Strength when defending.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_5_WHEN_DEFENDING_COMBAT_BONUS_DESC">
+			<Text>+5 [ICON_Strength] Combat Strength when defending.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC">
 			<Text>+15 [ICON_Strength] Combat Strength versus Heavy Cavalry.</Text>
