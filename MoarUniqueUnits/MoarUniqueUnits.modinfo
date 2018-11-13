@@ -14,18 +14,18 @@
             <File>Data/MOARUniqueUnitsConfig.sql</File>
         </UpdateDatabase>
         <UpdateText id="MUU_Config_Text">
-			<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
+			<File>Text/MoarUniqueUnits_LocalisationText_de_DE.xml</File>
 			<File>Text/MoarUniqueUnits_LocalisationText_en_US.xml</File>
-			<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_fr_FR.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_it_IT.xml</File>-->
-			<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>
-			<!--<File>Text/MOAR_Units_LocalisationText_ko_KR.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_pl_PL.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_pt_BR.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_ru_RU.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hans_CN.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hant_HK.xml</File>-->
+			<File>Text/MoarUniqueUnits_LocalisationText_es_ES.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_fr_FR.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_it_IT.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_ja_JP.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_ko_KR.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_pl_PL.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_pt_BR.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_ru_RU.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_zh_Hans_CN.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_zh_Hant_HK.xml</File>
         </UpdateText>
 		<UpdateIcons id="MUU_Config_Icons">
 			<Properties>
@@ -48,18 +48,18 @@
             <File>Data/MOARUniqueUnits.sql</File>
         </UpdateDatabase>
         <UpdateText id="MUU_LocalizedText">
-			<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
+			<File>Text/MoarUniqueUnits_LocalisationText_de_DE.xml</File>
 			<File>Text/MoarUniqueUnits_LocalisationText_en_US.xml</File>
-			<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_fr_FR.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_it_IT.xml</File>-->
-			<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>
-			<!--<File>Text/MOAR_Units_LocalisationText_ko_KR.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_pl_PL.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_pt_BR.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_ru_RU.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hans_CN.xml</File>-->
-			<!--<File>Text/MOAR_Units_LocalisationText_zh_Hant_HK.xml</File>-->
+			<File>Text/MoarUniqueUnits_LocalisationText_es_ES.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_fr_FR.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_it_IT.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_ja_JP.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_ko_KR.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_pl_PL.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_pt_BR.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_ru_RU.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_zh_Hans_CN.xml</File>
+			<File>Text/MoarUniqueUnits_LocalisationText_zh_Hant_HK.xml</File>
         </UpdateText>
         <UpdateIcons id="MUU_Icons">
 			<Properties>
@@ -87,18 +87,18 @@
         <File>ArtDefs/Unit_Bins.artdef</File>
 
         <!-- Text -->
-		<!--<File>Text/MOAR_Units_LocalisationText_de_DE.xml</File>-->
+		<File>Text/MoarUniqueUnits_LocalisationText_de_DE.xml</File>
 		<File>Text/MoarUniqueUnits_LocalisationText_en_US.xml</File>
-		<!--<File>Text/MOAR_Units_LocalisationText_es_ES.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_fr_FR.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_it_IT.xml</File>-->
-		<File>Text/MOAR_Units_LocalisationText_ja_JP.xml</File>
-		<!--<File>Text/MOAR_Units_LocalisationText_ko_KR.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_pl_PL.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_pt_BR.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_ru_RU.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_zh_Hans_CN.xml</File>-->
-		<!--<File>Text/MOAR_Units_LocalisationText_zh_Hant_HK.xml</File>-->
+		<File>Text/MoarUniqueUnits_LocalisationText_es_ES.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_fr_FR.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_it_IT.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_ja_JP.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_ko_KR.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_pl_PL.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_pt_BR.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_ru_RU.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_zh_Hans_CN.xml</File>
+		<File>Text/MoarUniqueUnits_LocalisationText_zh_Hant_HK.xml</File>
 
 		<!-- Platforms -->
 		<File>Platforms\MacOS\BLPs\ballistaVFX.blp</File>
@@ -268,6 +268,8 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Turtle_Ship_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Ulfhednar_Armor_a_Berzerker_ArmorA_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_u_shoshone_comanche_riders_diff_a_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_u_sumerian_phalanx_diff_u_sumerian_phalanx_diff_t</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_WarCart_Rider_a_Bronze_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Flat_Normal0</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Flat_Normal1</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Gendarme_Plate_Armor_n0</File>
@@ -543,6 +545,8 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Turtle_Ship_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Ulfhednar_Armor_a_Berzerker_ArmorA_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_u_shoshone_comanche_riders_diff_a_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_u_sumerian_phalanx_diff_u_sumerian_phalanx_diff_t</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_WarCart_Rider_a_Bronze_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Flat_Normal0</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Flat_Normal1</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Gendarme_Plate_Armor_n0</File>
