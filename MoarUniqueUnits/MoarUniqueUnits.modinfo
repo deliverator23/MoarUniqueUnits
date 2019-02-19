@@ -5,6 +5,7 @@
         <Teaser>Adds a second Unique Unit to every civilization</Teaser>
         <Description>Adds a second Unique Unit to every civilization</Description>
         <Authors>Deliverator</Authors>
+        <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
     <FrontEndActions>
         <UpdateDatabase id="MUU_Config_UpdateDatabase">

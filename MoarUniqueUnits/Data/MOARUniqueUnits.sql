@@ -11,8 +11,8 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, NULL, NULL, 'UNIT_MEDIC');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 0, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_KHOPESH', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 1, NULL, 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 0, NULL, 'UNIT_TANK', 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0, 'UNIT_MUSKETMAN', 'UNIT_FRENCH_GARDE_IMPERIALE', 'UNIT_MUSKETMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1, 'UNIT_PIKEMAN', 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
@@ -37,7 +37,7 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
 
--- Even Moar Units Uniques
+-- R&F/DLC Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_JAGUAR', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 0, NULL, NULL, 'UNIT_MEDIC');
@@ -47,8 +47,6 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 0, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_BALLISTA', 1, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 0, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
-
--- R&F/DLC Uniques
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NUBIA','UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 1, NULL, 'UNIT_KNIGHT', 'UNIT_KNIGHT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDONESIA','UNIT_INDONESIAN_KRIS_SWORDSMAN', 1, NULL, NULL, 'UNIT_WARRIOR_MONK');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KHMER','UNIT_KHMER_WAR_CANOE', 1, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
@@ -61,10 +59,21 @@ INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MONGOLIA','UNIT_MONGOLIAN_HUI_HUI_PAO', 1, NULL, 'UNIT_BOMBARD', 'UNIT_CATAPULT');
 INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ZULU','UNIT_ZULU_ASSEGAI', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
 
+-- GS Uniques
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CANADA','UNIT_CANADIAN_HMCS_HAIDA', 1, 'UNIT_DESTROYER', NULL, 'UNIT_DESTROYER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_HUNGARY', 'UNIT_HUNGARIAN_KALANDOZO', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INCA', 'UNIT_INCAN_CHASQUI', 1, 'UNIT_SCOUT', NULL, 'UNIT_SCOUT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MALI', 'UNIT_MALIAN_SOFA', 1, 'UNIT_CROSSBOWMAN', NULL, 'UNIT_CROSSBOWMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAORI', 'UNIT_MAORI_TUPARA', 1, 'UNIT_RANGER', NULL, 'UNIT_RANGER');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_OTTOMAN', 'UNIT_OTTOMAN_SIPAHI', 1, 'UNIT_KNIGHT', NULL, 'UNIT_KNIGHT');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PHOENICIA', 'UNIT_PHOENICIA_NUMIDIAN_CAVALRY', 1, 'UNIT_HORSEMAN', NULL, 'UNIT_HORSEMAN');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SWEDEN', 'UNIT_SWEDISH_KRONAN', 1, 'UNIT_FRIGATE', NULL, 'UNIT_FRIGATE');
+INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('LEADER_ELEANOR', 'UNIT_ELEANOR_TEMPLAR', 1, 'UNIT_SWORDSMAN', NULL, 'UNIT_SWORDSMAN');
+
 -- Disable UUs for Civilizations that are not present (DLC)
-UPDATE EnabledUniqueUnits SET Enabled = 0 WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.CivilizationType);
-
-
+UPDATE EnabledUniqueUnits SET Enabled = 0
+WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.CivilizationType)
+AND   NOT EXISTS (SELECT 1 FROM Leaders WHERE Leaders.LeaderType = EnabledUniqueUnits.CivilizationType);
 
 -- CONDITIONALS (Unit Stuff)
 
@@ -78,7 +87,9 @@ INSERT INTO Types (Type, Kind) SELECT 'TRAIT_CIVILIZATION_'||Type, 'KIND_TRAIT' 
 INSERT INTO Traits (TraitType, Name) SELECT 'TRAIT_CIVILIZATION_'||Type, 'LOC_'||Type||'_NAME' FROM EnabledUniqueUnits WHERE Enabled = 1;
 
 --Traits
-INSERT INTO CivilizationTraits (CivilizationType, TraitType) SELECT CivilizationType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1;
+INSERT INTO CivilizationTraits (CivilizationType, TraitType) SELECT CivilizationType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND CivilizationType LIKE 'CIVILIZATION_%';
+
+INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT CivilizationType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND CivilizationType LIKE 'LEADER_%';
 
 --Units
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
@@ -314,8 +325,6 @@ INSERT INTO UnitAIInfos (UnitType, AiType) SELECT EnabledUniqueUnits.Type, UnitA
 
 INSERT INTO Tags (Tag, Vocabulary) SELECT replace(Type,'UNIT_','CLASS_'), 'ABILITY_CLASS' FROM EnabledUniqueUnits;
 
-INSERT INTO Tags (Tag, Vocabulary) VALUES ('CLASS_JANISSARY', 'ABILITY_CLASS');
-
 INSERT INTO TypeTags (Type, Tag) SELECT Type, replace(Type,'UNIT_','CLASS_') FROM EnabledUniqueUnits WHERE Enabled = 1;
 
 INSERT INTO TypeTags (Type, Tag) SELECT EnabledUniqueUnits.Type, TypeTags.Tag FROM TypeTags, EnabledUniqueUnits WHERE TypeTags.Tag LIKE 'CLASS_%' AND TypeTags.Type = EnabledUniqueUnits.UnitAiBaseUnit AND EnabledUniqueUnits.Enabled = 1 AND EnabledUniqueUnits.UnitAiBaseUnit IS NOT NULL;
@@ -455,7 +464,6 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_YAMATO', 'CLASS_JAPANESE_YAMAT
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_BALLISTA', 'CLASS_MACEDONIAN_BALLISTA');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_CATAPHRACT', 'CLASS_PERSIAN_CATAPHRACT');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_CHOSEN_INFANTRY', 'CLASS_POLISH_CHOSEN_INFANTRY');
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_HEAL_ON_VICTORY', 'CLASS_JANISSARY');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_JAGUAR', 'CLASS_AZTEC_JAGUAR');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PERSIAN_WARSHIP', 'CLASS_PERSIAN_WARSHIP');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PEZHETAIROS', 'CLASS_MACEDONIAN_PEZHETAIROS');
@@ -756,8 +764,6 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_WARRIOR_PRIEST_NO_REDUCTION_WHEN_DAMAGED_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE', 'ADJACENT_WARRIOR_PRIEST_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('PLUS_10_HEAL_PER_TURN_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('ONE_HUNDRED_PERCENT_FLANKING_BONUS_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_FLANKING_BONUS_MODIFIER');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('MINOR_CIV_JANISSARY_BONUS', 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER', 'PLAYER_IS_SUZERAIN');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('JANISSARY_RESOURCE_BONUS', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_17_WHEN_ATTACKING_NON_DISTRICT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ATTACKING_NON_DISTRICT_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ATTACKING_DISTRICT_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_10_VERSUS_MELEE_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'THRUST_REQUIREMENTS');
@@ -955,9 +961,6 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_WARRIOR
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_10_HEAL_PER_TURN_BONUS', 'Amount', '10');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_10_HEAL_PER_TURN_BONUS', 'Type', 'ALL');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('ONE_HUNDRED_PERCENT_FLANKING_BONUS_MODIFIER', 'Percent', '100');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('MINOR_CIV_JANISSARY_BONUS', 'ModifierId', 'JANISSARY_RESOURCE_BONUS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('JANISSARY_RESOURCE_BONUS', 'ResourceType', 'RESOURCE_JANISSARY');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('JANISSARY_RESOURCE_BONUS', 'Amount', '2');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_10_VERSUS_MELEE_COMBAT_BONUS', 'Amount', '10');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS', 'Amount', '5');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_PERSIAN_WARSHIP_ADJACENT_MOVEMENT_BONUS', 'Amount', '2');
@@ -969,34 +972,6 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_KHMER_W
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_5_PLAINS_GRASS_COMBAT_BONUS', 'Amount', '5');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS', 'Amount', '10');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_HUI_HUI_PAO_BONUS', 'Amount', '5');
-
-/* -------------------------- */
-/* Poland DLC - Add Janissary */
-/* -------------------------- */
-
-INSERT INTO Types (Type, Kind) SELECT 'UNIT_JANISSARY', 'KIND_UNIT' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-INSERT INTO Types (Type, Kind) SELECT 'RESOURCE_JANISSARY', 'KIND_RESOURCE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-INSERT INTO Resources (ResourceType, Name, ResourceClassType, Frequency) SELECT 'RESOURCE_JANISSARY', 'LOC_RESOURCE_JANISSARY_NAME', 'RESOURCECLASS_STRATEGIC', 0 FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-INSERT INTO TraitModifiers (TraitType, ModifierId) SELECT 'MINOR_CIV_PRESLAV_TRAIT', 'MINOR_CIV_JANISSARY_BONUS'  FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-INSERT INTO TraitModifiers (TraitType, ModifierId) SELECT 'MINOR_CIV_YEREVAN_TRAIT', 'MINOR_CIV_JANISSARY_BONUS'  FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-REPLACE INTO TypeTags (Type, Tag) SELECT Type, 'CLASS_JANISSARY' FROM TypeTags WHERE  Tag = 'CLASS_MELEE' AND Type LIKE 'ABILITY%' AND EXISTS (SELECT 1 FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND');
-
-INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, StrategicResource)
-SELECT 'UNIT_JANISSARY', '2', '240', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_JANISSARY_NAME', 'LOC_UNIT_JANISSARY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '55', 'TECH_GUNPOWDER', 'RESOURCE_JANISSARY'
-FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-INSERT INTO UnitUpgrades (Unit, UpgradeUnit) SELECT 'UNIT_JANISSARY', 'UNIT_INFANTRY' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITAI_COMBAT' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITAI_EXPLORE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITTYPE_LAND_COMBAT' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-INSERT INTO UnitAIInfos (UnitType, AiType) SELECT 'UNIT_JANISSARY', 'UNITTYPE_MELEE' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
-
-INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_JANISSARY', 'CLASS_JANISSARY' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_POLAND';
 
 -- Polish Winged Hussar Fix
 UPDATE Units SET MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_POLISH_HUSSAR';
@@ -1070,7 +1045,6 @@ UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_F
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_INDIAN_MUGHAL_SOWAR' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_GEORGIAN_TADZREULI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
 
-UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_JANISSARY' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_POLISH_CHOSEN_INFANTRY' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_AMERICAN_MINUTEMAN' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
 
@@ -1218,7 +1192,3 @@ FROM   Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'sasr_HM.dds'
 FROM   Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
-
-UPDATE Colors
-SET Color = "255,255,255,255"
-WHERE Type = 'COLOR_PLAYER_NETHERLANDS_SECONDARY';
