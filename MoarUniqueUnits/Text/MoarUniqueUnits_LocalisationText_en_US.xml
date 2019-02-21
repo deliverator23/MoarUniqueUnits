@@ -1143,6 +1143,60 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
 			<Text>Isijula Warrior</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_NAME">
+			<Text>HMCS Haida</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_DESCRIPTION">
+			<Text>replacing Destroyer</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_NAME">
+			<Text>Kalandozó</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_DESCRIPTION">
+			<Text>replacing Crossbowman</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_NAME">
+			<Text>Chasqui</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_DESCRIPTION">
+			<Text>replacing Scout</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_NAME">
+			<Text>Sofa</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_DESCRIPTION">
+			<Text>replacing Crossbowman</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
+			<Text>Toatupara</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
+			<Text>replacing Ranger</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
+			<Text>Sipahi</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
+			<Text>replacing Knight</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
+			<Text>Sipahi</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
+			<Text>replacing Horseman</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_NAME">
+			<Text>Kronan</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_DESCRIPTION">
+			<Text>replacing Frigate</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
+			<Text>Templar</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
+			<Text>replacing Knight</Text>
+		</Replace>
 		<Replace Language="en_US" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
 			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
 		</Replace>
