@@ -61,6 +61,16 @@ INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MONGOLIA','UNIT_MONGOLIAN_HUI_HUI_PAO', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ZULU','UNIT_ZULU_ASSEGAI', 1, 5);
 
+-- New Uniques
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_CANADA','UNIT_CANADA_HMCS_HAIDA', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_HUNGARY','UNIT_HUNGARY_KALANDOZO', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_INCA','UNIT_INCA_CHASQUI', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MALI','UNIT_MALI_SOFA', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MAORI','UNIT_MAORI_TUPARA', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_OTTOMAN','UNIT_OTTOMAN_SIPAHI', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_PHOENICIA','UNIT_PHOENICIA_NUMIDIAN_CAVALRY', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (CivilizationType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SWEDEN','UNIT_SWEDEN_KRONAN', 1, 5);
+
 -- Disable UUs for Civilizations that are not present (DLC)
 UPDATE ConfigEnabledUniqueUnits SET Enabled = 0 WHERE NOT EXISTS (SELECT 1 FROM Players WHERE CivilizationType = ConfigEnabledUniqueUnits.CivilizationType);
 
