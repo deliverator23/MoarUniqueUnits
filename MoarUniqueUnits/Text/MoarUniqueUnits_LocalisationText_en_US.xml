@@ -1245,59 +1245,59 @@
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
 			<Text>Since we now have a supply of {ResourceType} we are able to field the {UnitType} for the first time!</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_NAME">
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME">
 			<Text>HMCS Haida</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_DESCRIPTION">
-			<Text>replacing Destroyer</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
+			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_NAME">
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
 			<Text>Kalandozó</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_DESCRIPTION">
-			<Text>replacing Crossbowman</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION">
+			<Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_NAME">
+		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_NAME">
 			<Text>Chasqui</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_DESCRIPTION">
-			<Text>replacing Scout</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION">
+			<Text>Incan unique Ancient Era Recon unit replacing the Scout.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_NAME">
+		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_NAME">
 			<Text>Sofa</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_DESCRIPTION">
-			<Text>replacing Crossbowman</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION">
+			<Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
 			<Text>Toatupara</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
-			<Text>replacing Ranger</Text>
+			<Text>Maori unique Industrial Era Recon unit replacing the Ranger.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
 			<Text>Sipahi</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
-			<Text>replacing Knight</Text>
+			<Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
-			<Text>Sipahi</Text>
+			<Text>Numidian Cavalry</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
-			<Text>replacing Horseman</Text>
+			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_NAME">
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
 			<Text>Kronan</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_DESCRIPTION">
-			<Text>replacing Frigate</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
+			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
 			<Text>Templar</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
-			<Text>replacing Knight</Text>
+			<Text>Unique unit for Eleanor of Aquitaine.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC">
 			<Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text>
