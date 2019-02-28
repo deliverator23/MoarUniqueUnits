@@ -1168,7 +1168,7 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('RECEIVE_SOFA_BO
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS', 'Preview', '+{1_Amount} {PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_IN_FORMATION_BONUS', 'Preview', '+{1_Amount} {PLUS_X_IN_FORMATION_BONUS_DESC}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS', 'Preview', '+{1_Amount} {PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS_DESC}');
-INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'Preview', '+{1_Amount} {PLUS_X_HOLY_SITE_PROXIMITY_BONUS}');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'Preview', '+{1_Amount} {PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC}');
 
 
 --ModifierArguments

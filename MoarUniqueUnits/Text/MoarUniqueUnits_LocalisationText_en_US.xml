@@ -1143,60 +1143,6 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
 			<Text>Isijula Warrior</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_NAME">
-			<Text>HMCS Haida</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_DESCRIPTION">
-			<Text>replacing Destroyer</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_NAME">
-			<Text>Kalandozó</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_DESCRIPTION">
-			<Text>replacing Crossbowman</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_NAME">
-			<Text>Chasqui</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_DESCRIPTION">
-			<Text>replacing Scout</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_NAME">
-			<Text>Sofa</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_DESCRIPTION">
-			<Text>replacing Crossbowman</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
-			<Text>Toatupara</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
-			<Text>replacing Ranger</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
-			<Text>Sipahi</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
-			<Text>replacing Knight</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
-			<Text>Sipahi</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
-			<Text>replacing Horseman</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_NAME">
-			<Text>Kronan</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_DESCRIPTION">
-			<Text>replacing Frigate</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
-			<Text>Templar</Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
-			<Text>replacing Knight</Text>
-		</Replace>
 		<Replace Language="en_US" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
 			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
 		</Replace>
@@ -1298,6 +1244,75 @@
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
 			<Text>Since we now have a supply of {ResourceType} we are able to field the {UnitType} for the first time!</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_NAME">
+			<Text>HMCS Haida</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADIAN_HMCS_HAIDA_DESCRIPTION">
+			<Text>replacing Destroyer</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_NAME">
+			<Text>Kalandozó</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARIAN_KALANDOZO_DESCRIPTION">
+			<Text>replacing Crossbowman</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_NAME">
+			<Text>Chasqui</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCAN_CHASQUI_DESCRIPTION">
+			<Text>replacing Scout</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_NAME">
+			<Text>Sofa</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALIAN_SOFA_DESCRIPTION">
+			<Text>replacing Crossbowman</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
+			<Text>Toatupara</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
+			<Text>replacing Ranger</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
+			<Text>Sipahi</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
+			<Text>replacing Knight</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
+			<Text>Sipahi</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
+			<Text>replacing Horseman</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_NAME">
+			<Text>Kronan</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDISH_KRONAN_DESCRIPTION">
+			<Text>replacing Frigate</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
+			<Text>Templar</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
+			<Text>replacing Knight</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength vs Naval Raider class.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_IN_FORMATION_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength when in formation.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength when adjacent to another Naval unit.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength within 4 tiles of a Holy Site.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
