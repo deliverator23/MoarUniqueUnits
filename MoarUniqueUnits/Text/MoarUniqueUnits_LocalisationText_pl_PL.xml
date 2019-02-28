@@ -1069,7 +1069,7 @@
 			<Text>Uhlan</Text>
 		</Replace>
 		<Replace Language="pl_PL" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION">
-			<Text>Roman unique cavalry unit that replaces Rider. +5 [ICON_Strength] Combat Strength when fighting next to Legion or Warrior unit. Yields 33% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
+			<Text>Roman unique cavalry unit that replaces Rider. +5 [ICON_Strength] Combat Strength when fighting next to Legion or Warrior unit. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
 		</Replace>
 		<Replace Language="pl_PL" Tag="LOC_UNIT_ROMAN_EQUITE_NAME">
 			<Text>Eques</Text>

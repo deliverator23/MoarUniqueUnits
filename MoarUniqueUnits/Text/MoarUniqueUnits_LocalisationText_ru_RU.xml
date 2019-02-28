@@ -1070,7 +1070,7 @@
 			<Text>Уланы</Text>
 		</Replace>
 		<Replace Language="ru_RU" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION">
-			<Text>Римский уникальный кавалерийский юнит заменяющий всадников. Получает +5 [ICON_Strength] к боевой мощи рядом с легионом или воином. Дает [ICON_Gold] золото в размере 33% от [ICON_Strength] боевой мощи побежденного противника.</Text>
+			<Text>Римский уникальный кавалерийский юнит заменяющий всадников. Получает +5 [ICON_Strength] к боевой мощи рядом с легионом или воином. Дает [ICON_Gold] золото в размере 50% от [ICON_Strength] боевой мощи побежденного противника.</Text>
 		</Replace>
 		<Replace Language="ru_RU" Tag="LOC_UNIT_ROMAN_EQUITE_NAME">
 			<Text>Эквиты</Text>

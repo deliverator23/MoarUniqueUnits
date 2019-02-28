@@ -1069,7 +1069,7 @@
 			<Text>ウーラン</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION">
-			<Text>ローマ固有の古典時代の軽騎兵ユニット。レギオンや戦士に隣接している場合に [ICON_Strength] 戦闘力+5。敵を撃破すると、相手 [ICON_Strength] 戦闘力の33%と同量の [ICON_Gold] ゴールドを獲得する。</Text>
+			<Text>ローマ固有の古典時代の軽騎兵ユニット。レギオンや戦士に隣接している場合に [ICON_Strength] 戦闘力+5。敵を撃破すると、相手 [ICON_Strength] 戦闘力の50%と同量の [ICON_Gold] ゴールドを獲得する。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_ROMAN_EQUITE_NAME">
 			<Text>エクィテス</Text>

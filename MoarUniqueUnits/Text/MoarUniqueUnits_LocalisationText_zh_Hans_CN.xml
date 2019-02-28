@@ -1069,7 +1069,7 @@
 			<Text>乌兰枪骑兵</Text>
 		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION">
-			<Text>罗马古典时期特色骑兵单位，替换骑手。与罗马军团或勇士单位相邻作战时+5战斗力[ICON_Strength]。击杀敌军获取等同于其33%战斗力[ICON_Strength]的金币[ICON_Gold]。</Text>
+			<Text>罗马古典时期特色骑兵单位，替换骑手。与罗马军团或勇士单位相邻作战时+5战斗力[ICON_Strength]。击杀敌军获取等同于其50%战斗力[ICON_Strength]的金币[ICON_Gold]。</Text>
 		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ROMAN_EQUITE_NAME">
 			<Text>军团骑手</Text>

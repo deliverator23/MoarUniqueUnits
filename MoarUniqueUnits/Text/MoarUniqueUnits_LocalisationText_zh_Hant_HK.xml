@@ -1069,7 +1069,7 @@
 			<Text>烏蘭槍騎兵</Text>
 		</Replace>
 		<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION">
-			<Text>羅馬古典時期特色騎兵單位，替換騎手。與羅馬軍團或勇士單位相鄰作戰時+5戰鬥力[ICON_Strength]。擊殺敵軍獲取等同于其33%戰鬥力[ICON_Strength]的金幣[ICON_Gold]。</Text>
+			<Text>羅馬古典時期特色騎兵單位，替換騎手。與羅馬軍團或勇士單位相鄰作戰時+5戰鬥力[ICON_Strength]。擊殺敵軍獲取等同于其50%戰鬥力[ICON_Strength]的金幣[ICON_Gold]。</Text>
 		</Replace>
 		<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ROMAN_EQUITE_NAME">
 			<Text>軍團騎手</Text>
