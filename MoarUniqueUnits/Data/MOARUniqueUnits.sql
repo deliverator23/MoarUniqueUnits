@@ -1,79 +1,11 @@
-CREATE TABLE EnabledUniqueUnits (CivilizationType VARCHAR, Type VARCHAR, Enabled INTEGER, DefaultReplaces VARCHAR, DefaultUpgrade VARCHAR, UnitAiBaseUnit VARCHAR);
-
--- Core Uniques
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 1, 'UNIT_HELICOPTER', NULL, 'UNIT_HELICOPTER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 0, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_CAMEL_ARCHER', 1, NULL, 'UNIT_FIELD_CANNON', 'UNIT_SCYTHIAN_HORSE_ARCHER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 0, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_BANDEIRANTE', 1, 'UNIT_RANGER', NULL, 'UNIT_RANGER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 0, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_CHOKONU', 0, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, NULL, NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 0, 'UNIT_QUADRIREME', 'UNIT_FRIGATE', 'UNIT_QUADRIREME');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_KHOPESH', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 0, NULL, 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0, 'UNIT_MUSKETMAN', 'UNIT_FRENCH_GARDE_IMPERIALE', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1, 'UNIT_PIKEMAN', 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_PANZER', 0, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_ARMATOLOS', 0, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GREECE','UNIT_GREEK_PELTAST', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_MUGHAL_SOWAR', 0, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDIA','UNIT_INDIAN_SEPOY', 1, NULL, 'UNIT_INFANTRY', 'UNIT_INFANTRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_SOHEI', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_JAPAN','UNIT_JAPANESE_YAMATO', 0, 'UNIT_BATTLESHIP', NULL, 'UNIT_BATTLESHIP');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_GARDE_REPUBLICAINE', 0, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KONGO','UNIT_KONGO_MEDICINE_MAN', 1, 'UNIT_MEDIC', NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_HIRDMAN', 0, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NORWAY','UNIT_NORWEGIAN_ULFHEDNAR', 1, NULL, NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_EQUITE', 1, 'UNIT_HORSEMAN', 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ROME','UNIT_ROMAN_ONAGER', 0, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_DRUZHINA', 1, NULL, 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_RUSSIA','UNIT_RUSSIAN_T34', 0, 'UNIT_TANK', 'UNIT_MODERN_ARMOR', 'UNIT_TANK');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCYTHIA','UNIT_SCYTHIAN_AMAZON_SCOUT', 0, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_JINETE', 0, NULL, 'UNIT_CAVALRY', 'UNIT_CAVALRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SPAIN','UNIT_SPANISH_TERCIO', 1, NULL, 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SUMERIA','UNIT_SUMERIAN_PHALANX', 1, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
-
--- R&F/DLC Uniques
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AUSTRALIA','UNIT_AUSTRALIAN_SASR', 1, 'UNIT_MECHANIZED_INFANTRY', NULL, 'UNIT_MECHANIZED_INFANTRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_JAGUAR', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_AZTEC','UNIT_AZTEC_WARRIOR_PRIEST', 0, NULL, NULL, 'UNIT_MEDIC');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_CHOSEN_INFANTRY', 0, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_POLAND','UNIT_POLISH_UHLAN', 1, 'UNIT_CAVALRY', 'UNIT_HELICOPTER', 'UNIT_CAVALRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_CATAPHRACT', 1, NULL, 'UNIT_KNIGHT', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PERSIA','UNIT_PERSIAN_WARSHIP', 0, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_BALLISTA', 1, 'UNIT_CATAPULT', 'UNIT_BOMBARD', 'UNIT_CATAPULT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MACEDON','UNIT_MACEDONIAN_PEZHETAIROS', 0, 'UNIT_SPEARMAN', 'UNIT_PIKEMAN', 'UNIT_SPEARMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NUBIA','UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT', 1, NULL, 'UNIT_KNIGHT', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INDONESIA','UNIT_INDONESIAN_KRIS_SWORDSMAN', 1, NULL, NULL, 'UNIT_WARRIOR_MONK');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KHMER','UNIT_KHMER_WAR_CANOE', 1, 'UNIT_GALLEY', 'UNIT_CARAVEL', 'UNIT_GALLEY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_KOREA','UNIT_KOREAN_TURTLE_SHIP', 1, 'UNIT_CARAVEL', 'UNIT_IRONCLAD', 'UNIT_CARAVEL');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_NETHERLANDS','UNIT_DUTCH_SCHUTTERIJ', 1, 'UNIT_MUSKETMAN', 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GEORGIA','UNIT_GEORGIAN_TADZREULI', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CREE','UNIT_CREE_OTEHTAPIW', 1, 'UNIT_CAVALRY', 'UNIT_HELICOPTER', 'UNIT_CAVALRY');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAPUCHE','UNIT_MAPUCHE_GUERILLA', 1, 'UNIT_PIKEMAN', 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SCOTLAND','UNIT_SCOTTISH_GALLOWGLASS', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MONGOLIA','UNIT_MONGOLIAN_HUI_HUI_PAO', 1, NULL, 'UNIT_BOMBARD', 'UNIT_CATAPULT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ZULU','UNIT_ZULU_ASSEGAI', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
-
--- GS Uniques
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CANADA','UNIT_CANADA_HMCS_HAIDA', 1, 'UNIT_DESTROYER', NULL, 'UNIT_DESTROYER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_HUNGARY', 'UNIT_HUNGARY_KALANDOZO', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INCA', 'UNIT_INCA_CHASQUI', 1, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MALI', 'UNIT_MALI_SOFA', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAORI', 'UNIT_MAORI_TUPARA', 1, 'UNIT_RANGER', NULL, 'UNIT_RANGER');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_OTTOMAN', 'UNIT_OTTOMAN_SIPAHI', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PHOENICIA', 'UNIT_PHOENICIA_NUMIDIAN_CAVALRY', 1, 'UNIT_HORSEMAN', 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SWEDEN', 'UNIT_SWEDEN_KRONAN', 1, 'UNIT_FRIGATE', 'UNIT_BATTLESHIP', 'UNIT_FRIGATE');
-INSERT INTO EnabledUniqueUnits (CivilizationType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('LEADER_ELEANOR_ENGLAND', 'UNIT_ELEANOR_TEMPLAR', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+DROP TRIGGER OnTypeInsert;
+CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
+PRAGMA foreign_keys = ON;
 
 -- Disable UUs for Civilizations that are not present (DLC)
 UPDATE EnabledUniqueUnits SET Enabled = 0
-WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.CivilizationType)
-AND   NOT EXISTS (SELECT 1 FROM Leaders WHERE Leaders.LeaderType = EnabledUniqueUnits.CivilizationType);
+WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.OwnerType)
+AND   NOT EXISTS (SELECT 1 FROM Leaders WHERE Leaders.LeaderType = EnabledUniqueUnits.OwnerType);
 
 -- CONDITIONALS (Unit Stuff)
 
@@ -87,239 +19,381 @@ INSERT INTO Types (Type, Kind) SELECT 'TRAIT_CIVILIZATION_'||Type, 'KIND_TRAIT' 
 INSERT INTO Traits (TraitType, Name) SELECT 'TRAIT_CIVILIZATION_'||Type, 'LOC_'||Type||'_NAME' FROM EnabledUniqueUnits WHERE Enabled = 1;
 
 --Traits
-INSERT INTO CivilizationTraits (CivilizationType, TraitType) SELECT CivilizationType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND CivilizationType LIKE 'CIVILIZATION_%';
+INSERT INTO CivilizationTraits (CivilizationType, TraitType) SELECT OwnerType, 'TRAIT_CIVILIZATION_' || Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType LIKE 'CIVILIZATION_%';
 
-INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT CivilizationType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND CivilizationType = 'LEADER_ELEANOR_ENGLAND';
+INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT OwnerType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType = 'LEADER_ELEANOR_ENGLAND';
 
-INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT 'LEADER_ELEANOR_FRANCE', 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND CivilizationType = 'LEADER_ELEANOR_ENGLAND';
+INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT 'LEADER_ELEANOR_FRANCE', 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType = 'LEADER_ELEANOR_ENGLAND';
 
 --Units
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '80', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ROMAN_EQUITE_NAME', 'LOC_UNIT_ROMAN_EQUITE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '2', '35', 'TECH_HORSEBACK_RIDING', 'TECH_SYNTHETIC_MATERIALS', 'TRAIT_CIVILIZATION_UNIT_ROMAN_EQUITE'
 FROM   Types WHERE Type = 'UNIT_ROMAN_EQUITE';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_ROMAN_EQUITE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_ROMAN_EQUITE';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '150', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SPANISH_JINETE_NAME', 'LOC_UNIT_SPANISH_JINETE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '2', '42', '35', '1', 'TECH_STIRRUPS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_SPANISH_JINETE'
 FROM   Types WHERE Type = 'UNIT_SPANISH_JINETE';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_SPANISH_JINETE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SPANISH_JINETE';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '150', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_RUSSIAN_DRUZHINA_NAME', 'LOC_UNIT_RUSSIAN_DRUZHINA_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '2', '44', 'TECH_STIRRUPS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_RUSSIAN_DRUZHINA'
 FROM   Types WHERE Type = 'UNIT_RUSSIAN_DRUZHINA';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_RUSSIAN_DRUZHINA';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, RangedCombat, Range, PrereqTech, TraitType)
 SELECT Type, '2', '60', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GREEK_PELTAST_NAME', 'LOC_UNIT_GREEK_PELTAST_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '1', '15', 'TECH_BALLISTICS', '25', '2', 'TECH_ARCHERY', 'TRAIT_CIVILIZATION_UNIT_GREEK_PELTAST'
 FROM   Types WHERE Type = 'UNIT_GREEK_PELTAST';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '200', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_INDIAN_MUGHAL_SOWAR_NAME', 'LOC_UNIT_INDIAN_MUGHAL_SOWAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '2', '48', 'TECH_STIRRUPS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_INDIAN_MUGHAL_SOWAR'
 FROM   Types WHERE Type = 'UNIT_INDIAN_MUGHAL_SOWAR';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_INDIAN_MUGHAL_SOWAR';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_INDIAN_MUGHAL_SOWAR';
+
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '200', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_FRENCH_GENDARME_NAME', 'LOC_UNIT_FRENCH_GENDARME_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '3', '50', 'TECH_STIRRUPS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_FRENCH_GENDARME'
 FROM   Types WHERE Type = 'UNIT_FRENCH_GENDARME';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_FRENCH_GENDARME';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_FRENCH_GENDARME';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '200', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCYTHIAN_AMAZON_NAME', 'LOC_UNIT_SCYTHIAN_AMAZON_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '3', '48', 'TECH_STIRRUPS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_SCYTHIAN_AMAZON'
 FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_SCYTHIAN_AMAZON';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SCYTHIAN_AMAZON';
+
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_NORWEGIAN_HIRDMAN_NAME', 'LOC_UNIT_NORWEGIAN_HIRDMAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '36', 'TECH_IRON_WORKING', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_NORWEGIAN_HIRDMAN'
 FROM   Types WHERE Type = 'UNIT_NORWEGIAN_HIRDMAN';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_NORWEGIAN_HIRDMAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_NORWEGIAN_HIRDMAN';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqCivic, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '180', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_JAPANESE_SOHEI_NAME', 'LOC_UNIT_JAPANESE_SOHEI_DESCRIPTION', 'YIELD_FAITH', 'PROMOTION_CLASS_MELEE', '1', '42', 'CIVIC_FEUDALISM', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_JAPANESE_SOHEI'
 FROM   Types WHERE Type = 'UNIT_JAPANESE_SOHEI';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '180', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ENGLISH_LONGBOWMAN_NAME', 'LOC_UNIT_ENGLISH_LONGBOWMAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '3', '30', '40', '2', 'TECH_MACHINERY', 'TECH_SYNTHETIC_MATERIALS', 'TRAIT_CIVILIZATION_UNIT_ENGLISH_LONGBOWMAN'
 FROM   Types WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '200', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_CHINESE_CHOKONU_NAME', 'LOC_UNIT_CHINESE_CHOKONU_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '4', '30', '34', '2', 'TECH_MACHINERY', 'TECH_ADVANCED_BALLISTICS', 'TRAIT_CIVILIZATION_UNIT_CHINESE_CHOKONU'
 FROM   Types WHERE Type = 'UNIT_CHINESE_CHOKONU';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '100', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ARABIAN_CAMEL_ARCHER_NAME', 'LOC_UNIT_ARABIAN_CAMEL_ARCHER_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RANGED', '2', '13', '27', '1', 'TECH_HORSEBACK_RIDING', 'TECH_BALLISTICS', 'TRAIT_CIVILIZATION_UNIT_ARABIAN_CAMEL_ARCHER'
 FROM   Types WHERE Type = 'UNIT_ARABIAN_CAMEL_ARCHER';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, TraitType, PrereqTech, MandatoryObsoleteTech)
 SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AMERICAN_MINUTEMAN_NAME', 'LOC_UNIT_AMERICAN_MINUTEMAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '50', 'TRAIT_CIVILIZATION_UNIT_AMERICAN_MINUTEMAN', 'TECH_GUNPOWDER', 'TECH_SATELLITES'
 FROM   Types WHERE Type = 'UNIT_AMERICAN_MINUTEMAN';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_AMERICAN_MINUTEMAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_AMERICAN_MINUTEMAN';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, BuildCharges, TraitType)
 SELECT Type, '3', '220', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_BRAZILIAN_BANDEIRANTE_NAME', 'LOC_UNIT_BRAZILIAN_BANDEIRANTE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_RECON', '4', '46', '60', '1', 'TECH_GUNPOWDER', '1', 'TRAIT_CIVILIZATION_UNIT_BRAZILIAN_BANDEIRANTE'
 FROM   Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SUMERIAN_PHALANX_NAME', 'LOC_UNIT_SUMERIAN_PHALANX_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '1', '25', 'TECH_MINING', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_SUMERIAN_PHALANX'
 FROM   Types WHERE Type = 'UNIT_SUMERIAN_PHALANX';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '280', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME', 'LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '64', 'TECH_RIFLING', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER'
 FROM   Types WHERE Type = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '350', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_INDIAN_SEPOY_NAME', 'LOC_UNIT_INDIAN_SEPOY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '64', 'TECH_RIFLING', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_INDIAN_SEPOY'
 FROM   Types WHERE Type = 'UNIT_INDIAN_SEPOY';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_INDIAN_SEPOY';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_INDIAN_SEPOY';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
 SELECT Type, '3', '660', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_KONGO_GARDE_REPUBLICAINE_NAME', 'LOC_UNIT_KONGO_GARDE_REPUBLICAINE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '8', '90', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_KONGO_GARDE_REPUBLICAINE'
 FROM   Types WHERE Type = 'UNIT_KONGO_GARDE_REPUBLICAINE';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_OIL' WHERE UnitType = 'UNIT_KONGO_GARDE_REPUBLICAINE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_OIL', 1
+FROM Units WHERE  UnitType = 'UNIT_KONGO_GARDE_REPUBLICAINE';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_EGYPTIAN_KHOPESH_NAME', 'LOC_UNIT_EGYPTIAN_KHOPESH_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '36', 'TECH_IRON_WORKING', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_EGYPTIAN_KHOPESH'
 FROM   Types WHERE Type = 'UNIT_EGYPTIAN_KHOPESH';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_EGYPTIAN_KHOPESH';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_EGYPTIAN_KHOPESH';
+
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '250', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SPANISH_TERCIO_NAME', 'LOC_UNIT_SPANISH_TERCIO_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '4', '60', 'TECH_GUNPOWDER', 'TECH_ROCKETRY', 'TRAIT_CIVILIZATION_UNIT_SPANISH_TERCIO'
 FROM   Types WHERE Type = 'UNIT_SPANISH_TERCIO';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
 SELECT Type, '4', '540', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GERMAN_PANZER_NAME', 'LOC_UNIT_GERMAN_PANZER_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '8', '80', 'TECH_COMBUSTION', 'TRAIT_CIVILIZATION_UNIT_GERMAN_PANZER'
 FROM   Types WHERE Type = 'UNIT_GERMAN_PANZER';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_OIL' WHERE UnitType = 'UNIT_GERMAN_PANZER';
+INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_OIL', 1
+FROM Units WHERE  UnitType = 'UNIT_GERMAN_PANZER';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
 SELECT Type, '4', '460', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_RUSSIAN_T34_NAME', 'LOC_UNIT_RUSSIAN_T34_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '5', '80', 'TECH_COMBUSTION', 'TRAIT_CIVILIZATION_UNIT_RUSSIAN_T34'
 FROM   Types WHERE Type = 'UNIT_RUSSIAN_T34';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_OIL' WHERE UnitType = 'UNIT_RUSSIAN_T34';
+INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_OIL', 1
+FROM Units WHERE  UnitType = 'UNIT_RUSSIAN_T34';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Combat, TraitType)
 SELECT Type, '3', '30', 'ADVISOR_GENERIC', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME', 'LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_EXPLORER', 'PROMOTION_CLASS_RECON', '15', 'TRAIT_CIVILIZATION_UNIT_SCYTHIAN_AMAZON_SCOUT'
 FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON_SCOUT';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, PrereqTech, Bombard, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ROMAN_ONAGER_NAME', 'LOC_UNIT_ROMAN_ONAGER_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '2', '23', '2', 'TECH_ENGINEERING', '40', 'TECH_STEEL', 'TRAIT_CIVILIZATION_UNIT_ROMAN_ONAGER'
 FROM   Types WHERE Type = 'UNIT_ROMAN_ONAGER';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, AntiAirCombat, TraitType, InitialLevel)
 SELECT Type, '5', '460', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_SEA', 'FORMATION_CLASS_NAVAL', 'LOC_UNIT_JAPANESE_YAMATO_NAME', 'LOC_UNIT_JAPANESE_YAMATO_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'PROMOTION_CLASS_NAVAL_RANGED', '7', '70', '80', '3', 'TECH_STEEL', '80', 'TRAIT_CIVILIZATION_UNIT_JAPANESE_YAMATO', '2'
 FROM   Types WHERE Type = 'UNIT_JAPANESE_YAMATO';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_OIL' WHERE UnitType = 'UNIT_JAPANESE_YAMATO';
+INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_OIL', 1
+FROM Units WHERE  UnitType = 'UNIT_JAPANESE_YAMATO';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '3', '130', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_SEA', 'FORMATION_CLASS_NAVAL', 'LOC_UNIT_EGYPTIAN_WAR_GALLEY_NAME', 'LOC_UNIT_EGYPTIAN_WAR_GALLEY_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'PROMOTION_CLASS_NAVAL_RANGED', '2', '25', '30', '2', 'TECH_SHIPBUILDING', 'TECH_STEEL', 'TRAIT_CIVILIZATION_UNIT_EGYPTIAN_WAR_GALLEY'
 FROM   Types WHERE Type = 'UNIT_EGYPTIAN_WAR_GALLEY';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, MustPurchase, CostProgressionModel, CostProgressionParam1, PromotionClass, Maintenance, PrereqCivic, TraitType)
 SELECT Type, '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_KONGO_MEDICINE_MAN_NAME', 'LOC_UNIT_KONGO_MEDICINE_MAN_DESCRIPTION', 'YIELD_FAITH', 1, 'COST_PROGRESSION_PREVIOUS_COPIES', '20', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_KONGO_MEDICINE_MAN'
 FROM   Types WHERE Type = 'UNIT_KONGO_MEDICINE_MAN';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '240', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_FRENCH_MARINE_NAME', 'LOC_UNIT_FRENCH_MARINE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '55', 'TECH_GUNPOWDER', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_FRENCH_MARINE'
 FROM   Types WHERE Type = 'UNIT_FRENCH_MARINE';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_FRENCH_MARINE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_FRENCH_MARINE';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '350', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GREEK_ARMATOLOS_NAME', 'LOC_UNIT_GREEK_ARMATOLOS_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '4', '64', 'TECH_RIFLING', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_GREEK_ARMATOLOS'
 FROM   Types WHERE Type = 'UNIT_GREEK_ARMATOLOS';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_GREEK_ARMATOLOS';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_GREEK_ARMATOLOS';
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, PrereqCivic, TraitType)
 SELECT Type, '2', '100', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_CHINESE_SHIGONG_NAME', 'LOC_UNIT_CHINESE_SHIGONG_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MILITARY_TRAINING', 'TRAIT_CIVILIZATION_UNIT_CHINESE_SHIGONG'
 FROM   Types WHERE Type = 'UNIT_CHINESE_SHIGONG';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ARABIAN_GHAZI_NAME', 'LOC_UNIT_ARABIAN_GHAZI_DESCRIPTION', 'YIELD_FAITH', 'PROMOTION_CLASS_MELEE', '2', '46', 'TECH_CASTLES', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_ARABIAN_GHAZI'
 FROM   Types WHERE Type = 'UNIT_ARABIAN_GHAZI';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_ARABIAN_GHAZI';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_ARABIAN_GHAZI';
+
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, MustPurchase, CostProgressionModel, CostProgressionParam1, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '80', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_GERMAN_LANDSKNECHT_NAME', 1, 'COST_PROGRESSION_PREVIOUS_COPIES', '13', 'LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '3', '45', 'TECH_MILITARY_TACTICS', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_GERMAN_LANDSKNECHT'
 FROM   Types WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, CanTargetAir, TraitType)
 SELECT Type, '4', '600', 'ADVISOR_CONQUEST', '3', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AMERICAN_AH64_APACHE_NAME', 'LOC_UNIT_AMERICAN_AH64_APACHE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '7', '85', 'TECH_SYNTHETIC_MATERIALS', 1, 'TRAIT_CIVILIZATION_UNIT_AMERICAN_AH64_APACHE'
 FROM   Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqCivic, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '260', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ENGLISH_IRONSIDE_NAME', 'LOC_UNIT_ENGLISH_IRONSIDE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '4', '56', 'CIVIC_REFORMED_CHURCH', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_ENGLISH_IRONSIDE'
 FROM   Types WHERE Type = 'UNIT_ENGLISH_IRONSIDE';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_ENGLISH_IRONSIDE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_ENGLISH_IRONSIDE';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, PrereqCivic, TraitType, MandatoryObsoleteTech)
 SELECT Type, '2', '100', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_NORWEGIAN_ULFHEDNAR_NAME', 'LOC_UNIT_NORWEGIAN_ULFHEDNAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_NORWEGIAN_ULFHEDNAR', 'TECH_GUNPOWDER'
 FROM   Types WHERE Type = 'UNIT_NORWEGIAN_ULFHEDNAR';
+
 
 -- Even Moar Units
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
 SELECT Type, '4', '650', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AUSTRALIAN_SASR_NAME', 'LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '8', '91', 'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_AUSTRALIAN_SASR'
 FROM   Types WHERE Type = 'UNIT_AUSTRALIAN_SASR';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_OIL' WHERE UnitType = 'UNIT_AUSTRALIAN_SASR';
+INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_OIL', 1
+FROM Units WHERE  UnitType = 'UNIT_AUSTRALIAN_SASR';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AZTEC_JAGUAR_NAME', 'LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '34', 'TECH_IRON_WORKING', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_AZTEC_JAGUAR'
 FROM   Types WHERE Type = 'UNIT_AZTEC_JAGUAR';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, CostProgressionModel, CostProgressionParam1, PromotionClass, Maintenance, PrereqCivic, TraitType)
 SELECT Type, '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME', 'LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION', 'YIELD_FAITH', 'COST_PROGRESSION_PREVIOUS_COPIES', '20', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_AZTEC_WARRIOR_PRIEST'
 FROM   Types WHERE Type = 'UNIT_AZTEC_WARRIOR_PRIEST';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, Range, PrereqTech, Bombard, TraitType)
 SELECT Type, '2', '120', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MACEDONIAN_BALLISTA_NAME', 'LOC_UNIT_MACEDONIAN_BALLISTA_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '2', '23', 'TECH_STEEL', '2', 'TECH_ENGINEERING', '35', 'TRAIT_CIVILIZATION_UNIT_MACEDONIAN_BALLISTA'
 FROM   Types WHERE Type = 'UNIT_MACEDONIAN_BALLISTA';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '2', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MACEDONIAN_PEZHETAIROS_NAME', 'LOC_UNIT_MACEDONIAN_PEZHETAIROS_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_ANTI_CAVALRY', '1', '28', 'TECH_COMPOSITES', 'TECH_BRONZE_WORKING', 'TRAIT_CIVILIZATION_UNIT_MACEDONIAN_PEZHETAIROS'
 FROM   Types WHERE Type = 'UNIT_MACEDONIAN_PEZHETAIROS';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '4', '100', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_PERSIAN_CATAPHRACT_NAME', 'LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '2', '39', 'TECH_HORSEBACK_RIDING',  'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_PERSIAN_CATAPHRACT'
 FROM   Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_PERSIAN_CATAPHRACT';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_PERSIAN_CATAPHRACT';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '3', '65', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_SEA', 'FORMATION_CLASS_NAVAL', 'LOC_UNIT_PERSIAN_WARSHIP_NAME', 'LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'PROMOTION_CLASS_NAVAL_MELEE', '1', '25', 'TECH_STEAM_POWER', 'TECH_SAILING', 'TRAIT_CIVILIZATION_UNIT_PERSIAN_WARSHIP'
 FROM   Types WHERE Type = 'UNIT_PERSIAN_WARSHIP';
 
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '180', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME', 'LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '3', '55', 'TECH_GUNPOWDER',  'TECH_SATELLITES', 'TRAIT_CIVILIZATION_UNIT_POLISH_CHOSEN_INFANTRY'
 FROM   Types WHERE Type = 'UNIT_POLISH_CHOSEN_INFANTRY';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_POLISH_CHOSEN_INFANTRY';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_POLISH_CHOSEN_INFANTRY';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
 SELECT Type, '5', '330', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_POLISH_UHLAN_NAME', 'LOC_UNIT_POLISH_UHLAN_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '5', '62', 'TECH_MILITARY_SCIENCE', 'TRAIT_CIVILIZATION_UNIT_POLISH_UHLAN'
 FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_POLISH_UHLAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_POLISH_UHLAN';
+
+
 
 -- R&F/DLC Units
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '120', '3', '4', '2', 1, 'DOMAIN_LAND', '38', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_HEAVY_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME', 'LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION', 'YIELD_GOLD', 'TECH_BALLISTICS', 'TECH_HORSEBACK_RIDING', 'TRAIT_CIVILIZATION_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT'
 FROM   Types WHERE Type = 'UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT';
 
+
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, Name, Description, PurchaseYield, PrereqCivic, TraitType)
 SELECT Type, '100', '2', '3', '2', 1, 'DOMAIN_LAND', '35', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_MONK', 'LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME', 'LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION', 'YIELD_FAITH', 'CIVIC_THEOLOGY', 'TRAIT_CIVILIZATION_UNIT_INDONESIAN_KRIS_SWORDSMAN'
 FROM   Types WHERE Type = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
+
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, PseudoYieldType, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '65', '1', '3', '2', 1, 'DOMAIN_SEA', '25', 'FORMATION_CLASS_NAVAL', 'PROMOTION_CLASS_NAVAL_MELEE', 'ADVISOR_CONQUEST', 'LOC_UNIT_KHMER_WAR_CANOE_NAME', 'LOC_UNIT_KHMER_WAR_CANOE_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'TECH_STEAM_POWER', 'TECH_SAILING', 'TRAIT_CIVILIZATION_UNIT_KHMER_WAR_CANOE'
 FROM   Types WHERE Type = 'UNIT_KHMER_WAR_CANOE';
 
+
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, PseudoYieldType, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '240', '4', '5', '3', 1, 'DOMAIN_SEA', '55', 'FORMATION_CLASS_NAVAL', 'PROMOTION_CLASS_NAVAL_MELEE', 'ADVISOR_CONQUEST', 'LOC_UNIT_KOREAN_TURTLE_SHIP_NAME', 'LOC_UNIT_KOREAN_TURTLE_SHIP_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'TECH_COMBINED_ARMS', 'TECH_CARTOGRAPHY', 'TRAIT_CIVILIZATION_UNIT_KOREAN_TURTLE_SHIP'
 FROM   Types WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
+
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '120', '2', '2', '2', 1, 'DOMAIN_LAND', '55', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_MELEE', 'ADVISOR_CONQUEST', 'LOC_UNIT_DUTCH_SCHUTTERIJ_NAME', 'LOC_UNIT_DUTCH_SCHUTTERIJ_DESCRIPTION', 'YIELD_GOLD', 'TECH_ADVANCED_BALLISTICS', 'TECH_GUNPOWDER', 'TRAIT_CIVILIZATION_UNIT_DUTCH_SCHUTTERIJ'
 FROM   Types WHERE Type = 'UNIT_DUTCH_SCHUTTERIJ';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_DUTCH_SCHUTTERIJ';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_DUTCH_SCHUTTERIJ';
+
+
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat,  FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '180', '3', '4', '2', 1, 'DOMAIN_LAND', '48', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_HEAVY_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_GEORGIAN_TADZREULI_NAME', 'LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION', 'YIELD_FAITH', 'TECH_COMPOSITES', 'TECH_STIRRUPS', 'TRAIT_CIVILIZATION_UNIT_GEORGIAN_TADZREULI'
 FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI';
+
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_GEORGIAN_TADZREULI';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_GEORGIAN_TADZREULI';
+
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, PrereqTech, TraitType)
 SELECT Type, '330', '5', '5', '2', 1, 'DOMAIN_LAND', '62', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_LIGHT_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_CREE_OTEHTAPIW_NAME', 'LOC_UNIT_CREE_OTEHTAPIW_DESCRIPTION', 'YIELD_GOLD', 'TECH_MILITARY_SCIENCE', 'TRAIT_CIVILIZATION_UNIT_CREE_OTEHTAPIW'
 FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_CREE_OTEHTAPIW';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_CREE_OTEHTAPIW';
+
+
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, RangedCombat, Range, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '160', '2', '2', '2', 1, 'DOMAIN_LAND', '45', '33', '1', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_ANTI_CAVALRY', 'ADVISOR_CONQUEST', 'LOC_UNIT_MAPUCHE_GUERILLA_NAME', 'LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION', 'YIELD_GOLD', 'TECH_COMPOSITES', 'TECH_MILITARY_TACTICS', 'TRAIT_CIVILIZATION_UNIT_MAPUCHE_GUERILLA'
 FROM   Types WHERE Type = 'UNIT_MAPUCHE_GUERILLA';
+
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SCOTTISH_GALLOWGLASS_NAME', 'LOC_UNIT_SCOTTISH_GALLOWGLASS_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_MELEE', '2', '46', 'TECH_CASTLES', 'TECH_REPLACEABLE_PARTS', 'TRAIT_CIVILIZATION_UNIT_SCOTTISH_GALLOWGLASS'
 FROM   Types WHERE Type = 'UNIT_SCOTTISH_GALLOWGLASS';
 
+UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_SCOTTISH_GALLOWGLASS';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SCOTTISH_GALLOWGLASS';
+
+
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, Bombard, PrereqTech, MandatoryObsoleteTech, TraitType)
 SELECT Type,  '2', '200', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME', 'LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SIEGE', '3', '38', '2', '50', 'TECH_MILITARY_ENGINEERING', 'TECH_BALLISTICS', 'TRAIT_CIVILIZATION_UNIT_MONGOLIAN_HUI_HUI_PAO'
 FROM   Types WHERE Type = 'UNIT_MONGOLIAN_HUI_HUI_PAO';
 
+
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, RangedCombat, Range, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
 SELECT Type, '60', '1', '2', '2', 0, 'DOMAIN_LAND', '20', '25', '2', 'FORMATION_CLASS_LAND_COMBAT', 'PROMOTION_CLASS_RANGED', 'ADVISOR_CONQUEST', 'LOC_UNIT_ZULU_ASSEGAI_NAME', 'LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION', 'YIELD_GOLD', 'TECH_BALLISTICS', 'TECH_ARCHERY', 'TRAIT_CIVILIZATION_UNIT_ZULU_ASSEGAI'
 FROM   Types WHERE Type = 'UNIT_ZULU_ASSEGAI';
-
-
---INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType)
---INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount)
---INSERT INTO Units_XP2 (UnitType, ResourceCost) VALUES ('UNIT_GERMAN_PANZER', 20);
 
 
 -- Gathering Storm Units

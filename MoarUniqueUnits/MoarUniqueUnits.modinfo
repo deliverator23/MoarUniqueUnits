@@ -8,9 +8,15 @@
         <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
     <FrontEndActions>
+        <UpdateDatabase id="MUU_Config_UpdateDatabase_Settings">
+            <Properties>
+                <LoadOrder>3</LoadOrder>
+            </Properties>
+            <File>Data/MOARUniqueUnitsConfigUserSettings.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="MUU_Config_UpdateDatabase">
 			<Properties>
-				<LoadOrder>3</LoadOrder>
+				<LoadOrder>5</LoadOrder>
 			</Properties>
             <File>Data/MOARUniqueUnitsConfig.sql</File>
         </UpdateDatabase>
@@ -42,6 +48,12 @@
 		</UpdateArt>
     </FrontEndActions>
     <InGameActions>
+        <UpdateDatabase id="MUU_UpdateDatabase_Settings">
+            <Properties>
+                <LoadOrder>3</LoadOrder>
+            </Properties>
+            <File>Data/MOARUniqueUnitsUserSettings.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="MUU_UpdateDatabase">
 			<Properties>
 				<LoadOrder>5</LoadOrder>

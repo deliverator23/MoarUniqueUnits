@@ -1,0 +1,1 @@
+UPDATE EnabledUniqueUnits SET Enabled = 1;
