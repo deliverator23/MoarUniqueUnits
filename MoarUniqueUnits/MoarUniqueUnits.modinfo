@@ -92,7 +92,9 @@
 
 		<!-- Data -->
 		<File>Data/MOARUniqueUnits.sql</File>
+		<File>Data/MOARUniqueUnitsUserSettings.sql</File>
 		<File>Data/MOARUniqueUnitsConfig.sql</File>
+     	<File>Data/MOARUniqueUnitsConfigUserSettings.sql</File>
         <File>Data/MOARUniqueUnitsIcons.xml</File>
 
 		<!-- ArtDefs -->
