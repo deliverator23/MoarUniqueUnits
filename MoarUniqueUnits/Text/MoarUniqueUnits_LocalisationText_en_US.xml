@@ -1249,7 +1249,7 @@
 			<Text>HMCS Haida</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
-			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer.</Text>
+			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. </Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
 			<Text>Kalandozó</Text>
