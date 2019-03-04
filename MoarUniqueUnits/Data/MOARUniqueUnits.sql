@@ -524,6 +524,8 @@ WHERE EnabledUniqueUnits.Type = 'UNIT_ELEANOR_TEMPLAR'
 AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
 AND   EnabledUniqueUnits.Enabled = 1;
 
+UPDATE Units SET Combat = 46, Maintenance = 2, Cost = 160 WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR';
+
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
@@ -1394,6 +1396,10 @@ AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_INDIAN_SEPOY');
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SCOTTISH_GALLOWGLASS', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SCOTTISH_GALLOWGLASS');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ELEANOR_TEMPLAR', 'UNIT_DLV_LONGSWORDSMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR');
 
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_MONGOLIAN_HUI_HUI_PAO', 'UNIT_DLV_TREBUCHET'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_TREBUCHET')
