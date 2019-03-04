@@ -68,4 +68,4 @@ INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, Defau
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_OTTOMAN', 'UNIT_OTTOMAN_SIPAHI', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_PHOENICIA', 'UNIT_PHOENICIA_NUMIDIAN_CAVALRY', 1, 'UNIT_HORSEMAN', 'UNIT_CAVALRY', 'UNIT_HORSEMAN');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_SWEDEN', 'UNIT_SWEDEN_KRONAN', 1, 'UNIT_FRIGATE', 'UNIT_BATTLESHIP', 'UNIT_FRIGATE');
-INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('LEADER_ELEANOR_ENGLAND', 'UNIT_ELEANOR_TEMPLAR', 1, 'UNIT_SWORDSMAN', 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('LEADER_ELEANOR_ENGLAND', 'UNIT_ELEANOR_TEMPLAR', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
