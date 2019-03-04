@@ -1249,55 +1249,55 @@
 			<Text>HMCS Haida</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
-			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. </Text>
+			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. + [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
 			<Text>Kalandozó</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION">
-			<Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman.</Text>
+			<Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman. Double gold from pillaging Districts and Improvements. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_NAME">
 			<Text>Chasqui</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION">
-			<Text>Incan unique Ancient Era Recon unit replacing the Scout.</Text>
+			<Text>Incan unique Ancient Era Recon unit replacing the Scout. +1 extra movement and can build roads.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_NAME">
 			<Text>Sofa</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION">
-			<Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman.</Text>
+			<Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman.  +5 [ICON_Strength] vs damaged units. Adjacent Cavalry units receive +4 [ICON_Strength].</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
 			<Text>Toatupara</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
-			<Text>Maori unique Industrial Era Recon unit replacing the Ranger.</Text>
+			<Text>Maori unique Industrial Era Recon unit replacing the Ranger. Weaker than Ranger but can attack twice per turn. Can build Pa Improvement.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
 			<Text>Sipahi</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
-			<Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight.</Text>
+			<Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight. +100% flanking bonus and requires fewer movement points to pillage.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
 			<Text>Numidian Cavalry</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
-			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman.</Text>
+			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has 25 Ranged Strength with a Range of 1. Can move after attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
 			<Text>Kronan</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
-			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate.</Text>
+			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate. Combat +5 adjacent to another Naval Melee, Naval Raider or Naval Ranged unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
 			<Text>Templar</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
-			<Text>Unique unit for Eleanor of Aquitaine.</Text>
+			<Text>Unique unit for Eleanor of Aquitaine. +5 [ICON_Strength] Combat Strength when opponent is another religion. +5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC">
 			<Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text>
