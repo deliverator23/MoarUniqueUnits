@@ -521,7 +521,7 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_ELEANOR_TEMPLAR'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.UnitAiBaseUnit
 AND   EnabledUniqueUnits.Enabled = 1;
 
 UPDATE Units SET Combat = 46, Maintenance = 2, Cost = 160 WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR';
@@ -530,7 +530,7 @@ INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, Resour
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_ELEANOR_TEMPLAR'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.UnitAiBaseUnit
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
