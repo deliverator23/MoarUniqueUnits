@@ -139,15 +139,15 @@
 				<m_Name text="UNIT_OTTOMAN_SIPAHI"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
-			<Element>
+		<Element>
 				<m_Fields>
 					<m_Values>
 						<Element class="AssetObjects..ArtDefReferenceValue">
 							<m_ElementName text="Archer"/>
 							<m_RootCollectionName text="UnitFormationTypes"/>
 							<m_ArtDefPath text="Units.artdef"/>
-							<m_CollectionIsLocked>false</m_CollectionIsLocked>
-							<m_TemplateName text=""/>
+							<m_CollectionIsLocked>true</m_CollectionIsLocked>
+							<m_TemplateName text="Units"/>
 							<m_ParamName text="Formation"/>
 						</Element>
                         <Element class="AssetObjects:ArtDefReferenceValue">
@@ -167,7 +167,7 @@
 							<m_ParamName text="EscortFormation"/>
 						</Element>
 						<Element class="AssetObjects..ArtDefReferenceValue">
-							<m_ElementName text="UNIT_MODERNEMBARK"/>
+							<m_ElementName text="UNIT_ANCIENTEMBARK"/>
 							<m_RootCollectionName text="Units"/>
 							<m_ArtDefPath text="Units.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -175,7 +175,7 @@
 							<m_ParamName text="EmbarkedUnit"/>
 						</Element>
 						<Element class="AssetObjects..BoolValue">
-							<m_bValue>false</m_bValue>
+							<m_bValue>true</m_bValue>
 							<m_ParamName text="DoNotDisplayCharges"/>
 						</Element>
 						<Element class="AssetObjects..ArtDefReferenceValue">
@@ -238,32 +238,7 @@
 								</m_Values>
 							</m_Fields>
 							<m_ChildCollections/>
-							<m_Name text="Member2"/>
-							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
-						</Element>
-						<Element>
-							<m_Fields>
-								<m_Values>
-									<Element class="AssetObjects..FloatValue">
-										<m_fValue>1.000000</m_fValue>
-										<m_ParamName text="Scale"/>
-									</Element>
-									<Element class="AssetObjects..IntValue">
-										<m_nValue>3</m_nValue>
-										<m_ParamName text="Count"/>
-									</Element>
-									<Element class="AssetObjects..ArtDefReferenceValue">
-										<m_ElementName text="UnitMember_Tupara"/>
-										<m_RootCollectionName text="UnitMemberTypes"/>
-										<m_ArtDefPath text="Units.artdef"/>
-										<m_CollectionIsLocked>true</m_CollectionIsLocked>
-										<m_TemplateName text="Units"/>
-										<m_ParamName text="Type"/>
-									</Element>
-								</m_Values>
-							</m_Fields>
-							<m_ChildCollections/>
-							<m_Name text="Member1"/>
+							<m_Name text="Members001"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
 					</Element>
@@ -274,7 +249,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..StringValue">
-										<m_Value text="Ranger"/>
+										<m_Value text="SakaHorseArcher"/>
 										<m_ParamName text="XrefName"/>
 									</Element>
 								</m_Values>
@@ -283,10 +258,6 @@
 							<m_Name text="RANGER"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
-					</Element>
-					<Element>
-						<m_CollectionName text="AttachmentVisibility"/>
-						<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
 					</Element>
 				</m_ChildCollections>
 				<m_Name text="UNIT_MAORI_TUPARA"/>
@@ -753,7 +724,7 @@
 										<m_ParamName text="Count"/>
 									</Element>
 									<Element class="AssetObjects..ArtDefReferenceValue">
-										<m_ElementName text="UnitMember_Tupara"/>
+										<m_ElementName text="UnitMember_Kalandozo"/>
 										<m_RootCollectionName text="UnitMemberTypes"/>
 										<m_ArtDefPath text="Units.artdef"/>
 										<m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -38117,7 +38088,7 @@
 									</Element>
 								</Element>
 							</m_ChildCollections>
-							<m_Name text="Any"/>
+							<m_Name text="Maori"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
 					</Element>
