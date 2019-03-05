@@ -1,7 +1,3 @@
-DROP TRIGGER OnTypeInsert;
-CREATE TRIGGER OnTypeInsert AFTER INSERT ON Types BEGIN UPDATE Types SET Hash = random() Where Type = New.Type; END;
-PRAGMA foreign_keys = ON;
-
 -- Disable UUs for Civilizations that are not present (DLC)
 UPDATE EnabledUniqueUnits SET Enabled = 0
 WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.OwnerType)
