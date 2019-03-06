@@ -825,8 +825,8 @@
 		<Replace Language="fr_FR" Tag="LOC_UNIT_AUSTRALIAN_SASR_NAME">
 			<Text>S.A.S.R.</Text>
 		</Replace>
-		<Replace Language="fr_FR" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION">
-			<Text>Unique Aztec melee unit that replaces Swordsman. +7 [ICON_Strength] Combat Strength when attacking and -7 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest.</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION">
+			<Text>Unique Aztec melee unit that replaces Swordsman. +10 [ICON_Strength] Combat Strength when attacking and -5 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest.</Text>
 		</Replace>
 		<Replace Language="fr_FR" Tag="LOC_UNIT_AZTEC_JAGUAR_NAME">
 			<Text>Jaguar Warrior</Text>

@@ -826,7 +826,7 @@
 			<Text>S.A.S.R.</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION">
-			<Text>剣士に取ってかわるアステカ固有の古典時代の近接戦闘ユニット。攻撃時に [ICON_Strength] 戦闘力+7、防御時に [ICON_Strength] 戦闘力-7。捕獲した軍事ユニットを労働者として使える。森林と熱帯雨林で移動ペナルティを負わない。</Text>
+			<Text>剣士に取ってかわるアステカ固有の古典時代の近接戦闘ユニット。攻撃時に [ICON_Strength] 戦闘力+10、防御時に [ICON_Strength] 戦闘力-5。捕獲した軍事ユニットを労働者として使える。森林と熱帯雨林で移動ペナルティを負わない。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_AZTEC_JAGUAR_NAME">
 			<Text>ジャガー戦士</Text>

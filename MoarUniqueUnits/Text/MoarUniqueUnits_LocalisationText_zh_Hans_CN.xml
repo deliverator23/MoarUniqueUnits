@@ -826,7 +826,7 @@
 			<Text>特别空勤团</Text>
 		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION">
-			<Text>阿兹特克古典时期特色近战单位，替换剑士。攻击时+7战斗力[ICON_Strength]但防御时-7战斗力[ICON_Strength]。可将俘虏转为建造者。忽略森林和雨林地格的移动惩罚。</Text>
+			<Text>阿兹特克古典时期特色近战单位，替换剑士。攻击时+10战斗力[ICON_Strength]但防御时-5战斗力[ICON_Strength]。可将俘虏转为建造者。忽略森林和雨林地格的移动惩罚。</Text>
 		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AZTEC_JAGUAR_NAME">
 			<Text>美洲虎战士</Text>
