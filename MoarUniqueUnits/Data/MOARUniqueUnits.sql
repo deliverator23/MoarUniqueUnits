@@ -1593,7 +1593,7 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
   FROM   Types WHERE Type = 'UNIT_OTTOMAN_SIPAHI';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
-  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Numidian_Cavalry_HM.dds'
+  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Numidian_HM.dds'
   FROM   Types WHERE Type = 'UNIT_PHOENICIA_NUMIDIAN_CAVALRY';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
