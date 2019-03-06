@@ -1236,9 +1236,6 @@
 		<Replace Language="ja_JP" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
 			<Text>{ActingPlayerCivName}以外のどの文明が{UnitType}を作れるだろう？ ひとたび完成すれば、抵抗できる者など存在するまい。</Text>
 		</Replace>
-		<Replace Language="ja_JP" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
-			<Text>{ResourceType}を手に入れたことで、いよいよ{UnitType}を用いることができるようになった！</Text>
-		</Replace>
 
 		<!-- Appendix -->
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">

@@ -1236,11 +1236,5 @@
 		<Replace Language="zh_Hans_CN" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
 			<Text>我们的{UnitType}是{ActingPlayerCivName}新的特色单位。难道地球上没有平等吗？</Text>
 		</Replace>
-		<Replace Language="zh_Hans_CN" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
-			<Text>由于我们现在已经有了{ResourceType}的供应，所以我们第一次可以在{UnitType}中进行字段的字段的输入!</Text>
-		</Replace>
-		<Replace Language="zh_Hans_CN" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
-			<Text>因为我们现在有了{ResourceType}的供应，所以我们第一次能够保护{UnitType}!</Text>
-		</Replace>
 	</LocalizedText>
 </GameData>

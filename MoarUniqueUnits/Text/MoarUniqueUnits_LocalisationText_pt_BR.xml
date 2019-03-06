@@ -1236,8 +1236,5 @@
 		<Replace Language="pt_BR" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
 			<Text>Our new {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
 		</Replace>
-		<Replace Language="pt_BR" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_REQUIRING_STRATEGIC_IN_WORLD_INSTANCE_DESCRIPTION">
-			<Text>Since we now have a supply of {ResourceType} we are able to field the {UnitType} for the first time!</Text>
-		</Replace>
 	</LocalizedText>
 </GameData>
