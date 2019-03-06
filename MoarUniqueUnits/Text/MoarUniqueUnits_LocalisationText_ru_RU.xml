@@ -1234,8 +1234,5 @@
 		<Replace Language="ru_RU" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC">
 			<Text>+4 [ICON_Strength] к боевой мощи другим подразделением Ассегай.</Text>
 		</Replace>
-		<Replace Language="ru_RU" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
-			<Text>Наш новый {UnitType} уникален для {ActingPlayerCivName}. Неужели он не имеет равных по всей земле?</Text>
-		</Replace>
 	</LocalizedText>
 </GameData>

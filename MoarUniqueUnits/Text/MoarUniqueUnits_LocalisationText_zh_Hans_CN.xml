@@ -1233,8 +1233,5 @@
 		<Replace Language="zh_Hans_CN" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC">
 			<Text>与其他长矛勇士两两相邻时+4战斗力[ICON_Strength]。</Text>
 		</Replace>
-		<Replace Language="zh_Hans_CN" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
-			<Text>我们的{UnitType}是{ActingPlayerCivName}新的特色单位。难道地球上没有平等吗？</Text>
-		</Replace>
 	</LocalizedText>
 </GameData>

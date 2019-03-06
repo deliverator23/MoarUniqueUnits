@@ -1233,8 +1233,5 @@
 		<Replace Language="ko_KR" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC">
 			<Text>+4 [ICON_Strength] Combat Strength next to Assegai Warrior unit.</Text>
 		</Replace>
-		<Replace Language="ko_KR" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
-			<Text>Our new {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
-		</Replace>
 	</LocalizedText>
 </GameData>

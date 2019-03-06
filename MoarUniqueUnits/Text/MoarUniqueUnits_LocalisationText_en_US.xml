@@ -1239,9 +1239,6 @@
 		<Replace Language="en_US" Tag="RECEIVE_HUI_HUI_PAO_BONUS_DESC">
 			<Text>+5 [ICON_Strength] District defenders fear the adjacent Hui Hui Pao!</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_MOMENT_UNIT_CREATED_FIRST_UNIQUE_INSTANCE_DESCRIPTION">
-			<Text>Our new {UnitType} is unique to {ActingPlayerCivName}. Surely it has no equal in all the earth?</Text>
-		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME">
 			<Text>HMCS Haida</Text>
 		</Replace>
