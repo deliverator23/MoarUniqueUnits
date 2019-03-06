@@ -299,7 +299,7 @@
 							<m_ParamName text="EmbarkedUnit"/>
 						</Element>
 						<Element class="AssetObjects:BoolValue">
-							<m_bValue>false</m_bValue>
+							<m_bValue>true</m_bValue>
 							<m_ParamName text="DoNotDisplayCharges"/>
 						</Element>
 						<Element class="AssetObjects:ArtDefReferenceValue">
