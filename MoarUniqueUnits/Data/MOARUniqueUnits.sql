@@ -499,7 +499,7 @@ AND    EnabledUniqueUnits.Enabled = 1;
 
 
 INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
-SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 3, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 3, RangedCombat + 3, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_SWEDEN_KRONAN'
 AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
@@ -629,7 +629,7 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BO
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_DOUBLEPILLAGEIMPROVE', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_DOUBLEPILLAGEDISTRICT', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'KIND_ABILITY');
-INSERT INTO Types (Type, Kind) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS', 'KIND_ABILITY');
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_EQUITE_ADJACENCY_BONUS', 'KIND_ABILITY');
@@ -752,7 +752,7 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_LESS_MOVEMENT_PILLAGE', 'CLASS
 
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MOVE_AFTER_ATTACKING', 'CLASS_PHOENICIA_NUMIDIAN_CAVALRY');
 
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS', 'CLASS_SWEDEN_KRONAN');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'CLASS_SWEDEN_KRONAN');
 
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS', 'CLASS_ELEANOR_TEMPLAR');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'CLASS_ELEANOR_TEMPLAR');
@@ -847,7 +847,7 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_DOUBLEPILLAGEIMPROVE', 'LOC_ABILITY_DOUBLEPILLAGEIMPROVE_NAME', 'LOC_ABILITY_DOUBLEPILLAGEIMPROVE_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_DOUBLEPILLAGEDISTRICT', 'LOC_ABILITY_DOUBLEPILLAGEDISTRICT_NAME', 'LOC_ABILITY_DOUBLEPILLAGEDISTRICT_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_NAME', 'LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION');
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS', 'LOC_ABILITY_KRONAN_ADJACENCY_BONUS_NAME', 'LOC_ABILITY_KRONAN_ADJACENCY_BONUS_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'LOC_ABILITY_KRONAN_ADJACENCY_BONUS_NAME', 'LOC_ABILITY_KRONAN_ADJACENCY_BONUS_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_NAME', 'LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESCRIPTION');
 
 
@@ -890,14 +890,14 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJA
 
 --GS
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_SOFA_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_FRIENDLY_SHIP_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 
 
 --Requirements
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_COLONIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_HOLY_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_RECONQUEST_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
@@ -915,27 +915,25 @@ INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('UNIT
 
 --DLC
 INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS', 'REQUIREMENT_PLOT_DISTRICT_IS_DEFENDED', 1);
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT', 'REQUIREMENT_PLOT_HAS_ANY_DISTRICT', 1);
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 
 -- R&F/DLC
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_GRASS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
 
 --GS
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RAIDER_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_MELEE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES');
 
 
 --RequirementArguments
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'Tag', 'CLASS_KONGO_MEDICINE_MAN');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'Tag', 'CLASS_NORWEGIAN_ULFHEDNAR');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'Tag', 'CLASS_CHINESE_SHIGONG');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'UnitType', 'UNIT_KONGO_MEDICINE_MAN');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'UnitType', 'UNIT_NORWEGIAN_ULFHEDNAR');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'UnitType', 'UNIT_CHINESE_SHIGONG');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'MinimumAmount', '1');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'TerrainType', 'TERRAIN_PLAINS_HILLS');
@@ -951,19 +949,17 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'UnitType', 'UNIT_WARRIOR');
 
 --DLC
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'Tag', 'CLASS_AZTEC_WARRIOR_PRIEST');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'Tag', 'CLASS_PERSIAN_WARSHIP');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'UnitType', 'UNIT_AZTEC_WARRIOR_PRIEST');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'UnitType', 'UNIT_PERSIAN_WARSHIP');
 
 -- R&F/DLC
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'Tag', 'CLASS_KHMER_WAR_CANOE');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'UnitType', 'UNIT_KHMER_WAR_CANOE');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_GRASS', 'TerrainType', 'TERRAIN_GRASS');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'Tag', 'CLASS_MONGOLIAN_HUI_HUI_PAO');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'UnitType', 'UNIT_MONGOLIAN_HUI_HUI_PAO');
 
 --GS
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'Tag', 'CLASS_MALI_SOFA');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'Tag', 'CLASS_NAVAL_RANGED');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_MELEE_REQUIREMENT', 'Tag', 'CLASS_NAVAL_MELEE');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RAIDER_REQUIREMENT', 'Tag', 'CLASS_NAVAL_RAIDER');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'UnitType', 'UNIT_MALI_SOFA');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'UnitType', 'UNIT_SWEDEN_KRONAN');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'DistrictType', 'DISTRICT_HOLY_SITE');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MaxRange', '4');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MinRange', '0');
@@ -1027,9 +1023,7 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
 
 -- GS
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SOFA_REQUIREMENTS', 'ADJACENT_FRIENDLY_SOFA_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_SHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_SHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_MELEE_REQUIREMENT');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_SHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_RAIDER_REQUIREMENT');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS', 'PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT');
 
 
@@ -1092,8 +1086,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_SOFA_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_SOFA_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'CREEPING_ATTACK_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_IN_FORMATION_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'CONVOY_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_FRIENDLY_SHIP_REQUIREMENTS');
-
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS');
 
 
@@ -1195,7 +1188,7 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DOUBLEPILLAGEDISTRICT', 'SACK_DOUBLEPILLAGEDISTRICT');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DOUBLEPILLAGEIMPROVE', 'TOTALWAR_DOUBLEPILLAGEIMPROVE');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'PLUS_X_IN_FORMATION_BONUS');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS', 'PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'PLUS_X_HOLY_SITE_PROXIMITY_BONUS');
 
 --ModifierStrings
@@ -1239,7 +1232,7 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('RECEIVE_HUI_HUI
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('RECEIVE_SOFA_BONUS', 'Preview', '+{1_Amount} {RECEIVE_SOFA_BONUS_DESC}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS', 'Preview', '+{1_Amount} {PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_IN_FORMATION_BONUS', 'Preview', '+{1_Amount} {PLUS_X_IN_FORMATION_BONUS_DESC}');
-INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS', 'Preview', '+{1_Amount} {PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS_DESC}');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS', 'Preview', '+{1_Amount} {PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'Preview', '+{1_Amount} {PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC}');
 
 
@@ -1314,7 +1307,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_HUI_HUI
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_SOFA_BONUS', 'Amount', '4');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS', 'Amount', '10');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_IN_FORMATION_BONUS', 'Amount', '5');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS', 'Amount', '5');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS', 'Amount', '5');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'Amount', '5');
 
 
