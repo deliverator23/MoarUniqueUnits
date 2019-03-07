@@ -1302,8 +1302,8 @@
 		<Replace Language="en_US" Tag="PLUS_X_IN_FORMATION_BONUS_DESC">
 			<Text>[ICON_Strength] Combat Strength when in formation.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="PLUS_X_ADJACENT_FRIENDLY_SHIP_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength when adjacent to another Naval unit.</Text>
+		<Replace Language="en_US" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength when adjacent to another Kronan unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC">
 			<Text>[ICON_Strength] Combat Strength within 4 tiles of a Holy Site.</Text>
