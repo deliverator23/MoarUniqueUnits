@@ -1233,6 +1233,210 @@
 		<Replace Language="ja_JP" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC">
 			<Text>イシジュラ戦士に隣接しているため [ICON_Strength] 戦闘力+4</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME">
+			<Text>HMCS Haida</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
+			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. + [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
+			<Text>Kalandozó</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION">
+			<Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman. Double gold from pillaging Districts and Improvements. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_NAME">
+			<Text>Chasqui</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION">
+			<Text>Incan unique Ancient Era Recon unit replacing the Scout. +1 extra movement and can build roads.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_NAME">
+			<Text>Sofa</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION">
+			<Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman.  +5 [ICON_Strength] vs damaged units. Adjacent Cavalry units receive +4 [ICON_Strength].</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
+			<Text>Toatupara</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
+			<Text>Maori unique Industrial Era Recon unit replacing the Ranger. Weaker than Ranger but can attack twice per turn. Can build Pa Improvement.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
+			<Text>Sipahi</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
+			<Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight. +100% flanking bonus and requires fewer movement points to pillage.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
+			<Text>Numidian Cavalry</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
+			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has 25 Ranged Strength with a Range of 1. Can move after attacking.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
+			<Text>Kronan</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
+			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate. Combat +5 adjacent to another Kronan unit.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
+			<Text>Templar</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
+			<Text>Unique unit for Eleanor of Aquitaine. +5 [ICON_Strength] Combat Strength when opponent is another religion. +5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength vs Naval Raider class.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_IN_FORMATION_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength when in formation.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength when adjacent to another Kronan unit.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC">
+			<Text>[ICON_Strength] Combat Strength within 4 tiles of a Holy Site.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_1">
+			<Text>HMCS Haida is a Tribal-class destroyer that served in the Royal Canadian Navy (RCN) from 1943 to 1963, participating in World War II and the Korean War. She was named after the Haida people. The only surviving Tribal-class destroyer out of 27 vessels constructed for the RCN, Royal Navy and Royal Australian Navy between 1937 and 1945, Haida sank more enemy surface tonnage than any other Canadian warship and as such is commonly referred to as the "Fightingest Ship in the Royal Canadian Navy". Designated a National Historic Site of Canada in 1984, she now serves as a museum ship berthed next to HMCS Star, an active Royal Canadian Naval Reserve Division, in Hamilton, Ontario. In 2018, Haida was designated the ceremonial flagship of the RCN.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_1">
+			<Text>The Hungarian invasions of Europe (kalandozások in Hungarian) took place in the ninth and tenth centuries, the period of transition in the history of Europe in the Early Middle Ages, when the territory of the former Carolingian Empire was threatened by invasion from multiple hostile forces, the Magyars (Hungarians) from the east, the Viking expansion from the north and the Arabs from the south.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_2">
+			<Text>The Magyars successfully conquered the Pannonian Basin (i.e. what is now Hungary) by the end of the ninth century, and launched a number of plundering raids both westward into former Francia and southward into the Byzantine Empire. The westward raids were stopped only with the Magyar defeat of the Battle of Lechfeld of 955, which led to a new political order in Western Europe centered on the Holy Roman Empire. The raids in to Byzantine territories continued throughout the 10th century, until the eventual Christianisation of the Magyars and the establishment of the Christian Kingdom of Hungary in 1000 or 1001.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_1">
+			<Text>The Chasquis were the messengers of the Inca empire. Agile, highly trained and physically fit, they were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system. Chasquis were not just messengers (those were young boys who were just used to pass along basic information), the chasquis were trained to be able to read and translate the quipus to each other and higher authorities. Not only were they used to transport oral messages, but they also helped the inspector general, the Sapa Inka's brother, keep track of the people in the empire.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_2">
+			<Text>Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. On the coast of what is now Peru their route ran from Nazca to Tumbes. Chasqui routes also extended into further reaches of the empire into parts of what are now Colombia, Bolivia, Argentina, and Chile.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_3">
+			<Text>Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. There were different sizes and levels of tambos and each one was assigned a different use. The use of the tambo depended on what route it was on and who was allowed to use it, but the majority of them were just to pass the messages along because there were other structures that the chasquis used for rest and shelter called chaskiwasis. Chasquis would start at one tambo and run to the next tambo where a rested chasqui was waiting to carry the message to the next tambo.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_1">
+			<Text>Sofa is a Mandinka term for slave soldiers who served in the army of the Mali Empire. Sofas would also fight, in varying capacities, in the armies of later Mandé states such as the Bamana and Wassoulou empires. The word sofa translates into English as "father of the horse" ("so" means horse, and "fa" means "father") or "guardian of the horse". This term stems from the original function of the sofa as a caretaker for the horse or horses of Mandinka cavalry commanders called "farari".</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_2">
+			<Text>Sofas make their first appearance in oral and written records during the formation of the Mali Empire. Sofas were recruited from "jonow" (slaves) captured in battle or bought from afar. They could be depended on in most instances for obedience, since their livelihood depended entirely on their master. The institution of slavery in the Mali Empire heavily rewarded loyalty, and jonow could rise to civil or military positions of prominence. Jonow became part of their master's clan, and were often freed after a certain number of years. As part of the clan, jonow were expected to accompany their master's into battle and handle his horse and weapons. Initially forbidden from engaging in direct warfare, sofa eventually made up the majority of Mali's infantry army. As infantry, they were armed with bows and arrows by the state or, more accurately, royal clans devoted to the state.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_3">
+			<Text>In the forest and swampy areas of the Mali Empire, cavalry was minimized or altogether abandoned making sofas the exclusive instrument of war. Sofas were equipped with two quivers, and their bow was small by European standards. It could not fire very far or even powerfully, so sofas utilized deadly poisons and fired in arcs to give the arrows strength. Sofas also used flaming arrows, especially against fortifications that were often little more than thatch or wooden palisades.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_1">
+			<Text>Maori often preferred the double-barreled tupara (two barrel), shotguns loaded with musket balls, as they could fire twice before reloading.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_1">
+			<Text>The Sipahi were the lancers of the Ottoman Empire. Founded during the reign of Murad I (ruled 1362 – 1389), the sipahi were drawn from the ethnic Turk landed gentry. They were extremely highly motivated and loyal fighters and were the sultan's personal bodyguard. The sipahi were great rivals of the Janissaries (another special Ottoman unit), who were drawn from both Turkish and non-Turkish soldiers. In fact the sipahi enthusiastically assisted in the violent disbandment of the Janissaries in 1826, following an unsuccessful revolt by the latter group.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_1">
+			<Text>Numidia was a Berber kingdom located in northern Africa to the west of Carthage. Originally nomadic tribesmen and well-versed in horsemanship, the Numidians were most famous for their cavalry, which was considered to be among the finest in the ancient world. These warriors were lightly-armed - riding on swift horses equipped with nothing more than a small shield and a fistful of javelins - but very tough customers nonetheless. Even after settling down in cities, the Numidians remained enamored with the horse warriors - the Numidians did eventually produce infantry, but it was always regarded as unreliable and substantially inferior to the cavalry.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_2">
+			<Text>Numidian cavalry specialized in hit-and-run attacks, making excellent use of their javelins to harass and break up enemy formations. They were never intended to close with the enemy and fight hand-to-hand. Roman commanders were initially skeptical of the threat posed by such lightly armed cavalry, but they soon learned of the danger caused by a force that constantly would attack, retreat and regroup, and then attack again, always remaining out of range of melee weapons. Ancient authors compare the Numidian cavalry to a pack of dogs, because of the way that they savaged the flanks and rear of enemy formations. It required strict discipline for opposing infantry not to break ranks when they came under attack from Numidian cavalry, but in time the Romans learned from their mistakes and became more adept at combating them.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_3">
+			<Text>Numidian cavalry was not the fastest, but since the riders wore no armor, they were nimbler than the opposition of the day and able to traverse terrain too difficult for heavier cavalry. Numidian cavalry is most famous for serving in Hannibal's cavalry wing during the Second Punic War. However, they were also employed by the Romans as mercenaries as well. Julius Caesar deployed Numidians during his campaigns - and also fought against them during the Roman Civil War. In short, Numidian cavalry was highly prized and among the best light cavalry in the ancient world.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_1">
+			<Text>Kronan, also called Stora Kronan, was a Swedish warship that served as the flagship of the Swedish Navy in the Baltic Sea in the 1670s. When built, she was one of the largest seagoing vessels in the world. The construction of Kronan lasted from 1668 to 1672 and was delayed by difficulties with financing and conflicts between the shipwright Francis Sheldon and the Swedish admiralty. After four years of service, the ship foundered in rough weather at the Battle of Öland on 1 June 1676: while making a sharp turn under too much sail she capsized, and the gunpowder magazine ignited and blew off most of the bow. Kronan sank quickly, taking about 800 men and more than 100 guns with her, along with valuable military equipment, weapons, personal items, and large quantities of silver and gold coins.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_2">
+			<Text>The loss of Kronan was a hard blow for Sweden during the Scanian War. Besides being the largest and most heavily armed ship in the Swedish Navy, she had been an important status symbol for the monarchy of the young Charles XI. Along with Kronan, the navy lost a sizeable proportion of its best manpower, acting supreme commander Lorentz Creutz, numerous high-ranking fleet officers, and the chief of the navy medical staff. A commission was set up to investigate whether any individuals could be held responsible for the Swedish fiasco at the Battle of Öland and other major defeats during the war. Although no one was officially held accountable, Creutz has been blamed by many historians for the sinking of Kronan because of his naval and command inexperience. Recent research has provided a more nuanced picture, and points to Sweden's general lack of a well-developed naval organization and officer corps at the time.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_3">
+			<Text>Most of the guns that sank with Kronan were salvaged in the 1680s, but eventually the wreck fell into obscurity. Its exact position was rediscovered in 1980 by the amateur researcher Anders Franzén, who had also located the 17th-century warship Vasa in the 1950s. Yearly diving operations have since surveyed and excavated the wreck site and salvaged artifacts, and Kronan has become the most widely publicized shipwreck in the Baltic after Vasa. More than 30,000 artifacts have been recovered, and many have been conserved and put on permanent public display at the Kalmar County Museum in Kalmar. The museum is responsible for the maritime archaeological operations and the permanent exhibitions on Kronan.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_1">
+			<Text>The Knights Templar was a holy order devoted to defending the fledgling crusader states founded during the First Crusade against Muslim reconquest. The king of Jerusalem allowed them to make their headquarters in the main temple of Jerusalem, from which they took their name. In exchange for this hospitality they swore allegiance to the throne of Jerusalem. They participated in several major battles and did very well; this increased their numbers substantially. Eventually their power grew so much -- to the point where they could field an army of almost 10,000 knights and still uphold their promises to garrison individual towns -- that the Pope decided to place them under his direct control.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_2">
+			<Text>Templar valor in the Holy Land resulted in many rewards back in Europe; knights who fought under the red cross and white field of the Templars often found themselves with new estates and castles in their native countries. As a result the order became fantastically wealthy, as the Grandmasters shrewdly invested the order's wealth, using plunder to buy goods and sell them throughout the Mediterranean.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_3">
+			<Text>Kings, however, often become jealous of wealthy organizations over which they have little or no control. The French king Philip IV, his treasury emptied and his debts monstrous from constant warfare, accused the Templars of heresy and blasphemy, and confiscated almost all of their wealth in France. Other monarchs followed suit, embarking on a program of persecution and repression whose goal was mostly to secure the Templars' money for themselves. Hundreds of Templars gave false confessions of heresy under torture, and others were burned at the stake. The order died out completely in the early 14th century when the entire Templar leadership had been murdered.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Replace>
 
 		<!-- Appendix -->
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">
