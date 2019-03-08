@@ -62,7 +62,7 @@ INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, Defau
 -- GS Uniques
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_CANADA', 'UNIT_CANADA_HMCS_HAIDA', 1, 'UNIT_DESTROYER', NULL, 'UNIT_DESTROYER');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_HUNGARY', 'UNIT_HUNGARY_KALANDOZO', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
-INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INCA', 'UNIT_INCA_CHASQUI', 1, 'UNIT_SCOUT', 'UNIT_RANGER', 'UNIT_SCOUT');
+INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_INCA', 'UNIT_INCA_CHASQUI', 1, 'UNIT_SCOUT', 'UNIT_INCA_WARAKAQ', 'UNIT_SCOUT');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MALI', 'UNIT_MALI_SOFA', 1, 'UNIT_CROSSBOWMAN', 'UNIT_FIELD_CANNON', 'UNIT_CROSSBOWMAN');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAORI', 'UNIT_MAORI_TUPARA', 1, 'UNIT_RANGER', NULL, 'UNIT_RANGER');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_OTTOMAN', 'UNIT_OTTOMAN_SIPAHI', 1, 'UNIT_KNIGHT', 'UNIT_TANK', 'UNIT_KNIGHT');
