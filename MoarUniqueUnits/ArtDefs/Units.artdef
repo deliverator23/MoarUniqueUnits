@@ -2855,7 +2855,7 @@
 							<m_ParamName text="Formation"/>
 						</Element>
 						<Element class="AssetObjects:ArtDefReferenceValue">
-							<m_ElementName text="Archer"/>
+							<m_ElementName text=""/>
 							<m_RootCollectionName text="UnitCombat"/>
 							<m_ArtDefPath text="Units.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -36832,22 +36832,22 @@
 			<Element>
 				<m_Fields>
 					<m_Values>
-						<Element class="AssetObjects:ArtDefReferenceValue">
-							<m_ElementName text="Cavalry"/>
-							<m_RootCollectionName text="UnitMovementTypes"/>
-							<m_ArtDefPath text="Units.artdef"/>
-							<m_CollectionIsLocked>true</m_CollectionIsLocked>
-							<m_TemplateName text="Units"/>
-							<m_ParamName text="Movement"/>
-						</Element>
-						<Element class="AssetObjects:ArtDefReferenceValue">
-							<m_ElementName text="ArcherCombat"/>
-							<m_RootCollectionName text="MemberCombat"/>
-							<m_ArtDefPath text="Units.artdef"/>
-							<m_CollectionIsLocked>true</m_CollectionIsLocked>
-							<m_TemplateName text="Units"/>
-							<m_ParamName text="Combat"/>
-						</Element>
+                        <Element class="AssetObjects:ArtDefReferenceValue">
+                            <m_ElementName text="Crossbowman"/>
+                            <m_RootCollectionName text="UnitMovementTypes"/>
+                            <m_ArtDefPath text="Units.artdef"/>
+                            <m_CollectionIsLocked>true</m_CollectionIsLocked>
+                            <m_TemplateName text=""/>
+                            <m_ParamName text="Movement"/>
+                        </Element>
+                        <Element class="AssetObjects:ArtDefReferenceValue">
+                            <m_ElementName text="CrossbowmanCombat"/>
+                            <m_RootCollectionName text="MemberCombat"/>
+                            <m_ArtDefPath text="Units.artdef"/>
+                            <m_CollectionIsLocked>true</m_CollectionIsLocked>
+                            <m_TemplateName text=""/>
+                            <m_ParamName text="Combat"/>
+                        </Element>
 						<Element class="AssetObjects:ArtDefReferenceValue">
 							<m_ElementName text="MEAT"/>
 							<m_RootCollectionName text="MaterialTypes"/>
