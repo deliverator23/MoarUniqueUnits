@@ -1273,7 +1273,7 @@
 			<Text>Numidian Cavalry</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
-			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has 25 Ranged Strength with a Range of 1. Can move after attacking.</Text>
+			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has Ranged Attack. Can move after attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
 			<Text>Kronan</Text>
