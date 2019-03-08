@@ -520,7 +520,7 @@ WHERE EnabledUniqueUnits.Type = 'UNIT_ELEANOR_TEMPLAR'
 AND   Units.UnitType = EnabledUniqueUnits.UnitAiBaseUnit
 AND   EnabledUniqueUnits.Enabled = 1;
 
-UPDATE Units SET Combat = 46, Maintenance = 2, Cost = 160 WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR';
+UPDATE Units SET Combat = 46, Maintenance = 2, Cost = 160, PrereqTech = 'TECH_CASTLES', MandatoryObsoleteTech = 'TECH_REPLACEABLE_PARTS', PurchaseYield = 'YIELD_FAITH' WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR';
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
