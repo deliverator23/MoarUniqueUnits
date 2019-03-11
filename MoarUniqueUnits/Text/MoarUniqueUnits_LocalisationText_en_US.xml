@@ -1243,7 +1243,7 @@
 			<Text>HMCS Haida</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
-			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. + [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile.</Text>
+			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. +5 [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
 			<Text>Kalandozó</Text>
