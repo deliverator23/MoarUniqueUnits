@@ -1,10 +1,10 @@
 <GameData>
 	<LocalizedText>
 		<Replace Language="ko_KR" Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION">
-			<Text>Your light and heavy cavalry units have +5 [ICON_Strength] Strength when fighting on hill tiles. May build Janissary unit.</Text>
+			<Text>경기병 및 중기병유닛이 언덕 위에서 전투를 할 때 [ICON_Strength] 전투력 +5를 획득합니다. 용병 예니체리를 훈련 할 수 있게 됩니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_LEADER_TRAIT_YEREVAN_DESCRIPTION">
-			<Text>Your Apostle units can choose from any possible promotion instead of receiving a random promotion. May build Janissary unit.</Text>
+			<Text>사도는 무작위진급이 아닌, 원하는진급을 선택할 수 있게 됩니다. 용병 예니체리를 훈련 할 수 있게 됩니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_JANISSARY_CHAPTER_HISTORY_PARA_1">
 			<Text>Devshirme (literally "lifting" or "collecting") was chiefly the practice whereby the Ottoman Empire sent military officers to take boys, ages 8 to 18, from their families in order that they be raised to serve the state. This tax of sons was imposed only on the Christian subjects of the empire. The boys were then converted to Islam with the primary objective of selecting and training the ablest children and teenagers for the military or civil service of the empire, notably into the Janissaries.</Text>
@@ -787,654 +787,654 @@
 			<Text />
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_PROMOTION_HUNTER_DESCRIPTION">
-			<Text>+5 [ICON_Ranged] Ranged Strength vs. land units and +5 [ICON_Strength] Combat Strength when attacking non-District tiles.</Text>
+			<Text>지상유닛을 상대시 [ICON_Ranged] 원거리 전투력 +5를 얻으며, 추가로 공격이 불가능한 특수지구 위에 위치한 적을 상대시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_PROMOTION_HUNTER_NAME">
-			<Text>Hunter</Text>
+			<Text>사냥꾼</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_RESOURCE_JANISSARY_NAME">
-			<Text>Devshirme</Text>
+			<Text>데브시르메 징수제도</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AMERICAN_AH64_APACHE_DESCRIPTION">
-			<Text>American unique Atomic Era Light Cavalry unit. +10 [ICON_Strength] Combat Strength versus Heavy Cavalry units.</Text>
+			<Text>미국 특유의 원자시대 경기병 유닛입니다. 중기병 유닛을 상대시 [ICON_Strength] 전투력 +10을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AMERICAN_AH64_APACHE_NAME">
-			<Text>AH-64 Apache</Text>
+			<Text>AH-64 아파치</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_DESCRIPTION">
-			<Text>American unique Industrial Era unit that replaces Musketman. Weaker than Musketman, but cheaper to build and maintain and gains +5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Also gains additional +5 [ICON_Strength] when fighting in Forest or Jungle.</Text>
+			<Text>미국 특유의 산업시대 근접유닛으로, 머스킷병을 대체합니다. 머스킷병보다 전투력은 낮지만 요규생산력과 유지비또한 적습니다. 아군 영토에서 전투시 [ICON_Strength] 전투력 +5를 얻습니다. 또한 숲 또는 열대우림에서 전투시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_NAME">
-			<Text>Minuteman</Text>
+			<Text>미닛맨</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_DESCRIPTION">
-			<Text>Arabian unique Classical Era unit. Gains additional +8 [ICON_Strength] when fighting on Desert or Plains.</Text>
+			<Text>아라비아 특유의 고전시대 유닛입니다. 사막 및 평원에서 전투시 [ICON_Strength] 전투력보너스 +8을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_NAME">
-			<Text>Camel Archer</Text>
+			<Text>낙타 궁수</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ARABIAN_GHAZI_DESCRIPTION">
-			<Text>Arabian unique Medieval Era Melee unit that replaces the Longswordsman. +5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. May be purchased with Faith.</Text>
+			<Text>아라비아 특유의 중세시대 근접유닛으로, 장검병을 대체합니다. 다른종교를 믿는 적을 상대시 [ICON_Strength] 전투력 +5를 얻습니다. 쓰러트린 적의 [ICON_Strength]전투력의 50%에 해당하는 [ICON_Faith] 신앙을 얻으며, 이 유닛으로 도시를 점령할경우 자동으로 플레이어의 대중종교로 개종시킵니다. 신앙으로 구매할 수 있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ARABIAN_GHAZI_NAME">
-			<Text>Ghazi</Text>
+			<Text>가지</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION">
-			<Text>Strong, mobile Australian Mechanized Infantry replacement that ignores Zone of Control and has +5 [ICON_Strength] Combat Strength when fighting on Desert or Plains.</Text>
+			<Text>호주 특유의 정보화시대 유닛으로, 기계화보병을 대체합니다. ZOC를 무시하며, 사막 또는 평원에서 전투시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AUSTRALIAN_SASR_NAME">
 			<Text>S.A.S.R.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION">
-			<Text>Unique Aztec melee unit that replaces Swordsman. +10 [ICON_Strength] Combat Strength when attacking and -5 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION">
+			<Text>아즈텍 특유의 고전시대 유닛으로, 검사를 대체합니다. 공격시 [ICON_Strength] 전투력 +10을 얻으나, 방어시 [ICON_Strength] 전투력 -5를 얻습니다. 적 유닛을 사로잡아 건설자로 전환할 기회가 있습니다. 숲과 열대우림으로 인한 이동력 패널티를 무시합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AZTEC_JAGUAR_NAME">
-			<Text>Jaguar Warrior</Text>
+			<Text>재규어 전사</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION">
-			<Text>Aztec unique support unit available with the Mysticism Civic. Can be purchased with Faith. Adjacent Melee, Anti-Cavalry and Ranged units fight at full strength when damaged and earn Great General points from kills.</Text>
+			<Text>아즈텍 특유의 고대시대 지원유닛이며, 신비주의 시빅에서 해금됩니다. 신앙으로 구매할 수 있습니다. 인접한 근접, 대기병, 원거리유닛은 피해를 받아도 항상 최대전투력을 발휘하며, 적을 죽일때마다 위대한장군 점수를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME">
-			<Text>Warrior Priest</Text>
+			<Text>전투 사제</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_DESCRIPTION">
-			<Text>Brazilian unique Renaissance Era Recon unit that replaces the Ranger. Available earlier than the Hunter at Gunpowder. Can build forts. Yields 25% of defeated units' combat strength as [ICON_Gold] Gold and 25% of defeated units' combat strength as [ICON_Culture] Culture.</Text>
+			<Text>브라질 특유의 르네상스시대 정찰유닛으로 레인저를 대체합니다. 기존 레인저와 달리 화약테크에서 잠금해제됩니다. 요새를 지을 수 있습니다. 적을 죽일때마다 적의 전투력의 25%에 해당하는 [ICON_Gold]금과 [ICON_Culture]문화를 획득합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_NAME">
-			<Text>Bandeirante</Text>
+			<Text>반데이란테</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION">
-			<Text>Brazilian unique Industrial Era Melee unit that replaces the Rifleman. Cheaper than the Rifleman and costs less maintenance. +5 [ICON_Strength] Combat Strength on same continent as capital city.</Text>
+			<Text>브라질 특유의 산업시대 근접유닛으로, 소총병을 대체합니다. 기존 소총병보다 저렴하고 유지비도 적게 소모됩니다. 수도가 위치한 대륙에서 전투시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME">
-			<Text>Voluntário da Pátria</Text>
+			<Text>보른다르 다 파트리아</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_CHINESE_CHOKONU_DESCRIPTION">
-			<Text>Chinese unique Medieval Era Ranged unit that replaces Crossbowman. Slightly less strong than the Crossbowman, but can attack twice per turn.</Text>
+			<Text>중국 특유의 중세시대 원거리유닛으로 석궁병을 대체합니다. 전투력은 기존 석궁병보다 낮지만, 1턴에 2번 공격할 수 있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_CHINESE_CHOKONU_NAME">
-			<Text>Cho-Ko-Nu</Text>
+			<Text>연노병</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_CHINESE_SHIGONG_DESCRIPTION">
-			<Text>Chinese unique support unit available with the Military Training Civic. Adjacent Melee, Cavalry, Anti-Cavalry and Ranged units get +5 Combat Strength and earn more experience. Must have a Barracks to build.</Text>
+			<Text>중국 특유의 지원유닛으로 군사훈련 사회제도에서 해금됩니다. 인접한 근접, 기병, 대기병, 원거리유닛에게 전투력 +5를 추가하며, 경험치를 더 얻을 수 있게합니다. 반드시 병영이 지어져있어야 생산할 수 있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_CHINESE_SHIGONG_NAME">
-			<Text>Shigong</Text>
+			<Text>병법가</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_CREE_OTEHTAPIW_DESCRIPTION">
-			<Text>Cree unique Industrial era light cavalry unit replacing Cavalry. Gains +2 movement points if it starts on flat terrain. Heals +15 per turn when on Plains or Grassland. +10 [ICON_Strength] when fighting on Plains or Grassland.</Text>
+			<Text>크리 특유의 산업시대 경기병유닛으로 기병대를 대체합니다. 평지에서 턴을 끝마칠 경우 다음턴에 이동력 +2를 얻습니다. 초원 또는 평원에서 체력을 회복시 +15씩 추가로 회복합니다. 초원 또는 평원에서 전투시 [ICON_Strength] 전투력 +10을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_CREE_OTEHTAPIW_NAME">
-			<Text>Otehtapiw</Text>
+			<Text>오테타피</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_DESCRIPTION">
-			<Text>Dutch unique Renaissance era melee unit that replaces Musketman. Half cost and maintenance of Musketman. +10 [ICON_Strength] when defending districts.</Text>
+			<Text>네덜란드 특유의 르네상스시대 유닛으로 머스킷병을 대체합니다. 기존 머스킷병의 절반에 해당하는 생산력과 유지비용을 소모합니다. 방어기능이 있는 특수지구를 공격시 [ICON_Strength] 전투력 +10을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_NAME">
-			<Text>Schutterij</Text>
+			<Text>샤더리치</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_EGYPTIAN_HYKSOS_BOWMAN_DESCRIPTION">
-			<Text>Egyptian unique Ranged unit that is stronger than the Archer it replaces.</Text>
+			<Text>이집트 특유의 원거리유닛으로 궁수를 대체합니다. 궁수보다 전투력이 더 높습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_EGYPTIAN_HYKSOS_BOWMAN_NAME">
-			<Text>Hyksos Bowman</Text>
+			<Text>힉소스 궁수</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_DESCRIPTION">
-			<Text>Egyptian unique naval Ranged unit. Stronger than the Quadrireme it replaces and has range 2 instead of 1.</Text>
+			<Text>이집트 특유의 해군 원거리유닛입니다. 기존 사단노선보다 강력하며 사거리가 2로 더 깁니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_NAME">
-			<Text>Septireme</Text>
+			<Text>셉티레메</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ENGLISH_IRONSIDE_DESCRIPTION">
-			<Text>English unique Renaissance Era Heavy Cavalry unit available with the Reformed Church Civic. +5 [ICON_Strength] Combat Strength in or adjacent to own territory and +5 [ICON_Strength] Combat Strength when opponent is another religion.</Text>
+			<Text>영국 특유의 르네상스시대 중기병유닛으로 개혁교회 시빅에서 해금됩니다. 자국 영토 안 또는 자국영토 근처에서 [ICON_Strength] 전투력 +5를 얻으며, 다른종교를 믿는 적을 상대시 [ICON_Strength] 전투력 +5를 추가로 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ENGLISH_IRONSIDE_NAME">
-			<Text>Ironside</Text>
+			<Text>아이언사이드</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_DESCRIPTION">
-			<Text>English unique Medieval Era Ranged unit that replaces the Crossbowman. +4 [ICON_Strength] Combat Strength against Melee and Cavalry units with a further +4 [ICON_Strength] Combat Strength if adjacent to another Longbowman unit.</Text>
+			<Text>영국 특유의 중세시대 유닛으로 석궁병을 대체합니다. 근접 및 기병유닛을 상대시 [ICON_Strength] 전투력 +4를 얻으며, 인접한 장궁병 1기당 [ICON_Strength] 전투력 +4를 추가로 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_NAME">
-			<Text>Longbowman</Text>
+			<Text>장궁병</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_FRENCH_GENDARME_DESCRIPTION">
-			<Text>French unique Medieval Era Heavy Cavalry unit that replaces Knight. +5 [ICON_Strength] Combat Strength when attacking.</Text>
+			<Text>프랑스 특유의 중세시대 유닛으로 기사를 대체합니다. 공격시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_FRENCH_GENDARME_NAME">
-			<Text>Gendarme</Text>
+			<Text>기마헌병대</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_FRENCH_MARINE_DESCRIPTION">
-			<Text>French unique Melee unit that replaces Musketman. +5 [ICON_Strength] Combat Strength on foreign continents. Amphibious - no attack penalty when attacking from sea or across rivers.</Text>
+			<Text>프랑스 특유의 르네상스시대 유닛으로 머스킷병을 대체합니다. 수도가 위치하지 않은 대륙에서 [ICON_Strength] 전투력 +5를 얻습습니다. 수륙양용 진급을 가지고 생성됩니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_FRENCH_MARINE_NAME">
-			<Text>Marine</Text>
+			<Text>프랑스 해병</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION">
-			<Text>Georgian unique Medieval era heavy cavalry unit that replaces Knight. +5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. May be purchased with Faith.</Text>
+			<Text>조지아 특유의 중세시대유닛으로 기사를 대체합니다. 다른종교를 믿는 적을 상대시 [ICON_Strength] 전투력 +5를 얻으며, 적을 죽일때마다 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Faith] 신앙을 얻습니다. 이 유닛으로 도시를 점령할경우 자동으로 플레이어의 대중종교로 개종시킵니다. 신앙으로 구매할 수 있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GEORGIAN_TADZREULI_NAME">
-			<Text>Tadzreuli</Text>
+			<Text>타즈레오니</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION">
-			<Text>German unique Medieval Era unit that replaces Pikeman. Half the cost of Pikeman but must be purchased with gold.</Text>
+			<Text>독일 특유의 중세시대 유닛으로 파이크병을 대체합니다. 요구생산력이 기존 파이크병의 절반이지만, 오직 금으로만 구매 할 수있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_NAME">
-			<Text>Landsknecht</Text>
+			<Text>란츠크네히트</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GERMAN_PANZER_DESCRIPTION">
-			<Text>German unique Tank replacement that has +5 [ICON_Strength] Combat Strength when attacking.</Text>
+			<Text>독일 특유의 원자시대 유닛으로 탱크를 대체합니다. 공격시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GERMAN_PANZER_NAME">
-			<Text>Tiger I</Text>
+			<Text>티거 I</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GREEK_ARMATOLOS_DESCRIPTION">
-			<Text>Greek unique Melee unit that replaces Rifleman. +5 [ICON_Strength] Combat Strength on Hills and ignores Hills movement penalty.</Text>
+			<Text>그리스 특유의 산업시대 유닛으로 소총병을 대체합니다. 언덕에서 전투시 [ICON_Strength] 전투력 +5를 얻으며, 언덕 이동력 패널티를 무시합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GREEK_ARMATOLOS_NAME">
-			<Text>Armatolos</Text>
+			<Text>아르마톨로스</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION">
-			<Text>Greek unique Ranged unit that replaces Archer. Stronger Ranged attack and Melee defence than Archer but with Range 2.</Text>
+			<Text>그리스 특유의 고대시대 유닛으로 궁수를 대체합니다. 기존 궁수보다 전투력이 높습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_GREEK_PELTAST_NAME">
-			<Text>Peltast</Text>
+			<Text>펠타스트</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_DESCRIPTION">
-			<Text>Indian unique Medieval Era Heavy Cavalry unit that replaces Knight. Ignores terrain costs. Heals +15 per turn when on or adjacent to a Stepwell improvement.</Text>
+			<Text>인도 특유의 중세시대 유닛으로 기사를 대체합니다. 모든 지형의 이동력패널티를 무시하며, 계단식우물에 인접시 추가로 체력을 턴당 +15씩 회복합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_NAME">
-			<Text>Mughal Sowar</Text>
+			<Text>무굴 소와르</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_INDIAN_SEPOY_DESCRIPTION">
-			<Text>Indian unique Melee unit that replaces the Rifleman. Fights at full Combat Strength when damaged.</Text>
+			<Text>인도 특유의 산업시대 유닛으로 소총병을 대체합니다. 부상을 입어도 항상 최대전투력을 발휘합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_INDIAN_SEPOY_NAME">
-			<Text>Sepoy</Text>
+			<Text>세포이</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION">
-			<Text>Indonesian unique land combat unit that uses the Warrior Monk promotion tree. May be purchased with Faith.</Text>
+			<Text>인도네시아 특유의 고전시대 유닛입니다. 전투승 진급트리를 가지며, 신앙으로 구매할 수 있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME">
-			<Text>Kris Warrior</Text>
+			<Text>크리스 전사</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_JANISSARY_DESCRIPTION">
-			<Text>Renaissance era melee unit that can be built by the Suzerain of Preslav or Yerevan. Heals when destroying an enemy unit.</Text>
+			<Text>프레슬라프나 예레반의 종주국이 되면 생산할 수 있게되는 르네상스 시대의 근접유닛입니다. 적을 죽일때마다 일정량의 체력을 회복합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_JANISSARY_NAME">
-			<Text>Janissary</Text>
+			<Text>용병 예니체리</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_JAPANESE_SOHEI_DESCRIPTION">
-			<Text>Japanese unique unit available with the Feudalism Civic. Can be purchased with [ICON_Faith] Faith. +10 [ICON_Strength] Combat Strength when defending.</Text>
+			<Text>일본 특유의 중세시대 유닛으로 봉건제 시빅에서 잠금해제 됩니다. 신앙으로 구매할 수 있습니다. 방어시 [ICON_Strength] 전투력 +10을 얻습니다..</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_JAPANESE_SOHEI_NAME">
-			<Text>Sohei</Text>
+			<Text>승병</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_JAPANESE_YAMATO_DESCRIPTION">
-			<Text>Japanese unique naval Ranged unit. Stronger than the Battleship it replaces.</Text>
+			<Text>일본 특유의 원자시대 유닛으로 전함을 대체합니다. 기존 전함보다 강력합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_JAPANESE_YAMATO_NAME">
-			<Text>Yamato</Text>
+			<Text>야마토</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KHMER_WAR_CANOE_DESCRIPTION">
-			<Text>Khmer unique Ancient era naval melee unit replacing Galley. Escorted units move at the same speed. Can capture ships. Adjacent land units incur no embark/disembark movement cost. Can only operate on Coastal waters until Cartography is researched.</Text>
+			<Text>크메르 특유의 고대시대 유닛으로 갤리를 대체합니다. 전투카누와 호위대형을 짠 유닛이 전투 카누의 이동력을 받습니다. 적의 해상유닛을 나포 할 수 있습니다. 인접한 지상유닛이 승,하선시 이동력패널티를 받지 않습니다. 지도제작 테크를 연구하기 전까지는 해안에서만 활동할 수 있습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KHMER_WAR_CANOE_NAME">
-			<Text>War Canoe</Text>
+			<Text>전투 카누</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KONGO_GARDE_REPUBLICAINE_DESCRIPTION">
-			<Text>Kongolese unique Information Era Melee unit that replaces Mechanized Infantry. +10 [ICON_Strength] Combat Strength when attacking or defending districts.</Text>
+			<Text>콩고 특유의 정보화시대 유닛으로 기계화보병을 대체합니다. 전투력을 가진 특수지구를 공격하거나, 전투력을 가진 특수지구에게 공격받을시 [ICON_Strength] 전투력 +10을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KONGO_GARDE_REPUBLICAINE_NAME">
-			<Text>Garde Republicaine</Text>
+			<Text>공화당 경비대</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KONGO_MEDICINE_MAN_DESCRIPTION">
-			<Text>Kongolese unique support unit replacing Medic but available earlier with the Mysticism Civic. Must be purchased with Faith. Heals units plus adjacent Melee, Cavalry, Anti-Cavalry and Ranged units yield 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory.</Text>
+			<Text>콩고 특유의 고대시대 지원유닛으로 의무관을 대체합니다. 신비주의 시빅에서 해금되며, 신앙으로만 구입할 수 있습니다. 전투 주술사의 회복효과를 받는 근접, 기병, 대기병, 원기리유닛이 적을 죽일시 죽인 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Faith] 신앙을 획득합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KONGO_MEDICINE_MAN_NAME">
-			<Text>Medicine Man</Text>
+			<Text>전투 주술사</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_DESCRIPTION">
-			<Text>Korean unique Renaissance era naval melee unit. Faster and stronger than the Caravel. +5 [ICON_Strength] vs damaged units.</Text>
+			<Text>한국 특유의 르네상스시대 해상근접유닛입니다. 케러벨보다 빠르고 전투력이 더 높습니다. 부상당한 유닛을 공격시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_NAME">
-			<Text>Turtle Ship</Text>
+			<Text>거북선</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MACEDONIAN_BALLISTA_DESCRIPTION">
-			<Text>Macedonian unique Catapult replacement. +17 [ICON_Strength] versus non-District tiles and -10 [ICON_Strength] versus District tiles.</Text>
+			<Text>마케도니아 특유의 고전시대 유닛으로 캐터펄드를 대체합니다. 일반유닛을 공격시 [ICON_Strength] 전투력 +17을 얻지만, 전투력을 가진 특수지구를 공격시 [ICON_Strength] 전투력이 -10 감소합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MACEDONIAN_BALLISTA_NAME">
-			<Text>Ballistra</Text>
+			<Text>발리스타</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MACEDONIAN_HETAIROI_NAME">
-			<Text>Hetairos</Text>
+			<Text>헤타이로이</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MACEDONIAN_PEZHETAIROS_DESCRIPTION">
-			<Text>Macedonian unique Spearman replacement. Stronger than Spearman and receives +10 [ICON_Strength] Combat Strength versus Melee units.</Text>
+			<Text>마케도니아 특유의 고전시대 유닛으로 창병을 대체합니다. 기존 창병보다 강하며 근접유닛을 상대시 [ICON_Strength] 전투력 +10을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MACEDONIAN_PEZHETAIROS_NAME">
-			<Text>Pezhetairos</Text>
+			<Text>페제타이로스</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION">
-			<Text>Mapuche unique Medieval anti cavalry unit that replaces Pikeman. Has ranged attack. Can move after attacking. Can move and see through Woods and Rainforest.</Text>
+			<Text>마푸체 특유의 중세시대 유닛으로 파이크병을 대체합니다. 사거리 1의 원거리공격이 가능하며 공격 후 이동이 가능합니다. 숲 또는 열대우림에서 시야 및 이동력패널티를 받지 않습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MAPUCHE_GUERILLA_NAME">
-			<Text>Namuntulinco</Text>
+			<Text>나무투린코</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION">
-			<Text>Mongolian unique Medieval era siege unit.</Text>
+			<Text>몽골 특유의 중세시대 유닛으로 트레뷰셋을 대체합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME">
-			<Text>Hui Hui Pao</Text>
+			<Text>회회포</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_DESCRIPTION">
-			<Text>Norwegian unique Medieval Era Melee unit that replaces Swordsman. +5 [ICON_Strength] Combat Strength and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Culture] Culture on combat victory if fighting on same continent as capital.</Text>
+			<Text>노르웨이 특유의 고전시대 유닛으로 검사를 대체합니다. [ICON_Strength] 전투력이 +5 더 높고, 수도가 위치한 대륙에서 적을 죽일때 죽인 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Culture] 문화를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_NAME">
-			<Text>Hirdman</Text>
+			<Text>힐드만</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_NORWEGIAN_ULFHEDNAR_DESCRIPTION">
-			<Text>Norwegian unique support unit available with the Mysticism Civic. Adjacent units receive +5 [ICON_Strength] Combat Strength versus undamaged units and +10 [ICON_Strength] Combat Strength versus damaged units. Yield 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith if combat is won within one tile.</Text>
+			<Text>노르웨이 특유의 고대시대 지원유닛으로 신비주의 시빅에서 해금됩니다. 인접한 유닛 중 부상당하지 않은 유닛에게는 [ICON_Strength] 전투력 +5를 증가시키고, 부상을입은 유닛에게는 [ICON_Strength] 전투력 +10을 증가시킵니다. 울프헤딘과 겹쳐져있는 유닛이 적을 죽일경우 죽인 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Faith] 신앙을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_NORWEGIAN_ULFHEDNAR_NAME">
-			<Text>Ulfhedinn</Text>
+			<Text>울프헤딘</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
-			<Text>Nubian unique Classical era heavy cavalry unit. Pushes defending enemy units back. No movement cost when crossing rivers.</Text>
+			<Text>누비아 특유의 고전시대 유닛입니다. 공격시 적을 밀쳐냅니다. 강 이동력 패널티를 받지 않습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME">
-			<Text>African Forest Elephant</Text>
+			<Text>아프리카 숲 코끼리</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION">
-			<Text>Persian unique Classical era heavy cavalry unit.</Text>
+			<Text>페르시아 특유의 고전시대 중기병 유닛입니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_PERSIAN_CATAPHRACT_NAME">
-			<Text>Cataphract</Text>
+			<Text>카타프락토르</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION">
-			<Text>Persian unique Naval unit. Replaces Galley. +5 [ICON_Strength] Combat Strength when attacking. Also gives +5 [ICON_Strength] Combat Strength to adjacent land units and +2 movement if they start their turn in an adjacent tile.</Text>
+			<Text>페르시아 특유의 고대시대 유닛으로 갤리를 대체합니다. 공격시 [ICON_Strength] 전투력 +5를 얻습니다. 지상유닛과 인접 또는 호위시 [ICON_Strength] 추가전투력 +5와 이동력 +2를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_PERSIAN_WARSHIP_NAME">
-			<Text>Phoenician Warship</Text>
+			<Text>페니키아식 전함</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION">
-			<Text>Polish unique Melee unit that replaces Musketman. Heals an additional 10 points per turn.</Text>
+			<Text>폴란드 특유의 르네상스시대 유닛으로 머스킷병을 대체합니다. 어떤 행동을 하더라도 매턴마다 체력을 10씩 회복합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME">
-			<Text>Chosen Infantry</Text>
+			<Text>징용병</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_POLISH_UHLAN_DESCRIPTION">
-			<Text>Polish unique Light Cavalry unit that replaces Cavalry. +100% flanking bonus.</Text>
+			<Text>폴란드 특유의 산업시대 유닛으로 기병대를 대체합니다. 측면협동공격 보너스가 100% 증가합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_POLISH_UHLAN_NAME">
-			<Text>Uhlan</Text>
+			<Text>우완</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION">
-			<Text>Roman unique cavalry unit that replaces Rider. +5 [ICON_Strength] Combat Strength when fighting next to Legion or Warrior unit. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
+			<Text>로마 특유의 고전시대 유닛으로 기마병을 대체합니다. 전사 또는 군단병과 인접시 [ICON_Strength] 전투력 +5를 얻습니다. 적을 죽일때 죽인 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Gold] 금을 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ROMAN_EQUITE_NAME">
-			<Text>Eques</Text>
+			<Text>이퀴스</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ROMAN_ONAGER_DESCRIPTION">
-			<Text>Roman unique siege unit. Stronger than the Catapult it replaces.</Text>
+			<Text>로마 특유의 고전시대 유닛으로 캐터펄드를 대체합니다. 캐터펄드보다 전투력이 높습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ROMAN_ONAGER_NAME">
-			<Text>Onager</Text>
+			<Text>오나거</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_RUSSIAN_DRUZHINA_DESCRIPTION">
-			<Text>Russian unique cavalry unit that replaces Horseman. +5 [ICON_Strength] Combat Strength versus damaged units and +4 [ICON_Strength] Combat Strength against Melee units.</Text>
+			<Text>러시아 특유의 중세시대 유닛으로 군마를 대체합니다. 부상을입은 유닛을 상대시 [ICON_Strength] 전투력 +5를 얻으며, 추가로 근접유닛과 인접시 [ICON_Strength] 전투력 +4를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_RUSSIAN_DRUZHINA_NAME">
-			<Text>Druzhina</Text>
+			<Text>드루자이나</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_RUSSIAN_T34_DESCRIPTION">
-			<Text>Russian unique Tank replacement that costs less to build and less maintenance. +5 [ICON_Strength] Combat Strength in or adjacent to own territory.</Text>
+			<Text>러시아 특유의 원자시대 유닛으로 탱크를 대체합니다. 탱크보다 요구생산력과 유지비가 적습니다. 자국 영토안에 있거나, 자국영토에 인접할경우 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_RUSSIAN_T34_NAME">
 			<Text>T-34</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_DESCRIPTION">
-			<Text>Scottish unique Medieval era melee unit. Earns experience faster and receives +5 [ICON_Strength] Combat Strength when attacking.</Text>
+			<Text>스코틀랜드 특유의 중세시대 유닛으로 장검병을 대체합니다. 경험치를 더 빨리 얻으며, 공격시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_NAME">
-			<Text>Gallowglass</Text>
+			<Text>갈로우 글래스</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SCYTHIAN_AMAZON_DESCRIPTION">
-			<Text>Scythian unique Medieval Era Heavy Cavalry unit that replaces Knight. Can move after attacking.</Text>
+			<Text>스키타이 특유의 중세시대 유닛으로 기사를 대체합니다. 공격 후 이동이 가능합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SCYTHIAN_AMAZON_NAME">
-			<Text>Amazon</Text>
+			<Text>아마존</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION">
-			<Text>Scythian unique Ancient Era Recon unit that is stronger than the regular Scout.</Text>
+			<Text>스키타이 특유의 고대시대 유닛으로 정찰병을 대체합니다. 기존 정찰병보다 강력합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME">
-			<Text>Amazon Scout</Text>
+			<Text>아마존 정찰병</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION">
-			<Text>Spanish unique Renaissance Era unit that replaces the Musketman. +9 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's Religion as the dominant Religion.</Text>
+			<Text>스페인 특유의 르네상스시대 유닛으로 머스킷병을 대체합니다. 선교사, 이단심문과, 사도와 겹쳐있을때 [ICON_Strength] 전투력 +9를 얻으며, 이 유닛으로 도시를 점령하거나 도시를 점령할때 콩키스타도르가 인접했을경우 해당 도시를 자동으로 플레이어의 대중종교로 개종시킵니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SPANISH_JINETE_DESCRIPTION">
-			<Text>Spanish unique Ranged unit that replaces Horseman. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory if fighting on same continent as capital.</Text>
+			<Text>스페인 특유의 중세시대 유닛으로 군마를 대체합니다. 사거리1의 원거리공격을 합니다. 수도가 위치한 대륙에서 적을 죽일때 죽인 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Faith] 신앙을 획득합니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SPANISH_JINETE_NAME">
-			<Text>Jinete</Text>
+			<Text>지네테</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SPANISH_TERCIO_DESCRIPTION">
-			<Text>Spanish unique Renaissance Era Anti-Cavalry unit. Earns experience more quickly.</Text>
+			<Text>스페인 특유의 르네상스시대 유닛으로 파이크와 총을 대체합니다. 경험치를 더 많이 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SPANISH_TERCIO_NAME">
-			<Text>Tercio</Text>
+			<Text>테르시오</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SUMERIAN_PHALANX_DESCRIPTION">
-			<Text>Sumerian unique Ancient Era unit that replaces the Spearman. The Phalanx is available with the discovery of the Mining technology. +5 [ICON_Strength] if fighting within 8 tiles of a Ziggurat improvement.</Text>
+			<Text>수메르 특유의 고대시대 유닛으로 창병을 대체합니다. 채광테크에서 해금됩니다. 지구라트에서 8타일 내에 인접시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_SUMERIAN_PHALANX_NAME">
-			<Text>Phalanx</Text>
+			<Text>팔랑크스</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_DESCRIPTION">
-			<Text>Egyptian unique Melee unit. +5 [ICON_Strength] Combat Strength versus damaged units.</Text>
+			<Text>이집트 특유의 고전시대 유닛으로 검사를 대체합니다. 부상을 입은 유닛을 상대시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_NAME">
-			<Text>Khopesh Warrior</Text>
+			<Text>코페시 전사</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION">
-			<Text>Zulu unique Ancient era ranged unit that replaces Archer. Higher Melee Strength. +4 [ICON_Strength] when adjacent to another Isijula Warrior.</Text>
+			<Text>줄루 특유의 고대시대 유닛으로 궁수를 대체합니다. 기존 궁수보다 전투력이 더 높습니다. 이시줄라 전사와 인접시 [ICON_Strength] 전투력 +4를 얻습니다.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME">
-			<Text>Isijula Warrior</Text>
+			<Text>이시줄라 전사</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC">
-			<Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text>
+			<Text>특수지구 상대시 [ICON_Strength] 전투력 보정 -10.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_10_VERSUS_MELEE_COMBAT_BONUS_DESC">
-			<Text>+10 [ICON_Strength] Combat Strength versus Melee units.</Text>
+			<Text>근접유닛 상대시 [ICON_Strength] 전투력 보정 +10.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC">
-			<Text>+10 [ICON_Strength] Combat Strength versus Heavy Cavalry.</Text>
+			<Text>중기병 상대시 [ICON_Strength] 전투력 보정 +10.</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_10_WHEN_DEFENDING_COMBAT_BONUS_DESC">
-			<Text>+10 [ICON_Strength] Combat Strength when defending.</Text>
+			<Text>방어시 [ICON_Strength] 전투력 보정 +10</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC">
-			<Text>+15 [ICON_Strength] Combat Strength versus Heavy Cavalry.</Text>
+			<Text>중기병 상대시 [ICON_Strength] 전투력 보정 +15</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS_DESC">
-			<Text>+20 [ICON_Strength] Combat Strength versus Light Cavalry.</Text>
+			<Text>경기병 상대시 [ICON_Strength] 전투력 보정 +20</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS_DESC">
-			<Text>+4 [ICON_Strength] Combat Strength next to Longbowman unit.</Text>
+			<Text>장궁병과 인접시 [ICON_Strength] 전투력보정 +4</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS_DESC">
-			<Text>+4 [ICON_Strength] Combat Strength against Melee and Cavalry units.</Text>
+			<Text>근접 및 기병유닛과 인접시 [ICON_Strength] 전투력 보정 +4</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_4_VERSUS_MELEE_COMBAT_BONUS_DESC">
-			<Text>+4 [ICON_Strength] Combat Strength against Melee units.</Text>
+			<Text>근접유닛과 인접시 [ICON_Strength] 전투력 보정 +4</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength on same continent as capital city.</Text>
+			<Text>수도가 위치한 대륙에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_COMBAT_STRENGTH_NON_DISTRICT_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength when attacking non-District tiles.</Text>
+			<Text>전투력이 없는 특수지구에 위치한 적을 공격시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_DESERT_PLAINS_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength in Desert or Plains.</Text>
+			<Text>사막 또는 평원에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength next to Legion or Warrior unit.</Text>
+			<Text>군단병 또는 전사와 인접시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_FOREIGN_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength on foreign continents.</Text>
+			<Text>수도가 위치하지 않은 대륙에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_FOREST_JUNGLE_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength in Forest or Jungle.</Text>
+			<Text>숲 또는 열대우림에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_HILLS_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength on Hills.</Text>
+			<Text>언덕에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_NOT_OWNER_TERRITORY_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength outside of own borders.</Text>
+			<Text>자국 영토 밖에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength when opponent is another religion.</Text>
+			<Text>군단병과 인접시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_WHEN_ATTACKING_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength when attacking.</Text>
+			<Text>공격시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_ZIGURRAT_PROXIMITY_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength within 8 tiles of Ziggurat.</Text>
+			<Text>지구라트와 8타일내에 인접시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_17_WHEN_ATTACKING_NON_DISTRICT_BONUS_DESC">
-			<Text>+17 [ICON_Strength] Combat Strength versus non-District tiles.</Text>
+			<Text>전투력이 있는 특수지구를 공격하지 않을때 [ICON_Strength] 전투력 보정 +17</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_8_DESERT_PLAINS_COMBAT_BONUS_DESC">
-			<Text>+8 [ICON_Strength] Combat Strength in Desert or Plains.</Text>
+			<Text>사막 또는 평원에 자리잡았을 때 [ICON_Strength] 전투력 보정 +8</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_X_VS_MELEE_ANTICAV_LIGHTCAV_COMBAT_BONUS_DESC">
-			<Text>+8 [ICON_Strength] Combat Strength against Melee, Anti Cavalry and Light Cavalry units.</Text>
+			<Text>근접, 대기병, 경기병유닛 상대시 [ICON_Strength] 전투력 보정 +8</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength versus undamaged units.</Text>
+			<Text>부상을 입지않은 적을 상대시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS_DESC">
-			<Text>+10 [ICON_Strength] Combat Strength versus damaged units.</Text>
+			<Text>부상을 입은 유닛을 상대시 [ICON_Strength] 전투력 보정 +10</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength from adjacent Royal Warship.</Text>
+			<Text>페니키아식 전함과 인접시 [ICON_Strength] 전투력보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength from Shigong unit.</Text>
+			<Text>병법가와 인접시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_5_PLAINS_GRASS_COMBAT_BONUS_DESC">
-			<Text>+5 [ICON_Strength] Combat Strength in Plains or Grassland.</Text>
+			<Text>초원 또는 평원에 자리잡았을 때 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS_DESC">
-			<Text>+10 [ICON_Strength] Combat Strength when defending districts.</Text>
+			<Text>전투력이 있는 특수지구를 공격시 [ICON_Strength] 전투력 보정 +10</Text>
 		</Replace>
 		<Replace Language="ko_KR" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC">
-			<Text>+4 [ICON_Strength] Combat Strength next to Isijula Warrior unit.</Text>
+			<Text>이시줄라 전사와 인접시 [ICON_Strength] 전투력 보정 +4</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME">
-			<Text>HMCS Haida</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME">
+			<Text>HMCS 하이다</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
-			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. + [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
+			<Text>캐나다 특유의 원자시대 유닛으로 구축함을 대체합니다. 해상 습격계열 유닛을 상대시 [ICON_Strength] 전투력 +10을 얻으며, 호위진형을 짰을 때 [ICON_Strength] 전투력 +5를 얻습니다. HMCS 하이다와 4타일내에 인접한 상인유닛을 약탈을 당하지 않습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
-			<Text>Kalandozó</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
+			<Text>칼란도조</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION">
-			<Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman. Double gold from pillaging Districts and Improvements. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION">
+			<Text>헝가리 특유의 중세시대 유닛으로 석궁병을 대체합니다. 약탈시 얻는 모든 산출량이 2배가 됩니다. 적을 죽일때 죽인 적의 [ICON_Strength] 전투력의 50%에 해당하는 [ICON_Gold] 금을 얻습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_NAME">
-			<Text>Chasqui</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_INCA_CHASQUI_NAME">
+			<Text>차스퀴</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION">
-			<Text>Incan unique Ancient Era Recon unit replacing the Scout. +1 extra movement and can build roads.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION">
+			<Text>잉카 특유의 고대시대 유닛으로 정찰병을 대체합니다. 이동력 +1을 얻으며, 도로를 건설할 수 있습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_NAME">
-			<Text>Sofa</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_MALI_SOFA_NAME">
+			<Text>소파(원거리)</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION">
-			<Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman.  +5 [ICON_Strength] vs damaged units. Adjacent Cavalry units receive +4 [ICON_Strength].</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION">
+			<Text>말리 특유의 중세시대 유닛으로 석궁병을 대체합니다. 부상을 입은 유닛을 상대시 [ICON_Strength] 전투력 +5를 얻습니다. 기병유닛과 인접시 [ICON_Strength] 전투력 +4를 얻습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
-			<Text>Toatupara</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
+			<Text>토아투파라</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
-			<Text>Maori unique Industrial Era Recon unit replacing the Ranger. Weaker than Ranger but can attack twice per turn. Can build Pa Improvement.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
+			<Text>마오리 특유의 산업시대 유닛으로 레인저를 대체합니다. 원거리 전투력이 약한대신 1턴에 2번 공격할 수 있습니다. 파를 건설할 수 있습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
-			<Text>Sipahi</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
+			<Text>시파히</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
-			<Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight. +100% flanking bonus and requires fewer movement points to pillage.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
+			<Text>오스만 특유의 중세시대 유닛으로 기사를 대체합니다. 측면협동공격 보너스 +100%를 받으며, 약탈을 하는데 필요한 이동력이 적습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
-			<Text>Numidian Cavalry</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
+			<Text>누미디안 기병대</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
-			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has Ranged Attack. Can move after attacking.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
+			<Text>페니키아 특유의 고전시대 유닛으로 기마병을 대체합니다. 사거리1의 원거리 공격이 가능하며, 공격 후 이동이 가능합니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
-			<Text>Kronan</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
+			<Text>퀴로우난</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
-			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate. Combat +5 adjacent to another Kronan unit.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
+			<Text>스웨덴 특유의 르네상스시대 유닛으로 프리깃을 대체합니다. 퀴로우난과 인접시 전투력 +5를 얻습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
-			<Text>Templar</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
+			<Text>템플 기사단</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
-			<Text>Unique unit for Eleanor of Aquitaine. +5 [ICON_Strength] Combat Strength when opponent is another religion. +5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text>
+		<Replace Language="ko_KR" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
+			<Text>지도자가 아키텐의 엘레오노르일때 생산할 수 있는 중세시대 근접유닛입니다. 다른종교를 믿는 적을 상대시 [ICON_Strength] 전투력 +5를 얻습니다. 성지 특수지구와 4타일내에 인접시 [ICON_Strength] 전투력 +5를 얻습니다.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text>
+		<Replace Language="ko_KR" Tag="RECEIVE_SOFA_BONUS_DESC">
+			<Text>기병유닛과 인접시 [ICON_Strength] 전투력 보정 +4</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength vs Naval Raider class.</Text>
+		<Replace Language="ko_KR" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC">
+			<Text>해상 습격유닛을 상대시 [ICON_Strength] 전투력 보정 +10</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="PLUS_X_IN_FORMATION_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength when in formation.</Text>
+		<Replace Language="ko_KR" Tag="PLUS_X_IN_FORMATION_BONUS_DESC">
+			<Text>호위진형을 짰을 때 [ICON_Strength] 전투력 보정 +5 </Text>
 		</Replace>
-		<Replace Language="en_US" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength when adjacent to another Kronan unit.</Text>
+		<Replace Language="ko_KR" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC">
+			<Text>퀴로우난과 인접시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength within 4 tiles of a Holy Site.</Text>
+		<Replace Language="ko_KR" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC">
+			<Text>성지 특수지구와 4타일내에 인접시 [ICON_Strength] 전투력 보정 +5</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_1">
 			<Text>HMCS Haida is a Tribal-class destroyer that served in the Royal Canadian Navy (RCN) from 1943 to 1963, participating in World War II and the Korean War. She was named after the Haida people. The only surviving Tribal-class destroyer out of 27 vessels constructed for the RCN, Royal Navy and Royal Australian Navy between 1937 and 1945, Haida sank more enemy surface tonnage than any other Canadian warship and as such is commonly referred to as the "Fightingest Ship in the Royal Canadian Navy". Designated a National Historic Site of Canada in 1984, she now serves as a museum ship berthed next to HMCS Star, an active Royal Canadian Naval Reserve Division, in Hamilton, Ontario. In 2018, Haida was designated the ceremonial flagship of the RCN.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_2">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_3">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_1">
 			<Text>The Hungarian invasions of Europe (kalandozások in Hungarian) took place in the ninth and tenth centuries, the period of transition in the history of Europe in the Early Middle Ages, when the territory of the former Carolingian Empire was threatened by invasion from multiple hostile forces, the Magyars (Hungarians) from the east, the Viking expansion from the north and the Arabs from the south.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_2">
 			<Text>The Magyars successfully conquered the Pannonian Basin (i.e. what is now Hungary) by the end of the ninth century, and launched a number of plundering raids both westward into former Francia and southward into the Byzantine Empire. The westward raids were stopped only with the Magyar defeat of the Battle of Lechfeld of 955, which led to a new political order in Western Europe centered on the Holy Roman Empire. The raids in to Byzantine territories continued throughout the 10th century, until the eventual Christianisation of the Magyars and the establishment of the Christian Kingdom of Hungary in 1000 or 1001.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_3">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_1">
 			<Text>The Chasquis were the messengers of the Inca empire. Agile, highly trained and physically fit, they were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system. Chasquis were not just messengers (those were young boys who were just used to pass along basic information), the chasquis were trained to be able to read and translate the quipus to each other and higher authorities. Not only were they used to transport oral messages, but they also helped the inspector general, the Sapa Inka's brother, keep track of the people in the empire.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_2">
 			<Text>Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. On the coast of what is now Peru their route ran from Nazca to Tumbes. Chasqui routes also extended into further reaches of the empire into parts of what are now Colombia, Bolivia, Argentina, and Chile.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_3">
 			<Text>Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. There were different sizes and levels of tambos and each one was assigned a different use. The use of the tambo depended on what route it was on and who was allowed to use it, but the majority of them were just to pass the messages along because there were other structures that the chasquis used for rest and shelter called chaskiwasis. Chasquis would start at one tambo and run to the next tambo where a rested chasqui was waiting to carry the message to the next tambo.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_1">
 			<Text>Sofa is a Mandinka term for slave soldiers who served in the army of the Mali Empire. Sofas would also fight, in varying capacities, in the armies of later Mandé states such as the Bamana and Wassoulou empires. The word sofa translates into English as "father of the horse" ("so" means horse, and "fa" means "father") or "guardian of the horse". This term stems from the original function of the sofa as a caretaker for the horse or horses of Mandinka cavalry commanders called "farari".</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_2">
 			<Text>Sofas make their first appearance in oral and written records during the formation of the Mali Empire. Sofas were recruited from "jonow" (slaves) captured in battle or bought from afar. They could be depended on in most instances for obedience, since their livelihood depended entirely on their master. The institution of slavery in the Mali Empire heavily rewarded loyalty, and jonow could rise to civil or military positions of prominence. Jonow became part of their master's clan, and were often freed after a certain number of years. As part of the clan, jonow were expected to accompany their master's into battle and handle his horse and weapons. Initially forbidden from engaging in direct warfare, sofa eventually made up the majority of Mali's infantry army. As infantry, they were armed with bows and arrows by the state or, more accurately, royal clans devoted to the state.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_3">
 			<Text>In the forest and swampy areas of the Mali Empire, cavalry was minimized or altogether abandoned making sofas the exclusive instrument of war. Sofas were equipped with two quivers, and their bow was small by European standards. It could not fire very far or even powerfully, so sofas utilized deadly poisons and fired in arcs to give the arrows strength. Sofas also used flaming arrows, especially against fortifications that were often little more than thatch or wooden palisades.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_1">
 			<Text>Maori often preferred the double-barreled tupara (two barrel), shotguns loaded with musket balls, as they could fire twice before reloading.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_2">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_3">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_1">
 			<Text>The Sipahi were the lancers of the Ottoman Empire. Founded during the reign of Murad I (ruled 1362 – 1389), the sipahi were drawn from the ethnic Turk landed gentry. They were extremely highly motivated and loyal fighters and were the sultan's personal bodyguard. The sipahi were great rivals of the Janissaries (another special Ottoman unit), who were drawn from both Turkish and non-Turkish soldiers. In fact the sipahi enthusiastically assisted in the violent disbandment of the Janissaries in 1826, following an unsuccessful revolt by the latter group.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_2">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_3">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_1">
 			<Text>Numidia was a Berber kingdom located in northern Africa to the west of Carthage. Originally nomadic tribesmen and well-versed in horsemanship, the Numidians were most famous for their cavalry, which was considered to be among the finest in the ancient world. These warriors were lightly-armed - riding on swift horses equipped with nothing more than a small shield and a fistful of javelins - but very tough customers nonetheless. Even after settling down in cities, the Numidians remained enamored with the horse warriors - the Numidians did eventually produce infantry, but it was always regarded as unreliable and substantially inferior to the cavalry.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_2">
 			<Text>Numidian cavalry specialized in hit-and-run attacks, making excellent use of their javelins to harass and break up enemy formations. They were never intended to close with the enemy and fight hand-to-hand. Roman commanders were initially skeptical of the threat posed by such lightly armed cavalry, but they soon learned of the danger caused by a force that constantly would attack, retreat and regroup, and then attack again, always remaining out of range of melee weapons. Ancient authors compare the Numidian cavalry to a pack of dogs, because of the way that they savaged the flanks and rear of enemy formations. It required strict discipline for opposing infantry not to break ranks when they came under attack from Numidian cavalry, but in time the Romans learned from their mistakes and became more adept at combating them.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_3">
 			<Text>Numidian cavalry was not the fastest, but since the riders wore no armor, they were nimbler than the opposition of the day and able to traverse terrain too difficult for heavier cavalry. Numidian cavalry is most famous for serving in Hannibal's cavalry wing during the Second Punic War. However, they were also employed by the Romans as mercenaries as well. Julius Caesar deployed Numidians during his campaigns - and also fought against them during the Roman Civil War. In short, Numidian cavalry was highly prized and among the best light cavalry in the ancient world.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_1">
 			<Text>Kronan, also called Stora Kronan, was a Swedish warship that served as the flagship of the Swedish Navy in the Baltic Sea in the 1670s. When built, she was one of the largest seagoing vessels in the world. The construction of Kronan lasted from 1668 to 1672 and was delayed by difficulties with financing and conflicts between the shipwright Francis Sheldon and the Swedish admiralty. After four years of service, the ship foundered in rough weather at the Battle of Öland on 1 June 1676: while making a sharp turn under too much sail she capsized, and the gunpowder magazine ignited and blew off most of the bow. Kronan sank quickly, taking about 800 men and more than 100 guns with her, along with valuable military equipment, weapons, personal items, and large quantities of silver and gold coins.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_2">
 			<Text>The loss of Kronan was a hard blow for Sweden during the Scanian War. Besides being the largest and most heavily armed ship in the Swedish Navy, she had been an important status symbol for the monarchy of the young Charles XI. Along with Kronan, the navy lost a sizeable proportion of its best manpower, acting supreme commander Lorentz Creutz, numerous high-ranking fleet officers, and the chief of the navy medical staff. A commission was set up to investigate whether any individuals could be held responsible for the Swedish fiasco at the Battle of Öland and other major defeats during the war. Although no one was officially held accountable, Creutz has been blamed by many historians for the sinking of Kronan because of his naval and command inexperience. Recent research has provided a more nuanced picture, and points to Sweden's general lack of a well-developed naval organization and officer corps at the time.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_3">
 			<Text>Most of the guns that sank with Kronan were salvaged in the 1680s, but eventually the wreck fell into obscurity. Its exact position was rediscovered in 1980 by the amateur researcher Anders Franzén, who had also located the 17th-century warship Vasa in the 1950s. Yearly diving operations have since surveyed and excavated the wreck site and salvaged artifacts, and Kronan has become the most widely publicized shipwreck in the Baltic after Vasa. More than 30,000 artifacts have been recovered, and many have been conserved and put on permanent public display at the Kalmar County Museum in Kalmar. The museum is responsible for the maritime archaeological operations and the permanent exhibitions on Kronan.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_KRONAN_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_1">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_1">
 			<Text>The Knights Templar was a holy order devoted to defending the fledgling crusader states founded during the First Crusade against Muslim reconquest. The king of Jerusalem allowed them to make their headquarters in the main temple of Jerusalem, from which they took their name. In exchange for this hospitality they swore allegiance to the throne of Jerusalem. They participated in several major battles and did very well; this increased their numbers substantially. Eventually their power grew so much -- to the point where they could field an army of almost 10,000 knights and still uphold their promises to garrison individual towns -- that the Pope decided to place them under his direct control.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_2">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_2">
 			<Text>Templar valor in the Holy Land resulted in many rewards back in Europe; knights who fought under the red cross and white field of the Templars often found themselves with new estates and castles in their native countries. As a result the order became fantastically wealthy, as the Grandmasters shrewdly invested the order's wealth, using plunder to buy goods and sell them throughout the Mediterranean.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_3">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_3">
 			<Text>Kings, however, often become jealous of wealthy organizations over which they have little or no control. The French king Philip IV, his treasury emptied and his debts monstrous from constant warfare, accused the Templars of heresy and blasphemy, and confiscated almost all of their wealth in France. Other monarchs followed suit, embarking on a program of persecution and repression whose goal was mostly to secure the Templars' money for themselves. Hundreds of Templars gave false confessions of heresy under torture, and others were burned at the stake. The order died out completely in the early 14th century when the entire Templar leadership had been murdered.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_4">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_4">
 			<Text />
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5">
+		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
 	</LocalizedText>
