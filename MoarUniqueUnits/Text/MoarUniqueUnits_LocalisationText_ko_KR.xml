@@ -1,14 +1,5 @@
 <GameData>
 	<LocalizedText>
-		<Replace Language="ko_KR" Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION">
-			<Text>경기병 및 중기병유닛이 언덕 위에서 전투를 할 때 [ICON_Strength] 전투력 +5를 획득합니다. 용병 예니체리를 훈련 할 수 있게 됩니다.</Text>
-		</Replace>
-		<Replace Language="ko_KR" Tag="LOC_LEADER_TRAIT_YEREVAN_DESCRIPTION">
-			<Text>사도는 무작위진급이 아닌, 원하는진급을 선택할 수 있게 됩니다. 용병 예니체리를 훈련 할 수 있게 됩니다.</Text>
-		</Replace>
-		<Replace Language="ko_KR" Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_JANISSARY_CHAPTER_HISTORY_PARA_1">
-			<Text>Devshirme (literally "lifting" or "collecting") was chiefly the practice whereby the Ottoman Empire sent military officers to take boys, ages 8 to 18, from their families in order that they be raised to serve the state. This tax of sons was imposed only on the Christian subjects of the empire. The boys were then converted to Islam with the primary objective of selecting and training the ablest children and teenagers for the military or civil service of the empire, notably into the Janissaries.</Text>
-		</Replace>
 		<Replace Language="ko_KR" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_1">
 			<Text>The Boeing AH-64 Apache is an American four-blade, twin-turboshaft attack helicopter with a tailwheel-type landing gear arrangement and a tandem cockpit for a two-man crew. It features a nose-mounted sensor suite for target acquisition and night vision systems. It is armed with a 30 mm (1.18 in) M230 chain gun carried between the main landing gear, under the aircraft's forward fuselage. It has four hardpoints mounted on stub-wing pylons, typically carrying a mixture of AGM-114 Hellfire missiles and Hydra 70 rocket pods. The AH-64 has a large amount of systems redundancy to improve combat survivability.</Text>
 		</Replace>

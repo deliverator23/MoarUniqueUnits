@@ -1,14 +1,5 @@
 <GameData>
 	<LocalizedText>
-		<Replace Language="zh_Hans_CN" Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION">
-			<Text>位于丘陵地格时时你的轻重骑兵获得+5战斗力[ICON_Strength]。 并允训练苏丹亲兵单位。</Text>
-		</Replace>
-		<Replace Language="zh_Hans_CN" Tag="LOC_LEADER_TRAIT_YEREVAN_DESCRIPTION">
-			<Text>你的使徒单位可以选择任何可能的晋升而不是随机的晋升。 并允训练苏丹亲兵单位。</Text>
-		</Replace>
-		<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_JANISSARY_CHAPTER_HISTORY_PARA_1">
-			<Text>血税兵源(字面意思是“提升”或“收集”)主要是指奥斯曼帝国派遣军官从他们的家庭中接收8至18岁的男孩，以使他们为国家服务。这种对儿子的征税只对帝国的基督教臣民征收。然后，这些男孩被改信伊斯兰教，主要目的是为帝国的军事或文职人员选择和训练最优秀的儿童和青少年，特别是在1月1日。</Text>
-		</Replace>
 		<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_1">
 			<Text>这架波音AH-64阿帕奇是一架美国的四翼飞机，双涡轮轴攻击直升飞机，配备了一个尾轮式起落架装置和一个双人座舱。它的特点是为目标采集和夜视系统安装了传感器。它配备了30毫米(1.18英寸)M230链枪在主起落架之间，在飞机的前机身下。它有四个挂载在柱翼塔上的挂载点，典型的是携带AGM-114“地狱火”导弹和九头蛇70火箭吊舱的混合物。AH-64有大量的防护系统来提高战斗的生存能力。</Text>
 		</Replace>
