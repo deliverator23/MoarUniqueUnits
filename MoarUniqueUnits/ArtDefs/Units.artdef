@@ -36232,7 +36232,7 @@
 																	<m_Values/>
 																</m_Fields>
 																<m_ChildCollections/>
-																<m_Name text="BaseMale_Heads/Heads"/>
+																<m_Name text="BaseMale_Heads/Heads/MiddleEastern"/>
 																<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 															</Element>
 														</Element>
@@ -36266,7 +36266,7 @@
 																	<m_Values/>
 																</m_Fields>
 																<m_ChildCollections/>
-																<m_Name text="BaseMale_FaceHair/FaceHairs"/>
+																<m_Name text="BaseMale_FaceHair/FaceHairs/MiddleEastern"/>
 																<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 															</Element>
 														</Element>
