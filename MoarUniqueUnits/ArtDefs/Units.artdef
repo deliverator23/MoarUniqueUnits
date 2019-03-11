@@ -35812,7 +35812,7 @@
 				<m_Fields>
 					<m_Values>
                         <Element class="AssetObjects:ArtDefReferenceValue">
-                            <m_ElementName text="Crossbowman"/>
+                            <m_ElementName text="Archer"/>
                             <m_RootCollectionName text="UnitMovementTypes"/>
                             <m_ArtDefPath text="Units.artdef"/>
                             <m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -35820,7 +35820,7 @@
                             <m_ParamName text="Movement"/>
                         </Element>
                         <Element class="AssetObjects:ArtDefReferenceValue">
-                            <m_ElementName text="CrossbowmanCombat"/>
+                            <m_ElementName text="ArcherCombat"/>
                             <m_RootCollectionName text="MemberCombat"/>
                             <m_ArtDefPath text="Units.artdef"/>
                             <m_CollectionIsLocked>true</m_CollectionIsLocked>
