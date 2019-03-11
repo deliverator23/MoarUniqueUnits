@@ -1450,7 +1450,7 @@ FROM   Types WHERE Type = 'UNIT_MACEDONIAN_BALLISTA';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'BandeirantesHM.dds'
-FROM   Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTES';
+FROM   Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'CamelArcherHM.dds'
