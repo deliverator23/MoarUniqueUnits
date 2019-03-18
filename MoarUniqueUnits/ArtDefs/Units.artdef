@@ -31074,7 +31074,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Bodies/Male_MediumBody_Full"/>
+                                                                <m_Name text="BaseMale_Bodies/Full"/>
                                                             </Element>
                                                         </Element>
                                                     </m_ChildCollections>
@@ -31150,9 +31150,9 @@
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
                                                             <Element class="AssetObjects:ArtDefReferenceValue">
-                                                                <m_ElementName text="Caucasian_Light"/>
+                                                                <m_ElementName text=""/>
                                                                 <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text="Units.artdef"/>
+                                                                <m_ArtDefPath text=""/>
                                                                 <m_CollectionIsLocked>true</m_CollectionIsLocked>
                                                                 <m_TemplateName text=""/>
                                                                 <m_ParamName text="Tint"/>
