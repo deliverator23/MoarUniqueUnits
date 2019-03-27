@@ -11,8 +11,8 @@ INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUE
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_CHINA','UNIT_CHINESE_SHIGONG', 1, 8);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_WAR_GALLEY', 0, 11);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_EGYPT','UNIT_EGYPTIAN_KHOPESH', 1, 12);
-INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_IRONSIDE', 0, 8);
-INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 1, 9);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_SHIP_OF_THE_LINE', 0, 9);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ENGLAND','UNIT_ENGLISH_LONGBOWMAN', 1, 8);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_GENDARME', 1, 8);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_FRANCE','UNIT_FRENCH_MARINE', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GERMANY','UNIT_GERMAN_LANDSKNECHT', 1, 9);
@@ -69,6 +69,6 @@ INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUE
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MAORI','UNIT_MAORI_TUPARA', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_OTTOMAN','UNIT_OTTOMAN_SIPAHI', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_PHOENICIA','UNIT_PHOENICIA_NUMIDIAN_CAVALRY', 1, 5);
-INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SWEDEN','UNIT_SWEDEN_KRONAN', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SWEDEN','UNIT_SWEDEN_HAKKAPELIITTA', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('LEADER_ELEANOR_ENGLAND','UNIT_ELEANOR_TEMPLAR', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('LEADER_ELEANOR_FRANCE','UNIT_ELEANOR_TEMPLAR', 1, 5);

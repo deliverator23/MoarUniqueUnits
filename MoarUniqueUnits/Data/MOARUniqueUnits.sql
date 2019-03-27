@@ -252,11 +252,11 @@ FROM   Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqCivic, MandatoryObsoleteTech, TraitType)
-SELECT Type, '4', '260', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_ENGLISH_IRONSIDE_NAME', 'LOC_UNIT_ENGLISH_IRONSIDE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '4', '56', 'CIVIC_REFORMED_CHURCH', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_ENGLISH_IRONSIDE'
-FROM   Types WHERE Type = 'UNIT_ENGLISH_IRONSIDE';
+SELECT Type, '4', '260', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SWEDEN_HAKKAPELIITTA_NAME', 'LOC_UNIT_SWEDEN_HAKKAPELIITTA_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '4', '56', 'CIVIC_REFORMED_CHURCH', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_SWEDEN_HAKKAPELIITTA'
+FROM   Types WHERE Type = 'UNIT_SWEDEN_HAKKAPELIITTA';
 
-UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_ENGLISH_IRONSIDE';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_ENGLISH_IRONSIDE';
+UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_SWEDEN_HAKKAPELIITTA';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SWEDEN_HAKKAPELIITTA';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, PrereqCivic, TraitType, MandatoryObsoleteTech)
@@ -504,14 +504,14 @@ AND    EnabledUniqueUnits.Enabled = 1;
 INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 3, RangedCombat + 3, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
-WHERE EnabledUniqueUnits.Type = 'UNIT_SWEDEN_KRONAN'
+WHERE EnabledUniqueUnits.Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE'
 AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
-WHERE  EnabledUniqueUnits.Type = 'UNIT_SWEDEN_KRONAN'
+WHERE  EnabledUniqueUnits.Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE'
 AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
 AND    EnabledUniqueUnits.Enabled = 1;
 
@@ -568,7 +568,7 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_BANDEIRANTE', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_CAMEL_ARCHER', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_ADDITIONAL_ATTACK', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_DRUZHINA', 'KIND_ABILITY');
-INSERT INTO Types (Type, Kind) VALUES ('ABILITY_ENGLISH_IRONSIDE', 'KIND_ABILITY');
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_FATHERLAND_VOLUNTEER', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_FRENCH_MARINE', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_GARDE_REPUBLICAINE', 'KIND_ABILITY');
@@ -646,7 +646,7 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_BANDEIRANTE', 'CLASS_BRAZILIAN
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_CAMEL_ARCHER', 'CLASS_ARABIAN_CAMEL_ARCHER');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ADDITIONAL_ATTACK', 'CLASS_CHINESE_CHOKONU');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_DRUZHINA', 'CLASS_RUSSIAN_DRUZHINA');
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ENGLISH_IRONSIDE', 'CLASS_ENGLISH_IRONSIDE');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'CLASS_SWEDEN_HAKKAPELIITTA');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'CLASS_ROMAN_EQUITE');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_EQUITE_ADJACENCY_BONUS', 'CLASS_ROMAN_EQUITE');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_FATHERLAND_VOLUNTEER', 'CLASS_BRAZILIAN_FATHERLAND_VOLUNTEER');
@@ -754,7 +754,7 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_LESS_MOVEMENT_PILLAGE', 'CLASS
 
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MOVE_AFTER_ATTACKING', 'CLASS_PHOENICIA_NUMIDIAN_CAVALRY');
 
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'CLASS_SWEDEN_KRONAN');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'CLASS_ENGLISH_SHIP_OF_THE_LINE');
 
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS', 'CLASS_ELEANOR_TEMPLAR');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'CLASS_ELEANOR_TEMPLAR');
@@ -783,7 +783,7 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_CAMEL_ARCHER', 'LOC_ABILITY_CAMEL_ARCHER_NAME', 'LOC_ABILITY_CAMEL_ARCHER_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_ADDITIONAL_ATTACK', 'LOC_ABILITY_ADDITIONAL_ATTACK_NAME', 'LOC_ABILITY_ADDITIONAL_ATTACK_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_DRUZHINA', 'LOC_ABILITY_DRUZHINA_NAME', 'LOC_ABILITY_DRUZHINA_DESCRIPTION');
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_ENGLISH_IRONSIDE', 'LOC_ABILITY_ENGLISH_IRONSIDE_NAME', 'LOC_ABILITY_ENGLISH_IRONSIDE_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'LOC_ABILITY_SWEDEN_HAKKAPELIITTA_NAME', 'LOC_ABILITY_SWEDEN_HAKKAPELIITTA_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'LOC_ABILITY_PERC_50_POST_COMBAT_GOLD_NAME', 'LOC_ABILITY_PERC_50_POST_COMBAT_GOLD_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_EQUITE_ADJACENCY_BONUS', 'LOC_ABILITY_EQUITE_ADJACENCY_BONUS_NAME', 'LOC_ABILITY_EQUITE_ADJACENCY_BONUS_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_FATHERLAND_VOLUNTEER', 'LOC_ABILITY_FATHERLAND_VOLUNTEER_NAME', 'LOC_ABILITY_FATHERLAND_VOLUNTEER_DESCRIPTION');
@@ -961,7 +961,7 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_
 
 --GS
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'UnitType', 'UNIT_MALI_SOFA');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'UnitType', 'UNIT_SWEDEN_KRONAN');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'UnitType', 'UNIT_ENGLISH_SHIP_OF_THE_LINE');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'DistrictType', 'DISTRICT_HOLY_SITE');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MaxRange', '4');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MinRange', '0');
@@ -1104,8 +1104,8 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_ADDITIONAL_ATTACK', 'EXPERT_MARKSMAN_ADDITIONAL_ATTACK');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DRUZHINA', 'PLUS_4_VERSUS_MELEE_COMBAT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DRUZHINA', 'VULTURE_BONUS_VS_DAMAGED');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_ENGLISH_IRONSIDE', 'COSSACK_LOCAL_COMBAT');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_ENGLISH_IRONSIDE', 'PLUS_5_OTHER_RELIGION_COMBAT_BONUS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'COSSACK_LOCAL_COMBAT');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'PLUS_5_OTHER_RELIGION_COMBAT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'PERC_50_POST_COMBAT_GOLD');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_EQUITE_ADJACENCY_BONUS', 'PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_FRENCH_MARINE', 'AMPHIBIOUS_BONUS_IGNORE_RIVERS');
@@ -1481,7 +1481,7 @@ FROM   Types WHERE Type = 'UNIT_MONGOLIAN_HUI_HUI_PAO';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'IronsideHM.dds'
-FROM   Types WHERE Type = 'UNIT_ENGLISH_IRONSIDE';
+FROM   Types WHERE Type = 'UNIT_SWEDEN_HAKKAPELIITTA';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
 SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'JaguarHM.dds'
@@ -1593,7 +1593,7 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
   SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Kronan_HM.dds'
-  FROM   Types WHERE Type = 'UNIT_SWEDEN_KRONAN';
+  FROM   Types WHERE Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE';
 
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
   SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Longbowman_HM.dds'
