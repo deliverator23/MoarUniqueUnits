@@ -867,7 +867,7 @@
 						<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
 					</Element>
 				</m_ChildCollections>
-				<m_Name text="UNIT_SWEDEN_KRONAN"/>
+				<m_Name text="UNIT_ENGLISH_SHIP_OF_THE_LINE"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
 			<Element>
@@ -8307,7 +8307,7 @@
                         </Element>
                     </Element>
                 </m_ChildCollections>
-                <m_Name text="UNIT_ENGLISH_IRONSIDE"/>
+                <m_Name text="UNIT_SWEDEN_HAKKAPELIITTA"/>
                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
             </Element>
             <Element>

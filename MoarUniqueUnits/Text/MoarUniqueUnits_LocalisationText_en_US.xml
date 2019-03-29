@@ -876,11 +876,11 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_NAME">
 			<Text>Septireme</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_IRONSIDE_DESCRIPTION">
-			<Text>English unique Renaissance Era Heavy Cavalry unit available with the Reformed Church Civic. +5 [ICON_Strength] Combat Strength in or adjacent to own territory and +5 [ICON_Strength] Combat Strength when opponent is another religion.</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_DESCRIPTION">
+			<Text>English unique unit.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_IRONSIDE_NAME">
-			<Text>Ironside</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_NAME">
+			<Text>Ship of the Line</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_DESCRIPTION">
 			<Text>English unique Medieval Era Ranged unit that replaces the Crossbowman. +4 [ICON_Strength] Combat Strength against Melee and Cavalry units with a further +4 [ICON_Strength] Combat Strength if adjacent to another Longbowman unit.</Text>
@@ -1272,11 +1272,11 @@
 		<Replace Language="en_US" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
 			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has Ranged Attack. Can move after attacking.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
-			<Text>Kronan</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_NAME">
+			<Text>Hakkapeliitta</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
-			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate. Combat +5 adjacent to another Kronan unit.</Text>
+		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_DESCRIPTION">
+			<Text>Swedish unique unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
 			<Text>Templar</Text>
