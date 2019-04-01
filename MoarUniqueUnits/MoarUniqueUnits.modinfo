@@ -254,6 +254,8 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_C_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_D_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_GreatRenaissanceMusician_Hat_black_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Hakkapeliitta_a5_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Hakka_TopArmor_a_Pikemen_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_HMCS_Haida_b_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Hoplite_NoShade_aVib_Hoplite_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Indo_ShieldA_a2_cargo_ship_middle_t</File>
@@ -354,6 +356,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_Flat_Normal1</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Gendarme_Plate_Armor_n0</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Gendarme_Plate_Armor_n1</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Hakkapeliitta_ao4</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Heater_Shield_AO</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Heater_Shield_gloss</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Heater_Shield_normal0</File>
@@ -615,6 +618,8 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_C_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Georgia_Kite_D_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_GreatRenaissanceMusician_Hat_black_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Hakkapeliitta_a5_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Hakka_TopArmor_a_Pikemen_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_HMCS_Haida_b_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Hoplite_NoShade_aVib_Hoplite_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Indo_ShieldA_a2_cargo_ship_middle_t</File>
@@ -715,6 +720,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_Flat_Normal1</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Gendarme_Plate_Armor_n0</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Gendarme_Plate_Armor_n1</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Hakkapeliitta_ao4</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Heater_Shield_AO</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Heater_Shield_gloss</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Heater_Shield_normal0</File>
