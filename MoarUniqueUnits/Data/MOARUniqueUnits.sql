@@ -1,3 +1,22 @@
+DELETE FROM TypeTags WHERE Type IN (SELECT Type FROM UnitsToDelete);
+
+DELETE FROM Traits WHERE TraitType IN (SELECT 'TRAIT_CIVILIZATION_'||Type FROM UnitsToDelete);
+
+DELETE FROM CivilizationTraits WHERE TraitType IN (SELECT 'TRAIT_CIVILIZATION_'||Type FROM UnitsToDelete);
+
+DELETE FROM UnitAIInfos WHERE UnitType IN (SELECT Type FROM UnitsToDelete);
+
+DELETE FROM Improvement_ValidBuildUnits WHERE UnitType IN (SELECT Type FROM UnitsToDelete);
+
+DELETE FROM UnitUpgrades WHERE Unit IN (SELECT Type FROM UnitsToDelete);
+
+DELETE FROM UnitReplaces WHERE CivUniqueUnitType IN (SELECT Type FROM UnitsToDelete);
+
+DELETE FROM Units WHERE UnitType IN (SELECT Type FROM UnitsToDelete);
+
+DELETE FROM Types WHERE Type IN (SELECT Type FROM UnitsToDelete);
+
+
 -- Disable UUs for Civilizations that are not present (DLC)
 UPDATE EnabledUniqueUnits SET Enabled = 0
 WHERE NOT EXISTS (SELECT 1 FROM Civilizations WHERE Civilizations.CivilizationType = EnabledUniqueUnits.OwnerType)
@@ -251,13 +270,6 @@ SELECT Type, '4', '600', 'ADVISOR_CONQUEST', '3', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
 
 
-INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqCivic, MandatoryObsoleteTech, TraitType)
-SELECT Type, '4', '260', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_SWEDEN_HAKKAPELIITTA_NAME', 'LOC_UNIT_SWEDEN_HAKKAPELIITTA_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_HEAVY_CAVALRY', '4', '56', 'CIVIC_REFORMED_CHURCH', 'TECH_COMPOSITES', 'TRAIT_CIVILIZATION_UNIT_SWEDEN_HAKKAPELIITTA'
-FROM   Types WHERE Type = 'UNIT_SWEDEN_HAKKAPELIITTA';
-
-UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_SWEDEN_HAKKAPELIITTA';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SWEDEN_HAKKAPELIITTA';
-
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, PrereqCivic, TraitType, MandatoryObsoleteTech)
 SELECT Type, '2', '100', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_NORWEGIAN_ULFHEDNAR_NAME', 'LOC_UNIT_NORWEGIAN_ULFHEDNAR_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MYSTICISM', 'TRAIT_CIVILIZATION_UNIT_NORWEGIAN_ULFHEDNAR', 'TECH_GUNPOWDER'
@@ -502,7 +514,7 @@ AND    EnabledUniqueUnits.Enabled = 1;
 
 
 INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
-SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 3, RangedCombat + 3, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 5, RangedCombat + 5, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE'
 AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
@@ -512,6 +524,21 @@ INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, Resour
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE'
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    EnabledUniqueUnits.Enabled = 1;
+
+
+INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+FROM Units, EnabledUniqueUnits
+WHERE EnabledUniqueUnits.Type = 'UNIT_SWEDEN_HAKKAPELIITTA'
+AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   EnabledUniqueUnits.Enabled = 1;
+
+INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
+SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
+FROM   Units_XP2, EnabledUniqueUnits
+WHERE  EnabledUniqueUnits.Type = 'UNIT_SWEDEN_HAKKAPELIITTA'
 AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
 AND    EnabledUniqueUnits.Enabled = 1;
 
@@ -632,10 +659,12 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BO
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_DOUBLEPILLAGEIMPROVE', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_DOUBLEPILLAGEDISTRICT', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'KIND_ABILITY');
-INSERT INTO Types (Type, Kind) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'KIND_ABILITY');
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_EQUITE_ADJACENCY_BONUS', 'KIND_ABILITY');
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_5_WHEN_ATTACKING', 'KIND_ABILITY');
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA', 'KIND_ABILITY');
 
 -- Class Abilities
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MOVE_AFTER_ATTACKING', 'CLASS_SCYTHIAN_AMAZON');
@@ -739,26 +768,21 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_RECEIVE_HUI_HUI_PAO_BONUS', 'C
 INSERT INTO TypeTags (Type, Tag) SELECT UnitAbilityType, 'CLASS_CANADA_HMCS_HAIDA' FROM UnitAbilities WHERE UnitAbilityType = 'ABILITY_BIREME_PROTECT_TRADER';
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS', 'CLASS_CANADA_HMCS_HAIDA');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'CLASS_CANADA_HMCS_HAIDA');
-
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'CLASS_HUNGARY_KALANDOZO');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_LESS_MOVEMENT_PILLAGE', 'CLASS_HUNGARY_KALANDOZO');
-
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_5_BONUS_VS_DAMAGED','CLASS_MALI_SOFA');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_RECEIVE_SOFA_BONUS', 'CLASS_HEAVY_CAVALRY');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_RECEIVE_SOFA_BONUS', 'CLASS_LIGHT_CAVALRY');
-
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ADDITIONAL_ATTACK', 'CLASS_MAORI_TUPARA');
-
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_100_PERCENT_FLANKING', 'CLASS_OTTOMAN_SIPAHI');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_LESS_MOVEMENT_PILLAGE', 'CLASS_OTTOMAN_SIPAHI');
-
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MOVE_AFTER_ATTACKING', 'CLASS_PHOENICIA_NUMIDIAN_CAVALRY');
-
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'CLASS_ENGLISH_SHIP_OF_THE_LINE');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS', 'CLASS_ENGLISH_SHIP_OF_THE_LINE');
 
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS', 'CLASS_ELEANOR_TEMPLAR');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'CLASS_ELEANOR_TEMPLAR');
-
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_5_WHEN_ATTACKING', 'CLASS_SWEDEN_HAKKAPELIITTA');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA', 'CLASS_SWEDEN_HAKKAPELIITTA');
 
 ---- Incan Chasqui - Build Roads
 UPDATE Units SET BuildCharges = 2 WHERE UnitType = 'UNIT_INCA_CHASQUI';
@@ -849,9 +873,10 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_DOUBLEPILLAGEIMPROVE', 'LOC_ABILITY_DOUBLEPILLAGEIMPROVE_NAME', 'LOC_ABILITY_DOUBLEPILLAGEIMPROVE_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_DOUBLEPILLAGEDISTRICT', 'LOC_ABILITY_DOUBLEPILLAGEDISTRICT_NAME', 'LOC_ABILITY_DOUBLEPILLAGEDISTRICT_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_NAME', 'LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION');
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'LOC_ABILITY_KRONAN_ADJACENCY_BONUS_NAME', 'LOC_ABILITY_KRONAN_ADJACENCY_BONUS_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS', 'LOC_ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS_NAME', 'LOC_ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_NAME', 'LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESCRIPTION');
-
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_5_WHEN_ATTACKING', 'LOC_ABILITY_PLUS_5_WHEN_ATTACKING_NAME', 'LOC_ABILITY_PLUS_5_WHEN_ATTACKING_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA', 'LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_NAME', 'LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_DESCRIPTION');
 
 
 --RequirementSets
@@ -867,6 +892,7 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPO
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
@@ -894,7 +920,6 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJA
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_SOFA_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
-
 
 --Requirements
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
@@ -930,6 +955,8 @@ INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
 
 
 --RequirementArguments
@@ -939,6 +966,8 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'MinimumAmount', '1');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'TerrainType', 'TERRAIN_PLAINS_HILLS');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'TerrainType', 'TERRAIN_SNOW');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'TerrainType', 'TERRAIN_SNOW_HILLS');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'ImprovementType', 'IMPROVEMENT_ZIGGURAT');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MaxRange', '8');
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MinRange', '0');
@@ -1027,7 +1056,10 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SOFA_REQUIREMENTS', 'ADJACENT_FRIENDLY_SOFA_REQUIREMENT');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS', 'PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT');
-
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_SNOW');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_SNOW_HILLS');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA_HILLS');
 
 --Modifiers
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('50_PERCENT_POST_COMBAT_FAITH', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
@@ -1090,7 +1122,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_IN_FORMATION_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'CONVOY_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS');
-
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('EXTRA_MOVEMENT_ON_TUNDRA_OR_SNOW', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT', 'PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS');
 
 
 -- AbilityModifiers
@@ -1104,8 +1136,6 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_ADDITIONAL_ATTACK', 'EXPERT_MARKSMAN_ADDITIONAL_ATTACK');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DRUZHINA', 'PLUS_4_VERSUS_MELEE_COMBAT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DRUZHINA', 'VULTURE_BONUS_VS_DAMAGED');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'COSSACK_LOCAL_COMBAT');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_SWEDEN_HAKKAPELIITTA', 'PLUS_5_OTHER_RELIGION_COMBAT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PERC_50_POST_COMBAT_GOLD', 'PERC_50_POST_COMBAT_GOLD');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_EQUITE_ADJACENCY_BONUS', 'PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_FRENCH_MARINE', 'AMPHIBIOUS_BONUS_IGNORE_RIVERS');
@@ -1190,8 +1220,10 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DOUBLEPILLAGEDISTRICT', 'SACK_DOUBLEPILLAGEDISTRICT');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_DOUBLEPILLAGEIMPROVE', 'TOTALWAR_DOUBLEPILLAGEIMPROVE');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_IN_FORMATION_BONUS', 'PLUS_X_IN_FORMATION_BONUS');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_KRONAN_ADJACENCY_BONUS_NAVAL_RANGED', 'PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS', 'PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'PLUS_X_HOLY_SITE_PROXIMITY_BONUS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_5_WHEN_ATTACKING', 'PLUS_5_WHEN_ATTACKING_COMBAT_BONUS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA', 'EXTRA_MOVEMENT_ON_TUNDRA_OR_SNOW');
 
 --ModifierStrings
 --ModifierStrings
@@ -1310,8 +1342,9 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_HUI_HUI
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('RECEIVE_SOFA_BONUS', 'Amount', '4');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS', 'Amount', '10');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_IN_FORMATION_BONUS', 'Amount', '5');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS', 'Amount', '5');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS', 'Amount', '7');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_HOLY_SITE_PROXIMITY_BONUS', 'Amount', '5');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('EXTRA_MOVEMENT_ON_TUNDRA_OR_SNOW', 'Amount', '2');
 
 
 -- Polish Winged Hussar Fix

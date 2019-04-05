@@ -1,3 +1,5 @@
+DELETE FROM PlayerItems WHERE Type IN (SELECT Type FROM UnitsToDelete);
+
 -- Disable UUs for Civilizations that are not present (DLC)
 UPDATE ConfigEnabledUniqueUnits SET Enabled = 0 WHERE NOT EXISTS (SELECT 1 FROM Players WHERE OwnerType = ConfigEnabledUniqueUnits.OwnerType);
 

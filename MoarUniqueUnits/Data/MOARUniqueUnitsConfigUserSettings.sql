@@ -72,3 +72,7 @@ INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUE
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_SWEDEN','UNIT_SWEDEN_HAKKAPELIITTA', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('LEADER_ELEANOR_ENGLAND','UNIT_ELEANOR_TEMPLAR', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('LEADER_ELEANOR_FRANCE','UNIT_ELEANOR_TEMPLAR', 1, 5);
+
+CREATE TABLE UnitsToDelete (Type VARCHAR);
+
+INSERT INTO UnitsToDelete VALUES ('UNIT_ENGLISH_SEADOG');

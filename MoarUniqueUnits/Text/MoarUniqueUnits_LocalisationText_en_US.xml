@@ -877,7 +877,7 @@
 			<Text>Septireme</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_DESCRIPTION">
-			<Text>English unique unit.</Text>
+			<Text>English unique Renaissance era Naval Ranged unit replacing the Frigate. +7 [ICON_Strength] Combat Strength when adjacent to another Ship of the Line.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_NAME">
 			<Text>Ship of the Line</Text>
@@ -1276,7 +1276,7 @@
 			<Text>Hakkapeliitta</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_DESCRIPTION">
-			<Text>Swedish unique unit.</Text>
+			<Text>Swedish unique Industrial Era Light Cavalry unit replacing Cavalry. +5 [ICON_Strength] Combat Strength when attacking. Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
 			<Text>Templar</Text>
