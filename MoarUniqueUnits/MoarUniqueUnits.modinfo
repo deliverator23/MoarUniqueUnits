@@ -142,6 +142,8 @@
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_stop_run</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Horseman_Spear_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Longswordsman_Idle</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_Mounted_Sword_AttackA</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_Mounted_Sword_Idle</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Peltast_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Skirt_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_attacka</File>
@@ -219,6 +221,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_2_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_3_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_4_a_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_England_Sail_a_England_Sail_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_English_SotL_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_01_d45_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_02_null</File>
@@ -355,6 +358,8 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_u_sumerian_phalanx_diff_u_sumerian_phalanx_diff_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_WarCart_Rider_a_Bronze_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_WhiteRed_Longbowman_a_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_England_Sail_g</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_England_Sail_m</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_English_SotL_g</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_English_SotL_m</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Flat_Normal0</File>
@@ -519,6 +524,8 @@
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_stop_run</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Horseman_Spear_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Longswordsman_Idle</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_Mounted_Sword_AttackA</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_Mounted_Sword_Idle</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Peltast_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Skirt_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_attacka</File>
@@ -596,6 +603,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_2_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_3_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_4_a_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_England_Sail_a_England_Sail_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_English_SotL_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_01_d45_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_02_null</File>
@@ -732,6 +740,8 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_u_sumerian_phalanx_diff_u_sumerian_phalanx_diff_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_WarCart_Rider_a_Bronze_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_WhiteRed_Longbowman_a_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_England_Sail_g</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_England_Sail_m</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_English_SotL_g</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_English_SotL_m</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Flat_Normal0</File>
