@@ -54,37 +54,13 @@
         <Element>
             <LibraryName text="Unit"/>
             <PackageDependencies>
-                <Element text="units/aborigine.blp"/>
-                <Element text="units/accessories.blp"/>
-                <Element text="units/africanForestElephant.blp"/>
-                <Element text="units/apache.blp"/>
-                <Element text="units/armoredHorseman.blp"/>
-                <Element text="units/ballista.blp"/>
-                <Element text="units/bandeirante.blp"/>
-                <Element text="units/cataphract.blp"/>
-                <Element text="units/gendarme.blp"/>
-                <Element text="units/ironside.blp"/>
-                <Element text="units/lancer.blp"/>
-                <Element text="units/longbowman.blp"/>
-                <Element text="units/modernInfantry.blp"/>
-                <Element text="units/nativeAmerican.blp"/>
-                <Element text="units/peltast.blp"/>
-                <Element text="units/persianWarship.blp"/>
-                <Element text="units/pezhetairos.blp"/>
-                <Element text="units/rifleman.blp"/>
-                <Element text="units/roundShields.blp"/>
-                <Element text="units/septireme.blp"/>
-                <Element text="units/tanks.blp"/>
-                <Element text="units/ulfhednar.blp"/>
                 <Element text="units/uniqueUnits.blp"/>
             </PackageDependencies>
         </Element>
         <Element>
             <LibraryName text="VFX"/>
             <PackageDependencies>
-                <Element text="ballistaVFX.blp"/>
-                <Element text="spearVFX.blp"/>
-                <Element text="trebuchetVFX.blp"/>
+                <Element text="uniqueUnitsVFX.blp"/>
             </PackageDependencies>
         </Element>
         <Element>
