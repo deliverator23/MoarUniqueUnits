@@ -116,9 +116,7 @@
 		<File>Text/MoarUniqueUnits_LocalisationText_zh_Hant_HK.xml</File>
 
 		<!-- Platforms -->
-		<File>Platforms\MacOS\BLPs\ballistaVFX.blp</File>
-		<File>Platforms\MacOS\BLPs\spearVFX.blp</File>
-		<File>Platforms\MacOS\BLPs\trebuchetVFX.blp</File>
+		<File>Platforms\MacOS\BLPs\uniqueUnitsVFX.blp</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_ballista_static_anim</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_destroyer_attacka</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_destroyer_bombard_defense</File>
@@ -142,6 +140,8 @@
 		<File>Platforms\MacOS\BLPs\ANIMATION_helicoptergunship_stop_run</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Horseman_Spear_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Longswordsman_Idle</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_Mounted_Sword_AttackA</File>
+		<File>Platforms\MacOS\BLPs\ANIMATION_Mounted_Sword_Idle</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Peltast_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_Skirt_Throw</File>
 		<File>Platforms\MacOS\BLPs\ANIMATION_trebuchet_attacka</File>
@@ -209,6 +209,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Amazon_Shield_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_ArmoredHorseman_a_ArmoredHorseman_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Ballista_Black_TintMask</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_Caucasian_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_Maori_Tattoo_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
@@ -219,6 +220,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_2_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_3_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_4_a_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_England_Sail_a_England_Sail_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_English_SotL_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_01_d45_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_02_null</File>
@@ -355,6 +357,8 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_u_sumerian_phalanx_diff_u_sumerian_phalanx_diff_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_WarCart_Rider_a_Bronze_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_WhiteRed_Longbowman_a_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_England_Sail_g</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_England_Sail_m</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_English_SotL_g</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_English_SotL_m</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Flat_Normal0</File>
@@ -470,32 +474,8 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_White_AO</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_White_Metal</File>
 		<File>Platforms\MacOS\BLPs\Icons.blp</File>
-		<File>Platforms\MacOS\BLPs\aborigine.blp</File>
-		<File>Platforms\MacOS\BLPs\accessories.blp</File>
-		<File>Platforms\MacOS\BLPs\africanForestElephant.blp</File>
-		<File>Platforms\MacOS\BLPs\apache.blp</File>
-		<File>Platforms\MacOS\BLPs\armoredHorseman.blp</File>
-		<File>Platforms\MacOS\BLPs\ballista.blp</File>
-		<File>Platforms\MacOS\BLPs\bandeirante.blp</File>
-		<File>Platforms\MacOS\BLPs\cataphract.blp</File>
-		<File>Platforms\MacOS\BLPs\gendarme.blp</File>
-		<File>Platforms\MacOS\BLPs\ironside.blp</File>
-		<File>Platforms\MacOS\BLPs\lancer.blp</File>
-		<File>Platforms\MacOS\BLPs\longbowman.blp</File>
-		<File>Platforms\MacOS\BLPs\modernInfantry.blp</File>
-		<File>Platforms\MacOS\BLPs\nativeAmerican.blp</File>
-		<File>Platforms\MacOS\BLPs\peltast.blp</File>
-		<File>Platforms\MacOS\BLPs\persianWarship.blp</File>
-		<File>Platforms\MacOS\BLPs\pezhetairos.blp</File>
-		<File>Platforms\MacOS\BLPs\rifleman.blp</File>
-		<File>Platforms\MacOS\BLPs\roundShields.blp</File>
-		<File>Platforms\MacOS\BLPs\septireme.blp</File>
-		<File>Platforms\MacOS\BLPs\tanks.blp</File>
-		<File>Platforms\MacOS\BLPs\ulfhednar.blp</File>
 		<File>Platforms\MacOS\BLPs\uniqueUnits.blp</File>
-		<File>Platforms\Windows\BLPs\ballistaVFX.blp</File>
-		<File>Platforms\Windows\BLPs\spearVFX.blp</File>
-		<File>Platforms\Windows\BLPs\trebuchetVFX.blp</File>
+		<File>Platforms\Windows\BLPs\uniqueUnitsVFX.blp</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_ballista_static_anim</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_destroyer_attacka</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_destroyer_bombard_defense</File>
@@ -519,6 +499,8 @@
 		<File>Platforms\Windows\BLPs\ANIMATION_helicoptergunship_stop_run</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Horseman_Spear_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Longswordsman_Idle</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_Mounted_Sword_AttackA</File>
+		<File>Platforms\Windows\BLPs\ANIMATION_Mounted_Sword_Idle</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Peltast_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_Skirt_Throw</File>
 		<File>Platforms\Windows\BLPs\ANIMATION_trebuchet_attacka</File>
@@ -586,6 +568,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Amazon_Shield_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_ArmoredHorseman_a_ArmoredHorseman_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Ballista_Black_TintMask</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_Caucasian_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_Maori_Tattoo_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
@@ -596,6 +579,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_2_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_3_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_4_a_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_England_Sail_a_England_Sail_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_English_SotL_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_01_d45_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_France_Heater_Shield_02_null</File>
@@ -732,6 +716,8 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_u_sumerian_phalanx_diff_u_sumerian_phalanx_diff_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_WarCart_Rider_a_Bronze_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_WhiteRed_Longbowman_a_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_England_Sail_g</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_England_Sail_m</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_English_SotL_g</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_English_SotL_m</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Flat_Normal0</File>
@@ -847,28 +833,6 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_White_AO</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_White_Metal</File>
 		<File>Platforms\Windows\BLPs\Icons.blp</File>
-		<File>Platforms\Windows\BLPs\aborigine.blp</File>
-		<File>Platforms\Windows\BLPs\accessories.blp</File>
-		<File>Platforms\Windows\BLPs\africanForestElephant.blp</File>
-		<File>Platforms\Windows\BLPs\apache.blp</File>
-		<File>Platforms\Windows\BLPs\armoredHorseman.blp</File>
-		<File>Platforms\Windows\BLPs\ballista.blp</File>
-		<File>Platforms\Windows\BLPs\bandeirante.blp</File>
-		<File>Platforms\Windows\BLPs\cataphract.blp</File>
-		<File>Platforms\Windows\BLPs\gendarme.blp</File>
-		<File>Platforms\Windows\BLPs\ironside.blp</File>
-		<File>Platforms\Windows\BLPs\lancer.blp</File>
-		<File>Platforms\Windows\BLPs\longbowman.blp</File>
-		<File>Platforms\Windows\BLPs\modernInfantry.blp</File>
-		<File>Platforms\Windows\BLPs\nativeAmerican.blp</File>
-		<File>Platforms\Windows\BLPs\peltast.blp</File>
-		<File>Platforms\Windows\BLPs\persianWarship.blp</File>
-		<File>Platforms\Windows\BLPs\pezhetairos.blp</File>
-		<File>Platforms\Windows\BLPs\rifleman.blp</File>
-		<File>Platforms\Windows\BLPs\roundShields.blp</File>
-		<File>Platforms\Windows\BLPs\septireme.blp</File>
-		<File>Platforms\Windows\BLPs\tanks.blp</File>
-		<File>Platforms\Windows\BLPs\ulfhednar.blp</File>
 		<File>Platforms\Windows\BLPs\uniqueUnits.blp</File>
 	</Files>
 </Mod>
