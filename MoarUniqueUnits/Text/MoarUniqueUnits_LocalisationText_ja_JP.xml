@@ -1045,7 +1045,7 @@
 			<Text>ガレー船に取ってかわるペルシア固有の太古の海洋近接戦闘ユニット。攻撃時に [ICON_Strength] 戦闘力+5。隣接している味方の陸上ユニットに [ICON_Strength] 戦闘力+5を付与。フェニキア軍船に隣接してターンを開始した味方の陸上ユニットに移動ポイント+2を付与。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_PERSIAN_WARSHIP_NAME">
-			<Text>フェニキア軍船</Text>
+			<Text>軍船</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION">
 			<Text>マスケット銃兵に取ってかわるポーランド固有のルネサンス時代の近接戦闘ユニット。ターンごとの回復量+10。</Text>
@@ -1210,7 +1210,7 @@
 			<Text>ダメージを負ったユニットに対して [ICON_Strength] 戦闘力+10</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC">
-			<Text>フェニキア軍船に隣接しているため [ICON_Strength] 戦闘力+5</Text>
+			<Text>軍船に隣接しているため [ICON_Strength] 戦闘力+5</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC">
 			<Text>師公から [ICON_Strength] 戦闘力+5</Text>
@@ -1225,73 +1225,73 @@
 			<Text>イシジュラ戦士に隣接しているため [ICON_Strength] 戦闘力+4</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME">
-			<Text>HMCS Haida</Text>
+			<Text>ハイダ</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION">
-			<Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. + [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile.</Text>
+			<Text>駆逐艦に取ってかわるカナダ固有の原子力時代の海洋近接戦闘ユニット。海洋略奪ユニットに対して [ICON_Strength] 戦闘力+10。陣形を組むと [ICON_Strength] 戦闘力+5。4タイル以内にいる交易商ユニットは、水域タイルで略奪を受けない。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME">
-			<Text>Kalandozó</Text>
+			<Text>カランドゾー</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION">
-			<Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman. Double gold from pillaging Districts and Improvements. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
+			<Text>弩兵に取ってかわるハンガリー固有の中世の長距離戦闘ユニット。区域や施設の略奪時に2倍のゴールドを得る。敵を撃破すると、相手 [ICON_Strength] 戦闘力の50%と同量の [ICON_Gold] ゴールドを獲得する。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_INCA_CHASQUI_NAME">
-			<Text>Chasqui</Text>
+			<Text>チャスキ</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION">
-			<Text>Incan unique Ancient Era Recon unit replacing the Scout. +1 extra movement and can build roads.</Text>
+			<Text>斥候に取ってかわるインカ固有の太古の偵察ユニット。移動力が1多い。道路を建設可能。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_MALI_SOFA_NAME">
-			<Text>Sofa</Text>
+			<Text>ソファ</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION">
-			<Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman.  +5 [ICON_Strength] vs damaged units. Adjacent Cavalry units receive +4 [ICON_Strength].</Text>
+			<Text>弩兵に取ってかわるマリ固有の中世の長距離戦闘ユニット。ダメージを負ったユニットに対して [ICON_Strength] 戦闘力+5。隣接する軽騎兵ユニットと重騎兵ユニットに [ICON_Strength] 戦闘力+4を付与する。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_MAORI_TUPARA_NAME">
-			<Text>Toatupara</Text>
+			<Text>トアトゥパラ</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION">
-			<Text>Maori unique Industrial Era Recon unit replacing the Ranger. Weaker than Ranger but can attack twice per turn. Can build Pa Improvement.</Text>
+			<Text>レンジャーに取ってかわるマオリ固有の産業時代の偵察ユニット。戦闘力は低いが、1ターンに2回攻撃可能。マオリ固有の施設「パー」を建設できる。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME">
-			<Text>Sipahi</Text>
+			<Text>スィパーヒー</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION">
-			<Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight. +100% flanking bonus and requires fewer movement points to pillage.</Text>
+			<Text>騎士に取ってかわるオスマン固有の中世の重騎兵ユニット。側面攻撃ボーナス+100%。略奪に要する移動力が少なくて済む。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME">
-			<Text>Numidian Cavalry</Text>
+			<Text>ヌミディア騎兵</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION">
-			<Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has Ranged Attack. Can move after attacking.</Text>
+			<Text>騎乗兵に取ってかわるフェニキア固有の古典時代の軽騎兵ユニット。遠隔攻撃が可能。攻撃後に移動可能。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_SWEDEN_KRONAN_NAME">
-			<Text>Kronan</Text>
+			<Text>クローナン</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_SWEDEN_KRONAN_DESCRIPTION">
-			<Text>Swedish unique Renaissance Era Naval Melee unit replacing the Frigate. Combat +5 adjacent to another Kronan unit.</Text>
+			<Text>フリゲート艦に取ってかわるスウェーデン固有のルネサンス時代の海洋長距離戦闘戦闘ユニット。別のクローナンと隣接している場合に [ICON_Strength] 戦闘力+5。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME">
-			<Text>Templar</Text>
+			<Text>テンプル騎士団</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION">
-			<Text>Unique unit for Eleanor of Aquitaine. +5 [ICON_Strength] Combat Strength when opponent is another religion. +5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text>
+			<Text>アリエノール固有の中世の近接戦闘ユニット。異なる宗教を信奉する敵に対して [ICON_Strength] 戦闘力+5。聖地区域から4タイル以内にいる場合に [ICON_Strength] 戦闘力+5。</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="RECEIVE_SOFA_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text>
+			<Text>ソファに隣接しているため [ICON_Strength] 戦闘力+5</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength vs Naval Raider class.</Text>
+			<Text>海洋略奪ユニットに対して [ICON_Strength] 戦闘力+10</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="PLUS_X_IN_FORMATION_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength when in formation.</Text>
+			<Text>陣形を組んでいるため [ICON_Strength] 戦闘力+5</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength when adjacent to another Kronan unit.</Text>
+			<Text>クローナンと隣接しているため [ICON_Strength] 戦闘力+5</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC">
-			<Text>[ICON_Strength] Combat Strength within 4 tiles of a Holy Site.</Text>
+			<Text>4タイル以内に聖地区域があるため [ICON_Strength] 戦闘力+5</Text>
 		</Replace>
 		<Replace Language="ja_JP" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_1">
 			<Text>HMCS Haida is a Tribal-class destroyer that served in the Royal Canadian Navy (RCN) from 1943 to 1963, participating in World War II and the Korean War. She was named after the Haida people. The only surviving Tribal-class destroyer out of 27 vessels constructed for the RCN, Royal Navy and Royal Australian Navy between 1937 and 1945, Haida sank more enemy surface tonnage than any other Canadian warship and as such is commonly referred to as the "Fightingest Ship in the Royal Canadian Navy". Designated a National Historic Site of Canada in 1984, she now serves as a museum ship berthed next to HMCS Star, an active Royal Canadian Naval Reserve Division, in Hamilton, Ontario. In 2018, Haida was designated the ceremonial flagship of the RCN.</Text>
@@ -1428,11 +1428,5 @@
 		<Replace Language="ja_JP" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
-
-		<!-- Appendix -->
-		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">
-			<Text>マケドニア固有の古典時代の重騎兵ユニット。大将軍に隣接していると [ICON_Strength] 戦闘力+5。敵ユニットを倒すと大将軍ポイント+5。最初から無料でレベルアップを1つ有する。</Text>
-		</Replace>
-
 	</LocalizedText>
 </GameData>
