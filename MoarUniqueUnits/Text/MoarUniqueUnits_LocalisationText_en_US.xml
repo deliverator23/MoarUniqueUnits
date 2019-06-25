@@ -1434,5 +1434,29 @@
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_MEDICINE_MAN_BONUS_DESCRIPTION">
+			<Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory when adjacent to Medicine Man (Medicine Man).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_NORWEGIAN_ULFHEDNAR_BONUS_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength versus undamaged units, +10 [ICON_Strength] Combat Strength versus damaged units, and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith if adjacent to Ulfhedinn (Norway).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SHIGONG_BONUS_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength and earns more experience if adjacent to Strategist (China).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION">
+			<Text>Fights at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength and +2 movement at start of turn if adjacent to Warship (Persia).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION">
+			<Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SOFA_BONUS_DESCRIPTION">
+			<Text>+4 [ICON_Strength] if adjacent to Sofa (Mali).</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
