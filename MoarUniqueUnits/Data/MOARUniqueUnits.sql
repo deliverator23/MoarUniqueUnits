@@ -49,7 +49,7 @@ SELECT Type, '4', '80', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CL
 FROM   Types WHERE Type = 'UNIT_ROMAN_EQUITE';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_ROMAN_EQUITE';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_ROMAN_EQUITE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_ROMAN_EQUITE';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, MandatoryObsoleteTech, TraitType)
@@ -57,7 +57,7 @@ SELECT Type, '4', '150', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_SPANISH_JINETE';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_SPANISH_JINETE';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SPANISH_JINETE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_SPANISH_JINETE';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
@@ -65,7 +65,7 @@ SELECT Type, '4', '150', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_RUSSIAN_DRUZHINA';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_RUSSIAN_DRUZHINA';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_RUSSIAN_DRUZHINA';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, RangedCombat, Range, PrereqTech, TraitType)
@@ -78,7 +78,7 @@ SELECT Type, '4', '200', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_INDIAN_MUGHAL_SOWAR';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_INDIAN_MUGHAL_SOWAR';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_INDIAN_MUGHAL_SOWAR';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_INDIAN_MUGHAL_SOWAR';
 
 
 
@@ -87,7 +87,7 @@ SELECT Type, '4', '200', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_FRENCH_GENDARME';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_FRENCH_GENDARME';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_FRENCH_GENDARME';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_FRENCH_GENDARME';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
@@ -95,7 +95,7 @@ SELECT Type, '4', '200', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_SCYTHIAN_AMAZON';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_SCYTHIAN_AMAZON';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SCYTHIAN_AMAZON';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_SCYTHIAN_AMAZON';
 
 
 
@@ -104,7 +104,7 @@ SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_NORWEGIAN_HIRDMAN';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_NORWEGIAN_HIRDMAN';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_NORWEGIAN_HIRDMAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_NORWEGIAN_HIRDMAN';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqCivic, MandatoryObsoleteTech, TraitType)
@@ -132,7 +132,7 @@ SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_AMERICAN_MINUTEMAN';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_AMERICAN_MINUTEMAN';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_AMERICAN_MINUTEMAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_AMERICAN_MINUTEMAN';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, RangedCombat, Range, PrereqTech, BuildCharges, TraitType)
@@ -150,7 +150,7 @@ SELECT Type, '2', '280', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
@@ -158,7 +158,7 @@ SELECT Type, '2', '350', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_INDIAN_SEPOY';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_INDIAN_SEPOY';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_INDIAN_SEPOY';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_INDIAN_SEPOY';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
@@ -175,7 +175,7 @@ SELECT Type, '2', '90', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CL
 FROM   Types WHERE Type = 'UNIT_EGYPTIAN_KHOPESH';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_EGYPTIAN_KHOPESH';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_EGYPTIAN_KHOPESH';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_EGYPTIAN_KHOPESH';
 
 
 
@@ -236,7 +236,7 @@ SELECT Type, '2', '240', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_FRENCH_MARINE';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_FRENCH_MARINE';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_FRENCH_MARINE';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_FRENCH_MARINE';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, MandatoryObsoleteTech, TraitType)
@@ -244,7 +244,7 @@ SELECT Type, '2', '350', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_GREEK_ARMATOLOS';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_GREEK_ARMATOLOS';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_GREEK_ARMATOLOS';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_GREEK_ARMATOLOS';
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, PrereqCivic, TraitType)
 SELECT Type, '2', '100', 'ADVISOR_CONQUEST', '2', 0, 'DOMAIN_LAND', 'FORMATION_CLASS_SUPPORT', 'LOC_UNIT_CHINESE_SHIGONG_NAME', 'LOC_UNIT_CHINESE_SHIGONG_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_SUPPORT', '3', 'CIVIC_MILITARY_TRAINING', 'TRAIT_CIVILIZATION_UNIT_CHINESE_SHIGONG'
@@ -256,7 +256,7 @@ SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_ARABIAN_GHAZI';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_ARABIAN_GHAZI';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_ARABIAN_GHAZI';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_ARABIAN_GHAZI';
 
 
 
@@ -311,7 +311,7 @@ SELECT Type, '4', '100', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_PERSIAN_CATAPHRACT';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_PERSIAN_CATAPHRACT';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_PERSIAN_CATAPHRACT';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_PERSIAN_CATAPHRACT';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PseudoYieldType, PromotionClass, Maintenance, Combat, MandatoryObsoleteTech, PrereqTech, TraitType)
@@ -324,7 +324,7 @@ SELECT Type, '2', '180', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_POLISH_CHOSEN_INFANTRY';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_POLISH_CHOSEN_INFANTRY';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_POLISH_CHOSEN_INFANTRY';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_POLISH_CHOSEN_INFANTRY';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, TraitType)
@@ -332,7 +332,7 @@ SELECT Type, '5', '330', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_POLISH_UHLAN';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_POLISH_UHLAN';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_POLISH_UHLAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_POLISH_UHLAN';
 
 
 
@@ -347,7 +347,7 @@ SELECT Type, '100', '2', '3', '2', 1, 'DOMAIN_LAND', '35', 'FORMATION_CLASS_LAND
 FROM   Types WHERE Type = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_INDONESIAN_KRIS_SWORDSMAN';
 
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, PseudoYieldType, MandatoryObsoleteTech, PrereqTech, TraitType)
@@ -365,7 +365,7 @@ SELECT Type, '120', '2', '2', '2', 1, 'DOMAIN_LAND', '55', 'FORMATION_CLASS_LAND
 FROM   Types WHERE Type = 'UNIT_DUTCH_SCHUTTERIJ';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_NITER' WHERE UnitType = 'UNIT_DUTCH_SCHUTTERIJ';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_DUTCH_SCHUTTERIJ';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_DUTCH_SCHUTTERIJ';
 
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat,  FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
@@ -373,7 +373,7 @@ SELECT Type, '180', '3', '4', '2', 1, 'DOMAIN_LAND', '48', 'FORMATION_CLASS_LAND
 FROM   Types WHERE Type = 'UNIT_GEORGIAN_TADZREULI';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_GEORGIAN_TADZREULI';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_GEORGIAN_TADZREULI';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_GEORGIAN_TADZREULI';
 
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, PrereqTech, TraitType)
@@ -381,7 +381,7 @@ SELECT Type, '330', '5', '5', '2', 1, 'DOMAIN_LAND', '62', 'FORMATION_CLASS_LAND
 FROM   Types WHERE Type = 'UNIT_CREE_OTEHTAPIW';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_CREE_OTEHTAPIW';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_CREE_OTEHTAPIW';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_CREE_OTEHTAPIW';
 
 
 INSERT INTO Units (UnitType, Cost, Maintenance, BaseMoves, BaseSightRange, ZoneOfControl, Domain, Combat, RangedCombat, Range, FormationClass, PromotionClass, AdvisorType, Name, Description, PurchaseYield, MandatoryObsoleteTech, PrereqTech, TraitType)
@@ -394,7 +394,7 @@ SELECT Type, '2', '160', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_C
 FROM   Types WHERE Type = 'UNIT_SCOTTISH_GALLOWGLASS';
 
 UPDATE Units SET StrategicResource = 'RESOURCE_IRON' WHERE UnitType = 'UNIT_SCOTTISH_GALLOWGLASS';
-INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 20 FROM Units WHERE  UnitType = 'UNIT_SCOTTISH_GALLOWGLASS';
+INSERT INTO Units_XP2 (UnitType, ResourceCost) SELECT UnitType, 10 FROM Units WHERE  UnitType = 'UNIT_SCOTTISH_GALLOWGLASS';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, Range, Bombard, PrereqTech, MandatoryObsoleteTech, TraitType)
