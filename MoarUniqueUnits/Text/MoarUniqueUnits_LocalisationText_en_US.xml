@@ -1459,34 +1459,31 @@
 			<Text>+5 [ICON_Strength] Combat Strength when attacking. Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills terrain.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PERC_50_POST_COMBAT_GOLD_DESCRIPTION">
-			<Text></Text>
+			<Text>Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_EQUITE_ADJACENCY_BONUS_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when fighting next to Legion or Warrior unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_FATHERLAND_VOLUNTEER_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength on same continent as capital city.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_FRENCH_MARINE_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength on foreign continents. No attack penalty when attacking from sea or across rivers.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_GARDE_REPUBLICAINE_DESCRIPTION">
-			<Text></Text>
+			<Text>+10 [ICON_Strength] Combat Strength when attacking or defending districts.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_GENDARME_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_GHAZI_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_HIRDMAN_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Culture] Culture on combat victory if fighting on same continent as capital.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_JINETE_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_LANDSKNECHT_DESCRIPTION">
-			<Text></Text>
+			<Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory if fighting on same continent as capital.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_LONGBOWMAN_DESCRIPTION">
 			<Text></Text>
