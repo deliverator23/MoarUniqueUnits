@@ -1434,6 +1434,87 @@
 		<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5">
 			<Text />
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_AMAZON_SCOUT_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_AMERICAN_AH64_APACHE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_ARMATOLOS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_BANDEIRANTE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_CAMEL_ARCHER_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_ADDITIONAL_ATTACK_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_DRUZHINA_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_SWEDEN_HAKKAPELIITTA_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PERC_50_POST_COMBAT_GOLD_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_EQUITE_ADJACENCY_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_FATHERLAND_VOLUNTEER_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_FRENCH_MARINE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_GARDE_REPUBLICAINE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_GENDARME_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_GHAZI_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_HIRDMAN_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_JINETE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_LANDSKNECHT_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_LONGBOWMAN_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_MINUTEMAN_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_MUGHAL_SOWAR_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_ONAGER_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PANZER_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PELTAST_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PHALANX_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_10_DEFENDER_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_DEFENDER_DESCRIPTION">
+			<Text></Text>
+		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_MEDICINE_MAN_BONUS_DESCRIPTION">
 			<Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory when adjacent to Medicine Man (Medicine Man).</Text>
 		</Replace>
@@ -1443,20 +1524,128 @@
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SHIGONG_BONUS_DESCRIPTION">
 			<Text>+5 [ICON_Strength] Combat Strength and earns more experience if adjacent to Strategist (China).</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_SEPOY_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_T34_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_TERCIO_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_BONUS_VS_DAMAGED_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_WAR_GALLEY_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_YAMATO_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_SASR_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_JAGUAR_DESCRIPTION">
+			<Text></Text>
+		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION">
 			<Text>Fights at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_CHOSEN_INFANTRY_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_100_PERCENT_FLANKING_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_PLACEHOLDER">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_BALLISTA_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_CATAPHRACT_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PEZHETAIROS_DESCRIPTION">
+			<Text></Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION">
 			<Text>+5 [ICON_Strength] Combat Strength and +2 movement at start of turn if adjacent to Warship (Persia).</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION">
+			<Text></Text>
+		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION">
 			<Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_KOREAN_TURTLE_SHIP_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_DUTCH_SCHUTTERIJ_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_GEORGIAN_TADZREULI_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_CREE_OTEHTAPIW_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_MAPUCHE_GUERILLA_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_SCOTTISH_GALLOWGLASS_DESCRIPTION">
+			<Text></Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION">
 			<Text>+5 [ICON_Strength] Combat Strength when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_ZULU_ASSEGAI_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_LESS_MOVEMENT_PILLAGE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SOFA_BONUS_DESCRIPTION">
 			<Text>+4 [ICON_Strength] if adjacent to Sofa (Mali).</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_DOUBLEPILLAGEIMPROVE_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_DOUBLEPILLAGEDISTRICT_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_WHEN_ATTACKING_DESCRIPTION">
+			<Text></Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_DESCRIPTION">
+			<Text></Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
