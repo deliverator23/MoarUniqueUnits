@@ -925,7 +925,7 @@
 			<Text>Armatolos</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION">
-			<Text>Greek unique Ranged unit that replaces Archer. +5 [ICON_Strength] Combat Strength when Defending.</Text>
+			<Text>Greek unique Ranged unit that replaces Archer. +5 [ICON_Strength] Combat Strength when defending.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_GREEK_PELTAST_NAME">
 			<Text>Peltast</Text>
@@ -1486,31 +1486,28 @@
 			<Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory if fighting on same continent as capital.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_LONGBOWMAN_DESCRIPTION">
-			<Text></Text>
+			<Text>+4 [ICON_Strength] Combat Strength against Melee and Cavalry units with a further +4 [ICON_Strength] Combat Strength if adjacent to another Longbowman unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_MINUTEMAN_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Also gains additional +5 [ICON_Strength] when fighting in Forest or Jungle.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_MUGHAL_SOWAR_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_ONAGER_DESCRIPTION">
-			<Text></Text>
+			<Text>Heals +15 per turn when on or adjacent to a Stepwell improvement. Ignores terrain costs.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PANZER_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PELTAST_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when defending.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PHALANX_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] if fighting within 8 tiles of a Ziggurat improvement.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_10_DEFENDER_DESCRIPTION">
-			<Text></Text>
+			<Text>+10 [ICON_Strength] Combat Strength when defending.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_DEFENDER_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when defending.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_MEDICINE_MAN_BONUS_DESCRIPTION">
 			<Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory when adjacent to Medicine Man (Medicine Man).</Text>
@@ -1522,127 +1519,103 @@
 			<Text>+5 [ICON_Strength] Combat Strength and earns more experience if adjacent to Strategist (China).</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_SEPOY_DESCRIPTION">
-			<Text></Text>
+			<Text>Fights at full Combat Strength when damaged.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_T34_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength in or adjacent to own territory.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_TERCIO_DESCRIPTION">
-			<Text></Text>
+			<Text>Earns experience more quickly.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_BONUS_VS_DAMAGED_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_WAR_GALLEY_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_YAMATO_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength versus damaged units.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_SASR_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when fighting on Desert or Plains. Ignores Zone of Control.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_JAGUAR_DESCRIPTION">
-			<Text></Text>
+			<Text>+10 [ICON_Strength] Combat Strength when attacking and -5 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION">
 			<Text>Fights at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_CHOSEN_INFANTRY_DESCRIPTION">
-			<Text></Text>
+			<Text>Heals an additional 10 points per turn.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_100_PERCENT_FLANKING_DESCRIPTION">
-			<Text></Text>
+			<Text>+100% flanking bonus.</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_PLACEHOLDER">
-			<Text></Text>
+		<Replace Language="en_US" Tag="LOC_HEAL_ON_VICTORY_DESCRIPTION">
+			<Text>Heals after defeating unit.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_BALLISTA_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_CATAPHRACT_DESCRIPTION">
-			<Text></Text>
+			<Text>+17 [ICON_Strength] versus non-District tiles and -10 [ICON_Strength] versus District tiles.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PEZHETAIROS_DESCRIPTION">
-			<Text></Text>
+			<Text>+10 [ICON_Strength] Combat Strength versus Melee units.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_PERSIAN_WARSHIP_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION">
 			<Text>+5 [ICON_Strength] Combat Strength and +2 movement at start of turn if adjacent to Warship (Persia).</Text>
 		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION">
-			<Text></Text>
-		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION">
-			<Text></Text>
+			<Text>Pushes defending enemy units back. No movement cost when crossing rivers.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION">
 			<Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_KOREAN_TURTLE_SHIP_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] vs damaged units.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_DUTCH_SCHUTTERIJ_DESCRIPTION">
-			<Text></Text>
+			<Text>+10 [ICON_Strength] when defending districts.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_GEORGIAN_TADZREULI_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_CREE_OTEHTAPIW_DESCRIPTION">
-			<Text></Text>
+			<Text>Gains +2 movement points if it starts on flat terrain. Heals +15 per turn when on Plains or Grassland. +10 [ICON_Strength] when fighting on Plains or Grassland.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_MAPUCHE_GUERILLA_DESCRIPTION">
-			<Text></Text>
+			<Text>Can move after attacking. Can move and see through Woods and Rainforest.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_SCOTTISH_GALLOWGLASS_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when attacking. Earns experience more quickly.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION">
 			<Text>+5 [ICON_Strength] Combat Strength when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_ZULU_ASSEGAI_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION">
-			<Text></Text>
+			<Text>+4 [ICON_Strength] when adjacent to another Isijula Warrior.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when opponent is another religion.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_LESS_MOVEMENT_PILLAGE_DESCRIPTION">
-			<Text></Text>
+			<Text>Requires fewer movement points to pillage.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SOFA_BONUS_DESCRIPTION">
 			<Text>+4 [ICON_Strength] if adjacent to Sofa (Mali).</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_DOUBLEPILLAGEIMPROVE_DESCRIPTION">
-			<Text></Text>
-		</Replace>
-		<Replace Language="en_US" Tag="LOC_ABILITY_DOUBLEPILLAGEDISTRICT_DESCRIPTION">
-			<Text></Text>
+			<Text>+10 [ICON_Strength] versus Naval Raider class units.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] when in formation.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS_DESCRIPTION">
-			<Text></Text>
+			<Text>+7 [ICON_Strength] Combat Strength when adjacent to another Ship of the Line.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_PLUS_5_WHEN_ATTACKING_DESCRIPTION">
-			<Text></Text>
+			<Text>+5 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_DESCRIPTION">
-			<Text></Text>
+			<Text>Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
