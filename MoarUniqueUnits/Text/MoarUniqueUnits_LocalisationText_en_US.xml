@@ -1563,6 +1563,9 @@
 		<Replace Language="en_US" Tag="LOC_ABILITY_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION">
 			<Text>Pushes defending enemy units back. No movement cost when crossing rivers.</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_ABILITY_KHMER_WAR_CANOE_DESCRIPTION">
+			<Text>Escorted units move at the same speed. Can capture ships. Adjacent land units incur no embark/disembark movement cost.</Text>
+		</Replace>
 		<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION">
 			<Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text>
 		</Replace>
