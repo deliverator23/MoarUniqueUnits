@@ -216,8 +216,8 @@ INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneO
 SELECT Type, '5', '460', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_SEA', 'FORMATION_CLASS_NAVAL', 'LOC_UNIT_JAPANESE_YAMATO_NAME', 'LOC_UNIT_JAPANESE_YAMATO_DESCRIPTION', 'YIELD_GOLD', 'PSEUDOYIELD_UNIT_NAVAL_COMBAT', 'PROMOTION_CLASS_NAVAL_RANGED', '7', '70', '80', '3', 'TECH_STEEL', '80', 'TRAIT_CIVILIZATION_UNIT_JAPANESE_YAMATO', '2'
 FROM   Types WHERE Type = 'UNIT_JAPANESE_YAMATO';
 
-UPDATE Units SET StrategicResource = 'RESOURCE_OIL' WHERE UnitType = 'UNIT_JAPANESE_YAMATO';
-INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_OIL', 1
+UPDATE Units SET StrategicResource = 'RESOURCE_COAL' WHERE UnitType = 'UNIT_JAPANESE_YAMATO';
+INSERT INTO Units_XP2 (UnitType, ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount) SELECT UnitType, 1, 'RESOURCE_COAL', 1
 FROM Units WHERE  UnitType = 'UNIT_JAPANESE_YAMATO';
 
 
@@ -265,10 +265,14 @@ SELECT Type, '2', '80', 'ADVISOR_CONQUEST', '2', 1, 'DOMAIN_LAND', 'FORMATION_CL
 FROM   Types WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
 
 
-INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, CanTargetAir, TraitType)
-SELECT Type, '4', '600', 'ADVISOR_CONQUEST', '3', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AMERICAN_AH64_APACHE_NAME', 'LOC_UNIT_AMERICAN_AH64_APACHE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '7', '85', 'TECH_SYNTHETIC_MATERIALS', 1, 'TRAIT_CIVILIZATION_UNIT_AMERICAN_AH64_APACHE'
+INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, Combat, PrereqTech, CanTargetAir, TraitType, StrategicResource)
+SELECT Type, '4', '600', 'ADVISOR_CONQUEST', '3', 1, 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 'LOC_UNIT_AMERICAN_AH64_APACHE_NAME', 'LOC_UNIT_AMERICAN_AH64_APACHE_DESCRIPTION', 'YIELD_GOLD', 'PROMOTION_CLASS_LIGHT_CAVALRY', '7', '85', 'TECH_SYNTHETIC_MATERIALS', 1, 'TRAIT_CIVILIZATION_UNIT_AMERICAN_AH64_APACHE', 'RESOURCE_ALUMINUM'
 FROM   Types WHERE Type = 'UNIT_AMERICAN_AH64_APACHE';
 
+INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
+SELECT 'UNIT_AMERICAN_AH64_APACHE', ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
+FROM   Units_XP2
+WHERE  Units_XP2.UnitType = 'UNIT_HELICOPTER';
 
 
 INSERT INTO Units (UnitType, BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name, Description, PurchaseYield, PromotionClass, Maintenance, PrereqCivic, TraitType, MandatoryObsoleteTech)
@@ -553,12 +557,11 @@ AND   EnabledUniqueUnits.Enabled = 1;
 UPDATE Units SET Combat = 46, Maintenance = 2, Cost = 160, PrereqTech = 'TECH_CASTLES', MandatoryObsoleteTech = 'TECH_REPLACEABLE_PARTS', PurchaseYield = 'YIELD_FAITH' WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR';
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
-SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
+SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, 10, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_ELEANOR_TEMPLAR'
 AND    Units_XP2.UnitType = EnabledUniqueUnits.UnitAiBaseUnit
 AND    EnabledUniqueUnits.Enabled = 1;
-
 
 
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT Type, DefaultReplaces FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultReplaces IS NOT NULL;
@@ -1440,6 +1443,7 @@ UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_LONGSWORDSMAN' WHERE Unit = 'UNI
 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_POLISH_CHOSEN_INFANTRY' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_AMERICAN_MINUTEMAN' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_RIFLEMAN' WHERE Unit = 'UNIT_DUTCH_SCHUTTERIJ' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN');
 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_COG' WHERE Unit = 'UNIT_KHMER_WAR_CANOE' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_COG');
 
