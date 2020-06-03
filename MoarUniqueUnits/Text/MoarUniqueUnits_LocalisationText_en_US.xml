@@ -1614,5 +1614,17 @@
 		<Replace Language="en_US" Tag="LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_DESCRIPTION">
 			<Text>Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills.</Text>
 		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAYAN_HOLKAN_NAME">
+			<Text>Holcan</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_MAYAN_HOLKAN_DESCRIPTION">
+			<Text>Holcan Desc.</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_NAME">
+			<Text>British Legion</Text>
+		</Replace>
+		<Replace Language="en_US" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_DESCRIPTION">
+			<Text>British Legion Desc.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

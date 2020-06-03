@@ -55,6 +55,7 @@
             <LibraryName text="Unit"/>
             <PackageDependencies>
                 <Element text="units/uniqueUnits.blp"/>
+                <Element text="units/newFrontierUnits.blp"/>
             </PackageDependencies>
         </Element>
         <Element>

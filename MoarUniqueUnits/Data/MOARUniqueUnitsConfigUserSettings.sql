@@ -73,6 +73,10 @@ INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUE
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('LEADER_ELEANOR_ENGLAND','UNIT_ELEANOR_TEMPLAR', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('LEADER_ELEANOR_FRANCE','UNIT_ELEANOR_TEMPLAR', 1, 5);
 
+-- New Frontier UUs
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MAYA', 'UNIT_MAYAN_HOLKAN', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GRAN_COLOMBIA', 'UNIT_COLOMBIAN_BRITISH_LEGION', 1, 5);
+
 CREATE TABLE UnitsToDelete (Type VARCHAR);
 
 INSERT INTO UnitsToDelete VALUES ('UNIT_ENGLISH_SEADOG');
