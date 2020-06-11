@@ -214,6 +214,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_black_tricorn_redcoat_t</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_British_Legion_a_British_Legion_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Builder_Ancient_a_Builder_Ancient_Full_Tint_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Chasqui_Weapon_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_1_a_null</File>
@@ -383,6 +384,11 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_Heater_Shield_normal1</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_HMCS_Haida_ao</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_HMCS_Haida_g</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Huszar_ao</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Huszar_gloss</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Huszar_metalness</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Huszar_normal0</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Huszar_normal1</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Ironside_Musketman_NoShade_AO</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Ironside_Normal0</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Ironside_Normal1</File>
@@ -592,6 +598,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_black_tricorn_redcoat_t</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_British_Legion_a_British_Legion_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Builder_Ancient_a_Builder_Ancient_Full_Tint_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Chasqui_Weapon_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Crusader_Helms_1_a_null</File>
@@ -761,6 +768,11 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_Heater_Shield_normal1</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_HMCS_Haida_ao</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_HMCS_Haida_g</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Huszar_ao</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Huszar_gloss</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Huszar_metalness</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Huszar_normal0</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Huszar_normal1</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Ironside_Musketman_NoShade_AO</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Ironside_Normal0</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Ironside_Normal1</File>
