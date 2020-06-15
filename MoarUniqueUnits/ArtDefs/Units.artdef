@@ -7263,7 +7263,7 @@
                             <m_Fields>
                                 <m_Values>
                                     <Element class="AssetObjects:FloatValue">
-                                        <m_fValue>1.000000</m_fValue>
+                                        <m_fValue>1.15</m_fValue>
                                         <m_ParamName text="Scale"/>
                                     </Element>
                                     <Element class="AssetObjects:IntValue">
@@ -18020,7 +18020,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Rifles/RoughRider"/>
+                                                                    <m_Name text="Rifles/Redcoat/Any/Redcoat_GunA"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
@@ -18069,14 +18069,14 @@
                                                                 <m_Value text="Root"/>
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
-                                                            <Element class="AssetObjects:ArtDefReferenceValue">
-                                                                <m_ElementName text=""/>
-                                                                <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text=""/>
-                                                                <m_CollectionIsLocked>true</m_CollectionIsLocked>
-                                                                <m_TemplateName text=""/>
-                                                                <m_ParamName text="Tint"/>
-                                                            </Element>
+												<Element class="AssetObjects..ArtDefReferenceValue">
+													<m_ElementName text="BaseMale_SkinColor_Caucasian"/>
+													<m_RootCollectionName text="UnitTintTypes"/>
+													<m_ArtDefPath text="Units.artdef"/>
+													<m_CollectionIsLocked>true</m_CollectionIsLocked>
+													<m_TemplateName text="Units"/>
+													<m_ParamName text="Tint"/>
+												</Element>
                                                         </m_Values>
                                                     </m_Fields>
                                                     <m_ChildCollections>
@@ -18103,14 +18103,14 @@
                                                                 <m_Value text="Root"/>
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
-                                                            <Element class="AssetObjects:ArtDefReferenceValue">
-                                                                <m_ElementName text=""/>
-                                                                <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text=""/>
-                                                                <m_CollectionIsLocked>true</m_CollectionIsLocked>
-                                                                <m_TemplateName text=""/>
-                                                                <m_ParamName text="Tint"/>
-                                                            </Element>
+												<Element class="AssetObjects..ArtDefReferenceValue">
+													<m_ElementName text="BaseMale_SkinColor_Caucasian"/>
+													<m_RootCollectionName text="UnitTintTypes"/>
+													<m_ArtDefPath text="Units.artdef"/>
+													<m_CollectionIsLocked>true</m_CollectionIsLocked>
+													<m_TemplateName text="Units"/>
+													<m_ParamName text="Tint"/>
+												</Element>
                                                         </m_Values>
                                                     </m_Fields>
                                                     <m_ChildCollections>

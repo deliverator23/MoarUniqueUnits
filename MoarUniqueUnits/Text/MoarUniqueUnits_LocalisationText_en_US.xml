@@ -1621,7 +1621,7 @@
 			<Text>Holcan Desc.</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_NAME">
-			<Text>British Legion</Text>
+			<Text>Legión Británica</Text>
 		</Replace>
 		<Replace Language="en_US" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_DESCRIPTION">
 			<Text>British Legion Desc.</Text>

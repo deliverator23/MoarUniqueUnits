@@ -1,3 +1,6 @@
+--Units_XP2
+CREATE TABLE IF NOT EXISTS Units_XP2 (UnitType VARCHAR, ResourceMaintenanceAmount INTEGER, ResourceCost INTEGER, ResourceMaintenanceType VARCHAR, TourismBomb INTEGER, CanEarnExperience BOOLEAN, TourismBombPossible BOOLEAN, CanFormMilitaryFormation BOOLEAN, MajorCivOnly BOOLEAN);
+
 DELETE FROM TypeTags WHERE Type IN (SELECT Type FROM UnitsToDelete);
 
 DELETE FROM Traits WHERE TraitType IN (SELECT 'TRAIT_CIVILIZATION_'||Type FROM UnitsToDelete);
@@ -580,20 +583,20 @@ AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
 AND    EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
-SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, 64, RangedCombat, Range, Bombard, Domain, FormationClass, 310, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, 'TECH_RIFLING', PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, 4, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, 'TECH_SATELLITES', MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_COLOMBIAN_BRITISH_LEGION'
-AND   Units.UnitType = 'UNIT_PIKEMAN'
+AND   Units.UnitType = 'UNIT_MUSKETMAN'
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_COLOMBIAN_BRITISH_LEGION'
-AND    Units_XP2.UnitType = 'UNIT_PIKEMAN'
+AND    Units_XP2.UnitType = 'UNIT_MUSKETMAN'
 AND    EnabledUniqueUnits.Enabled = 1;
 
-
+-- Units - End
 
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT Type, DefaultReplaces FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultReplaces IS NOT NULL;
 
@@ -1660,3 +1663,11 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
   SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Templar_HM.dds'
   FROM   Types WHERE Type = 'UNIT_ELEANOR_TEMPLAR';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'British_Legion_HM.dds'
+FROM   Types WHERE Type = 'UNIT_COLOMBIAN_BRITISH_LEGION';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Mayan_Holkan_HM.dds'
+  FROM   Types WHERE Type = 'UNIT_MAYAN_HOLKAN';

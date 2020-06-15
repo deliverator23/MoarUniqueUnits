@@ -1,0 +1,15 @@
+Holcan:
+<Row>
+    <ModifierId>BARBAROSSA_COMBAT_BONUS_VS_CITY_STATES</ModifierId>
+    <ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+    <SubjectRequirementSetId>REQUIREMENTS_OPPONENT_IS_MINOR_CIV</SubjectRequirementSetId>
+</Row>
+
+Holcan:
+Perhaps Holcan could have a combat bonus and victory gold vs units of City States?
+Basically Barbarossa's Ability plus gold on victory.
+
+British Legion:
+maybe they don't suffer combat damage loss when damaged and fighting on hills?
+Samurai bonus but only on hills - I like it.
+Bonus when attacking Ranged
