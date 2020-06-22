@@ -1,8 +1,8 @@
 CREATE TABLE ConfigEnabledUniqueUnits (OwnerType VARCHAR, Type VARCHAR, Enabled INTEGER, SortIndex INTEGER);
 
 -- Base Game UUs
-INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 1, 31);
-INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 0, 8);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_AH64_APACHE', 0, 31);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_AMERICA','UNIT_AMERICAN_MINUTEMAN', 1, 8);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_CAMEL_ARCHER', 1, 8);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ARABIA','UNIT_ARABIAN_GHAZI', 0, 9);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_BRAZIL','UNIT_BRAZILIAN_BANDEIRANTE', 1, 8);

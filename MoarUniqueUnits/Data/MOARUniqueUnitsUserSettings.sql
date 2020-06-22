@@ -1,3 +1,4 @@
+
 CREATE TABLE EnabledUniqueUnits (OwnerType VARCHAR, Type VARCHAR, Enabled INTEGER, DefaultReplaces VARCHAR, DefaultUpgrade VARCHAR, UnitAiBaseUnit VARCHAR);
 
 -- Base Game UUs
@@ -73,7 +74,7 @@ INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, Defau
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('LEADER_ELEANOR_ENGLAND', 'UNIT_ELEANOR_TEMPLAR', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 
 -- New Frontier UUs
-INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAYA', 'UNIT_MAYAN_HOLKAN', 1, 'UNIT_PIKEMAN', 'UNIT_AT_CREW', 'UNIT_PIKEMAN');
+INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAYA', 'UNIT_MAYAN_HOLKAN', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GRAN_COLOMBIA', 'UNIT_COLOMBIAN_BRITISH_LEGION', 1, NULL, 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
 
 CREATE TABLE UnitsToDelete (Type VARCHAR);
