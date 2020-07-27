@@ -16253,7 +16253,7 @@
 																	<m_Values/>
 																</m_Fields>
 																<m_ChildCollections/>
-																<m_Name text="BaseMale_Heads/Heads/Mediterranean"/>
+																<m_Name text="Heads/Male_SouthAmerican_Del"/>
 																<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 															</Element>
                                                         </Element>
@@ -16295,6 +16295,40 @@
 													<m_Name text="Body"/>
 													<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 												</Element>
+												 <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:StringValue">
+                                                                <m_Value text="Hat"/>
+                                                                <m_ParamName text="Point"/>
+                                                            </Element>
+															<Element class="AssetObjects:ArtDefReferenceValue">
+																<m_ElementName text=""/>
+																<m_RootCollectionName text="UnitTintTypes"/>
+																<m_ArtDefPath text=""/>
+																<m_CollectionIsLocked>true</m_CollectionIsLocked>
+																<m_TemplateName text=""/>
+																<m_ParamName text="Tint"/>
+															</Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections>
+                                                        <Element>
+                                                            <m_CollectionName text="Bins"/>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                                            <Element>
+                                                                <m_Fields>
+                                                                    <m_Values/>
+                                                                </m_Fields>
+                                                                <m_ChildCollections/>
+                                                                <m_Name text="Hair/Male_SouthAmerican_Del"/>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                            </Element>
+                                                        </Element>
+                                                    </m_ChildCollections>
+                                                    <m_Name text="Hair"/>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                </Element>
                                                 <Element>
                                                     <m_Fields>
                                                         <m_Values>
@@ -23075,6 +23109,40 @@
                                                     <m_Name text="Hat"/>
                                                     <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                 </Element>
+                                                   <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:StringValue">
+                                                                <m_Value text="Hat"/>
+                                                                <m_ParamName text="Point"/>
+                                                            </Element>
+															<Element class="AssetObjects:ArtDefReferenceValue">
+																<m_ElementName text=""/>
+																<m_RootCollectionName text="UnitTintTypes"/>
+																<m_ArtDefPath text=""/>
+																<m_CollectionIsLocked>true</m_CollectionIsLocked>
+																<m_TemplateName text=""/>
+																<m_ParamName text="Tint"/>
+															</Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections>
+                                                        <Element>
+                                                            <m_CollectionName text="Bins"/>
+                                                            <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                                            <Element>
+                                                                <m_Fields>
+                                                                    <m_Values/>
+                                                                </m_Fields>
+                                                                <m_ChildCollections/>
+                                                                <m_Name text="Hair/Male_SouthAmerican_Del"/>
+                                                                <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                            </Element>
+                                                        </Element>
+                                                    </m_ChildCollections>
+                                                    <m_Name text="Hair"/>
+                                                    <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                                </Element>
                                                 <Element>
                                                     <m_Fields>
                                                         <m_Values>
@@ -23101,7 +23169,7 @@
 																	<m_Values/>
 																</m_Fields>
 																<m_ChildCollections/>
-																<m_Name text="BaseMale_Heads/Heads/Mediterranean"/>
+																<m_Name text="Heads/Male_SouthAmerican_Del"/>
 																<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 															</Element>
                                                         </Element>
