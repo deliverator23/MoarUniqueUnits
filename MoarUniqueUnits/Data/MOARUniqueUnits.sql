@@ -618,7 +618,7 @@ INSERT INTO TypeTags (Type, Tag) SELECT EnabledUniqueUnits.Type, TypeTags.Tag FR
 INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_AZTEC_JAGUAR', 'CLASS_CAPTURE_WORKER' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_AZTEC';
 
 --Improvement_ValidBuildUnits
-INSERT INTO Improvement_ValidBuildUnits (ImprovementType, UnitType) SELECT 'IMPROVEMENT_FORT', Type FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
+INSERT INTO Improvement_ValidBuildUnits (ImprovementType, UnitType, ConsumesCharge, ValidRepairOnly) SELECT 'IMPROVEMENT_FORT', Type, 1, 0 FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
 
 --Unit_BuildingPrereqs
 INSERT INTO Unit_BuildingPrereqs (Unit, PrereqBuilding) SELECT Type, 'BUILDING_BARRACKS' FROM Types WHERE Type = 'UNIT_CHINESE_SHIGONG';
@@ -827,7 +827,7 @@ INSERT INTO Route_ValidBuildUnits SELECT 'ROUTE_MODERN_ROAD', UnitType FROM Unit
 ---- Maori Tupara - Build Pa Improvement
 UPDATE Units SET BuildCharges = 1 WHERE UnitType = 'UNIT_MAORI_TUPARA';
 
-INSERT INTO Improvement_ValidBuildUnits SELECT 'IMPROVEMENT_MAORI_PA', UnitType FROM Units WHERE UnitType = 'UNIT_MAORI_TUPARA';
+INSERT INTO Improvement_ValidBuildUnits  (ImprovementType, UnitType, ConsumesCharge, ValidRepairOnly) SELECT 'IMPROVEMENT_MAORI_PA', UnitType, 1, 0 FROM Units WHERE UnitType = 'UNIT_MAORI_TUPARA';
 
 -- New Frontiers Pass
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_FULL_STRENGTH_WHEN_DAMAGED_ON_HILLS', 'CLASS_COLOMBIAN_BRITISH_LEGION');
