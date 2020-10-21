@@ -310,6 +310,57 @@
                             <m_Name text="MongolianTrebuchet"/>
                             <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                         </Element>
+                        <Element>
+                            <m_Fields>
+                                <m_Values/>
+                            </m_Fields>
+                            <m_ChildCollections>
+                                <Element>
+                                    <m_CollectionName text="Cultures"/>
+                                    <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                    <Element>
+                                        <m_Fields>
+                                            <m_Values/>
+                                        </m_Fields>
+                                        <m_ChildCollections>
+                                            <Element>
+                                                <m_CollectionName text="Assets"/>
+                                                <m_ReplaceMergedCollectionElements>
+                                                    false
+                                                </m_ReplaceMergedCollectionElements>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:BLPEntryValue">
+                                                                <m_EntryName text="HeavyChariot_CartA_Flat"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects:FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="A"/>
+                                                    <m_AppendMergedParameterCollections>
+                                                        false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                            </Element>
+                                        </m_ChildCollections>
+                                        <m_Name text="Any"/>
+                                        <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                    </Element>
+                                </Element>
+                            </m_ChildCollections>
+                            <m_Name text="Gaulish_Chariot"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
                     </Element>
                 </m_ChildCollections>
                 <m_Name text="Vehicles"/>
@@ -1775,6 +1826,56 @@
                                 </Element>
                             </m_ChildCollections>
                             <m_Name text="Turban"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
+                        <Element>
+                            <m_Fields>
+                                <m_Values/>
+                            </m_Fields>
+                            <m_ChildCollections>
+                                <Element>
+                                    <m_CollectionName text="Cultures"/>
+                                    <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                    <Element>
+                                        <m_Fields>
+                                            <m_Values/>
+                                        </m_Fields>
+                                        <m_ChildCollections>
+                                            <Element>
+                                                <m_CollectionName text="Assets"/>
+                                                <m_ReplaceMergedCollectionElements>
+                                                    false
+                                                </m_ReplaceMergedCollectionElements>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects..BLPEntryValue">
+                                                                <m_EntryName text="Mehal_Hat"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects..FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="A"/>
+                                                    <m_AppendMergedParameterCollections>false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                            </Element>
+                                        </m_ChildCollections>
+                                        <m_Name text="Any"/>
+                                        <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                    </Element>
+                                </Element>
+                            </m_ChildCollections>
+                            <m_Name text="Mehal"/>
                             <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                         </Element>
                         <Element>
@@ -4832,6 +4933,104 @@
                             <m_Name text="Holkan"/>
                             <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                         </Element>
+                        <Element>
+                            <m_Fields>
+                                <m_Values/>
+                            </m_Fields>
+                            <m_ChildCollections>
+                                <Element>
+                                    <m_CollectionName text="Cultures"/>
+                                    <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                    <Element>
+                                        <m_Fields>
+                                            <m_Values/>
+                                        </m_Fields>
+                                        <m_ChildCollections>
+                                            <Element>
+                                                <m_CollectionName text="Assets"/>
+                                                <m_ReplaceMergedCollectionElements>false
+                                                </m_ReplaceMergedCollectionElements>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:BLPEntryValue">
+                                                                <m_EntryName text="Mehal_Armor_01"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects:FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="A"/>
+                                                    <m_AppendMergedParameterCollections>false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                            </Element>
+                                        </m_ChildCollections>
+                                        <m_Name text="Any"/>
+                                        <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                    </Element>
+                                </Element>
+                            </m_ChildCollections>
+                            <m_Name text="Mehal"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
+                        <Element>
+                            <m_Fields>
+                                <m_Values/>
+                            </m_Fields>
+                            <m_ChildCollections>
+                                <Element>
+                                    <m_CollectionName text="Cultures"/>
+                                    <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                    <Element>
+                                        <m_Fields>
+                                            <m_Values/>
+                                        </m_Fields>
+                                        <m_ChildCollections>
+                                            <Element>
+                                                <m_CollectionName text="Assets"/>
+                                                <m_ReplaceMergedCollectionElements>false
+                                                </m_ReplaceMergedCollectionElements>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects:BLPEntryValue">
+                                                                <m_EntryName text="HeavyChariot_DriverA"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects:FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="A"/>
+                                                    <m_AppendMergedParameterCollections>false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                            </Element>
+                                        </m_ChildCollections>
+                                        <m_Name text="Any"/>
+                                        <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                    </Element>
+                                </Element>
+                            </m_ChildCollections>
+                            <m_Name text="HeavyChariot_Driver"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
                     </Element>
                 </m_ChildCollections>
                 <m_Name text="Armor"/>
@@ -6855,6 +7054,103 @@
                                 </Element>
                             </m_ChildCollections>
                             <m_Name text="Kite_Georgian"/>
+                            <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                        </Element>
+                        <Element>
+                            <m_Fields>
+                                <m_Values/>
+                            </m_Fields>
+                            <m_ChildCollections>
+                                <Element>
+                                    <m_CollectionName text="Cultures"/>
+                                    <m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+                                    <Element>
+                                        <m_Fields>
+                                            <m_Values/>
+                                        </m_Fields>
+                                        <m_ChildCollections>
+                                            <Element>
+                                                <m_CollectionName text="Assets"/>
+                                                <m_ReplaceMergedCollectionElements>
+                                                    false
+                                                </m_ReplaceMergedCollectionElements>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects..BLPEntryValue">
+                                                                <m_EntryName text="Round_Shield_Byz"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects..FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="1"/>
+                                                    <m_AppendMergedParameterCollections>
+                                                        false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects..BLPEntryValue">
+                                                                <m_EntryName text="Round_Shield_Byz_2"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects..FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="2"/>
+                                                    <m_AppendMergedParameterCollections>
+                                                        false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                                <Element>
+                                                    <m_Fields>
+                                                        <m_Values>
+                                                            <Element class="AssetObjects..BLPEntryValue">
+                                                                <m_EntryName text="Round_Shield_Byz_3"/>
+                                                                <m_XLPClass text="Unit"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
+                                                                <m_LibraryName text="Unit"/>
+                                                                <m_ParamName text="Asset"/>
+                                                            </Element>
+                                                            <Element class="AssetObjects..FloatValue">
+                                                                <m_fValue>1.000000</m_fValue>
+                                                                <m_ParamName text="Scale"/>
+                                                            </Element>
+                                                        </m_Values>
+                                                    </m_Fields>
+                                                    <m_ChildCollections/>
+                                                    <m_Name text="3"/>
+                                                    <m_AppendMergedParameterCollections>
+                                                        false
+                                                    </m_AppendMergedParameterCollections>
+                                                </Element>
+                                            </Element>
+                                        </m_ChildCollections>
+                                        <m_Name text="Any"/>
+                                        <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+                                    </Element>
+                                </Element>
+                            </m_ChildCollections>
+                            <m_Name text="Round_Byzantine"/>
                             <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                         </Element>
                         <Element>

@@ -76,6 +76,9 @@ INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUE
 -- New Frontier UUs
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_MAYA', 'UNIT_MAYAN_HOLKAN', 1, 5);
 INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GRAN_COLOMBIA', 'UNIT_COLOMBIAN_BRITISH_LEGION', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_GAUL', 'UNIT_GAUL_CARRUS', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_BYZANTIUM', 'UNIT_BYZANTINE_VARANGIAN_GUARD', 1, 5);
+INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUES ('CIVILIZATION_ETHIOPIA', 'UNIT_ETHIOPIAN_MEHAL_SEFARI', 1, 5);
 
 CREATE TABLE UnitsToDelete (Type VARCHAR);
 

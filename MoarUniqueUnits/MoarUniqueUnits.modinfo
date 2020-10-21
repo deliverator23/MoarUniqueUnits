@@ -192,6 +192,11 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_AfricanForestElephant_ao2</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_AH64_g</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_BallistaOp_AO</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_BaseMale_SouthAmerican_ao</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_BaseMale_SouthAmerican_g</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_BaseMale_SouthAmerican_m</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_BaseMale_SouthAmerican_n0</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_BaseMale_SouthAmerican_n1</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Black_Gloss</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Black_Metalness</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Builder_Ancient_NoBags_ao</File>
@@ -212,6 +217,7 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_Caucasian_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_Maori_Tattoo_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_BaseMale_SouthAmerican_a_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_black_tricorn_redcoat_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_British_Legion_a_British_Legion_t</File>
@@ -296,6 +302,8 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Mayan_Shield_C2_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Mayan_Shield_D1_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Mayan_Shield_D2_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Mehal_albedo_Huszar_tint</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Mehal_Armor_a_Mehal_Armor_t</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_MOAR Shields - Full Cross A_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_MOAR Shields - Full Cross C_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_MOAR Shields - Jerusalem D_null</File>
@@ -343,6 +351,9 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_ShieldJ_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_ShieldK_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_ShieldL_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_Shield_Byz_2_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_Shield_Byz_3_null</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Round_Shield_Byz_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_A_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_B_null</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_DiffuseTint_Russia_Kite_C_null</File>
@@ -432,6 +443,9 @@
 		<File>Platforms\MacOS\BLPs\TEXTURE_MapucheClothingA_m</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_MapucheClothingA_n0</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_MapucheClothingA_n1</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Mehal_Armor_g</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Mehal_Armor_m</File>
+		<File>Platforms\MacOS\BLPs\TEXTURE_Mehal_gloss</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_Metal_Gloss</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_MOAR Shields - Jerusalem Gloss F</File>
 		<File>Platforms\MacOS\BLPs\TEXTURE_MOAR Shields - Jerusalem Metalness 80</File>
@@ -576,6 +590,11 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_AfricanForestElephant_ao2</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_AH64_g</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_BallistaOp_AO</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_BaseMale_SouthAmerican_ao</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_BaseMale_SouthAmerican_g</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_BaseMale_SouthAmerican_m</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_BaseMale_SouthAmerican_n0</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_BaseMale_SouthAmerican_n1</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Black_Gloss</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Black_Metalness</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Builder_Ancient_NoBags_ao</File>
@@ -596,6 +615,7 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_Caucasian_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_Maori_Tattoo_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_NativeAmerican_a_3_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_BaseMale_SouthAmerican_a_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Berzerker_Iron_Helm_Berzerker_ArmorA_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_black_tricorn_redcoat_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_British_Legion_a_British_Legion_t</File>
@@ -680,6 +700,8 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Mayan_Shield_C2_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Mayan_Shield_D1_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Mayan_Shield_D2_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Mehal_albedo_Huszar_tint</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Mehal_Armor_a_Mehal_Armor_t</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_MOAR Shields - Full Cross A_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_MOAR Shields - Full Cross C_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_MOAR Shields - Jerusalem D_null</File>
@@ -727,6 +749,9 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_ShieldJ_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_ShieldK_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_ShieldL_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_Shield_Byz_2_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_Shield_Byz_3_null</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Round_Shield_Byz_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_A_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_B_null</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_DiffuseTint_Russia_Kite_C_null</File>
@@ -816,6 +841,9 @@
 		<File>Platforms\Windows\BLPs\TEXTURE_MapucheClothingA_m</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_MapucheClothingA_n0</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_MapucheClothingA_n1</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Mehal_Armor_g</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Mehal_Armor_m</File>
+		<File>Platforms\Windows\BLPs\TEXTURE_Mehal_gloss</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_Metal_Gloss</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_MOAR Shields - Jerusalem Gloss F</File>
 		<File>Platforms\Windows\BLPs\TEXTURE_MOAR Shields - Jerusalem Metalness 80</File>
@@ -884,19 +912,5 @@
 		<File>Platforms\Windows\BLPs\Icons.blp</File>
 		<File>Platforms\Windows\BLPs\newFrontierUnits.blp</File>
 		<File>Platforms\Windows\BLPs\uniqueUnits.blp</File>
-
-		<!-- Extra Textures -->
-		<File>Platforms\MacOS\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_ao</File>
-		<File>Platforms\Windows\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_ao</File>
-		<File>Platforms\MacOS\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_g</File>
-		<File>Platforms\Windows\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_g</File>
-		<File>Platforms\MacOS\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_m</File>
-		<File>Platforms\Windows\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_m</File>
-		<File>Platforms\MacOS\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_n0</File>
-		<File>Platforms\Windows\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_n0</File>
-		<File>Platforms\MacOS\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_n1</File>
-		<File>Platforms\Windows\BLPs\SHARED_DATA\TEXTURE_BaseMale_SouthAmerican_n1</File>
-		<File>Platforms\MacOS\BLPs\SHARED_DATA\TEXTURE_DiffuseTint_BaseMale_SouthAmerican_a_null</File>
-		<File>Platforms\Windows\BLPs\SHARED_DATA\TEXTURE_DiffuseTint_BaseMale_SouthAmerican_a_null</File>
 	</Files>
 </Mod>
