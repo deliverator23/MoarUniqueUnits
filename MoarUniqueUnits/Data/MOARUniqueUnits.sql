@@ -1808,3 +1808,15 @@ FROM   Types WHERE Type = 'UNIT_COLOMBIAN_BRITISH_LEGION';
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
   SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Mayan_Holkan_HM.dds'
   FROM   Types WHERE Type = 'UNIT_MAYAN_HOLKAN';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Carrus_HM.dds'
+  FROM   Types WHERE Type = 'UNIT_GAUL_CARRUS';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Varangian_HM.dds'
+  FROM   Types WHERE Type = 'UNIT_BYZANTINE_VARANGIAN_GUARD';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Mehal_HM.dds'
+  FROM   Types WHERE Type = 'UNIT_ETHIOPIAN_MEHAL_SEFARI';

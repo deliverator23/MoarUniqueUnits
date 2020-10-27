@@ -517,12 +517,6 @@
 <Replace Language="en_US" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_NAME"><Text>Hakkapeliitta</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION"><Text>Zulu unique Ancient era ranged unit that replaces Archer. Higher Melee Strength. +4 [ICON_Strength] when adjacent to another Isijula Warrior.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME"><Text>Isijula Warrior</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_DESCRIPTION"><Text>Carrus</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_NAME"><Text>Carrus</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_DESCRIPTION"><Text>Mehal Sefari</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_NAME"><Text>Mehal Sefari</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_DESCRIPTION"><Text>Varangian Guard</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_NAME"><Text>Varangian Guard</Text></Replace>
 <Replace Language="en_US" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC"><Text>-10 [ICON_Strength] Combat Strength versus District tiles.</Text></Replace>
 <Replace Language="en_US" Tag="PLUS_10_VERSUS_MELEE_COMBAT_BONUS_DESC"><Text>+10 [ICON_Strength] Combat Strength versus Melee units.</Text></Replace>
 <Replace Language="en_US" Tag="PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC"><Text>+10 [ICON_Strength] Combat Strength versus Heavy Cavalry.</Text></Replace>
@@ -560,4 +554,10 @@
 <Replace Language="en_US" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from adjacent Royal Warship.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from Strategist unit.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC"><Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_DESCRIPTION"><Text>Carrus</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_NAME"><Text>Carrus</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_DESCRIPTION"><Text>Mehal Sefari</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_NAME"><Text>Mehal Sefari</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_DESCRIPTION"><Text>Varangian Guard</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_NAME"><Text>Varangian Guard</Text></Replace>
 </LocalizedText></GameData>
