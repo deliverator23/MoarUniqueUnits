@@ -76,7 +76,7 @@ INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, Defau
 -- New Frontier UUs
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_MAYA', 'UNIT_MAYAN_HOLKAN', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GRAN_COLOMBIA', 'UNIT_COLOMBIAN_BRITISH_LEGION', 1, NULL, 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
-INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GAUL', 'UNIT_GAUL_CARRUS', 1, 'UNIT_HEAVY_CHARIOT', 'UNIT_KNIGHT', 'UNIT_SWORDSMAN');
+INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GAUL', 'UNIT_GAUL_CARRUS', 1, 'UNIT_HEAVY_CHARIOT', 'UNIT_KNIGHT', 'UNIT_HEAVY_CHARIOT');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BYZANTIUM', 'UNIT_BYZANTINE_VARANGIAN_GUARD', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ETHIOPIA', 'UNIT_ETHIOPIAN_MEHAL_SEFARI', 1, NULL, 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
 

@@ -600,7 +600,7 @@ AND    Units_XP2.UnitType = 'UNIT_MUSKETMAN'
 AND    EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
-SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, 64, RangedCombat, Range, Bombard, Domain, FormationClass, 310, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, 'TECH_RIFLING', PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, 4, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, 'TECH_SATELLITES', MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, 4, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_GAUL_CARRUS'
 AND   Units.UnitType = 'UNIT_HEAVY_CHARIOT'
@@ -628,7 +628,7 @@ AND    Units_XP2.UnitType = 'UNIT_MUSKETMAN'
 AND    EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
-SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, 64, RangedCombat, Range, Bombard, Domain, FormationClass, 310, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, 'TECH_RIFLING', PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, 4, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, 'TECH_SATELLITES', MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, 48, RangedCombat, Range, Bombard, Domain, FormationClass, 160, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, 'TECH_CASTLES', PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, 2, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, 'TECH_REPLACEABLE_PARTS', MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_BYZANTINE_VARANGIAN_GUARD'
 AND   Units.UnitType = 'UNIT_SWORDSMAN'
@@ -744,6 +744,10 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_FULL_STRENGTH_WHEN_DAMAGED_ON_HI
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_WHEN_ATTACKING_RANGED', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_UNIT_BONUS_VERSUS_CITY_STATES', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS', 'KIND_ABILITY');
+
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'KIND_ABILITY'); -- Carrus
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_DISTRICT', 'KIND_ABILITY'); -- Varangian
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'KIND_ABILITY'); -- Mehal
 
 
 -- Class Abilities
@@ -875,6 +879,9 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_FULL_STRENGTH_WHEN_DAMAGED_ON_
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_WHEN_ATTACKING_RANGED', 'CLASS_COLOMBIAN_BRITISH_LEGION');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_UNIT_BONUS_VERSUS_CITY_STATES', 'CLASS_MAYAN_HOLKAN');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS', 'CLASS_MAYAN_HOLKAN');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'CLASS_GAUL_CARRUS');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_DISTRICT', 'CLASS_BYZANTINE_VARANGIAN_GUARD');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'CLASS_ETHIOPIAN_MEHAL_SEFARI');
 
 
 -- Abilities
@@ -954,6 +961,10 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_UNIT_BONUS_VERSUS_CITY_STATES', 'LOC_ABILITY_UNIT_BONUS_VERSUS_CITY_STATES_NAME', 'LOC_ABILITY_UNIT_BONUS_VERSUS_CITY_STATES_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS', 'LOC_ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS_NAME', 'LOC_ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS_DESCRIPTION');
 
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'LOC_ABILITY_PLUS_X_VS_ANTI_CAVALRY_NAME', 'LOC_ABILITY_PLUS_X_VS_ANTI_CAVALRY_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_DISTRICT', 'LOC_ABILITY_PLUS_X_DISTRICT_NAME', 'LOC_ABILITY_PLUS_X_DISTRICT_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'LOC_ABILITY_PLUS_X_VERSUS_STRONGER_UNITS_NAME', 'LOC_ABILITY_PLUS_X_VERSUS_STRONGER_UNITS_DESCRIPTION');
+
 
 --RequirementSets
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
@@ -1000,6 +1011,7 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT
 
 -- New Frontier Pass
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2', 'REQUIREMENTSET_TEST_ALL');
 
 
 --Requirements
@@ -1039,6 +1051,9 @@ INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('AD
 INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES');
 INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
 INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+
+-- New Frontier Pass
+INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2', 'REQUIREMENT_OPPONENT_IS_STRONGER');
 
 
 
@@ -1145,6 +1160,8 @@ INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, Requirement
 -- New Frontier Pass
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'OPPONENT_RANGED_REQUIREMENT');
+INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2', 'REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2');
+
 
 
 -- Modifiers
@@ -1232,6 +1249,10 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('NO_REDUCTION_DAMAGE_ON_HILLS', 'MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE', 'PLOT_IS_HILLS_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_WHEN_ATTACKING_RANGED', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ATTACKING_RANGED_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PERC_100_POST_COMBAT_GOLD_FROM_CITY_STATES', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD', 'REQUIREMENTS_OPPONENT_IS_MINOR_CIV');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_VS_ANTI_CAVALRY', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ANTI_SPEAR_OPPONENT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_DISTRICT_ATTACK', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'URBAN_WARFARE_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_DISTRICT_DEFEND', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'GARRISON_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2');
 
 
 -- UnitAbilityModifiers
@@ -1337,7 +1358,10 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_WHEN_ATTACKING_RANGED', 'PLUS_X_WHEN_ATTACKING_RANGED');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_UNIT_BONUS_VERSUS_CITY_STATES', 'BARBAROSSA_COMBAT_BONUS_VS_CITY_STATES');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS', 'PERC_100_POST_COMBAT_GOLD_FROM_CITY_STATES');
-
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'PLUS_X_VS_ANTI_CAVALRY');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_DISTRICT', 'PLUS_X_DISTRICT_ATTACK');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_DISTRICT', 'PLUS_X_DISTRICT_DEFEND');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'PLUS_X_VERSUS_STRONGER_UNITS');
 
 --ModifierStrings
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'Preview', 'PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC');
@@ -1385,7 +1409,10 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_HOLY_SIT
 
 -- New Frontier Pass
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_WHEN_ATTACKING_RANGED', 'Preview', '+{1_Amount} {PLUS_X_WHEN_ATTACKING_RANGED}');
-
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_VS_ANTI_CAVALRY', 'Preview', '+{1_Amount} {PLUS_X_VS_ANTI_CAVALRY}');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_DISTRICT_ATTACK', 'Preview', '+{1_Amount} {PLUS_X_DISTRICT_ATTACK}');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_DISTRICT_DEFEND', 'Preview', '+{1_Amount} {PLUS_X_DISTRICT_DEFEND}');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'Preview', '+{1_Amount} {PLUS_X_VERSUS_STRONGER_UNITS}');
 
 
 --ModifierArguments
@@ -1484,7 +1511,10 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('EXTRA_MOVEMENT_
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_WHEN_ATTACKING_RANGED', 'Amount', '5');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PERC_100_POST_COMBAT_GOLD_FROM_CITY_STATES', 'PercentDefeatedStrength', '100');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PERC_100_POST_COMBAT_GOLD_FROM_CITY_STATES', 'YieldType', 'YIELD_GOLD');
-
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VS_ANTI_CAVALRY', 'Amount', '7'); -- Carrus
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_DISTRICT_ATTACK', 'Amount', '5'); -- Varangian
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_DISTRICT_DEFEND', 'Amount', '5'); -- Varangian
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'Amount', '6'); -- Mehal
 
 
 -- Polish Winged Hussar Fix
@@ -1590,6 +1620,14 @@ AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_COLOMBIAN_BRITISH_LEGIO
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_MAYAN_HOLKAN', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_MAYAN_HOLKAN');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_BYZANTINE_VARANGIAN_GUARD', 'UNIT_DLV_LONGSWORDSMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_BYZANTINE_VARANGIAN_GUARD');
+
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ETHIOPIAN_MEHAL_SEFARI', 'UNIT_DLV_RIFLEMAN'
+WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
+AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_ETHIOPIAN_MEHAL_SEFARI');
 
 
 -- Unit Upgrades - when Unit Expansion active
