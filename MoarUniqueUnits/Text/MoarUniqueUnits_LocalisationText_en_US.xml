@@ -583,4 +583,6 @@
 <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GAUL_CARRUS_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
 <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GAUL_CARRUS_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
 <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GAUL_CARRUS_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BABYLONIAN_BOWMAN_DESCRIPTION"><Text>Naš Qašti Description.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BABYLONIAN_BOWMAN_NAME"><Text>Naš Qašti</Text></Replace>
 </LocalizedText></GameData>

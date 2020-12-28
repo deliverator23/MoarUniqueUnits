@@ -79,6 +79,7 @@ INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, Defau
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_GAUL', 'UNIT_GAUL_CARRUS', 1, 'UNIT_HEAVY_CHARIOT', 'UNIT_KNIGHT', 'UNIT_HEAVY_CHARIOT');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BYZANTIUM', 'UNIT_BYZANTINE_VARANGIAN_GUARD', 1, NULL, 'UNIT_MUSKETMAN', 'UNIT_SWORDSMAN');
 INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_ETHIOPIA', 'UNIT_ETHIOPIAN_MEHAL_SEFARI', 1, NULL, 'UNIT_INFANTRY', 'UNIT_MUSKETMAN');
+INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, DefaultUpgrade, UnitAiBaseUnit) VALUES ('CIVILIZATION_BABYLON_STK', 'UNIT_BABYLONIAN_BOWMAN', 1, 'UNIT_ARCHER', 'UNIT_CROSSBOWMAN', 'UNIT_ARCHER');
 
 CREATE TABLE UnitsToDelete (Type VARCHAR);
 
