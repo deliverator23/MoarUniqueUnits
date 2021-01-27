@@ -47,14 +47,14 @@
 <Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] when in formation.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESCRIPTION"><Text>+10 [ICON_Strength] versus Naval Raider class units.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_WHEN_ATTACKING_RANGED_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking Ranged units.</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION"><Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_MEDICINE_MAN_BONUS_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory when adjacent to Medicine Man (Medicine Man).</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_NORWEGIAN_ULFHEDNAR_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus undamaged units, +10 [ICON_Strength] Combat Strength versus damaged units, and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith if adjacent to Ulfhedinn (Norway). </Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and +2 movement at start of turn if adjacent to Warship (Persia).</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SHIGONG_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and earns more experience if adjacent to Strategist (China).</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_SOFA_BONUS_DESCRIPTION"><Text>+4 [ICON_Strength] if adjacent to Sofa (Mali).</Text></Replace>
-<Replace Language="en_US" Tag="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION"><Text>Fights at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_HUI_HUI_PAO_BONUS_DESCRIPTION"><Text>Grants +5 [ICON_Strength] Combat Strength to Melee and Light/Heavy Cavalry Class units when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_KHMER_WAR_CANOE_BONUS_DESCRIPTION"><Text>Adjacent units incur no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_MEDICINE_MAN_BONUS_DESCRIPTION"><Text>Grants 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory to Melee, Anti-Cav, Ranged, and Light/Heavy Cavalry Class units adjacent to Medicine Man (Medicine Man).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_NORWEGIAN_ULFHEDNAR_BONUS_DESCRIPTION"><Text>Grants +5 [ICON_Strength] Combat Strength vs. undamaged units, +10 [ICON_Strength] Combat Strength vs. damaged units, and  50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith to Land/Naval Melee, Land/Naval Ranged, Anti-Cav, and Light/Heavy Cavalry Class units adjacent to Ulfhedinn (Norway). </Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_PERSIAN_WARSHIP_BONUS_DESCRIPTION"><Text>Grants +5 [ICON_Strength] Combat Strength and +2 movement at start of turn to land units adjacent to Warship (Persia).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_SHIGONG_BONUS_DESCRIPTION"><Text>Grants +5 [ICON_Strength] Combat Strength and 50% more experience to Melee, Anti-Cav, Ranged, and Light/Heavy Cavalry Class units adjacent to Strategist (China).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_SOFA_BONUS_DESCRIPTION"><Text>Grants +4 [ICON_Strength] Combat Strength to Light/Heavy Cavalry Class units adjacent to Sofa (Mali).</Text></Replace>
+<Replace Language="en_US" Tag="LOC_ABILITY_GRANT_WARRIOR_PRIEST_BONUS_DESCRIPTION"><Text>Melee, Ranged, and Anti-Cav Class units fight at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_SASR_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting on Desert or Plains. Ignores Zone of Control.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_SCOTTISH_GALLOWGLASS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking. Earns experience more quickly.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_SEPOY_DESCRIPTION"><Text>Fights at full Combat Strength when damaged.</Text></Replace>
@@ -549,10 +549,10 @@
 <Replace Language="en_US" Tag="PLUS_X_VS_MELEE_ANTICAV_LIGHTCAV_COMBAT_BONUS_DESC"><Text>+8 [ICON_Strength] Combat Strength against Melee, Anti Cavalry and Light Cavalry units.</Text></Replace>
 <Replace Language="en_US" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC"><Text>[ICON_Strength] Combat Strength vs Naval Raider class.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_HUI_HUI_PAO_BONUS_DESC"><Text>+5 [ICON_Strength] District defenders fear the adjacent Hui Hui Pao!</Text></Replace>
-<Replace Language="en_US" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength versus undamaged units.</Text></Replace>
-<Replace Language="en_US" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS_DESC"><Text>+10 [ICON_Strength] Combat Strength versus damaged units.</Text></Replace>
+<Replace Language="en_US" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength vs. undamaged units from adjacent Ulfhedinn unit.</Text></Replace>
+<Replace Language="en_US" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS_DESC"><Text>+10 [ICON_Strength] Combat Strength vs. damaged units from adjacent Ulfhedinn unit.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from adjacent Royal Warship.</Text></Replace>
-<Replace Language="en_US" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from Strategist unit.</Text></Replace>
+<Replace Language="en_US" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from adjacent Strategist unit.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC"><Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_DESCRIPTION"><Text>Gaulish unique Heavy Cavalry unit that replaces the Heavy Chariot. +7 [ICON_Strength] Combat Strength against anti-cavalry units.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_NAME"><Text>Carrus</Text></Replace>
