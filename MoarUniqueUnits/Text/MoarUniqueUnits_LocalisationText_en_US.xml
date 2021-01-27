@@ -583,6 +583,11 @@
 <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GAUL_CARRUS_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
 <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GAUL_CARRUS_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
 <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GAUL_CARRUS_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_BABYLONIAN_BOWMAN_DESCRIPTION"><Text>Naš Qašti Description.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BABYLONIAN_BOWMAN_DESCRIPTION"><Text>Babylonian unique Ancient era ranged unit that replaces Archer. +5 [ICON_Strength] Combat Strength when attacking or occupying a District.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_BABYLONIAN_BOWMAN_NAME"><Text>Naš Qašti</Text></Replace>
+    <Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BABYLONIAN_BOWMAN_CHAPTER_HISTORY_PARA_1"><Text>We have a fairly accurate picture of the extraordinary Babylonian archer units, thanks to a beautiful Assyrian mosaic showing them marching off to battle. The Babylon archers are dressed in colorful padded robes and carry four-foot long bows, as well as a quiver of arrows slung on their backs. The archers also carry spears or daggers, doubtless for personal defense if enemy units get close enough for hand-to-hand combat.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BABYLONIAN_BOWMAN_CHAPTER_HISTORY_PARA_2"><Text>Separate units carrying large, man-height shields would accompany the bowman, providing in effect, a movable fortress. The bowmen were an integral part of the Babylonian infantry, as their numbers were easier to train and replace than the more expensive cavalry. Bowmen also helped man the famed Walls of Babylon, taking up positions in the many turrets dotting its line.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BABYLONIAN_BOWMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BABYLONIAN_BOWMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BABYLONIAN_BOWMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
 </LocalizedText></GameData>
