@@ -655,6 +655,20 @@ FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_BABYLONIAN_BOWMAN'
 AND    Units_XP2.UnitType = 'UNIT_ARCHER'
 AND    EnabledUniqueUnits.Enabled = 1;
+
+INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost - 70, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance - 1, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+FROM Units, EnabledUniqueUnits
+WHERE EnabledUniqueUnits.Type = 'UNIT_VIETNAMESE_VIETCONG'
+AND   Units.UnitType = 'UNIT_INFANTRY'
+AND   EnabledUniqueUnits.Enabled = 1;
+
+INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
+SELECT EnabledUniqueUnits.Type, 0, 0, NULL, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
+FROM   Units_XP2, EnabledUniqueUnits
+WHERE  EnabledUniqueUnits.Type = 'UNIT_VIETNAMESE_VIETCONG'
+AND    Units_XP2.UnitType = 'UNIT_INFANTRY'
+AND    EnabledUniqueUnits.Enabled = 1;
 -- Units - End
 
 
@@ -741,7 +755,6 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_GEORGIAN_TADZREULI', 'KIND_ABILI
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_CREE_OTEHTAPIW', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_MAPUCHE_GUERILLA', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_SCOTTISH_GALLOWGLASS', 'KIND_ABILITY');
---INSERT INTO Types (Type, Kind) VALUES ('ABILITY_MONGOLIAN_HUI_HUI_PAO', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_ZULU_ASSEGAI', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_GRANT_KHMER_WAR_CANOE_BONUS', 'KIND_ABILITY');
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS', 'KIND_ABILITY');
@@ -771,6 +784,7 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'KIND_ABILITY'); -- Carrus
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_DISTRICT', 'KIND_ABILITY'); -- Varangian
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'KIND_ABILITY'); -- Mehal
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'KIND_ABILITY'); -- VietCong
 
 
 -- Class Abilities
@@ -855,7 +869,6 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_GEORGIAN_TADZREULI', 'CLASS_GE
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_CREE_OTEHTAPIW', 'CLASS_CREE_OTEHTAPIW');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MAPUCHE_GUERILLA', 'CLASS_MAPUCHE_GUERILLA');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_SCOTTISH_GALLOWGLASS', 'CLASS_SCOTTISH_GALLOWGLASS');
---INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MONGOLIAN_HUI_HUI_PAO', 'CLASS_MONGOLIAN_HUI_HUI_PAO');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ZULU_ASSEGAI', 'CLASS_ZULU_ASSEGAI');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_GRANT_KHMER_WAR_CANOE_BONUS', 'CLASS_KHMER_WAR_CANOE');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS', 'CLASS_ANTI_CAVALRY');
@@ -914,6 +927,7 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'CLAS
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_DISTRICT', 'CLASS_BYZANTINE_VARANGIAN_GUARD');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'CLASS_ETHIOPIAN_MEHAL_SEFARI');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_DISTRICT', 'CLASS_BABYLONIAN_BOWMAN');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'CLASS_VIETNAMESE_VIETCONG'); -- VietCong
 
 -- Abilities
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_MOVE_AFTER_ATTACKING', 'LOC_ABILITY_MOVE_AFTER_ATTACKING_NAME', 'LOC_ABILITY_MOVE_AFTER_ATTACKING_DESCRIPTION');
@@ -975,7 +989,6 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_CREE_OTEHTAPIW','LOC_ABILITY_CREE_OTEHTAPIW_NAME','LOC_ABILITY_CREE_OTEHTAPIW_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_MAPUCHE_GUERILLA','LOC_ABILITY_MAPUCHE_GUERILLA_NAME','LOC_ABILITY_MAPUCHE_GUERILLA_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_SCOTTISH_GALLOWGLASS','LOC_ABILITY_SCOTTISH_GALLOWGLASS_NAME','LOC_ABILITY_SCOTTISH_GALLOWGLASS_DESCRIPTION');
---INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_MONGOLIAN_HUI_HUI_PAO','LOC_ABILITY_MONGOLIAN_HUI_HUI_PAO_NAME','LOC_ABILITY_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_ZULU_ASSEGAI','LOC_ABILITY_ZULU_ASSEGAI_NAME','LOC_ABILITY_ZULU_ASSEGAI_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_GRANT_KHMER_WAR_CANOE_BONUS', 'LOC_ABILITY_GRANT_KHMER_WAR_CANOE_BONUS_NAME', 'LOC_ABILITY_GRANT_KHMER_WAR_CANOE_BONUS_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS', NULL, NULL);
@@ -999,10 +1012,10 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_WHEN_ATTACKING_RANGED', 'LOC_ABILITY_PLUS_X_WHEN_ATTACKING_RANGED_NAME', 'LOC_ABILITY_PLUS_X_WHEN_ATTACKING_RANGED_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_UNIT_BONUS_VERSUS_CITY_STATES', 'LOC_ABILITY_UNIT_BONUS_VERSUS_CITY_STATES_NAME', 'LOC_ABILITY_UNIT_BONUS_VERSUS_CITY_STATES_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS', 'LOC_ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS_NAME', 'LOC_ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS_DESCRIPTION');
-
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'LOC_ABILITY_PLUS_X_VS_ANTI_CAVALRY_NAME', 'LOC_ABILITY_PLUS_X_VS_ANTI_CAVALRY_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_DISTRICT', 'LOC_ABILITY_PLUS_X_DISTRICT_NAME', 'LOC_ABILITY_PLUS_X_DISTRICT_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'LOC_ABILITY_PLUS_X_VERSUS_STRONGER_UNITS_NAME', 'LOC_ABILITY_PLUS_X_VERSUS_STRONGER_UNITS_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'LOC_ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH_NAME', 'LOC_ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH_DESCRIPTION');
 
 
 --RequirementSets
@@ -1051,6 +1064,7 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT
 -- New Frontier Pass
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 
 
 --Requirements
@@ -1093,7 +1107,6 @@ INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('RE
 
 -- New Frontier Pass
 INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2', 'REQUIREMENT_OPPONENT_IS_STRONGER');
-
 
 
 --RequirementArguments
@@ -1164,7 +1177,6 @@ INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, Requirement
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT');
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_IS_NOT_DAMAGED_REQUIREMENTS', 'OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT');
 
-
 --DLC
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS');
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
@@ -1200,7 +1212,9 @@ INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, Requirement
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'OPPONENT_RANGED_REQUIREMENT');
 INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2', 'REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2');
-
+INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
+INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
+INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_MARSH_REQUIREMENT');
 
 
 -- Modifiers
@@ -1264,7 +1278,6 @@ INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('RECEIVE_PERSIAN_WARSHI
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_PERSIAN_WARSHIP_ADJACENT_MOVEMENT_BONUS_ATTACH', 'MODIFIER_SINGLE_UNIT_ATTACH_MODIFIER', 'ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('RECEIVE_PERSIAN_WARSHIP_ADJACENT_MOVEMENT_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT');
 
-
 -- R&F/DLC
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('RECEIVE_KHMER_WAR_CANOE_AMPHIBIOUS_BONUS_ATTACH', 'MODIFIER_SINGLE_UNIT_ATTACH_MODIFIER', 'ADJACENT_KHMER_WAR_CANOE_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES ('RECEIVE_KHMER_WAR_CANOE_AMPHIBIOUS_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_SHORES');
@@ -1292,6 +1305,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_DISTRICT_ATTACK', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'URBAN_WARFARE_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_DISTRICT_DEFEND', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'GARRISON_REQUIREMENTS');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'MODIFIER_PLAYER_UNIT_ADJUST_HIDDEN_VISIBILITY', 'PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS');
 
 
 -- UnitAbilityModifiers
@@ -1401,6 +1415,7 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_DISTRICT', 'PLUS_X_DISTRICT_ATTACK');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_DISTRICT', 'PLUS_X_DISTRICT_DEFEND');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'PLUS_X_VERSUS_STRONGER_UNITS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'INVISIBLE_ON_RAINFOREST_FOREST_MARSH');
 
 --ModifierStrings
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'Preview', 'PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC');
@@ -1451,7 +1466,6 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_WHEN_ATT
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_VS_ANTI_CAVALRY', 'Preview', '+{1_Amount} {PLUS_X_VS_ANTI_CAVALRY}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_DISTRICT_ATTACK', 'Preview', '+{1_Amount} {PLUS_X_DISTRICT_ATTACK}');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_DISTRICT_DEFEND', 'Preview', '+{1_Amount} {PLUS_X_DISTRICT_DEFEND}');
-INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'Preview', '+{1_Amount} {PLUS_X_VERSUS_STRONGER_UNITS}');
 
 
 --ModifierArguments
@@ -1554,7 +1568,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VS_ANTI_
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_DISTRICT_ATTACK', 'Amount', '5'); -- Varangian
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_DISTRICT_DEFEND', 'Amount', '5'); -- Varangian
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'Amount', '6'); -- Mehal
-
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'Hidden', 'true'); -- VietCong
 
 -- Polish Winged Hussar Fix
 UPDATE Units SET MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_POLISH_HUSSAR';
