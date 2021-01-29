@@ -1915,3 +1915,7 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
   SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Babylon_HM.dds'
   FROM   Types WHERE Type = 'UNIT_BABYLONIAN_BOWMAN';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+  SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'VietCong_HM.dds'
+  FROM   Types WHERE Type = 'UNIT_VIETNAMESE_VIETCONG';
