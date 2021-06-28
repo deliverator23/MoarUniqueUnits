@@ -663,7 +663,19 @@ WHERE EnabledUniqueUnits.Type = 'UNIT_VIETNAMESE_VIETCONG'
 AND   Units.UnitType = 'UNIT_INFANTRY'
 AND   EnabledUniqueUnits.Enabled = 1;
 
--- Units - End
+INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, Description, Flavor, CanCapture, CanRetreatWhenCaptured, TraitType, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion)
+SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
+FROM Units, EnabledUniqueUnits
+WHERE EnabledUniqueUnits.Type = 'UNIT_PORTUGUESE_KNIGHT_OF_AVIZ'
+AND   Units.UnitType = 'UNIT_KNIGHT'
+AND   EnabledUniqueUnits.Enabled = 1;
+
+INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
+SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
+FROM   Units_XP2, EnabledUniqueUnits
+WHERE  EnabledUniqueUnits.Type = 'UNIT_PORTUGUESE_KNIGHT_OF_AVIZ'
+AND    Units_XP2.UnitType = 'UNIT_KNIGHT'
+AND    EnabledUniqueUnits.Enabled = 1;
 
 
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT Type, DefaultReplaces FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultReplaces IS NOT NULL;
@@ -779,6 +791,9 @@ INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'KIND_A
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_DISTRICT', 'KIND_ABILITY'); -- Varangian
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'KIND_ABILITY'); -- Mehal
 INSERT INTO Types (Type, Kind) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'KIND_ABILITY'); -- VietCong
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_RIVERS', 'KIND_ABILITY'); -- Aviz
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_SHORES', 'KIND_ABILITY'); -- Aviz
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_PLUS_X_DISTRICT_ATTACK', 'KIND_ABILITY'); -- Aviz
 
 
 -- Class Abilities
@@ -921,7 +936,10 @@ INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VS_ANTI_CAVALRY', 'CLAS
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_DISTRICT', 'CLASS_BYZANTINE_VARANGIAN_GUARD');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'CLASS_ETHIOPIAN_MEHAL_SEFARI');
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_DISTRICT', 'CLASS_BABYLONIAN_BOWMAN');
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'CLASS_VIETNAMESE_VIETCONG'); -- VietCong
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'CLASS_VIETNAMESE_VIETCONG');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_RIVERS', 'CLASS_PORTUGUESE_KNIGHT_OF_AVIZ');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_SHORES', 'CLASS_PORTUGUESE_KNIGHT_OF_AVIZ');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_PLUS_X_DISTRICT_ATTACK', 'CLASS_PORTUGUESE_KNIGHT_OF_AVIZ');
 
 -- Abilities
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_MOVE_AFTER_ATTACKING', 'LOC_ABILITY_MOVE_AFTER_ATTACKING_NAME', 'LOC_ABILITY_MOVE_AFTER_ATTACKING_DESCRIPTION');
@@ -1010,6 +1028,9 @@ INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_DISTRICT', 'LOC_ABILITY_PLUS_X_DISTRICT_NAME', 'LOC_ABILITY_PLUS_X_DISTRICT_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'LOC_ABILITY_PLUS_X_VERSUS_STRONGER_UNITS_NAME', 'LOC_ABILITY_PLUS_X_VERSUS_STRONGER_UNITS_DESCRIPTION');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'LOC_ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH_NAME', 'LOC_ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_RIVERS', 'LOC_ABILITY_AMPHIBIOUS_BONUS_IGNORE_RIVERS_NAME', 'LOC_ABILITY_AMPHIBIOUS_BONUS_IGNORE_RIVERS_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_SHORES', 'LOC_ABILITY_AMPHIBIOUS_BONUS_IGNORE_SHORES_NAME', 'LOC_ABILITY_AMPHIBIOUS_BONUS_IGNORE_SHORES_DESCRIPTION');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES ('ABILITY_PLUS_X_DISTRICT_ATTACK', 'LOC_ABILITY_PLUS_X_DISTRICT_ATTACK_NAME', 'LOC_ABILITY_PLUS_X_DISTRICT_ATTACK_DESCRIPTION');
 
 
 --RequirementSets
@@ -1410,6 +1431,9 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_DISTRICT', 'PLUS_X_DISTRICT_DEFEND');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_VERSUS_STRONGER_UNITS', 'PLUS_X_VERSUS_STRONGER_UNITS');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'INVISIBLE_ON_RAINFOREST_FOREST_MARSH');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_RIVERS', 'AMPHIBIOUS_BONUS_IGNORE_RIVERS');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_AMPHIBIOUS_BONUS_IGNORE_SHORES', 'AMPHIBIOUS_BONUS_IGNORE_SHORES');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_PLUS_X_DISTRICT_ATTACK', 'PLUS_X_DISTRICT_ATTACK');
 
 --ModifierStrings
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES ('PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS', 'Preview', 'PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC');
@@ -1591,15 +1615,15 @@ UPDATE Units SET Cost = 140 WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI' AND EXIS
 /* Gathering Storm Compatibility */
 /* ----------------------------- */
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_COURSER'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_COURSER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_COURSER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_COURSER'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_COURSER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_COURSER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPANISH_JINETE');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_CUIRASSIER'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_CUIRASSIER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CUIRASSIER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER');
 
@@ -1613,6 +1637,7 @@ UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CUIRASSIER' WHERE Unit = 'UNIT_FRENC
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CUIRASSIER' WHERE Unit = 'UNIT_INDIAN_MUGHAL_SOWAR' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CUIRASSIER');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CUIRASSIER' WHERE Unit = 'UNIT_GEORGIAN_TADZREULI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CUIRASSIER');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CUIRASSIER' WHERE Unit = 'UNIT_OTTOMAN_SIPAHI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CUIRASSIER');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CUIRASSIER' WHERE Unit = 'UNIT_PORTUGUESE_KNIGHT_OF_AVIZ' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CUIRASSIER');
 
 
 /* ----------------------------- */
@@ -1620,59 +1645,59 @@ UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CUIRASSIER' WHERE Unit = 'UNIT_OTTOM
 /* ----------------------------- */
 
 -- Unit Replaces
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ARABIAN_GHAZI', 'UNIT_DLV_LONGSWORDSMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ARABIAN_GHAZI', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_ARABIAN_GHAZI');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPANISH_JINETE');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNIT_DLV_RIFLEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER', 'UNIT_DLV_RIFLEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_GREEK_ARMATOLOS', 'UNIT_DLV_RIFLEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_GREEK_ARMATOLOS', 'UNIT_DLV_RIFLEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GREEK_ARMATOLOS');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_INDIAN_SEPOY', 'UNIT_DLV_RIFLEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_INDIAN_SEPOY', 'UNIT_DLV_RIFLEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_INDIAN_SEPOY');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SCOTTISH_GALLOWGLASS', 'UNIT_DLV_LONGSWORDSMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SCOTTISH_GALLOWGLASS', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SCOTTISH_GALLOWGLASS');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ELEANOR_TEMPLAR', 'UNIT_DLV_LONGSWORDSMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ELEANOR_TEMPLAR', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_ELEANOR_TEMPLAR');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_MONGOLIAN_HUI_HUI_PAO', 'UNIT_DLV_TREBUCHET'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_MONGOLIAN_HUI_HUI_PAO', 'UNIT_DLV_TREBUCHET'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_TREBUCHET')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_MONGOLIAN_HUI_HUI_PAO');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_DLV_CUIRASSIER'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_DLV_CUIRASSIER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_COLOMBIAN_BRITISH_LEGION', 'UNIT_DLV_RIFLEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_COLOMBIAN_BRITISH_LEGION', 'UNIT_DLV_RIFLEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_COLOMBIAN_BRITISH_LEGION');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_MAYAN_HOLKAN', 'UNIT_DLV_LONGSWORDSMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_MAYAN_HOLKAN', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_MAYAN_HOLKAN');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_BYZANTINE_VARANGIAN_GUARD', 'UNIT_DLV_LONGSWORDSMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_BYZANTINE_VARANGIAN_GUARD', 'UNIT_DLV_LONGSWORDSMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_LONGSWORDSMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_BYZANTINE_VARANGIAN_GUARD');
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ETHIOPIAN_MEHAL_SEFARI', 'UNIT_DLV_RIFLEMAN'
+INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_ETHIOPIAN_MEHAL_SEFARI', 'UNIT_DLV_RIFLEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_RIFLEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_ETHIOPIAN_MEHAL_SEFARI');
 
@@ -1688,6 +1713,7 @@ UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_F
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_INDIAN_MUGHAL_SOWAR' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_GEORGIAN_TADZREULI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_OTTOMAN_SIPAHI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_CUIRASSIER' WHERE Unit = 'UNIT_PORTUGUESE_KNIGHT_OF_AVIZ' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER');
 
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_TREBUCHET' WHERE Unit = 'UNIT_ROMAN_ONAGER' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_TREBUCHET');
 UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_DLV_TREBUCHET' WHERE Unit = 'UNIT_MACEDONIAN_BALLISTA' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_TREBUCHET');
@@ -1913,3 +1939,7 @@ INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDat
 INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
   SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'VietCong_HM.dds'
   FROM   Types WHERE Type = 'UNIT_VIETNAMESE_VIETCONG';
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'Aviz_HM.dds'
+FROM   Types WHERE Type = 'UNIT_PORTUGUESE_KNIGHT_OF_AVIZ';
