@@ -385,7 +385,7 @@
 <Replace Language="en_US" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_NAME"><Text>Minuteman</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_DESCRIPTION"><Text>Arabian unique Classical Era unit. Gains additional +8 [ICON_Strength] when fighting on Desert or Plains.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_NAME"><Text>Camel Archer</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_ARABIAN_GHAZI_DESCRIPTION"><Text>Arabian unique Medieval Era Melee unit that replaces the Longswordsman. +5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. May be purchased with Faith. </Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_ARABIAN_GHAZI_DESCRIPTION"><Text>Arabian unique Medieval Era Melee unit that replaces Man-at-Arms. +5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. May be purchased with Faith. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_ARABIAN_GHAZI_NAME"><Text>Ghazi</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION"><Text>Strong, mobile Australian Mechanized Infantry replacement that ignores Zone of Control and has +5 [ICON_Strength] Combat Strength when fighting on Desert or Plains. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_AUSTRALIAN_SASR_NAME"><Text>S.A.S.R.</Text></Replace>
@@ -395,7 +395,7 @@
 <Replace Language="en_US" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME"><Text>Warrior Priest</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_DESCRIPTION"><Text>Brazilian unique Renaissance Era Recon unit that replaces the Ranger. Available earlier than the Ranger at Gunpowder. Can build forts. Yields 25% of defeated units' combat strength as [ICON_Gold] Gold and 25% of defeated units' combat strength as [ICON_Culture] Culture. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_NAME"><Text>Bandeirante</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION"><Text>Brazilian unique Industrial Era Melee unit that replaces the Rifleman. Cheaper than the Rifleman and costs less maintenance. +5 [ICON_Strength] Combat Strength on same continent as capital city. </Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION"><Text>Brazilian unique Industrial Era Melee unit that replaces the Line Infantry. Cheaper than the Line Infantry and costs less maintenance. +5 [ICON_Strength] Combat Strength on same continent as capital city. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME"><Text>Voluntário da Pátria</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION"><Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. +5 [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME"><Text>HMCS Haida</Text></Replace>
@@ -431,7 +431,7 @@
 <Replace Language="en_US" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_NAME"><Text>Landsknecht</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GERMAN_PANZER_DESCRIPTION"><Text>German unique Tank replacement that has +5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GERMAN_PANZER_NAME"><Text>Tiger I</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_GREEK_ARMATOLOS_DESCRIPTION"><Text>Greek unique Melee unit that replaces Rifleman. +5 [ICON_Strength] Combat Strength on Hills and ignores Hills movement penalty.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_GREEK_ARMATOLOS_DESCRIPTION"><Text>Greek unique Melee unit that replaces Line Infantry. +5 [ICON_Strength] Combat Strength on Hills and ignores Hills movement penalty.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GREEK_ARMATOLOS_NAME"><Text>Armatolos</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION"><Text>Greek unique Ranged unit that replaces Archer. +5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GREEK_PELTAST_NAME"><Text>Peltast</Text></Replace>
@@ -441,7 +441,7 @@
 <Replace Language="en_US" Tag="LOC_UNIT_INCA_CHASQUI_NAME"><Text>Chasqui</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_DESCRIPTION"><Text>Indian unique Medieval Era Heavy Cavalry unit that replaces Knight. Ignores terrain costs. Heals +15 per turn when on or adjacent to a Stepwell improvement. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_NAME"><Text>Mughal Sowar</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_INDIAN_SEPOY_DESCRIPTION"><Text>Indian unique Melee unit that replaces the Rifleman. Fights at full Combat Strength when damaged.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_INDIAN_SEPOY_DESCRIPTION"><Text>Indian unique Melee unit that replaces the Line Infantry. Fights at full Combat Strength when damaged.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_INDIAN_SEPOY_NAME"><Text>Sepoy</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION"><Text>Indonesian unique land combat unit that uses the Warrior Monk promotion tree. May be purchased with Faith.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME"><Text>Kris Warrior</Text></Replace>
@@ -472,7 +472,7 @@
 <Replace Language="en_US" Tag="LOC_UNIT_MAPUCHE_GUERILLA_NAME"><Text>Namuntulinco</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_MAYAN_HOLKAN_DESCRIPTION"><Text>Mayan unique Medieval Melee unit. +5 [ICON_Strength] when attacking City States' units and yields 100% of defeated City State units' combat strength as [ICON_Gold] Gold. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_MAYAN_HOLKAN_NAME"><Text>Holcan</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION"><Text>Mongolian unique Medieval era siege unit. Adjacent Heavy Cavalry, Light Cavalry and Melee units get +5 Combat Strength when attacking Districts.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION"><Text>Mongolian unique Medieval era siege unit that replaces Trebuchet. Adjacent Heavy Cavalry, Light Cavalry and Melee units get +5 Combat Strength when attacking Districts.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME"><Text>Hui Hui Pao</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_DESCRIPTION"><Text>Norwegian unique Medieval Era Melee unit that replaces Swordsman. +5 [ICON_Strength] Combat Strength and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Culture] Culture on combat victory if fighting on same continent as capital. </Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_NAME"><Text>Hirdman</Text></Replace>
@@ -554,11 +554,11 @@
 <Replace Language="en_US" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from adjacent Royal Warship.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength from adjacent Strategist unit.</Text></Replace>
 <Replace Language="en_US" Tag="RECEIVE_SOFA_BONUS_DESC"><Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_DESCRIPTION"><Text>Gaulish unique Heavy Cavalry unit that replaces the Heavy Chariot. +7 [ICON_Strength] Combat Strength against anti-cavalry units.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_DESCRIPTION"><Text>Gaulish unique Heavy Cavalry unit that replaces Heavy Chariot. +7 [ICON_Strength] Combat Strength against anti-cavalry units.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_GAUL_CARRUS_NAME"><Text>Carrus</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_DESCRIPTION"><Text>Ethiopian unique Melee unit that replaces the Rifleman. +6 [ICON_Strength] Combat Strength against stronger units.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_DESCRIPTION"><Text>Ethiopian unique Melee unit that replaces Line Infantry. +6 [ICON_Strength] Combat Strength against stronger units.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_ETHIOPIAN_MEHAL_SEFARI_NAME"><Text>Mehal Sefari</Text></Replace>
-<Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_DESCRIPTION"><Text>Byzantine unique Melee unit that replaces the Longswordsman. +5 [ICON_Strength] Combat Strength when fighting in or occupying a District.</Text></Replace>
+<Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_DESCRIPTION"><Text>Byzantine unique Melee unit that replaces Man-at-Arms. +5 [ICON_Strength] Combat Strength when fighting in or occupying a District.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_UNIT_BYZANTINE_VARANGIAN_GUARD_NAME"><Text>Varangian Guard</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_VS_ANTI_CAVALRY_DESCRIPTION"><Text>+7 [ICON_Strength] Combat Strength against anti-cavalry units.</Text></Replace>
 <Replace Language="en_US" Tag="LOC_ABILITY_PLUS_X_DISTRICT_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting in or occupying a District.</Text></Replace>
