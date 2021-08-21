@@ -232,8 +232,8 @@
                                                             <Element class="AssetObjects:BLPEntryValue">
                                                                 <m_EntryName text="Ballista"/>
                                                                 <m_XLPClass text="Unit"/>
-                                                                <m_XLPPath text="uniqueUnits.xlp"/>
-                                                                <m_BLPPackage text="units/uniqueUnits"/>
+                                                                <m_XLPPath text="newFrontierUnits.xlp"/>
+                                                                <m_BLPPackage text="units/newFrontierUnits"/>
                                                                 <m_LibraryName text="Unit"/>
                                                                 <m_ParamName text="Asset"/>
                                                             </Element>
