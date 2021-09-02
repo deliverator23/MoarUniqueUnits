@@ -31849,7 +31849,7 @@
                                                                     <m_Values/>
                                                                 </m_Fields>
                                                                 <m_ChildCollections/>
-                                                                <m_Name text="Bodies/Male_MediumBody_Hands"/>
+                                                                <m_Name text="Bodies/Male_HeavyBody_Hands"/>
                                                                 <m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
                                                             </Element>
                                                         </Element>
