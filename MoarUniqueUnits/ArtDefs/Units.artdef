@@ -18898,12 +18898,12 @@
                                                                 <m_Value text="Root"/>
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
-                                                            <Element class="AssetObjects:ArtDefReferenceValue">
-                                                                <m_ElementName text=""/>
+                                                            <Element class="AssetObjects..ArtDefReferenceValue">
+                                                                <m_ElementName text="BaseMale_SkinColor_MiddleEastern"/>
                                                                 <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text=""/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
                                                                 <m_CollectionIsLocked>true</m_CollectionIsLocked>
-                                                                <m_TemplateName text=""/>
+                                                                <m_TemplateName text="Units"/>
                                                                 <m_ParamName text="Tint"/>
                                                             </Element>
                                                         </m_Values>
